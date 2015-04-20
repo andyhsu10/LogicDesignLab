@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-pre/BUC_4bit.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-pre/BUC_4bit.syr" 

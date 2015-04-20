@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/test_FBAD_isim_beh.exe" -prj "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/test_FBAD_beh.prj" "work.test_FBAD" "work.glbl" 

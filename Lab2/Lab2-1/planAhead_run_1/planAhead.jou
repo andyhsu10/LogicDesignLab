@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Mar 16 21:29:20 2015
+# Process ID: 2584
+# Log file: C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  cin]]
+startgroup
+set_property package_pin P1 [get_ports cin]
+endgroup
+startgroup
+set_property package_pin H6 [get_ports cout]
+endgroup
+startgroup
+set_property package_pin H5 [get_ports s]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports x]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports y]
+endgroup
+save_constraints

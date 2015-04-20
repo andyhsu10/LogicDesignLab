@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/College/LogicDesignLab/Lab1-1/fulladder_test_isim_beh.exe" -prj "F:/College/LogicDesignLab/Lab1-1/fulladder_test_beh.prj" "work.fulladder_test" "work.glbl" 

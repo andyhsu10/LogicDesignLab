@@ -1,0 +1,29 @@
+Command line:
+   test_BUC_4bit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54773
+
+Thu Mar 19 00:37:08 2015
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 360.882 Meg
+
+ Total Signals          : 16
+ Total Nets             : 19
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 109
+Total Line Count : 57
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 360.882 Meg
+
+Thu Mar 19 01:10:54 2015
+

@@ -1,0 +1,38 @@
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_99_Up_Counter.ucf -p xc6slx16-csg324-3 BCD_99_Up_Counter.ngc BCD_99_Up_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ngd BCD_99_Up_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ncd BCD_99_Up_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_99_Up_Counter.twx BCD_99_Up_Counter.ncd -o BCD_99_Up_Counter.twr BCD_99_Up_Counter.pcf -ucf BCD_99_Up_Counter.ucf 
+bitgen -intstyle ise -f BCD_99_Up_Counter.ut BCD_99_Up_Counter.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_99_Up_Counter.ucf -p xc6slx16-csg324-3 BCD_99_Up_Counter.ngc BCD_99_Up_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ngd BCD_99_Up_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ncd BCD_99_Up_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_99_Up_Counter.twx BCD_99_Up_Counter.ncd -o BCD_99_Up_Counter.twr BCD_99_Up_Counter.pcf -ucf BCD_99_Up_Counter.ucf 
+bitgen -intstyle ise -f BCD_99_Up_Counter.ut BCD_99_Up_Counter.ncd 
+bitgen -intstyle ise -f BCD_99_Up_Counter.ut BCD_99_Up_Counter.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_99_Up_Counter.ucf -p xc6slx16-csg324-3 BCD_99_Up_Counter.ngc BCD_99_Up_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ngd BCD_99_Up_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ncd BCD_99_Up_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_99_Up_Counter.twx BCD_99_Up_Counter.ncd -o BCD_99_Up_Counter.twr BCD_99_Up_Counter.pcf -ucf BCD_99_Up_Counter.ucf 
+bitgen -intstyle ise -f BCD_99_Up_Counter.ut BCD_99_Up_Counter.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_99_Up_Counter.ucf -p xc6slx16-csg324-3 BCD_99_Up_Counter.ngc BCD_99_Up_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ngd BCD_99_Up_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ncd BCD_99_Up_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_99_Up_Counter.twx BCD_99_Up_Counter.ncd -o BCD_99_Up_Counter.twr BCD_99_Up_Counter.pcf -ucf BCD_99_Up_Counter.ucf 
+bitgen -intstyle ise -f BCD_99_Up_Counter.ut BCD_99_Up_Counter.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_99_Up_Counter.ucf -p xc6slx16-csg324-3 BCD_99_Up_Counter.ngc BCD_99_Up_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ngd BCD_99_Up_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ncd BCD_99_Up_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_99_Up_Counter.twx BCD_99_Up_Counter.ncd -o BCD_99_Up_Counter.twr BCD_99_Up_Counter.pcf -ucf BCD_99_Up_Counter.ucf 
+bitgen -intstyle ise -f BCD_99_Up_Counter.ut BCD_99_Up_Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-3/BCD_99_Up_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_99_Up_Counter.ucf -p xc6slx16-csg324-3 BCD_99_Up_Counter.ngc BCD_99_Up_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ngd BCD_99_Up_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_99_Up_Counter_map.ncd BCD_99_Up_Counter.ncd BCD_99_Up_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_99_Up_Counter.twx BCD_99_Up_Counter.ncd -o BCD_99_Up_Counter.twr BCD_99_Up_Counter.pcf -ucf BCD_99_Up_Counter.ucf 
+bitgen -intstyle ise -f BCD_99_Up_Counter.ut BCD_99_Up_Counter.ncd 

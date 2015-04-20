@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\An-Ting\OneDrive\LogicDesignLab\Lab3\Lab3-2\Bin_Up_Cnt.ncd
+OUTFILE=C:\Users\An-Ting\OneDrive\LogicDesignLab\Lab3\Lab3-2\Bin_Up_Cnt.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\An-Ting\OneDrive\LogicDesignLab\Lab3\Lab3-2
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

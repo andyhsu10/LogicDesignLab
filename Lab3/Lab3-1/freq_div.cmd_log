@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/Lab3/Lab3-1/freq_div.xst" -ofn "D:/Lab3/Lab3-1/freq_div.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc freq_div.ucf -p xc6slx16-csg324-3 freq_div.ngc freq_div.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o freq_div_map.ncd freq_div.ngd freq_div.pcf 
+par -w -intstyle ise -ol high -mt off freq_div_map.ncd freq_div.ncd freq_div.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml freq_div.twx freq_div.ncd -o freq_div.twr freq_div.pcf -ucf freq_div.ucf 
+bitgen -intstyle ise -f freq_div.ut freq_div.ncd 
+xst -intstyle ise -ifn "D:/Lab3/Lab3-1/freq_div.xst" -ofn "D:/Lab3/Lab3-1/freq_div.syr" 
+xst -intstyle ise -ifn "D:/Lab3/Lab3-1/freq_div.xst" -ofn "D:/Lab3/Lab3-1/freq_div.syr" 
+xst -intstyle ise -ifn "D:/Lab3/Lab3-1/freq_div.xst" -ofn "D:/Lab3/Lab3-1/freq_div.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc freq_div.ucf -p xc6slx16-csg324-3 freq_div.ngc freq_div.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o freq_div_map.ncd freq_div.ngd freq_div.pcf 
+par -w -intstyle ise -ol high -mt off freq_div_map.ncd freq_div.ncd freq_div.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml freq_div.twx freq_div.ncd -o freq_div.twr freq_div.pcf -ucf freq_div.ucf 
+bitgen -intstyle ise -f freq_div.ut freq_div.ncd 

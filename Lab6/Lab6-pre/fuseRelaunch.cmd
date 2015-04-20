@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/OneDrive/LogicDesignLab/Lab6/Lab6-pre/test_keypad_isim_beh.exe" -prj "D:/OneDrive/LogicDesignLab/Lab6/Lab6-pre/test_keypad_beh.prj" "work.test_keypad" "work.glbl" 

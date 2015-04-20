@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\An-Ting\OneDrive\LogicDesignLab\Lab2\Lab2-2\BCD.ncd
+OUTFILE=C:\Users\An-Ting\OneDrive\LogicDesignLab\Lab2\Lab2-2\BCD.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\An-Ting\OneDrive\LogicDesignLab\Lab2\Lab2-2
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

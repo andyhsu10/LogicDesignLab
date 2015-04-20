@@ -1,0 +1,57 @@
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ncd single_digit_decimal_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_decimal_adder.twx single_digit_decimal_adder.ncd -o single_digit_decimal_adder.twr single_digit_decimal_adder.pcf -ucf single_digit_decimal_adder.ucf 
+bitgen -intstyle ise -f single_digit_decimal_adder.ut single_digit_decimal_adder.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ncd single_digit_decimal_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_decimal_adder.twx single_digit_decimal_adder.ncd -o single_digit_decimal_adder.twr single_digit_decimal_adder.pcf -ucf single_digit_decimal_adder.ucf 
+bitgen -intstyle ise -f single_digit_decimal_adder.ut single_digit_decimal_adder.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ncd single_digit_decimal_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_decimal_adder.twx single_digit_decimal_adder.ncd -o single_digit_decimal_adder.twr single_digit_decimal_adder.pcf -ucf single_digit_decimal_adder.ucf 
+bitgen -intstyle ise -f single_digit_decimal_adder.ut single_digit_decimal_adder.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ncd single_digit_decimal_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_decimal_adder.twx single_digit_decimal_adder.ncd -o single_digit_decimal_adder.twr single_digit_decimal_adder.pcf -ucf single_digit_decimal_adder.ucf 
+bitgen -intstyle ise -f single_digit_decimal_adder.ut single_digit_decimal_adder.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ngd single_digit_decimal_adder.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_decimal_adder_map.ncd single_digit_decimal_adder.ncd single_digit_decimal_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_decimal_adder.twx single_digit_decimal_adder.ncd -o single_digit_decimal_adder.twr single_digit_decimal_adder.pcf -ucf single_digit_decimal_adder.ucf 
+bitgen -intstyle ise -f single_digit_decimal_adder.ut single_digit_decimal_adder.ncd 

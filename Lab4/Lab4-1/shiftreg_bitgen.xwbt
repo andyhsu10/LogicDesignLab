@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\OneDrive\LogicDesignLab\Lab4\Lab4-1\shiftreg.ncd
+OUTFILE=D:\OneDrive\LogicDesignLab\Lab4\Lab4-1\shiftreg.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\OneDrive\LogicDesignLab\Lab4\Lab4-1
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

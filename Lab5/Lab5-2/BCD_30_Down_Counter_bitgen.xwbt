@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Lab\Lab5-2\BCD_30_Down_Counter.ncd
+OUTFILE=D:\Lab\Lab5-2\BCD_30_Down_Counter.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Lab\Lab5-2
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc down_cnt_30sec.ucf -p xc6slx16-csg324-3 down_cnt_30sec.ngc down_cnt_30sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o down_cnt_30sec_map.ncd down_cnt_30sec.ngd down_cnt_30sec.pcf 
+par -w -intstyle ise -ol high -mt off down_cnt_30sec_map.ncd down_cnt_30sec.ncd down_cnt_30sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml down_cnt_30sec.twx down_cnt_30sec.ncd -o down_cnt_30sec.twr down_cnt_30sec.pcf -ucf down_cnt_30sec.ucf 
+bitgen -intstyle ise -f down_cnt_30sec.ut down_cnt_30sec.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc down_cnt_30sec.ucf -p xc6slx16-csg324-3 down_cnt_30sec.ngc down_cnt_30sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o down_cnt_30sec_map.ncd down_cnt_30sec.ngd down_cnt_30sec.pcf 
+par -w -intstyle ise -ol high -mt off down_cnt_30sec_map.ncd down_cnt_30sec.ncd down_cnt_30sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml down_cnt_30sec.twx down_cnt_30sec.ncd -o down_cnt_30sec.twr down_cnt_30sec.pcf -ucf down_cnt_30sec.ucf 
+bitgen -intstyle ise -f down_cnt_30sec.ut down_cnt_30sec.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc down_cnt_30sec.ucf -p xc6slx16-csg324-3 down_cnt_30sec.ngc down_cnt_30sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o down_cnt_30sec_map.ncd down_cnt_30sec.ngd down_cnt_30sec.pcf 
+par -w -intstyle ise -ol high -mt off down_cnt_30sec_map.ncd down_cnt_30sec.ncd down_cnt_30sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml down_cnt_30sec.twx down_cnt_30sec.ncd -o down_cnt_30sec.twr down_cnt_30sec.pcf -ucf down_cnt_30sec.ucf 
+bitgen -intstyle ise -f down_cnt_30sec.ut down_cnt_30sec.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc down_cnt_30sec.ucf -p xc6slx16-csg324-3 down_cnt_30sec.ngc down_cnt_30sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o down_cnt_30sec_map.ncd down_cnt_30sec.ngd down_cnt_30sec.pcf 
+par -w -intstyle ise -ol high -mt off down_cnt_30sec_map.ncd down_cnt_30sec.ncd down_cnt_30sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml down_cnt_30sec.twx down_cnt_30sec.ncd -o down_cnt_30sec.twr down_cnt_30sec.pcf -ucf down_cnt_30sec.ucf 
+bitgen -intstyle ise -f down_cnt_30sec.ut down_cnt_30sec.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc down_cnt_30sec.ucf -p xc6slx16-csg324-3 down_cnt_30sec.ngc down_cnt_30sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o down_cnt_30sec_map.ncd down_cnt_30sec.ngd down_cnt_30sec.pcf 
+par -w -intstyle ise -ol high -mt off down_cnt_30sec_map.ncd down_cnt_30sec.ncd down_cnt_30sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml down_cnt_30sec.twx down_cnt_30sec.ncd -o down_cnt_30sec.twr down_cnt_30sec.pcf -ucf down_cnt_30sec.ucf 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc down_cnt_30sec.ucf -p xc6slx16-csg324-3 down_cnt_30sec.ngc down_cnt_30sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o down_cnt_30sec_map.ncd down_cnt_30sec.ngd down_cnt_30sec.pcf 
+par -w -intstyle ise -ol high -mt off down_cnt_30sec_map.ncd down_cnt_30sec.ncd down_cnt_30sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml down_cnt_30sec.twx down_cnt_30sec.ncd -o down_cnt_30sec.twr down_cnt_30sec.pcf -ucf down_cnt_30sec.ucf 
+bitgen -intstyle ise -f down_cnt_30sec.ut down_cnt_30sec.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab5/test/down_cnt_30sec.syr" 

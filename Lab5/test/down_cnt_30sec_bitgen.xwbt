@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\OneDrive\LogicDesignLab\Lab5\test\down_cnt_30sec.ncd
+OUTFILE=D:\OneDrive\LogicDesignLab\Lab5\test\down_cnt_30sec.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\OneDrive\LogicDesignLab\Lab5\test
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

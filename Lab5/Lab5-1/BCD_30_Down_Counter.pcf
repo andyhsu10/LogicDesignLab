@@ -1,0 +1,45 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 16 16:09:13 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "display<6>" LOCATE = SITE "T3" LEVEL 1;
+COMP "display<7>" LOCATE = SITE "R5" LEVEL 1;
+COMP "display<8>" LOCATE = SITE "N5" LEVEL 1;
+COMP "display<9>" LOCATE = SITE "R3" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "K4" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "K3" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "L5" LEVEL 1;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "K5" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "H4" LEVEL 1;
+COMP "display<10>" LOCATE = SITE "U7" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "H3" LEVEL 1;
+COMP "display<11>" LOCATE = SITE "T5" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "L7" LEVEL 1;
+COMP "display<12>" LOCATE = SITE "V5" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "K6" LEVEL 1;
+COMP "display<13>" LOCATE = SITE "N4" LEVEL 1;
+COMP "led<8>" LOCATE = SITE "G3" LEVEL 1;
+COMP "display<14>" LOCATE = SITE "P6" LEVEL 1;
+COMP "led<9>" LOCATE = SITE "G1" LEVEL 1;
+COMP "control<0>" LOCATE = SITE "V8" LEVEL 1;
+COMP "control<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "pause" LOCATE = SITE "P4" LEVEL 1;
+COMP "control<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "control<3>" LOCATE = SITE "T6" LEVEL 1;
+COMP "led<10>" LOCATE = SITE "J7" LEVEL 1;
+COMP "led<11>" LOCATE = SITE "J6" LEVEL 1;
+COMP "led<12>" LOCATE = SITE "F2" LEVEL 1;
+COMP "led<13>" LOCATE = SITE "F1" LEVEL 1;
+COMP "led<14>" LOCATE = SITE "H6" LEVEL 1;
+COMP "led<15>" LOCATE = SITE "H5" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "N3" LEVEL 1;
+COMP "display<0>" LOCATE = SITE "U5" LEVEL 1;
+COMP "display<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "display<2>" LOCATE = SITE "R7" LEVEL 1;
+COMP "display<3>" LOCATE = SITE "V7" LEVEL 1;
+COMP "display<4>" LOCATE = SITE "V4" LEVEL 1;
+COMP "display<5>" LOCATE = SITE "T4" LEVEL 1;
+SCHEMATIC END;
+

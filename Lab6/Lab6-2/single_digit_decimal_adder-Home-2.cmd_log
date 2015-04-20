@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/single_digit_decimal_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_decimal_adder.ucf -p xc6slx16-csg324-3 single_digit_decimal_adder.ngc single_digit_decimal_adder.ngd  

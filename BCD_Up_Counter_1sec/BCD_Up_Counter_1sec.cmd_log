@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Up_Counter_1sec.ucf -p xc6slx16-csg324-3 BCD_Up_Counter_1sec.ngc BCD_Up_Counter_1sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Up_Counter_1sec_map.ncd BCD_Up_Counter_1sec.ngd BCD_Up_Counter_1sec.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Up_Counter_1sec_map.ncd BCD_Up_Counter_1sec.ncd BCD_Up_Counter_1sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Up_Counter_1sec.twx BCD_Up_Counter_1sec.ncd -o BCD_Up_Counter_1sec.twr BCD_Up_Counter_1sec.pcf -ucf BCD_Up_Counter_1sec.ucf 
+bitgen -intstyle ise -f BCD_Up_Counter_1sec.ut BCD_Up_Counter_1sec.ncd 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/BCD_Up_Counter_1sec/BCD_Up_Counter_1sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Up_Counter_1sec.ucf -p xc6slx16-csg324-3 BCD_Up_Counter_1sec.ngc BCD_Up_Counter_1sec.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Up_Counter_1sec_map.ncd BCD_Up_Counter_1sec.ngd BCD_Up_Counter_1sec.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Up_Counter_1sec_map.ncd BCD_Up_Counter_1sec.ncd BCD_Up_Counter_1sec.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Up_Counter_1sec.twx BCD_Up_Counter_1sec.ncd -o BCD_Up_Counter_1sec.twr BCD_Up_Counter_1sec.pcf -ucf BCD_Up_Counter_1sec.ucf 
+bitgen -intstyle ise -f BCD_Up_Counter_1sec.ut BCD_Up_Counter_1sec.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\An-Ting\OneDrive\LogicDesignLab\BCD_Up_Counter_1sec\BCD_Up_Counter_1sec.ncd
+OUTFILE=C:\Users\An-Ting\OneDrive\LogicDesignLab\BCD_Up_Counter_1sec\BCD_Up_Counter_1sec.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\An-Ting\OneDrive\LogicDesignLab\BCD_Up_Counter_1sec
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

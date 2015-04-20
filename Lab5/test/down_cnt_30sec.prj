@@ -1,0 +1,5 @@
+verilog work "scan_ctl.v"
+verilog work "freq_div.v"
+verilog work "down_cnt.v"
+verilog work "bcd_display.v"
+verilog work "down_cnt_30sec.v"

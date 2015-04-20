@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Up_Cnt.ucf -p xc6slx16-csg324-3 Bin_Up_Cnt.ngc Bin_Up_Cnt.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bin_Up_Cnt_map.ncd Bin_Up_Cnt.ngd Bin_Up_Cnt.pcf 
+par -w -intstyle ise -ol high -mt off Bin_Up_Cnt_map.ncd Bin_Up_Cnt.ncd Bin_Up_Cnt.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Bin_Up_Cnt.twx Bin_Up_Cnt.ncd -o Bin_Up_Cnt.twr Bin_Up_Cnt.pcf -ucf BCD_Up_Cnt.ucf 
+bitgen -intstyle ise -f Bin_Up_Cnt.ut Bin_Up_Cnt.ncd 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Up_Cnt.ucf -p xc6slx16-csg324-3 Bin_Up_Cnt.ngc Bin_Up_Cnt.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bin_Up_Cnt_map.ncd Bin_Up_Cnt.ngd Bin_Up_Cnt.pcf 
+par -w -intstyle ise -ol high -mt off Bin_Up_Cnt_map.ncd Bin_Up_Cnt.ncd Bin_Up_Cnt.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Bin_Up_Cnt.twx Bin_Up_Cnt.ncd -o Bin_Up_Cnt.twr Bin_Up_Cnt.pcf -ucf BCD_Up_Cnt.ucf 
+bitgen -intstyle ise -f Bin_Up_Cnt.ut Bin_Up_Cnt.ncd 
+xst -intstyle ise -ifn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.xst" -ofn "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-2/Bin_Up_Cnt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Up_Cnt.ucf -p xc6slx16-csg324-3 Bin_Up_Cnt.ngc Bin_Up_Cnt.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bin_Up_Cnt_map.ncd Bin_Up_Cnt.ngd Bin_Up_Cnt.pcf 
+par -w -intstyle ise -ol high -mt off Bin_Up_Cnt_map.ncd Bin_Up_Cnt.ncd Bin_Up_Cnt.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Bin_Up_Cnt.twx Bin_Up_Cnt.ncd -o Bin_Up_Cnt.twr Bin_Up_Cnt.pcf -ucf BCD_Up_Cnt.ucf 
+bitgen -intstyle ise -f Bin_Up_Cnt.ut Bin_Up_Cnt.ncd 

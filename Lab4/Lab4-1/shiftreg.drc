@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Apr 01 19:25:12 2015
+
+drc -z shiftreg.ncd shiftreg.pcf
+
+DRC detected 0 errors and 0 warnings.

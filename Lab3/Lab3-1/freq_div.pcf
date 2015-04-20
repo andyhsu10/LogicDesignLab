@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Mar 19 17:59:21 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "clk_out" LOCATE = SITE "H5" LEVEL 1;
+SCHEMATIC END;
+

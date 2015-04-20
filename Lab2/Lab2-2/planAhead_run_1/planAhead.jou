@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Mar 16 22:21:43 2015
+# Process ID: 896
+# Log file: C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-2/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T1 [get_ports {bcd[3]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {bcd[2]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {bcd[1]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {bcd[0]}]
+endgroup
+startgroup
+set_property package_pin D3 [get_ports {display[14]}]
+endgroup
+set_property package_pin "" [get_ports [list  {display[13]}]]
+set_property package_pin "" [get_ports [list  {display[13]}]]
+set_property package_pin "" [get_ports [list  {display[14]}]]
+startgroup
+set_property package_pin T6 [get_ports {display[14]}]
+endgroup
+set_property package_pin "" [get_ports [list  {display[14]}]]
+startgroup
+set_property package_pin H5 [get_ports {led[3]}]
+endgroup
+startgroup
+set_property package_pin H6 [get_ports {led[2]}]
+endgroup
+startgroup
+set_property package_pin F1 [get_ports {led[1]}]
+endgroup
+startgroup
+set_property package_pin F2 [get_ports {led[0]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {display[14]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {display[13]}]
+endgroup
+startgroup
+set_property package_pin V5 [get_ports {display[12]}]
+endgroup
+set_property package_pin "" [get_ports [list  {display[10]}]]
+startgroup
+set_property package_pin T5 [get_ports {display[11]}]
+endgroup
+startgroup
+set_property package_pin U7 [get_ports {display[10]}]
+endgroup
+startgroup
+set_property package_pin R3 [get_ports {display[9]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {display[8]}]
+endgroup
+startgroup
+set_property package_pin R5 [get_ports {display[7]}]
+endgroup
+startgroup
+set_property package_pin T3 [get_ports {display[6]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {display[5]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {display[4]}]
+endgroup
+startgroup
+set_property package_pin V7 [get_ports {display[3]}]
+endgroup
+startgroup
+set_property package_pin R7 [get_ports {display[2]}]
+endgroup
+startgroup
+set_property package_pin T7 [get_ports {display[1]}]
+endgroup
+startgroup
+set_property package_pin U5 [get_ports {display[0]}]
+endgroup
+save_constraints

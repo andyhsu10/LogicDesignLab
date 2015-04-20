@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/OneDrive/LogicDesignLab/Lab4/Lab4-pre/test_shiftreg_isim_beh.exe" -prj "D:/OneDrive/LogicDesignLab/Lab4/Lab4-pre/test_shiftreg_beh.prj" "work.test_shiftreg" "work.glbl" 

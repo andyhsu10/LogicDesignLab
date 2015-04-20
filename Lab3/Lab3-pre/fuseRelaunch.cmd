@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-pre/test_BUC_4bit_isim_beh.exe" -prj "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab3/Lab3-pre/test_BUC_4bit_beh.prj" "work.test_BUC_4bit" "work.glbl" 

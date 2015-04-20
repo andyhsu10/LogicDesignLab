@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 keypad_scan_display.ngc keypad_scan_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o keypad_scan_display_map.ncd keypad_scan_display.ngd keypad_scan_display.pcf 
+par -w -intstyle ise -ol high -mt off keypad_scan_display_map.ncd keypad_scan_display.ncd keypad_scan_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml keypad_scan_display.twx keypad_scan_display.ncd -o keypad_scan_display.twr keypad_scan_display.pcf 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc keypad_scan_display.ucf -p xc6slx16-csg324-3 keypad_scan_display.ngc keypad_scan_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o keypad_scan_display_map.ncd keypad_scan_display.ngd keypad_scan_display.pcf 
+par -w -intstyle ise -ol high -mt off keypad_scan_display_map.ncd keypad_scan_display.ncd keypad_scan_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml keypad_scan_display.twx keypad_scan_display.ncd -o keypad_scan_display.twr keypad_scan_display.pcf -ucf keypad_scan_display.ucf 
+bitgen -intstyle ise -f keypad_scan_display.ut keypad_scan_display.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.syr" 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc keypad_scan_display.ucf -p xc6slx16-csg324-3 keypad_scan_display.ngc keypad_scan_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o keypad_scan_display_map.ncd keypad_scan_display.ngd keypad_scan_display.pcf 
+par -w -intstyle ise -ol high -mt off keypad_scan_display_map.ncd keypad_scan_display.ncd keypad_scan_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml keypad_scan_display.twx keypad_scan_display.ncd -o keypad_scan_display.twr keypad_scan_display.pcf -ucf keypad_scan_display.ucf 
+bitgen -intstyle ise -f keypad_scan_display.ut keypad_scan_display.ncd 
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab6/Lab6-1/keypad_scan_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc keypad_scan_display.ucf -p xc6slx16-csg324-3 keypad_scan_display.ngc keypad_scan_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o keypad_scan_display_map.ncd keypad_scan_display.ngd keypad_scan_display.pcf 
+par -w -intstyle ise -ol high -mt off keypad_scan_display_map.ncd keypad_scan_display.ncd keypad_scan_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml keypad_scan_display.twx keypad_scan_display.ncd -o keypad_scan_display.twr keypad_scan_display.pcf -ucf keypad_scan_display.ucf 
+bitgen -intstyle ise -f keypad_scan_display.ut keypad_scan_display.ncd 

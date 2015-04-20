@@ -1,0 +1,89 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/pa.fromHdl.tcl
+# create_project -name Lab4-1 -dir "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/planAhead_run_1" -part xc6slx16csg324-3
+create_project: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 430.133 ; gain = 48.289
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "shiftreg.ucf" [current_fileset -constrset]
+Adding file 'D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {shifter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {freq_div.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {shiftreg.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top shiftreg $srcset
+# add_files [list {shiftreg.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shifter.v" into library work
+Analyzing Verilog file "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/freq_div.v" into library work
+Analyzing Verilog file "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.v" into library work
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.ucf]
+Finished Parsing UCF File [D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 777da9cc
+open_rtl_design: Time (s): elapsed = 00:00:47 . Memory (MB): peak = 638.859 ; gain = 179.766
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin K6 [get_ports {led[7]}]
+endgroup
+startgroup
+set_property package_pin L7 [get_ports {led[6]}]
+endgroup
+startgroup
+set_property package_pin H3 [get_ports {led[5]}]
+endgroup
+startgroup
+set_property package_pin H4 [get_ports {led[4]}]
+endgroup
+startgroup
+set_property package_pin K5 [get_ports {led[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {led[1]}]]
+startgroup
+set_property package_pin L5 [get_ports {led[2]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {led[1]}]
+endgroup
+startgroup
+set_property package_pin K4 [get_ports {led[0]}]
+endgroup
+startgroup
+set_property package_pin R10 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports data]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports mode]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Apr 01 18:25:05 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

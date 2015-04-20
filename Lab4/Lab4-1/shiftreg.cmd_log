@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc shiftreg.ucf -p xc6slx16-csg324-3 shiftreg.ngc shiftreg.ngd  
+par -w -intstyle ise -ol high -mt off shiftreg_map.ncd shiftreg.ncd shiftreg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shiftreg.twx shiftreg.ncd -o shiftreg.twr shiftreg.pcf -ucf shiftreg.ucf 
+bitgen -intstyle ise -f shiftreg.ut shiftreg.ncd 

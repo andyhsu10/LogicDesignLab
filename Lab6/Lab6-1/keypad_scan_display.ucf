@@ -1,0 +1,33 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = R10;
+NET "rst_n" LOC = N3;
+NET "col_n[0]" LOC = J3;
+NET "col_n[1]" LOC = J1;
+NET "col_n[2]" LOC = H2;
+NET "col_n[3]" LOC = H1;
+NET "row_n[0]" LOC = K2;
+NET "row_n[1]" LOC = K1;
+NET "row_n[2]" LOC = L4;
+NET "row_n[3]" LOC = L3;
+NET "control[0]" LOC = V8;
+NET "control[1]" LOC = U8;
+NET "control[2]" LOC = V6;
+NET "control[3]" LOC = T6;
+NET "display[14]" LOC = P6;
+NET "display[13]" LOC = N4;
+NET "display[12]" LOC = V5;
+NET "display[11]" LOC = T5;
+NET "display[10]" LOC = U7;
+NET "display[9]" LOC = R3;
+NET "display[8]" LOC = N5;
+NET "display[7]" LOC = R5;
+NET "display[6]" LOC = T3;
+NET "display[5]" LOC = T4;
+NET "display[4]" LOC = V4;
+NET "display[3]" LOC = V7;
+NET "display[2]" LOC = R7;
+NET "display[1]" LOC = T7;
+NET "display[0]" LOC = U5;
+NET "pressed" LOC = H5;

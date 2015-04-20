@@ -1,0 +1,219 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml down_cnt_30sec.twx down_cnt_30sec.ncd -o
+down_cnt_30sec.twr down_cnt_30sec.pcf -ucf down_cnt_30sec.ucf
+
+Design file:              down_cnt_30sec.ncd
+Physical constraint file: down_cnt_30sec.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+control<0>  |         8.424(R)|      SLOW  |         4.603(R)|      FAST  |clk_BUFGP         |   0.000|
+control<1>  |         8.918(R)|      SLOW  |         4.893(R)|      FAST  |clk_BUFGP         |   0.000|
+display<7>  |         9.818(R)|      SLOW  |         4.568(R)|      FAST  |clk_BUFGP         |   0.000|
+display<8>  |        10.533(R)|      SLOW  |         5.049(R)|      FAST  |clk_BUFGP         |   0.000|
+display<9>  |         9.685(R)|      SLOW  |         4.810(R)|      FAST  |clk_BUFGP         |   0.000|
+display<10> |        10.236(R)|      SLOW  |         4.787(R)|      FAST  |clk_BUFGP         |   0.000|
+display<11> |         9.752(R)|      SLOW  |         4.815(R)|      FAST  |clk_BUFGP         |   0.000|
+display<12> |        10.204(R)|      SLOW  |         4.800(R)|      FAST  |clk_BUFGP         |   0.000|
+display<13> |         9.478(R)|      SLOW  |         4.816(R)|      FAST  |clk_BUFGP         |   0.000|
+display<14> |         9.573(R)|      SLOW  |         4.576(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock ini_val<0> to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                           | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)          | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+display<7>  |        11.193(F)|      SLOW  |         6.464(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+display<8>  |        11.908(F)|      SLOW  |         6.945(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+display<9>  |        10.677(F)|      SLOW  |         6.053(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+display<10> |        11.528(F)|      SLOW  |         6.684(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+display<11> |        10.419(F)|      SLOW  |         5.876(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+display<12> |        11.168(F)|      SLOW  |         6.437(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+display<13> |        10.812(F)|      SLOW  |         6.108(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+display<14> |        10.701(F)|      SLOW  |         6.074(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+
+Clock ini_val<1> to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                           | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)          | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+display<7>  |        10.783(F)|      SLOW  |         6.249(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+display<8>  |        11.498(F)|      SLOW  |         6.730(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+display<9>  |        10.469(F)|      SLOW  |         6.007(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+display<10> |        11.166(F)|      SLOW  |         6.511(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+display<11> |        10.688(F)|      SLOW  |         6.242(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+display<12> |        11.145(F)|      SLOW  |         6.512(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+display<13> |        10.640(F)|      SLOW  |         6.118(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+display<14> |        10.538(F)|      SLOW  |         6.092(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+
+Clock ini_val<2> to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                           | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)          | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+display<7>  |        10.300(F)|      SLOW  |         6.027(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+display<8>  |        11.015(F)|      SLOW  |         6.508(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+display<9>  |        10.167(F)|      SLOW  |         5.876(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+display<10> |        10.718(F)|      SLOW  |         6.269(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+display<11> |        10.234(F)|      SLOW  |         5.942(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+display<12> |        10.686(F)|      SLOW  |         6.266(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+display<13> |         9.960(F)|      SLOW  |         5.676(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+display<14> |        10.055(F)|      SLOW  |         5.818(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+
+Clock ini_val<3> to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                           | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)          | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+display<7>  |         9.618(F)|      SLOW  |         5.577(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<8>  |        10.333(F)|      SLOW  |         6.058(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<9>  |         9.638(F)|      SLOW  |         5.532(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<10> |        10.009(F)|      SLOW  |         5.830(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<11> |         9.453(F)|      SLOW  |         5.418(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<12> |         9.928(F)|      SLOW  |         5.790(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<13> |         9.199(F)|      SLOW  |         5.191(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<14> |         9.081(F)|      SLOW  |         5.166(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+
+Clock rst_n to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                           | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)          | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+display<7>  |        11.440(F)|      SLOW  |         6.599(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        11.107(F)|      SLOW  |         6.473(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        10.790(F)|      SLOW  |         6.314(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |        10.228(F)|      SLOW  |         5.973(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<8>  |        12.155(F)|      SLOW  |         7.080(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        11.822(F)|      SLOW  |         6.954(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        11.505(F)|      SLOW  |         6.795(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |        10.943(F)|      SLOW  |         6.454(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<9>  |        10.924(F)|      SLOW  |         6.188(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        10.793(F)|      SLOW  |         6.231(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        10.657(F)|      SLOW  |         6.163(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |        10.248(F)|      SLOW  |         5.928(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<10> |        11.775(F)|      SLOW  |         6.819(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        11.490(F)|      SLOW  |         6.735(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        11.208(F)|      SLOW  |         6.556(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |        10.619(F)|      SLOW  |         6.226(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<11> |        10.666(F)|      SLOW  |         6.011(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        11.012(F)|      SLOW  |         6.466(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        10.724(F)|      SLOW  |         6.229(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |        10.063(F)|      SLOW  |         5.814(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<12> |        11.415(F)|      SLOW  |         6.572(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        11.469(F)|      SLOW  |         6.736(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        11.176(F)|      SLOW  |         6.553(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |        10.538(F)|      SLOW  |         6.186(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<13> |        11.059(F)|      SLOW  |         6.243(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        10.964(F)|      SLOW  |         6.342(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        10.450(F)|      SLOW  |         5.963(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |         9.809(F)|      SLOW  |         5.587(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+display<14> |        10.948(F)|      SLOW  |         6.209(F)|      FAST  |digit1/rst_n_ini[0]_AND_9_o|   0.000|
+            |        10.862(F)|      SLOW  |         6.316(F)|      FAST  |digit1/rst_n_ini[1]_AND_7_o|   0.000|
+            |        10.545(F)|      SLOW  |         6.105(F)|      FAST  |digit1/rst_n_ini[2]_AND_5_o|   0.000|
+            |         9.691(F)|      SLOW  |         5.562(F)|      FAST  |digit1/rst_n_ini[3]_AND_3_o|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.885|         |         |         |
+rst_n          |    2.241|    2.241|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ini_val<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ini_val<0>     |         |         |    0.167|    0.167|
+rst_n          |         |         |    0.414|    0.414|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ini_val<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ini_val<1>     |         |         |    0.280|    0.280|
+rst_n          |         |         |    0.604|    0.604|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ini_val<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ini_val<2>     |         |         |    0.430|    0.430|
+rst_n          |         |         |    0.920|    0.920|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ini_val<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ini_val<3>     |         |         |    0.869|    0.869|
+rst_n          |         |         |    1.479|    1.479|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ini_val<0>     |         |         |   -0.023|   -0.023|
+ini_val<1>     |         |         |   -0.026|   -0.026|
+ini_val<2>     |         |         |   -0.034|   -0.034|
+ini_val<3>     |         |         |    0.292|    0.292|
+rst_n          |         |         |    0.902|    0.902|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Apr 14 21:10:48 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 218 MB
+
+
+

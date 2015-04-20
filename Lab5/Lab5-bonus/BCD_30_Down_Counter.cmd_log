@@ -1,0 +1,70 @@
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 
+xst -intstyle ise -ifn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.xst" -ofn "D:/Lab/Lab5-bonus/BCD_30_Down_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_30_Down_Counter.ucf -p xc6slx16-csg324-3 BCD_30_Down_Counter.ngc BCD_30_Down_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ngd BCD_30_Down_Counter.pcf 
+par -w -intstyle ise -ol high -mt off BCD_30_Down_Counter_map.ncd BCD_30_Down_Counter.ncd BCD_30_Down_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_30_Down_Counter.twx BCD_30_Down_Counter.ncd -o BCD_30_Down_Counter.twr BCD_30_Down_Counter.pcf -ucf BCD_30_Down_Counter.ucf 
+bitgen -intstyle ise -f BCD_30_Down_Counter.ut BCD_30_Down_Counter.ncd 

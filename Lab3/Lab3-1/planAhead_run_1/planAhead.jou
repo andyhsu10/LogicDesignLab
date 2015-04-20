@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Mar 19 17:51:15 2015
+# Process ID: 4504
+# Log file: D:/Lab3/Lab3-1/planAhead_run_1/planAhead.log
+# Journal file: D:/Lab3/Lab3-1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Lab3/Lab3-1/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin H5 [get_ports clk_out]
+endgroup
+startgroup
+set_property package_pin R10 [get_ports clk]
+endgroup
+save_constraints

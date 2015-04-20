@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.ncd
+OUTFILE=D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\OneDrive\LogicDesignLab\Lab6\Lab6-3
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

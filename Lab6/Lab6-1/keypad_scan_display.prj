@@ -1,0 +1,5 @@
+verilog work "scan_ctl.v"
+verilog work "keypad_scan.v"
+verilog work "freq_div.v"
+verilog work "bcd_display.v"
+verilog work "keypad_scan_display.v"

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.xst" -ofn "D:/OneDrive/LogicDesignLab/Lab4/Lab4-1/shiftreg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc shiftreg.ucf -p xc6slx16-csg324-3 shiftreg.ngc shiftreg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o shiftreg_map.ncd shiftreg.ngd shiftreg.pcf 

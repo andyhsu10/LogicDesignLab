@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Mar 16 21:29:20 2015
+# Process ID: 2584
+# Log file: C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/pa.fromHdl.tcl
+# create_project -name Lab2-1 -dir "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/planAhead_run_2" -part xc6slx16csg324-3
+create_project: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 404.254 ; gain = 54.371
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "FA.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/FA.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {HA.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {FA.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top FA $srcset
+# add_files [list {FA.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/HA.v" into library work
+Analyzing Verilog file "C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/FA.v" into library work
+Loading clock regions from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/FA.ucf]
+Finished Parsing UCF File [C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1/FA.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f6439fc9
+open_rtl_design: Time (s): elapsed = 00:00:46 . Memory (MB): peak = 588.602 ; gain = 182.582
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  cin]]
+startgroup
+set_property package_pin P1 [get_ports cin]
+endgroup
+startgroup
+set_property package_pin H6 [get_ports cout]
+endgroup
+startgroup
+set_property package_pin H5 [get_ports s]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports x]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports y]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See C:/Users/An-Ting/OneDrive/LogicDesignLab/Lab2/Lab2-1\planAhead_pid2584.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Mar 16 21:34:08 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

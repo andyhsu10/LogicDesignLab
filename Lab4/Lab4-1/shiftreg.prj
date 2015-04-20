@@ -1,0 +1,3 @@
+verilog work "shifter.v"
+verilog work "freq_div.v"
+verilog work "shiftreg.v"
