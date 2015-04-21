@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.ncd
-OUTFILE=D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.bit
+INFILE=D:\GitHub\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.ncd
+OUTFILE=D:\GitHub\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=D:\OneDrive\LogicDesignLab\Lab6\Lab6-2
+WORKINGDIR=D:\GitHub\LogicDesignLab\Lab6\Lab6-2
 LICENSE=WebPack
 USER_INFO=210913348_0_0_143

@@ -19,26 +19,27 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module debounce_one_pulse(
-	clk, //debounce & one pulse clock
+	de_clk, //debounce clock
+	pulse_clk, //one pulse clock
 	rst_n, //low active reset
 	in, //push button input
 	out //pulsed push button output
 );
 
 //I/Os
-input clk, rst_n, in;
+input de_clk, pulse_clk, rst_n, in;
 output out; //debounced push button output
 wire debounced;
 
 debounce debounce(
-	.clk(clk),
+	.clk(de_clk),
 	.rst_n(rst_n),
 	.pb_in(in),
 	.pb_debounced(debounced)
 );
 
 one_pulse pulse(
-	.clk(clk),
+	.clk(pulse_clk),
 	.rst_n(rst_n),
 	.in_trig(debounced),
 	.out_pulse(out)

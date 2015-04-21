@@ -6,7 +6,7 @@ Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 xc6slx16-csg324-3 two_digits_decimal_add_sub.ngc two_digits_decimal_add_sub.ngd
 
 Reading NGO file
-"D:/OneDrive/LogicDesignLab/Lab6/Lab6-3/two_digits_decimal_add_sub.ngc" ...
+"D:/GitHub/LogicDesignLab/Lab6/Lab6-3/two_digits_decimal_add_sub.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -29,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 161856 kilobytes
+Total memory usage is 162496 kilobytes
 
 Writing NGD file "two_digits_decimal_add_sub.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  15 sec
+Total CPU time to NGDBUILD completion:   11 sec
 
 Writing NGDBUILD log file "two_digits_decimal_add_sub.bld"...

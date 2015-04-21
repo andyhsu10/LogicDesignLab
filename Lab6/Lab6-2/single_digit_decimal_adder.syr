@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.73 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.50 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.73 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.51 secs
  
 --> Reading design: single_digit_decimal_adder.prj
 
@@ -105,39 +105,39 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\one_pulse.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\one_pulse.v" into library work
 Parsing module <one_pulse>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\debounce.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\debounce.v" into library work
 Parsing module <debounce>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\ssd_decoder.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\ssd_decoder.v" into library work
 Parsing module <ssd_decoder>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\scan_ctl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\scan_ctl.v" into library work
 Parsing module <scan_ctl>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\num_store.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\num_store.v" into library work
 Parsing module <num_store>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\keypad_scan.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\keypad_scan.v" into library work
 Parsing verilog file "global.v" included at line 21.
 Parsing module <keypad_scan>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\fsm.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\fsm.v" into library work
 Parsing module <fsm>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\freq_div.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\freq_div.v" into library work
 Parsing module <freq_div>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\debounce_one_pulse.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\debounce_one_pulse.v" into library work
 Parsing module <debounce_one_pulse>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\clock_generator.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\clock_generator.v" into library work
 Parsing verilog file "global.v" included at line 21.
 Parsing module <clock_generator>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\binary_converter.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\binary_converter.v" into library work
 Parsing module <binary_converter>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\answer_store.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\answer_store.v" into library work
 Parsing module <answer_store>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v" into library work
 Parsing module <single_digit_decimal_adder>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v" Line 49: Port clk_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v" Line 49: Port clk_out is not connected to this instance
 
 Elaborating module <single_digit_decimal_adder>.
 
@@ -170,14 +170,14 @@ Elaborating module <ssd_decoder>.
 =========================================================================
 
 Synthesizing Unit <single_digit_decimal_adder>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v".
-INFO:Xst:3210 - "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v" line 49: Output port <clk_out> of the instance <divider> is unconnected or connected to loadless signal.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v".
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\single_digit_decimal_adder.v" line 49: Output port <clk_out> of the instance <divider> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <single_digit_decimal_adder> synthesized.
 
 Synthesizing Unit <freq_div>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\freq_div.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\freq_div.v".
     Found 2-bit register for signal <clk_ctl>.
     Found 7-bit register for signal <cnt_h>.
     Found 15-bit register for signal <cnt_l>.
@@ -189,7 +189,7 @@ Synthesizing Unit <freq_div>.
 Unit <freq_div> synthesized.
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\clock_generator.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\clock_generator.v".
     Found 18-bit register for signal <count_200K>.
     Found 25-bit register for signal <count_20M>.
     Found 1-bit register for signal <clk_1>.
@@ -203,13 +203,13 @@ Synthesizing Unit <clock_generator>.
 Unit <clock_generator> synthesized.
 
 Synthesizing Unit <debounce_one_pulse>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\debounce_one_pulse.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\debounce_one_pulse.v".
     Summary:
 	no macro.
 Unit <debounce_one_pulse> synthesized.
 
 Synthesizing Unit <debounce>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\debounce.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\debounce.v".
     Found 4-bit register for signal <debounce_window>.
     Found 1-bit register for signal <pb_debounced>.
     Summary:
@@ -217,7 +217,7 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 Synthesizing Unit <one_pulse>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\one_pulse.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\one_pulse.v".
     Found 1-bit register for signal <out_pulse>.
     Found 1-bit register for signal <in_trig_delay>.
     Summary:
@@ -225,7 +225,7 @@ Synthesizing Unit <one_pulse>.
 Unit <one_pulse> synthesized.
 
 Synthesizing Unit <keypad_scan>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\keypad_scan.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\keypad_scan.v".
     Found 4-bit register for signal <pause_delay>.
     Found 4-bit register for signal <key>.
     Found 2-bit register for signal <sel>.
@@ -242,7 +242,7 @@ Synthesizing Unit <keypad_scan>.
 Unit <keypad_scan> synthesized.
 
 Synthesizing Unit <fsm>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\fsm.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\fsm.v".
     Found 2-bit register for signal <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
@@ -264,7 +264,7 @@ Synthesizing Unit <fsm>.
 Unit <fsm> synthesized.
 
 Synthesizing Unit <num_store>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\num_store.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\num_store.v".
     Found 4-bit register for signal <num_out>.
     Found 4-bit comparator not equal for signal <n0001> created at line 44
     Summary:
@@ -273,7 +273,7 @@ Synthesizing Unit <num_store>.
 Unit <num_store> synthesized.
 
 Synthesizing Unit <answer_store>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\answer_store.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\answer_store.v".
     Found 5-bit register for signal <answer_out>.
     Found 5-bit adder for signal <n0009> created at line 46.
     Summary:
@@ -282,7 +282,7 @@ Synthesizing Unit <answer_store>.
 Unit <answer_store> synthesized.
 
 Synthesizing Unit <binary_converter>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\binary_converter.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\binary_converter.v".
     Found 5-bit adder for signal <answer_in[4]_GND_12_o_add_1_OUT> created at line 43.
     Found 5-bit comparator greater for signal <GND_12_o_answer_in[4]_LessThan_1_o> created at line 41
     Summary:
@@ -292,7 +292,7 @@ Synthesizing Unit <binary_converter>.
 Unit <binary_converter> synthesized.
 
 Synthesizing Unit <scan_ctl>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\scan_ctl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\scan_ctl.v".
     Found 4x4-bit Read Only RAM for signal <ssd_ctl>
     Found 4-bit 4-to-1 multiplexer for signal <bcd_out> created at line 39.
     Summary:
@@ -301,7 +301,7 @@ Synthesizing Unit <scan_ctl>.
 Unit <scan_ctl> synthesized.
 
 Synthesizing Unit <ssd_decoder>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-2\ssd_decoder.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-2\ssd_decoder.v".
     Found 16x15-bit Read Only RAM for signal <ssd_out>
     Summary:
 	inferred   1 RAM(s).
@@ -842,11 +842,11 @@ clk_generate/clk_100|    3.472|         |         |         |
 
 
 Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 20.75 secs
+Total CPU time to Xst completion: 19.22 secs
  
 --> 
 
-Total memory usage is 259248 kilobytes
+Total memory usage is 259632 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   12 (   0 filtered)

@@ -1,5 +1,4 @@
 verilog work "one_pulse.v"
-verilog work "fsm_num_store.v"
 verilog work "debounce.v"
 verilog work "add3.v"
 verilog work "ssd_decoder.v"

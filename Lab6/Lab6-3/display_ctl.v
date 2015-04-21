@@ -41,25 +41,38 @@ input [`BIT_WIDTH4-1:0] right_unit, right_tens; //right part digits input
 input [`BIT_WIDTH4-1:0] ans_unit, ans_tens, ans_hund; //answer digits input
 
 reg [`BIT_WIDTH4-1:0] bcd_out1, bcd_out2, bcd_out3; //bcd output
+reg [`BIT_WIDTH4-1:0] left_tens_tmp, right_tens_tmp;
+
+always @*
+	if(left_tens == `BIT_WIDTH4'd0)
+		left_tens_tmp = `BIT_WIDTH4'd15;
+	else
+		left_tens_tmp = left_tens;
+		
+always @*
+	if(right_tens == `BIT_WIDTH4'd0)
+		right_tens_tmp = `BIT_WIDTH4'd15;
+	else
+		right_tens_tmp = right_tens;
 
 always @*
 	case(state)
 		`STATE_WIDTH'd0:
 			begin
 				bcd_out1 = 4'd15;
-				bcd_out2 = left_tens;
+				bcd_out2 = left_tens_tmp;
 				bcd_out3 = left_unit;
 			end
 		`STATE_WIDTH'd1:
 			begin
 				bcd_out1 = 4'd15;
-				bcd_out2 = right_tens;
+				bcd_out2 = right_tens_tmp;
 				bcd_out3 = right_unit;
 			end
 		`STATE_WIDTH'd2:
 			begin
 				bcd_out1 = 4'd15;
-				bcd_out2 = right_tens;
+				bcd_out2 = right_tens_tmp;
 				bcd_out3 = right_unit;
 			end
 		`STATE_WIDTH'd3:

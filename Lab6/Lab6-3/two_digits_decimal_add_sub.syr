@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total CPU time to Xst completion: 0.37 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total CPU time to Xst completion: 0.37 secs
  
 --> Reading design: two_digits_decimal_add_sub.prj
 
@@ -105,45 +105,42 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\one_pulse.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\one_pulse.v" into library work
 Parsing module <one_pulse>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\fsm_num_store.v" into library work
-Parsing module <fsm_num_store>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\debounce.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce.v" into library work
 Parsing module <debounce>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\add3.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\add3.v" into library work
 Parsing module <add3>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\ssd_decoder.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\ssd_decoder.v" into library work
 Parsing module <ssd_decoder>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\scan_ctl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\scan_ctl.v" into library work
 Parsing module <scan_ctl>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\num_store.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\num_store.v" into library work
 Parsing module <num_store>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\keypad_scan.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\keypad_scan.v" into library work
 Parsing verilog file "global.v" included at line 21.
 Parsing module <keypad_scan>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\fsm.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\fsm.v" into library work
 Parsing module <fsm>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\freq_div.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\freq_div.v" into library work
 Parsing module <freq_div>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\display_ctl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\display_ctl.v" into library work
 Parsing module <display_ctl>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\debounce_one_pulse.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce_one_pulse.v" into library work
 Parsing module <debounce_one_pulse>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\clock_generator.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\clock_generator.v" into library work
 Parsing verilog file "global.v" included at line 21.
 Parsing module <clock_generator>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\binary_converter.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\binary_converter.v" into library work
 Parsing module <binary_converter>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\answer_store.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\answer_store.v" into library work
 Parsing module <answer_store>.
-Analyzing Verilog file "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v" into library work
 Parsing module <two_digits_decimal_add_sub>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v" Line 60: Port clk_out is not connected to this instance
 
 Elaborating module <two_digits_decimal_add_sub>.
 
@@ -163,8 +160,6 @@ Elaborating module <fsm>.
 
 Elaborating module <num_store>.
 
-Elaborating module <fsm_num_store>.
-
 Elaborating module <answer_store>.
 
 Elaborating module <binary_converter>.
@@ -182,26 +177,26 @@ Elaborating module <ssd_decoder>.
 =========================================================================
 
 Synthesizing Unit <two_digits_decimal_add_sub>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v".
-INFO:Xst:3210 - "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v" line 60: Output port <clk_out> of the instance <divider> is unconnected or connected to loadless signal.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v".
     Summary:
 	no macro.
 Unit <two_digits_decimal_add_sub> synthesized.
 
 Synthesizing Unit <freq_div>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\freq_div.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\freq_div.v".
     Found 2-bit register for signal <clk_ctl>.
-    Found 7-bit register for signal <cnt_h>.
+    Found 4-bit register for signal <cnt_h>.
+    Found 3-bit register for signal <cnt_m>.
     Found 15-bit register for signal <cnt_l>.
     Found 1-bit register for signal <clk_out>.
-    Found 25-bit adder for signal <cnt_tmp> created at line 42.
+    Found 25-bit adder for signal <cnt_tmp> created at line 43.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  25 D-type flip-flop(s).
 Unit <freq_div> synthesized.
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\clock_generator.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\clock_generator.v".
     Found 18-bit register for signal <count_200K>.
     Found 25-bit register for signal <count_20M>.
     Found 1-bit register for signal <clk_1>.
@@ -215,13 +210,13 @@ Synthesizing Unit <clock_generator>.
 Unit <clock_generator> synthesized.
 
 Synthesizing Unit <debounce_one_pulse>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\debounce_one_pulse.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce_one_pulse.v".
     Summary:
 	no macro.
 Unit <debounce_one_pulse> synthesized.
 
 Synthesizing Unit <debounce>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\debounce.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce.v".
     Found 4-bit register for signal <debounce_window>.
     Found 1-bit register for signal <pb_debounced>.
     Summary:
@@ -229,7 +224,7 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 Synthesizing Unit <one_pulse>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\one_pulse.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\one_pulse.v".
     Found 1-bit register for signal <out_pulse>.
     Found 1-bit register for signal <in_trig_delay>.
     Summary:
@@ -237,7 +232,7 @@ Synthesizing Unit <one_pulse>.
 Unit <one_pulse> synthesized.
 
 Synthesizing Unit <keypad_scan>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\keypad_scan.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\keypad_scan.v".
     Found 4-bit register for signal <pause_delay>.
     Found 4-bit register for signal <key>.
     Found 2-bit register for signal <sel>.
@@ -254,7 +249,7 @@ Synthesizing Unit <keypad_scan>.
 Unit <keypad_scan> synthesized.
 
 Synthesizing Unit <fsm>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\fsm.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\fsm.v".
     Found 3-bit register for signal <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
@@ -275,76 +270,56 @@ Synthesizing Unit <fsm>.
 Unit <fsm> synthesized.
 
 Synthesizing Unit <num_store>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\num_store.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\num_store.v".
     Found 4-bit register for signal <unit_out>.
     Found 4-bit register for signal <tens_out>.
     Found 8-bit register for signal <value_out>.
-    Found 4-bit register for signal <unit_tmp>.
-    Found 4-bit register for signal <tens1_tmp>.
-    Found 4-bit register for signal <tens2_tmp>.
-    Found 8-bit adder for signal <tens_out[3]_GND_10_o_add_5_OUT> created at line 90.
-    Found 4x4-bit multiplier for signal <n0061> created at line 90.
+    Found 8-bit adder for signal <tens_out[3]_GND_10_o_add_5_OUT> created at line 67.
+    Found 4x4-bit multiplier for signal <n0037> created at line 67.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred  28 D-type flip-flop(s).
+	inferred  16 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <num_store> synthesized.
 
-Synthesizing Unit <fsm_num_store>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\fsm_num_store.v".
-    Found 2-bit register for signal <state>.
-    Found finite state machine <FSM_1> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 3                                              |
-    | Transitions        | 7                                              |
-    | Inputs             | 2                                              |
-    | Outputs            | 2                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | rst_n (negative)                               |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 00                                             |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 1-bit 3-to-1 multiplexer for signal <store_enable2> created at line 56.
-    Summary:
-	inferred   2 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <fsm_num_store> synthesized.
-
 Synthesizing Unit <answer_store>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\answer_store.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\answer_store.v".
     Found 8-bit register for signal <answer_out>.
-    Found 8-bit subtractor for signal <left_in[7]_right_in[7]_sub_4_OUT> created at line 50.
-    Found 8-bit adder for signal <left_in[7]_right_in[7]_add_1_OUT> created at line 48.
+    Found 1-bit register for signal <pos_neg>.
+    Found 8-bit subtractor for signal <left_in[7]_right_in[7]_sub_5_OUT> created at line 61.
+    Found 8-bit subtractor for signal <right_in[7]_left_in[7]_sub_8_OUT> created at line 66.
+    Found 8-bit adder for signal <left_in[7]_right_in[7]_add_1_OUT> created at line 56.
+    Found 8-bit comparator greater for signal <right_in[7]_left_in[7]_LessThan_4_o> created at line 58
+    Found 8-bit comparator greater for signal <left_in[7]_right_in[7]_LessThan_7_o> created at line 63
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   8 D-type flip-flop(s).
-	inferred   4 Multiplexer(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
 Unit <answer_store> synthesized.
 
 Synthesizing Unit <binary_converter>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\binary_converter.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\binary_converter.v".
     Summary:
-	inferred   3 Multiplexer(s).
+	inferred   7 Multiplexer(s).
 Unit <binary_converter> synthesized.
 
 Synthesizing Unit <add3>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\add3.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\add3.v".
     Found 16x4-bit Read Only RAM for signal <out>
     Summary:
 	inferred   1 RAM(s).
 Unit <add3> synthesized.
 
 Synthesizing Unit <display_ctl>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\display_ctl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\display_ctl.v".
     Summary:
-	inferred  13 Multiplexer(s).
+	inferred  15 Multiplexer(s).
 Unit <display_ctl> synthesized.
 
 Synthesizing Unit <scan_ctl>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\scan_ctl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\scan_ctl.v".
     Found 4x4-bit Read Only RAM for signal <ssd_ctl>
     Found 4-bit 4-to-1 multiplexer for signal <bcd_out> created at line 38.
     Summary:
@@ -353,7 +328,7 @@ Synthesizing Unit <scan_ctl>.
 Unit <scan_ctl> synthesized.
 
 Synthesizing Unit <ssd_decoder>.
-    Related source file is "D:\OneDrive\LogicDesignLab\Lab6\Lab6-3\ssd_decoder.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\ssd_decoder.v".
     Found 16x15-bit Read Only RAM for signal <ssd_out>
     Summary:
 	inferred   1 RAM(s).
@@ -376,24 +351,25 @@ Macro Statistics
  4-bit adder                                           : 1
  8-bit adder                                           : 2
  8-bit addsub                                          : 1
-# Registers                                            : 38
- 1-bit register                                        : 14
+# Registers                                            : 34
+ 1-bit register                                        : 15
  15-bit register                                       : 1
  18-bit register                                       : 1
  2-bit register                                        : 2
  25-bit register                                       : 1
- 4-bit register                                        : 15
- 7-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 10
  8-bit register                                        : 3
-# Multiplexers                                         : 50
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 56
  1-bit 2-to-1 multiplexer                              : 21
- 1-bit 3-to-1 multiplexer                              : 2
  18-bit 2-to-1 multiplexer                             : 1
  25-bit 2-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 18
+ 4-bit 2-to-1 multiplexer                              : 26
  4-bit 4-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 6
-# FSMs                                                 : 3
+# FSMs                                                 : 1
 
 =========================================================================
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -438,7 +414,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_row_n> will be implemented on LUTs e
 Unit <keypad_scan> synthesized (advanced).
 
 Synthesizing (advanced) Unit <num_store>.
-	Multiplier <Mmult_n0061> in block <num_store> and adder/subtractor <Madd_tens_out[3]_GND_10_o_add_5_OUT> in block <num_store> are combined into a MAC<Maddsub_n0061>.
+	Multiplier <Mmult_n0037> in block <num_store> and adder/subtractor <Madd_tens_out[3]_GND_10_o_add_5_OUT> in block <num_store> are combined into a MAC<Maddsub_n0037>.
 Unit <num_store> synthesized (advanced).
 
 Synthesizing (advanced) Unit <scan_ctl>.
@@ -487,31 +463,22 @@ Macro Statistics
  18-bit up counter                                     : 1
  2-bit up counter                                      : 1
  25-bit up counter                                     : 1
-# Registers                                            : 122
- Flip-Flops                                            : 122
-# Multiplexers                                         : 48
+# Registers                                            : 99
+ Flip-Flops                                            : 99
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 54
  1-bit 2-to-1 multiplexer                              : 21
- 1-bit 3-to-1 multiplexer                              : 2
- 4-bit 2-to-1 multiplexer                              : 18
+ 4-bit 2-to-1 multiplexer                              : 26
  4-bit 4-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 6
-# FSMs                                                 : 3
+# FSMs                                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_1> on signal <state[1:2]> with gray encoding.
-Optimizing FSM <FSM_1> on signal <state[1:2]> with gray encoding.
--------------------
- State | Encoding
--------------------
- 00    | 00
- 01    | 01
- 10    | 11
--------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <fsm/FSM_0> on signal <state[1:3]> with user encoding.
 -------------------
@@ -523,72 +490,11 @@ Optimizing FSM <fsm/FSM_0> on signal <state[1:3]> with user encoding.
  011   | 011
  100   | 100
 -------------------
+WARNING:Xst:2677 - Node <cnt_m_0> of sequential type is unconnected in block <freq_div>.
+WARNING:Xst:2677 - Node <cnt_m_1> of sequential type is unconnected in block <freq_div>.
+WARNING:Xst:2677 - Node <cnt_m_2> of sequential type is unconnected in block <freq_div>.
 
 Optimizing unit <two_digits_decimal_add_sub> ...
-WARNING:Xst:1710 - FF/Latch <left/value_out_5> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/value_out_6> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/value_out_7> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_7> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_6> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_5> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens1_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens1_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens1_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens1_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens1_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens1_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens1_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens1_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_4> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/value_out_4> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/tens1_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/tens1_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/tens1_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/tens1_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/value_out_5> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/value_out_6> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/value_out_7> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/tens1_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/tens1_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/tens1_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/tens1_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_7> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_6> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_5> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens2_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens2_tmp_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <left/tens_out_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_0> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <right/tens_out_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <right/value_out_4> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <left/value_out_4> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <keypad_scan> ...
 
@@ -603,14 +509,6 @@ Optimizing unit <fsm> ...
 Optimizing unit <answer_store> ...
 
 Optimizing unit <binary_converter> ...
-WARNING:Xst:2677 - Node <divider/clk_out> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
-WARNING:Xst:2677 - Node <divider/cnt_h_6> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
-WARNING:Xst:2677 - Node <divider/cnt_h_5> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
-WARNING:Xst:2677 - Node <divider/cnt_h_4> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
-WARNING:Xst:2677 - Node <divider/cnt_h_3> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
-WARNING:Xst:2677 - Node <divider/cnt_h_2> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
-WARNING:Xst:2677 - Node <divider/cnt_h_1> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
-WARNING:Xst:2677 - Node <divider/cnt_h_0> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
 WARNING:Xst:1710 - FF/Latch <key_scan/pause_delay_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <key_scan/pause_delay_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <key_scan/pause_delay_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
@@ -631,8 +529,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 125
- Flip-Flops                                            : 125
+# Registers                                            : 135
+ Flip-Flops                                            : 135
 
 =========================================================================
 
@@ -655,30 +553,28 @@ Top Level Output File Name         : two_digits_decimal_add_sub.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 358
+# BELS                             : 410
 #      GND                         : 1
 #      INV                         : 8
-#      LUT1                        : 57
-#      LUT2                        : 51
-#      LUT3                        : 19
-#      LUT4                        : 28
-#      LUT5                        : 28
-#      LUT6                        : 37
-#      MUXCY                       : 64
-#      MUXF7                       : 2
+#      LUT1                        : 66
+#      LUT2                        : 47
+#      LUT3                        : 13
+#      LUT4                        : 29
+#      LUT5                        : 42
+#      LUT6                        : 51
+#      MUXCY                       : 77
 #      VCC                         : 1
-#      XORCY                       : 62
-# FlipFlops/Latches                : 125
-#      FDC                         : 94
-#      FDCE                        : 20
-#      FDE                         : 8
+#      XORCY                       : 75
+# FlipFlops/Latches                : 135
+#      FDC                         : 95
+#      FDCE                        : 37
 #      FDP                         : 3
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 35
+# IO Buffers                       : 31
 #      IBUF                        : 8
-#      OBUF                        : 27
+#      OBUF                        : 23
 
 Device utilization summary:
 ---------------------------
@@ -687,23 +583,23 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             125  out of  18224     0%  
- Number of Slice LUTs:                  228  out of   9112     2%  
-    Number used as Logic:               228  out of   9112     2%  
+ Number of Slice Registers:             135  out of  18224     0%  
+ Number of Slice LUTs:                  256  out of   9112     2%  
+    Number used as Logic:               256  out of   9112     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    241
-   Number with an unused Flip Flop:     116  out of    241    48%  
-   Number with an unused LUT:            13  out of    241     5%  
-   Number of fully used LUT-FF pairs:   112  out of    241    46%  
-   Number of unique control sets:         8
+ Number of LUT Flip Flop pairs used:    276
+   Number with an unused Flip Flop:     141  out of    276    51%  
+   Number with an unused LUT:            20  out of    276     7%  
+   Number of fully used LUT-FF pairs:   115  out of    276    41%  
+   Number of unique control sets:         9
 
 IO Utilization: 
- Number of IOs:                          36
- Number of bonded IOBs:                  36  out of    232    15%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    232    13%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
 
 ---------------------------
 Partition Resource Summary:
@@ -723,13 +619,14 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+-------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)   | Load  |
------------------------------------+-------------------------+-------+
-clk_generate/clk_100               | BUFG                    | 66    |
-clk                                | BUFGP                   | 56    |
-clk_generate/clk_1                 | NONE(fsm/state_FSM_FFd1)| 3     |
------------------------------------+-------------------------+-------+
+-----------------------------------+---------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                 | Load  |
+-----------------------------------+---------------------------------------+-------+
+clk_generate/clk_1                 | NONE(de_pulse_add/pulse/in_trig_delay)| 9     |
+divider/clk_out                    | BUFG                                  | 32    |
+clk_generate/clk_100               | BUFG                                  | 33    |
+clk                                | BUFGP                                 | 61    |
+-----------------------------------+---------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -740,9 +637,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.947ns (Maximum Frequency: 253.383MHz)
-   Minimum input arrival time before clock: 4.608ns
-   Maximum output required time after clock: 9.679ns
+   Minimum period: 3.956ns (Maximum Frequency: 252.784MHz)
+   Minimum input arrival time before clock: 4.405ns
+   Maximum output required time after clock: 10.692ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -750,34 +647,81 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_generate/clk_100'
-  Clock period: 3.576ns (frequency: 279.669MHz)
-  Total number of paths / destination ports: 409 / 91
+Timing constraint: Default period analysis for Clock 'clk_generate/clk_1'
+  Clock period: 2.188ns (frequency: 457.038MHz)
+  Total number of paths / destination ports: 19 / 6
 -------------------------------------------------------------------------
-Delay:               3.576ns (Levels of Logic = 2)
-  Source:            de_pulse_equal/pulse/out_pulse (FF)
-  Destination:       right/value_out_3 (FF)
-  Source Clock:      clk_generate/clk_100 rising
-  Destination Clock: clk_generate/clk_100 rising
+Delay:               2.188ns (Levels of Logic = 1)
+  Source:            fsm/state_FSM_FFd3 (FF)
+  Destination:       fsm/state_FSM_FFd2 (FF)
+  Source Clock:      clk_generate/clk_1 rising
+  Destination Clock: clk_generate/clk_1 rising
 
-  Data Path: de_pulse_equal/pulse/out_pulse to right/value_out_3
+  Data Path: fsm/state_FSM_FFd3 to fsm/state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              4   0.447   0.912  de_pulse_equal/pulse/out_pulse (de_pulse_equal/pulse/out_pulse)
-     LUT6:I3->O            4   0.205   0.684  fsm/Mmux_num_enable211 (num_enable2)
-     LUT4:I3->O            8   0.205   0.802  right/_n0067_inv1 (right/_n0067_inv)
-     FDCE:CE                   0.322          right/unit_out_0
+     FDC:C->Q             19   0.447   1.436  fsm/state_FSM_FFd3 (fsm/state_FSM_FFd3)
+     LUT6:I0->O            1   0.203   0.000  fsm/state_FSM_FFd2-In1 (fsm/state_FSM_FFd2-In)
+     FDC:D                     0.102          fsm/state_FSM_FFd2
     ----------------------------------------
-    Total                      3.576ns (1.179ns logic, 2.397ns route)
-                                       (33.0% logic, 67.0% route)
+    Total                      2.188ns (0.752ns logic, 1.436ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divider/clk_out'
+  Clock period: 3.505ns (frequency: 285.278MHz)
+  Total number of paths / destination ports: 350 / 56
+-------------------------------------------------------------------------
+Delay:               3.505ns (Levels of Logic = 4)
+  Source:            right/tens_out_2 (FF)
+  Destination:       right/value_out_7 (FF)
+  Source Clock:      divider/clk_out rising
+  Destination Clock: divider/clk_out rising
+
+  Data Path: right/tens_out_2 to right/value_out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.447   0.907  right/tens_out_2 (right/tens_out_2)
+     LUT2:I0->O            1   0.203   0.000  right/Maddsub_n0037_Madd1_lut<3> (right/Maddsub_n0037_Madd1_lut<3>)
+     XORCY:LI->O           2   0.136   0.617  right/Maddsub_n0037_Madd1_xor<3> (right/Maddsub_n0037_3)
+     LUT6:I5->O            4   0.205   0.684  right/Maddsub_n0037_Madd_xor<7>121 (right/Maddsub_n0037_Madd_xor<7>12)
+     LUT2:I1->O            1   0.205   0.000  right/Maddsub_n0037_Madd_xor<4>11 (right/tens_out[3]_GND_10_o_add_5_OUT<4>)
+     FDCE:D                    0.102          right/value_out_4
+    ----------------------------------------
+    Total                      3.505ns (1.298ns logic, 2.207ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_generate/clk_100'
+  Clock period: 3.472ns (frequency: 288.039MHz)
+  Total number of paths / destination ports: 54 / 25
+-------------------------------------------------------------------------
+Delay:               3.472ns (Levels of Logic = 2)
+  Source:            key_scan/sel_1 (FF)
+  Destination:       key_scan/key_3 (FF)
+  Source Clock:      clk_generate/clk_100 rising
+  Destination Clock: clk_generate/clk_100 rising
+
+  Data Path: key_scan/sel_1 to key_scan/key_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   0.961  key_scan/sel_1 (key_scan/sel_1)
+     LUT6:I4->O            3   0.203   0.651  key_scan/Mmux_pressed_next11 (key_scan/Mmux_pressed_next11)
+     LUT2:I1->O            4   0.205   0.683  key_scan/_n0066_inv1 (key_scan/_n0066_inv)
+     FDCE:CE                   0.322          key_scan/key_0
+    ----------------------------------------
+    Total                      3.472ns (1.177ns logic, 2.295ns route)
+                                       (33.9% logic, 66.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.947ns (frequency: 253.383MHz)
-  Total number of paths / destination ports: 1514 / 56
+  Clock period: 3.956ns (frequency: 252.784MHz)
+  Total number of paths / destination ports: 1615 / 62
 -------------------------------------------------------------------------
-Delay:               3.947ns (Levels of Logic = 3)
+Delay:               3.956ns (Levels of Logic = 3)
   Source:            clk_generate/count_20M_17 (FF)
   Destination:       clk_generate/count_20M_24 (FF)
   Source Clock:      clk rising
@@ -788,61 +732,79 @@ Delay:               3.947ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              2   0.447   0.981  clk_generate/count_20M_17 (clk_generate/count_20M_17)
-     LUT6:I0->O            2   0.203   0.845  clk_generate/GND_3_o_GND_3_o_equal_1_o<24>4 (clk_generate/GND_3_o_GND_3_o_equal_1_o<24>3)
-     LUT6:I3->O           14   0.205   0.958  clk_generate/GND_3_o_GND_3_o_equal_1_o<24>5 (clk_generate/GND_3_o_GND_3_o_equal_1_o)
+     LUT6:I0->O            3   0.203   0.879  clk_generate/GND_3_o_GND_3_o_equal_1_o<24>4 (clk_generate/GND_3_o_GND_3_o_equal_1_o<24>3)
+     LUT6:I3->O           13   0.205   0.933  clk_generate/GND_3_o_GND_3_o_equal_1_o<24>5 (clk_generate/GND_3_o_GND_3_o_equal_1_o)
      LUT2:I1->O            1   0.205   0.000  clk_generate/Mcount_count_20M_eqn_241 (clk_generate/Mcount_count_20M_eqn_24)
      FDC:D                     0.102          clk_generate/count_20M_24
     ----------------------------------------
-    Total                      3.947ns (1.162ns logic, 2.785ns route)
+    Total                      3.956ns (1.162ns logic, 2.794ns route)
                                        (29.4% logic, 70.6% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_generate/clk_1'
-  Clock period: 2.323ns (frequency: 430.494MHz)
-  Total number of paths / destination ports: 9 / 3
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_1'
+  Total number of paths / destination ports: 9 / 9
 -------------------------------------------------------------------------
-Delay:               2.323ns (Levels of Logic = 1)
-  Source:            fsm/state_FSM_FFd3 (FF)
-  Destination:       fsm/state_FSM_FFd2 (FF)
-  Source Clock:      clk_generate/clk_1 rising
-  Destination Clock: clk_generate/clk_1 rising
-
-  Data Path: fsm/state_FSM_FFd3 to fsm/state_FSM_FFd2
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             26   0.447   1.571  fsm/state_FSM_FFd3 (fsm/state_FSM_FFd3)
-     LUT6:I0->O            1   0.203   0.000  fsm/state_FSM_FFd2-In1 (fsm/state_FSM_FFd2-In)
-     FDC:D                     0.102          fsm/state_FSM_FFd2
-    ----------------------------------------
-    Total                      2.323ns (0.752ns logic, 1.571ns route)
-                                       (32.4% logic, 67.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_100'
-  Total number of paths / destination ports: 109 / 79
--------------------------------------------------------------------------
-Offset:              4.608ns (Levels of Logic = 2)
+Offset:              4.405ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       de_pulse_add/pulse/in_trig_delay (FF)
-  Destination Clock: clk_generate/clk_100 rising
+  Destination Clock: clk_generate/clk_1 rising
 
   Data Path: rst_n to de_pulse_add/pulse/in_trig_delay
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   1.222   0.829  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            117   0.206   1.921  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
-     FDC:CLR                   0.430          answer/answer_out_0
+     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
+     FDP:PRE                   0.430          de_pulse_add/pulse/out_pulse
     ----------------------------------------
-    Total                      4.608ns (1.858ns logic, 2.750ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      4.405ns (1.858ns logic, 2.547ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'divider/clk_out'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.405ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       right/value_out_7 (FF)
+  Destination Clock: divider/clk_out rising
+
+  Data Path: rst_n to right/value_out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
+     FDCE:CLR                  0.430          right/unit_out_0
+    ----------------------------------------
+    Total                      4.405ns (1.858ns logic, 2.547ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_100'
+  Total number of paths / destination ports: 76 / 46
+-------------------------------------------------------------------------
+Offset:              4.405ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       key_scan/sel_1 (FF)
+  Destination Clock: clk_generate/clk_100 rising
+
+  Data Path: rst_n to key_scan/sel_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
+     FDC:CLR                   0.430          answer/pos_neg
+    ----------------------------------------
+    Total                      4.405ns (1.858ns logic, 2.547ns route)
+                                       (42.2% logic, 57.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 56 / 56
+  Total number of paths / destination ports: 61 / 61
 -------------------------------------------------------------------------
-Offset:              4.608ns (Levels of Logic = 2)
+Offset:              4.405ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       divider/clk_ctl_1 (FF)
   Destination Clock: clk rising
@@ -851,38 +813,65 @@ Offset:              4.608ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   1.222   0.829  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            117   0.206   1.921  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
-     FDC:CLR                   0.430          clk_generate/count_20M_0
+     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
+     FDCE:CLR                  0.430          clk_generate/clk_100
     ----------------------------------------
-    Total                      4.608ns (1.858ns logic, 2.750ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      4.405ns (1.858ns logic, 2.547ns route)
+                                       (42.2% logic, 57.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_1'
-  Total number of paths / destination ports: 3 / 3
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 243 / 12
 -------------------------------------------------------------------------
-Offset:              4.608ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       fsm/state_FSM_FFd1 (FF)
-  Destination Clock: clk_generate/clk_1 rising
+Offset:              8.668ns (Levels of Logic = 5)
+  Source:            divider/clk_ctl_0 (FF)
+  Destination:       display<8> (PAD)
+  Source Clock:      clk rising
 
-  Data Path: rst_n to fsm/state_FSM_FFd1
+  Data Path: divider/clk_ctl_0 to display<8>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   1.222   0.829  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            117   0.206   1.921  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
-     FDC:CLR                   0.430          fsm/state_FSM_FFd3
+     FDC:C->Q             10   0.447   1.201  divider/clk_ctl_0 (divider/clk_ctl_0)
+     LUT5:I0->O            4   0.203   1.048  scan_control/Mmux_bcd_out161 (scan_control/Mmux_bcd_out16)
+     LUT6:I0->O            1   0.203   0.924  scan_control/Mmux_bcd_out21 (scan_control/Mmux_bcd_out2)
+     LUT5:I0->O            8   0.203   1.050  scan_control/Mmux_bcd_out29 (bcd_out<1>)
+     LUT4:I0->O            2   0.203   0.616  display<8>1 (display_8_OBUF)
+     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
     ----------------------------------------
-    Total                      4.608ns (1.858ns logic, 2.750ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      8.668ns (3.830ns logic, 4.838ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_generate/clk_1'
+  Total number of paths / destination ports: 649 / 9
+-------------------------------------------------------------------------
+Offset:              9.486ns (Levels of Logic = 6)
+  Source:            fsm/state_FSM_FFd3 (FF)
+  Destination:       display<8> (PAD)
+  Source Clock:      clk_generate/clk_1 rising
+
+  Data Path: fsm/state_FSM_FFd3 to display<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.447   1.300  fsm/state_FSM_FFd3 (fsm/state_FSM_FFd3)
+     LUT3:I0->O            7   0.205   1.118  scan_control/Mmux_bcd_out151 (scan_control/Mmux_bcd_out15)
+     LUT5:I0->O            1   0.203   0.684  scan_control/Mmux_bcd_out26 (scan_control/Mmux_bcd_out25)
+     LUT6:I4->O            1   0.203   0.684  scan_control/Mmux_bcd_out28 (scan_control/Mmux_bcd_out27)
+     LUT5:I3->O            8   0.203   1.050  scan_control/Mmux_bcd_out29 (bcd_out<1>)
+     LUT4:I0->O            2   0.203   0.616  display<8>1 (display_8_OBUF)
+     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
+    ----------------------------------------
+    Total                      9.486ns (4.035ns logic, 5.451ns route)
+                                       (42.5% logic, 57.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_generate/clk_100'
-  Total number of paths / destination ports: 2057 / 17
+  Total number of paths / destination ports: 3546 / 13
 -------------------------------------------------------------------------
-Offset:              9.679ns (Levels of Logic = 6)
+Offset:              10.692ns (Levels of Logic = 7)
   Source:            answer/answer_out_5 (FF)
   Destination:       display<8> (PAD)
   Source Clock:      clk_generate/clk_100 rising
@@ -891,64 +880,41 @@ Offset:              9.679ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             13   0.447   1.277  answer/answer_out_5 (answer/answer_out_5)
-     LUT6:I1->O            5   0.203   0.962  converter/m4/Mram_out111 (converter/c4<1>)
-     LUT4:I0->O            4   0.203   0.931  converter/Mmux_answer_tens311 (converter/Mmux_answer_tens31)
-     LUT5:I1->O            1   0.203   0.808  scan_control/Mmux_bcd_out37 (scan_control/Mmux_bcd_out36)
-     LUT6:I3->O            8   0.205   1.050  scan_control/Mmux_bcd_out312 (bcd_out<2>)
+     FDC:C->Q             12   0.447   1.253  answer/answer_out_5 (answer/answer_out_5)
+     LUT6:I1->O            4   0.203   0.931  converter/m4/Mram_out111 (converter/c4<1>)
+     LUT4:I0->O            2   0.203   0.961  converter/tens_tmp[3]_GND_13_o_equal_16_o<3>11 (converter/tens_tmp[3]_GND_13_o_equal_16_o<3>1)
+     LUT6:I1->O            5   0.203   0.962  converter/tens_tmp[3]_GND_13_o_equal_16_o<3>1 (converter/tens_tmp[3]_GND_13_o_equal_16_o)
+     LUT6:I2->O            1   0.203   0.684  scan_control/Mmux_bcd_out28 (scan_control/Mmux_bcd_out27)
+     LUT5:I3->O            8   0.203   1.050  scan_control/Mmux_bcd_out29 (bcd_out<1>)
      LUT4:I0->O            2   0.203   0.616  display<8>1 (display_8_OBUF)
      OBUF:I->O                 2.571          display_8_OBUF (display<8>)
     ----------------------------------------
-    Total                      9.679ns (4.035ns logic, 5.644ns route)
-                                       (41.7% logic, 58.3% route)
+    Total                     10.692ns (4.236ns logic, 6.456ns route)
+                                       (39.6% logic, 60.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 222 / 12
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divider/clk_out'
+  Total number of paths / destination ports: 350 / 9
 -------------------------------------------------------------------------
-Offset:              9.400ns (Levels of Logic = 6)
-  Source:            divider/clk_ctl_1 (FF)
-  Destination:       display<8> (PAD)
-  Source Clock:      clk rising
+Offset:              8.482ns (Levels of Logic = 6)
+  Source:            right/tens_out_1 (FF)
+  Destination:       display<10> (PAD)
+  Source Clock:      divider/clk_out rising
 
-  Data Path: divider/clk_ctl_1 to display<8>
+  Data Path: right/tens_out_1 to display<10>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             18   0.447   1.297  divider/clk_ctl_1 (divider/clk_ctl_1)
-     LUT4:I0->O            3   0.203   0.995  scan_control/Mmux_bcd_out410 (scan_control/Mmux_bcd_out2)
-     LUT5:I0->O            1   0.203   0.827  scan_control/Mmux_bcd_out32 (scan_control/Mmux_bcd_out31)
-     LUT5:I1->O            1   0.203   0.580  scan_control/Mmux_bcd_out34 (scan_control/Mmux_bcd_out33)
-     LUT6:I5->O            8   0.205   1.050  scan_control/Mmux_bcd_out312 (bcd_out<2>)
-     LUT4:I0->O            2   0.203   0.616  display<8>1 (display_8_OBUF)
-     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
+     FDCE:C->Q            10   0.447   1.104  right/tens_out_1 (right/tens_out_1)
+     LUT6:I2->O            1   0.203   0.580  scan_control/Mmux_bcd_out14_SW0 (N13)
+     LUT6:I5->O            1   0.205   0.580  scan_control/Mmux_bcd_out14 (scan_control/Mmux_bcd_out17)
+     LUT6:I5->O            1   0.205   0.580  scan_control/Mmux_bcd_out16 (scan_control/Mmux_bcd_out19)
+     LUT6:I5->O            7   0.205   1.021  scan_control/Mmux_bcd_out112 (bcd_out<0>)
+     LUT4:I0->O            1   0.203   0.579  decoder/Mram_ssd_out101 (display_10_OBUF)
+     OBUF:I->O                 2.571          display_10_OBUF (display<10>)
     ----------------------------------------
-    Total                      9.400ns (4.035ns logic, 5.365ns route)
-                                       (42.9% logic, 57.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_generate/clk_1'
-  Total number of paths / destination ports: 432 / 9
--------------------------------------------------------------------------
-Offset:              9.540ns (Levels of Logic = 6)
-  Source:            fsm/state_FSM_FFd2 (FF)
-  Destination:       display<8> (PAD)
-  Source Clock:      clk_generate/clk_1 rising
-
-  Data Path: fsm/state_FSM_FFd2 to display<8>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             26   0.447   1.435  fsm/state_FSM_FFd2 (fsm/state_FSM_FFd2)
-     LUT4:I1->O            3   0.205   0.995  scan_control/Mmux_bcd_out410 (scan_control/Mmux_bcd_out2)
-     LUT5:I0->O            1   0.203   0.827  scan_control/Mmux_bcd_out32 (scan_control/Mmux_bcd_out31)
-     LUT5:I1->O            1   0.203   0.580  scan_control/Mmux_bcd_out34 (scan_control/Mmux_bcd_out33)
-     LUT6:I5->O            8   0.205   1.050  scan_control/Mmux_bcd_out312 (bcd_out<2>)
-     LUT4:I0->O            2   0.203   0.616  display<8>1 (display_8_OBUF)
-     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
-    ----------------------------------------
-    Total                      9.540ns (4.037ns logic, 5.503ns route)
-                                       (42.3% logic, 57.7% route)
+    Total                      8.482ns (4.039ns logic, 4.443ns route)
+                                       (47.6% logic, 52.4% route)
 
 =========================================================================
 
@@ -960,7 +926,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.947|         |         |         |
+clk            |    3.956|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_generate/clk_1
@@ -968,8 +934,8 @@ Clock to Setup on destination clock clk_generate/clk_1
                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------+---------+---------+---------+---------+
-clk_generate/clk_1  |    2.323|         |         |         |
-clk_generate/clk_100|    1.841|         |         |         |
+clk_generate/clk_1  |    2.188|         |         |         |
+clk_generate/clk_100|    1.371|         |         |         |
 --------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_generate/clk_100
@@ -977,21 +943,32 @@ Clock to Setup on destination clock clk_generate/clk_100
                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------+---------+---------+---------+---------+
-clk_generate/clk_1  |    4.233|         |         |         |
-clk_generate/clk_100|    3.576|         |         |         |
+clk_generate/clk_1  |    4.066|         |         |         |
+clk_generate/clk_100|    3.472|         |         |         |
+divider/clk_out     |    7.175|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock divider/clk_out
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk_generate/clk_1  |    4.374|         |         |         |
+clk_generate/clk_100|    2.821|         |         |         |
+divider/clk_out     |    3.505|         |         |         |
 --------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.31 secs
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 33.53 secs
  
 --> 
 
-Total memory usage is 261168 kilobytes
+Total memory usage is 291376 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   76 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
 

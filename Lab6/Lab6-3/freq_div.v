@@ -34,16 +34,17 @@ input rst_n; //active low reset
 reg clk_out; // clk output(in always block)
 reg [1:0] clk_ctl; //clk output(in always block)
 reg [14:0] cnt_l; //temp buf of the counter
-reg [6:0] cnt_h; //temp buf of the counter
+reg [3:0] cnt_h; //temp buf of the counter
+reg [2:0] cnt_m; //temp buf of the counter
 reg [`FREQ_DIV_BIT-1:0] cnt_tmp; //input to dff(in always block)
 
 //Combinational logics: increment, neglecting overflow
-always @(clk_out or cnt_h or clk_ctl or cnt_l)
-	cnt_tmp = {clk_out,cnt_h,clk_ctl,cnt_l} + 1'b1;
+always @(cnt_m or clk_out or cnt_h or clk_ctl or cnt_l)
+	cnt_tmp = {cnt_m,clk_out,cnt_h,clk_ctl,cnt_l} + 1'b1;
 
 //Sequential logics: Flip flops
 always @(posedge clk or negedge rst_n)
-	if(~rst_n) {clk_out,cnt_h,clk_ctl,cnt_l} <= `FREQ_DIV_BIT'd0;
-	else {clk_out,cnt_h,clk_ctl,cnt_l} <= cnt_tmp;
+	if(~rst_n) {cnt_m,clk_out,cnt_h,clk_ctl,cnt_l} <= `FREQ_DIV_BIT'd0;
+	else {cnt_m,clk_out,cnt_h,clk_ctl,cnt_l} <= cnt_tmp;
 
 endmodule

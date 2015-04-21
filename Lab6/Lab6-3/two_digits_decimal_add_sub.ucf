@@ -33,7 +33,3 @@ NET "display[3]" LOC = V7;
 NET "display[2]" LOC = R7;
 NET "display[1]" LOC = T7;
 NET "display[0]" LOC = U5;
-NET "check_state1[1]" LOC = H5;
-NET "check_state1[0]" LOC = H6;
-NET "check_state2[1]" LOC = F1;
-NET "check_state2[0]" LOC = F2;

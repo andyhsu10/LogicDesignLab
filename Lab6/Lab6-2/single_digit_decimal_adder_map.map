@@ -11,7 +11,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Apr 18 22:58:50 2015
+Mapped Date    : Mon Apr 20 19:21:33 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -20,17 +20,17 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 14 secs 
+Total REAL time at the beginning of Placer: 15 secs 
 Total CPU  time at the beginning of Placer: 11 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:9b870a9f) REAL time: 16 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:9b870a9f) REAL time: 17 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:9b870a9f) REAL time: 16 secs 
+Phase 2.7  Design Feasibility Check (Checksum:9b870a9f) REAL time: 17 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:9b870a9f) REAL time: 16 secs 
+Phase 3.31  Local Placement Optimization (Checksum:9b870a9f) REAL time: 17 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
@@ -52,21 +52,21 @@ Phase 8.5  Local Placement Optimization (Checksum:836ccdf) REAL time: 19 secs
 Phase 9.8  Global Placement
 .....
 .....
-Phase 9.8  Global Placement (Checksum:2c8e4bd7) REAL time: 19 secs 
+Phase 9.8  Global Placement (Checksum:2c8e4bd7) REAL time: 20 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:2c8e4bd7) REAL time: 19 secs 
+Phase 10.5  Local Placement Optimization (Checksum:2c8e4bd7) REAL time: 20 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:2eb0428f) REAL time: 19 secs 
+Phase 11.18  Placement Optimization (Checksum:2eb0428f) REAL time: 20 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:2eb0428f) REAL time: 19 secs 
+Phase 12.5  Local Placement Optimization (Checksum:2eb0428f) REAL time: 20 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:2eb0428f) REAL time: 19 secs 
+Phase 13.34  Placement Validation (Checksum:2eb0428f) REAL time: 20 secs 
 
-Total REAL time to Placer completion: 19 secs 
+Total REAL time to Placer completion: 20 secs 
 Total CPU  time to Placer completion: 15 secs 
 Running post-placement packing...
 Writing output files...
@@ -144,7 +144,7 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                2.91
 
 Peak Memory Usage:  353 MB
-Total REAL time to MAP completion:  21 secs 
+Total REAL time to MAP completion:  22 secs 
 Total CPU time to MAP completion:   16 secs 
 
 Mapping completed.

@@ -19,8 +19,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module two_digits_decimal_add_sub(
-	check_state1,
-	check_state2,
 	display, //SSD output
 	control, //SSD control signal
 	row_n, //scanned row index
@@ -33,7 +31,6 @@ module two_digits_decimal_add_sub(
 );
 
 //I/Os
-output [1:0] check_state1, check_state2;
 output [14:0] display; //SSD output
 output [3:0] control; //SS control signal
 output [3:0] row_n; //scanned row index
@@ -45,7 +42,8 @@ input [3:0] col_n; //pressed colume index
 input rst_n; //low active reset
 
 //Wires
-wire clk_1, clk_100, de_add, de_minus, de_equal, pressed;
+wire clk_out, clk_1, clk_100, de_add, de_minus, de_equal, pressed;
+wire pos_neg;
 wire num_enable1, num_enable2, ans_enable;
 wire [1:0] clk_ctl;
 wire [2:0] state;
@@ -58,6 +56,7 @@ wire [7:0] ans_out;
 wire [7:0] left_value, right_value;
 
 freq_div divider(
+	.clk_out(clk_out), //divided clock output
 	.clk_ctl(clk_ctl), //divided clock output for scan freq
 	.clk(clk), //global clock input
 	.rst_n(rst_n) //active low reset
@@ -71,21 +70,24 @@ clock_generator clk_generate(
 );
 
 debounce_one_pulse de_pulse_add(
-	.clk(clk_100), //debounce & one pulse clock
+	.de_clk(clk_100), //debounce clock
+	.pulse_clk(clk_1), //one pulse clock
 	.rst_n(rst_n), //low active reset
 	.in(add), //push button input
 	.out(de_add) //pulsed push button output
 );
 
 debounce_one_pulse de_pulse_minus(
-	.clk(clk_100), //debounce & one pulse clock
+	.de_clk(clk_100), //debounce clock
+	.pulse_clk(clk_1), //one pulse clock
 	.rst_n(rst_n), //low active reset
 	.in(minus), //push button input
 	.out(de_minus) //pulsed push button output
 );
 
 debounce_one_pulse de_pulse_equal(
-	.clk(clk_100), //debounce & one pulse clock
+	.de_clk(clk_100), //debounce clock
+	.pulse_clk(clk_1), //one pulse clock
 	.rst_n(rst_n), //low active reset
 	.in(equal), //push button input
 	.out(de_equal) //pulsed push button output
@@ -117,9 +119,8 @@ num_store left(
 	.value_out(left_value), //left part value output
 	.unit_out(left_unit), //unit digit output
 	.tens_out(left_tens), //tens digit output
-	.check_state(check_state1), //check state
 	.num_in(key), //number input
-	.clk(clk_100), //clock
+	.clk(clk_out), //clock
 	.enable(num_enable1), //enable for storing in value
 	.pressed(pressed), //button pressed
 	.rst_n(rst_n) //active low reset
@@ -129,9 +130,8 @@ num_store right(
 	.value_out(right_value), //left part value output
 	.unit_out(right_unit), //unit digit output
 	.tens_out(right_tens), //tens digit output
-	.check_state(check_state2), //check state
 	.num_in(key), //number input
-	.clk(clk_100), //clock
+	.clk(clk_out), //clock
 	.enable(num_enable2), //enable for storing in value
 	.pressed(pressed), //button pressed
 	.rst_n(rst_n) //active low reset
@@ -139,6 +139,7 @@ num_store right(
 
 answer_store answer(
 	.answer_out(ans_out), //binary answer output
+	.pos_neg(pos_neg), //determine whether the ans is positive(0) or negative(1)
 	.left_in(left_value), //augend & minuend input
 	.right_in(right_value), //addend & subtrahend input
 	.clk(clk_100), //clock
@@ -149,6 +150,7 @@ answer_store answer(
 
 binary_converter converter(
 	.answer_in(ans_out), //binary answer input
+	.pos_neg(pos_neg), //positive or negative
 	.answer_unit(ans_unit), //answer unit digit output
 	.answer_tens(ans_tens), //answer tens digit output
 	.answer_hund(ans_hund) //answer hundreds digit output

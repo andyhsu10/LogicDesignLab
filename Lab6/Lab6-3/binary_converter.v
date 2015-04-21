@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module binary_converter(
 	answer_in, //binary answer input
+	pos_neg, //positive or negative
 	answer_unit, //answer unit digit output
 	answer_tens, //answer tens digit output
 	answer_hund //answer hundreds digit output
@@ -27,6 +28,7 @@ module binary_converter(
 
 //I/Os
 input [7:0] answer_in; //answer input
+input pos_neg; //positive or negative
 output reg [3:0] answer_unit; //answer unit digit output
 output reg [3:0] answer_tens; //answer tens digit output
 output reg [3:0] answer_hund; //answer hundreds digit output
@@ -61,7 +63,19 @@ always @*
 	end
 
 always @*
-	if(tens_tmp == 4'd0 && hund_tmp == 4'd0)
+	if(pos_neg == 1'd1 && tens_tmp == 4'd0 && hund_tmp == 4'd0)
+		begin
+			answer_unit = unit_tmp;
+			answer_tens = 4'd14;
+			answer_hund = 4'd15;
+		end
+	else if(pos_neg == 1'd1 && hund_tmp == 4'd0)
+		begin
+			answer_unit = unit_tmp;
+			answer_tens = tens_tmp;
+			answer_hund = 4'd14;
+		end
+	else if(tens_tmp == 4'd0 && hund_tmp == 4'd0)
 		begin
 			answer_unit = unit_tmp;
 			answer_tens = 4'd15;

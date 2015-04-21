@@ -8,6 +8,10 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/two_digits_decimal_add_sub D:|GitHub|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v/converter - binary_converter</ClosedNode>
+         <ClosedNode>/two_digits_decimal_add_sub D:|GitHub|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v/de_pulse_add - debounce_one_pulse</ClosedNode>
+         <ClosedNode>/two_digits_decimal_add_sub D:|GitHub|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v/de_pulse_equal - debounce_one_pulse</ClosedNode>
+         <ClosedNode>/two_digits_decimal_add_sub D:|GitHub|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v/de_pulse_minus - debounce_one_pulse</ClosedNode>
          <ClosedNode>/two_digits_decimal_add_sub D:|OneDrive|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v</ClosedNode>
          <ClosedNode>/two_digits_decimal_add_sub D:|OneDrive|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v/converter - binary_converter</ClosedNode>
          <ClosedNode>/two_digits_decimal_add_sub D:|OneDrive|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v/de_pulse_add - debounce_one_pulse</ClosedNode>
@@ -16,25 +20,27 @@
          <ClosedNode>/two_digits_decimal_add_sub D:|OneDrive|LogicDesignLab|Lab6|Lab6-3|two_digits_decimal_add_sub.v/right - num_store</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>two_digits_decimal_add_sub (D:/OneDrive/LogicDesignLab/Lab6/Lab6-3/two_digits_decimal_add_sub.v)</SelectedItem>
+         <SelectedItem>two_digits_decimal_add_sub (D:/GitHub/LogicDesignLab/Lab6/Lab6-3/two_digits_decimal_add_sub.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a80000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bf0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>two_digits_decimal_add_sub (D:/OneDrive/LogicDesignLab/Lab6/Lab6-3/two_digits_decimal_add_sub.v)</CurrentItem>
+      <CurrentItem>two_digits_decimal_add_sub (D:/GitHub/LogicDesignLab/Lab6/Lab6-3/two_digits_decimal_add_sub.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" />
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -81,4 +87,18 @@
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>

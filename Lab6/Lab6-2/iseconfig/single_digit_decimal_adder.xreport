@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-20T02:55:46</DateModified>
+  <DateModified>2015-04-20T19:19:52</DateModified>
   <ModuleName>single_digit_decimal_adder</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/OneDrive/LogicDesignLab/Lab6/Lab6-2/iseconfig/single_digit_decimal_adder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/OneDrive/LogicDesignLab/Lab6/Lab6-2\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GitHub/LogicDesignLab/Lab6/Lab6-2/iseconfig/single_digit_decimal_adder.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab6/Lab6-2\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-18T21:25:35</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
