@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\LogicDesignLab\Lab6\Lab6-4\single_digit_add_sub_mult.ncd
+OUTFILE=D:\GitHub\LogicDesignLab\Lab6\Lab6-4\single_digit_add_sub_mult.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\GitHub\LogicDesignLab\Lab6\Lab6-4
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

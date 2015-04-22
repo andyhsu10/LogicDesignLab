@@ -2,9 +2,6 @@
 # PlanAhead Generated physical constraints 
 
 NET "clk" LOC = R10;
-NET "add" LOC = P3;
-NET "minus" LOC = P4;
-NET "equal" LOC = N3;
 NET "rst_n" LOC = T2;
 NET "col_n[0]" LOC = J3;
 NET "col_n[1]" LOC = J1;

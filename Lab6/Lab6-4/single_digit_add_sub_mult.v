@@ -75,6 +75,7 @@ fsm fsm(
 	.num_enable1(num_enable1), //number storage enabled 1
 	.num_enable2(num_enable2), //number storage enabled 2
 	.ans_enable(ans_enable), //answer enable
+	.state(state), //state output
 	.key(key), //key input
 	.clk(clk_1), //global clock signal
 	.rst_n(rst_n) //low active reset
@@ -113,7 +114,7 @@ binary_converter converter(
 	.answer_in(ans_out), //binary answer input
 	.pos_neg(pos_neg), //positive or negative
 	.answer_unit(ans_unit), //answer unit digit output
-	.answer_tens(ans_tens), //answer tens digit output
+	.answer_tens(ans_tens) //answer tens digit output
 );
 
 display_ctl display_controller(
@@ -124,7 +125,7 @@ display_ctl display_controller(
     .left(left_num), //left part digit input
     .right(right_num), //right part digit input
     .ans_unit(ans_unit), //answer unit digit input
-    .ans_tens(ans_tens), //answer tens digit input
+    .ans_tens(ans_tens) //answer tens digit input
 );
 
 scan_ctl scan_control(

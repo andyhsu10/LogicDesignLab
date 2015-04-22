@@ -35,6 +35,7 @@ module fsm(
 	num_enable1, //number storage enabled 1
 	num_enable2, //number storage enabled 2
 	ans_enable, //answer enable
+	state, //state output
 	key, //key input
 	clk, //global clock signal
 	rst_n //low active reset

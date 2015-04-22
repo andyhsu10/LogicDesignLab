@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/fulladder.v";
+static const char *ng0 = "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/fulladder.v";
 
 
 

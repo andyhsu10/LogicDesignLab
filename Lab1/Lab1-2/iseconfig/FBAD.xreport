@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-12T00:14:05</DateModified>
+  <DateModified>2015-04-22T21:00:11</DateModified>
   <ModuleName>FBAD</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/iseconfig/FBAD.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/OneDrive/LogicDesignLab/Lab1/Lab1-2\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GitHub/LogicDesignLab/Lab1/Lab1-2/iseconfig/FBAD.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab1/Lab1-2\</ImplementationReportsDirectory>
   <DateInitialized>2015-03-05T18:34:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

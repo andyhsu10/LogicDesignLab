@@ -1,0 +1,45 @@
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ngd single_digit_add_sub_mult.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ncd single_digit_add_sub_mult.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_add_sub_mult.twx single_digit_add_sub_mult.ncd -o single_digit_add_sub_mult.twr single_digit_add_sub_mult.pcf -ucf single_digit_add_sub_mult.ucf 
+bitgen -intstyle ise -f single_digit_add_sub_mult.ut single_digit_add_sub_mult.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ngd single_digit_add_sub_mult.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ncd single_digit_add_sub_mult.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_add_sub_mult.twx single_digit_add_sub_mult.ncd -o single_digit_add_sub_mult.twr single_digit_add_sub_mult.pcf -ucf single_digit_add_sub_mult.ucf 
+bitgen -intstyle ise -f single_digit_add_sub_mult.ut single_digit_add_sub_mult.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ngd single_digit_add_sub_mult.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ncd single_digit_add_sub_mult.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_add_sub_mult.twx single_digit_add_sub_mult.ncd -o single_digit_add_sub_mult.twr single_digit_add_sub_mult.pcf -ucf single_digit_add_sub_mult.ucf 
+bitgen -intstyle ise -f single_digit_add_sub_mult.ut single_digit_add_sub_mult.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ngd single_digit_add_sub_mult.pcf 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ngd single_digit_add_sub_mult.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ncd single_digit_add_sub_mult.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_add_sub_mult.twx single_digit_add_sub_mult.ncd -o single_digit_add_sub_mult.twr single_digit_add_sub_mult.pcf -ucf single_digit_add_sub_mult.ucf 
+bitgen -intstyle ise -f single_digit_add_sub_mult.ut single_digit_add_sub_mult.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ngd single_digit_add_sub_mult.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ncd single_digit_add_sub_mult.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_add_sub_mult.twx single_digit_add_sub_mult.ncd -o single_digit_add_sub_mult.twr single_digit_add_sub_mult.pcf -ucf single_digit_add_sub_mult.ucf 
+bitgen -intstyle ise -f single_digit_add_sub_mult.ut single_digit_add_sub_mult.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.xst" -ofn "D:/GitHub/LogicDesignLab/Lab6/Lab6-4/single_digit_add_sub_mult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc single_digit_add_sub_mult.ucf -p xc6slx16-csg324-3 single_digit_add_sub_mult.ngc single_digit_add_sub_mult.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ngd single_digit_add_sub_mult.pcf 
+par -w -intstyle ise -ol high -mt off single_digit_add_sub_mult_map.ncd single_digit_add_sub_mult.ncd single_digit_add_sub_mult.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml single_digit_add_sub_mult.twx single_digit_add_sub_mult.ncd -o single_digit_add_sub_mult.twr single_digit_add_sub_mult.pcf -ucf single_digit_add_sub_mult.ucf 
+bitgen -intstyle ise -f single_digit_add_sub_mult.ut single_digit_add_sub_mult.ncd 

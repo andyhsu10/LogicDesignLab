@@ -1,17 +1,17 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/test_FBAD_isim_beh.exe -prj D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/test_FBAD_beh.prj work.test_FBAD work.glbl 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/GitHub/LogicDesignLab/Lab1/Lab1-2/test_FBAD_isim_beh.exe -prj D:/GitHub/LogicDesignLab/Lab1/Lab1-2/test_FBAD_beh.prj work.test_FBAD work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/halfadder.v" into library work
-Analyzing Verilog file "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/fulladder.v" into library work
-Analyzing Verilog file "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/FBAD.v" into library work
-Analyzing Verilog file "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/test_FBAD.v" into library work
+Analyzing Verilog file "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/halfadder.v" into library work
+Analyzing Verilog file "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/fulladder.v" into library work
+Analyzing Verilog file "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/FBAD.v" into library work
+Analyzing Verilog file "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/test_FBAD.v" into library work
 Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/FBAD.v" Line 41: Port co is not connected to this instance
-WARNING:HDLCompiler:189 - "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/FBAD.v" Line 38: Size mismatch in connection of port <b>. Formal port size is 1-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/FBAD.v" Line 41: Size mismatch in connection of port <b>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1016 - "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/FBAD.v" Line 41: Port co is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/FBAD.v" Line 38: Size mismatch in connection of port <b>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/GitHub/LogicDesignLab/Lab1/Lab1-2/FBAD.v" Line 41: Size mismatch in connection of port <b>. Formal port size is 1-bit while actual signal size is 32-bit.
 Completed static elaboration
 Compiling module halfadder
 Compiling module fulladder
@@ -19,8 +19,7 @@ Compiling module FBAD
 Compiling module test_FBAD
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 5 Verilog Units
-Built simulation executable D:/OneDrive/LogicDesignLab/Lab1/Lab1-2/test_FBAD_isim_beh.exe
-Fuse Memory Usage: 28028 KB
-Fuse CPU Usage: 1325 ms
+Built simulation executable D:/GitHub/LogicDesignLab/Lab1/Lab1-2/test_FBAD_isim_beh.exe
+Fuse Memory Usage: 28172 KB
+Fuse CPU Usage: 1435 ms

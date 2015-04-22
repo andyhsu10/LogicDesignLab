@@ -44,6 +44,10 @@
     <transform xil_pn:end_ts="1426015486" xil_pn:in_ck="2427903007354819831" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1426015486">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FBAD.v"/>
       <outfile xil_pn:name="fulladder.v"/>
       <outfile xil_pn:name="halfadder.v"/>
@@ -64,16 +68,23 @@
     <transform xil_pn:end_ts="1426015486" xil_pn:in_ck="2427903007354819831" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1426015486">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FBAD.v"/>
       <outfile xil_pn:name="fulladder.v"/>
       <outfile xil_pn:name="halfadder.v"/>
       <outfile xil_pn:name="test_FBAD.v"/>
     </transform>
-    <transform xil_pn:end_ts="1428741406" xil_pn:in_ck="2427903007354819831" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6774020559547489019" xil_pn:start_ts="1428741400">
+    <transform xil_pn:end_ts="1429707632" xil_pn:in_ck="2427903007354819831" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6774020559547489019" xil_pn:start_ts="1429707618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -82,7 +93,7 @@
       <outfile xil_pn:name="test_FBAD_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1428742235" xil_pn:in_ck="-8582540497958083662" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5878892448164491368" xil_pn:start_ts="1428742234">
+    <transform xil_pn:end_ts="1429707633" xil_pn:in_ck="-8582540497958083662" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5878892448164491368" xil_pn:start_ts="1429707632">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
