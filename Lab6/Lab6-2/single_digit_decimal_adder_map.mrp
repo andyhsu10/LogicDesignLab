@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (nt)
 Xilinx Mapping Report File for Design 'single_digit_decimal_adder'
 
 Design Information
@@ -11,12 +11,12 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Apr 20 19:21:33 2015
+Mapped Date    : Thu Apr 23 15:53:58 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    1
 Slice Logic Utilization:
   Number of Slice Registers:                    87 out of  18,224    1%
     Number used as Flip Flops:                  87
@@ -36,15 +36,15 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    50 out of   2,278    2%
+  Number of occupied Slices:                    52 out of   2,278    2%
   Number of MUXCYs used:                        68 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          153
-    Number with an unused Flip Flop:            71 out of     153   46%
-    Number with an unused LUT:                   8 out of     153    5%
-    Number of fully used LUT-FF pairs:          74 out of     153   48%
-    Number of unique control sets:               7
+  Number of LUT Flip Flop pairs used:          155
+    Number with an unused Flip Flop:            72 out of     155   46%
+    Number with an unused LUT:                  10 out of     155    6%
+    Number of fully used LUT-FF pairs:          73 out of     155   47%
+    Number of unique control sets:               6
     Number of slice register sites lost
-      to control set restrictions:              25 out of  18,224    1%
+      to control set restrictions:              17 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -81,11 +81,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.91
+Average Fanout of Non-Clock Nets:                2.94
 
-Peak Memory Usage:  353 MB
-Total REAL time to MAP completion:  22 secs 
-Total CPU time to MAP completion:   16 secs 
+Peak Memory Usage:  257 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   4 secs 
 
 Table of Contents
 -----------------
@@ -108,6 +108,9 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net clk_generate/clk_1 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 
 Section 3 - Informational
 -------------------------

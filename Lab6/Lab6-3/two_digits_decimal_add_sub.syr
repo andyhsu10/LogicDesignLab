@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: two_digits_decimal_add_sub.prj
 
@@ -105,37 +105,37 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\one_pulse.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\one_pulse.v" into library work
 Parsing module <one_pulse>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\debounce.v" into library work
 Parsing module <debounce>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\add3.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\add3.v" into library work
 Parsing module <add3>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\ssd_decoder.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\ssd_decoder.v" into library work
 Parsing module <ssd_decoder>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\scan_ctl.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\scan_ctl.v" into library work
 Parsing module <scan_ctl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\num_store.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\num_store.v" into library work
 Parsing module <num_store>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\keypad_scan.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\keypad_scan.v" into library work
 Parsing verilog file "global.v" included at line 21.
 Parsing module <keypad_scan>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\fsm.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\fsm.v" into library work
 Parsing module <fsm>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\freq_div.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\freq_div.v" into library work
 Parsing module <freq_div>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\display_ctl.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\display_ctl.v" into library work
 Parsing module <display_ctl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce_one_pulse.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\debounce_one_pulse.v" into library work
 Parsing module <debounce_one_pulse>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\clock_generator.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\clock_generator.v" into library work
 Parsing verilog file "global.v" included at line 21.
 Parsing module <clock_generator>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\binary_converter.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\binary_converter.v" into library work
 Parsing module <binary_converter>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\answer_store.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\answer_store.v" into library work
 Parsing module <answer_store>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v" into library work
+Analyzing Verilog file "F:\Lab6\Lab6-3\two_digits_decimal_add_sub.v" into library work
 Parsing module <two_digits_decimal_add_sub>.
 
 =========================================================================
@@ -147,6 +147,7 @@ Elaborating module <two_digits_decimal_add_sub>.
 Elaborating module <freq_div>.
 
 Elaborating module <clock_generator>.
+WARNING:HDLCompiler:1127 - "F:\Lab6\Lab6-3\two_digits_decimal_add_sub.v" Line 68: Assignment to clk_1 ignored, since the identifier is never used
 
 Elaborating module <debounce_one_pulse>.
 
@@ -177,13 +178,14 @@ Elaborating module <ssd_decoder>.
 =========================================================================
 
 Synthesizing Unit <two_digits_decimal_add_sub>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\two_digits_decimal_add_sub.v".
+    Related source file is "F:\Lab6\Lab6-3\two_digits_decimal_add_sub.v".
+INFO:Xst:3210 - "F:\Lab6\Lab6-3\two_digits_decimal_add_sub.v" line 65: Output port <clk_1> of the instance <clk_generate> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <two_digits_decimal_add_sub> synthesized.
 
 Synthesizing Unit <freq_div>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\freq_div.v".
+    Related source file is "F:\Lab6\Lab6-3\freq_div.v".
     Found 2-bit register for signal <clk_ctl>.
     Found 4-bit register for signal <cnt_h>.
     Found 3-bit register for signal <cnt_m>.
@@ -196,7 +198,7 @@ Synthesizing Unit <freq_div>.
 Unit <freq_div> synthesized.
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\clock_generator.v".
+    Related source file is "F:\Lab6\Lab6-3\clock_generator.v".
     Found 18-bit register for signal <count_200K>.
     Found 25-bit register for signal <count_20M>.
     Found 1-bit register for signal <clk_1>.
@@ -210,13 +212,13 @@ Synthesizing Unit <clock_generator>.
 Unit <clock_generator> synthesized.
 
 Synthesizing Unit <debounce_one_pulse>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce_one_pulse.v".
+    Related source file is "F:\Lab6\Lab6-3\debounce_one_pulse.v".
     Summary:
 	no macro.
 Unit <debounce_one_pulse> synthesized.
 
 Synthesizing Unit <debounce>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\debounce.v".
+    Related source file is "F:\Lab6\Lab6-3\debounce.v".
     Found 4-bit register for signal <debounce_window>.
     Found 1-bit register for signal <pb_debounced>.
     Summary:
@@ -224,7 +226,7 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 Synthesizing Unit <one_pulse>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\one_pulse.v".
+    Related source file is "F:\Lab6\Lab6-3\one_pulse.v".
     Found 1-bit register for signal <out_pulse>.
     Found 1-bit register for signal <in_trig_delay>.
     Summary:
@@ -232,7 +234,7 @@ Synthesizing Unit <one_pulse>.
 Unit <one_pulse> synthesized.
 
 Synthesizing Unit <keypad_scan>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\keypad_scan.v".
+    Related source file is "F:\Lab6\Lab6-3\keypad_scan.v".
     Found 4-bit register for signal <pause_delay>.
     Found 4-bit register for signal <key>.
     Found 2-bit register for signal <sel>.
@@ -249,7 +251,7 @@ Synthesizing Unit <keypad_scan>.
 Unit <keypad_scan> synthesized.
 
 Synthesizing Unit <fsm>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\fsm.v".
+    Related source file is "F:\Lab6\Lab6-3\fsm.v".
     Found 3-bit register for signal <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
@@ -270,7 +272,7 @@ Synthesizing Unit <fsm>.
 Unit <fsm> synthesized.
 
 Synthesizing Unit <num_store>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\num_store.v".
+    Related source file is "F:\Lab6\Lab6-3\num_store.v".
     Found 4-bit register for signal <unit_out>.
     Found 4-bit register for signal <tens_out>.
     Found 8-bit register for signal <value_out>.
@@ -284,7 +286,7 @@ Synthesizing Unit <num_store>.
 Unit <num_store> synthesized.
 
 Synthesizing Unit <answer_store>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\answer_store.v".
+    Related source file is "F:\Lab6\Lab6-3\answer_store.v".
     Found 8-bit register for signal <answer_out>.
     Found 1-bit register for signal <pos_neg>.
     Found 8-bit subtractor for signal <left_in[7]_right_in[7]_sub_5_OUT> created at line 61.
@@ -300,26 +302,26 @@ Synthesizing Unit <answer_store>.
 Unit <answer_store> synthesized.
 
 Synthesizing Unit <binary_converter>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\binary_converter.v".
+    Related source file is "F:\Lab6\Lab6-3\binary_converter.v".
     Summary:
 	inferred   7 Multiplexer(s).
 Unit <binary_converter> synthesized.
 
 Synthesizing Unit <add3>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\add3.v".
+    Related source file is "F:\Lab6\Lab6-3\add3.v".
     Found 16x4-bit Read Only RAM for signal <out>
     Summary:
 	inferred   1 RAM(s).
 Unit <add3> synthesized.
 
 Synthesizing Unit <display_ctl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\display_ctl.v".
+    Related source file is "F:\Lab6\Lab6-3\display_ctl.v".
     Summary:
 	inferred  15 Multiplexer(s).
 Unit <display_ctl> synthesized.
 
 Synthesizing Unit <scan_ctl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\scan_ctl.v".
+    Related source file is "F:\Lab6\Lab6-3\scan_ctl.v".
     Found 4x4-bit Read Only RAM for signal <ssd_ctl>
     Found 4-bit 4-to-1 multiplexer for signal <bcd_out> created at line 38.
     Summary:
@@ -328,7 +330,7 @@ Synthesizing Unit <scan_ctl>.
 Unit <scan_ctl> synthesized.
 
 Synthesizing Unit <ssd_decoder>.
-    Related source file is "D:\GitHub\LogicDesignLab\Lab6\Lab6-3\ssd_decoder.v".
+    Related source file is "F:\Lab6\Lab6-3\ssd_decoder.v".
     Found 16x15-bit Read Only RAM for signal <ssd_out>
     Summary:
 	inferred   1 RAM(s).
@@ -509,15 +511,35 @@ Optimizing unit <fsm> ...
 Optimizing unit <answer_store> ...
 
 Optimizing unit <binary_converter> ...
+WARNING:Xst:2677 - Node <clk_generate/count_20M_24> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_23> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_22> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_21> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_20> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_19> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_18> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_17> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_16> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_15> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_14> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_13> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_12> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_11> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_10> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_9> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_8> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_7> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_6> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_5> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_4> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_3> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_2> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_1> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/count_20M_0> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
+WARNING:Xst:2677 - Node <clk_generate/clk_1> of sequential type is unconnected in block <two_digits_decimal_add_sub>.
 WARNING:Xst:1710 - FF/Latch <key_scan/pause_delay_3> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <key_scan/pause_delay_2> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <key_scan/pause_delay_1> (without init value) has a constant value of 0 in block <two_digits_decimal_add_sub>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <clk_generate/count_20M_0> in Unit <two_digits_decimal_add_sub> is equivalent to the following FF/Latch, which will be removed : <clk_generate/count_200K_0> 
-INFO:Xst:2261 - The FF/Latch <clk_generate/count_20M_1> in Unit <two_digits_decimal_add_sub> is equivalent to the following FF/Latch, which will be removed : <clk_generate/count_200K_1> 
-INFO:Xst:2261 - The FF/Latch <clk_generate/count_20M_2> in Unit <two_digits_decimal_add_sub> is equivalent to the following FF/Latch, which will be removed : <clk_generate/count_200K_2> 
-INFO:Xst:2261 - The FF/Latch <clk_generate/count_20M_3> in Unit <two_digits_decimal_add_sub> is equivalent to the following FF/Latch, which will be removed : <clk_generate/count_200K_3> 
-INFO:Xst:2261 - The FF/Latch <clk_generate/count_20M_4> in Unit <two_digits_decimal_add_sub> is equivalent to the following FF/Latch, which will be removed : <clk_generate/count_200K_4> 
-INFO:Xst:2261 - The FF/Latch <clk_generate/count_20M_5> in Unit <two_digits_decimal_add_sub> is equivalent to the following FF/Latch, which will be removed : <clk_generate/count_200K_5> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -529,8 +551,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 135
- Flip-Flops                                            : 135
+# Registers                                            : 115
+ Flip-Flops                                            : 115
 
 =========================================================================
 
@@ -553,21 +575,21 @@ Top Level Output File Name         : two_digits_decimal_add_sub.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 410
+# BELS                             : 314
 #      GND                         : 1
-#      INV                         : 8
-#      LUT1                        : 66
-#      LUT2                        : 47
-#      LUT3                        : 13
-#      LUT4                        : 29
-#      LUT5                        : 42
-#      LUT6                        : 51
-#      MUXCY                       : 77
+#      INV                         : 7
+#      LUT1                        : 42
+#      LUT2                        : 22
+#      LUT3                        : 11
+#      LUT4                        : 28
+#      LUT5                        : 48
+#      LUT6                        : 45
+#      MUXCY                       : 53
 #      VCC                         : 1
-#      XORCY                       : 75
-# FlipFlops/Latches                : 135
-#      FDC                         : 95
-#      FDCE                        : 37
+#      XORCY                       : 56
+# FlipFlops/Latches                : 115
+#      FDC                         : 76
+#      FDCE                        : 36
 #      FDP                         : 3
 # Clock Buffers                    : 3
 #      BUFG                        : 2
@@ -583,16 +605,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             135  out of  18224     0%  
- Number of Slice LUTs:                  256  out of   9112     2%  
-    Number used as Logic:               256  out of   9112     2%  
+ Number of Slice Registers:             115  out of  18224     0%  
+ Number of Slice LUTs:                  203  out of   9112     2%  
+    Number used as Logic:               203  out of   9112     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    276
-   Number with an unused Flip Flop:     141  out of    276    51%  
-   Number with an unused LUT:            20  out of    276     7%  
-   Number of fully used LUT-FF pairs:   115  out of    276    41%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:    223
+   Number with an unused Flip Flop:     108  out of    223    48%  
+   Number with an unused LUT:            20  out of    223     8%  
+   Number of fully used LUT-FF pairs:    95  out of    223    42%  
+   Number of unique control sets:         7
 
 IO Utilization: 
  Number of IOs:                          32
@@ -619,15 +641,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+---------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                 | Load  |
------------------------------------+---------------------------------------+-------+
-clk_generate/clk_1                 | NONE(de_pulse_add/pulse/in_trig_delay)| 9     |
-divider/clk_out                    | BUFG                                  | 32    |
-clk_generate/clk_100               | BUFG                                  | 33    |
-clk                                | BUFGP                                 | 61    |
------------------------------------+---------------------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_generate/clk_100               | BUFG                   | 42    |
+divider/clk_out                    | BUFG                   | 32    |
+clk                                | BUFGP                  | 41    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -637,8 +657,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.956ns (Maximum Frequency: 252.784MHz)
-   Minimum input arrival time before clock: 4.405ns
+   Minimum period: 3.795ns (Maximum Frequency: 263.498MHz)
+   Minimum input arrival time before clock: 4.365ns
    Maximum output required time after clock: 10.692ns
    Maximum combinational path delay: No path found
 
@@ -647,26 +667,35 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_generate/clk_1'
-  Clock period: 2.188ns (frequency: 457.038MHz)
-  Total number of paths / destination ports: 19 / 6
+Timing constraint: Default period analysis for Clock 'clk_generate/clk_100'
+  Clock period: 3.670ns (frequency: 272.454MHz)
+  Total number of paths / destination ports: 598 / 43
 -------------------------------------------------------------------------
-Delay:               2.188ns (Levels of Logic = 1)
-  Source:            fsm/state_FSM_FFd3 (FF)
-  Destination:       fsm/state_FSM_FFd2 (FF)
-  Source Clock:      clk_generate/clk_1 rising
-  Destination Clock: clk_generate/clk_1 rising
+Delay:               3.670ns (Levels of Logic = 10)
+  Source:            fsm/state_FSM_FFd1 (FF)
+  Destination:       answer/answer_out_7 (FF)
+  Source Clock:      clk_generate/clk_100 rising
+  Destination Clock: clk_generate/clk_100 rising
 
-  Data Path: fsm/state_FSM_FFd3 to fsm/state_FSM_FFd2
+  Data Path: fsm/state_FSM_FFd1 to answer/answer_out_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             19   0.447   1.436  fsm/state_FSM_FFd3 (fsm/state_FSM_FFd3)
-     LUT6:I0->O            1   0.203   0.000  fsm/state_FSM_FFd2-In1 (fsm/state_FSM_FFd2-In)
-     FDC:D                     0.102          fsm/state_FSM_FFd2
+     FDC:C->Q             13   0.447   1.161  fsm/state_FSM_FFd1 (fsm/state_FSM_FFd1)
+     LUT4:I1->O           15   0.205   1.086  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_A11 (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_A11)
+     LUT5:I3->O            1   0.203   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_lut<0> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<0> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<1> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<2> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<3> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<4> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<5> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<6> (answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_cy<6>)
+     XORCY:CI->O           1   0.180   0.000  answer/Mmux_GND_12_o_left_in[7]_mux_10_OUT_rs_xor<7> (answer/GND_12_o_left_in[7]_mux_10_OUT<7>)
+     FDC:D                     0.102          answer/answer_out_7
     ----------------------------------------
-    Total                      2.188ns (0.752ns logic, 1.436ns route)
-                                       (34.4% logic, 65.6% route)
+    Total                      3.670ns (1.423ns logic, 2.247ns route)
+                                       (38.8% logic, 61.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'divider/clk_out'
@@ -694,77 +723,55 @@ Delay:               3.505ns (Levels of Logic = 4)
                                        (37.0% logic, 63.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_generate/clk_100'
-  Clock period: 3.472ns (frequency: 288.039MHz)
-  Total number of paths / destination ports: 54 / 25
--------------------------------------------------------------------------
-Delay:               3.472ns (Levels of Logic = 2)
-  Source:            key_scan/sel_1 (FF)
-  Destination:       key_scan/key_3 (FF)
-  Source Clock:      clk_generate/clk_100 rising
-  Destination Clock: clk_generate/clk_100 rising
-
-  Data Path: key_scan/sel_1 to key_scan/key_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             10   0.447   0.961  key_scan/sel_1 (key_scan/sel_1)
-     LUT6:I4->O            3   0.203   0.651  key_scan/Mmux_pressed_next11 (key_scan/Mmux_pressed_next11)
-     LUT2:I1->O            4   0.205   0.683  key_scan/_n0066_inv1 (key_scan/_n0066_inv)
-     FDCE:CE                   0.322          key_scan/key_0
-    ----------------------------------------
-    Total                      3.472ns (1.177ns logic, 2.295ns route)
-                                       (33.9% logic, 66.1% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.956ns (frequency: 252.784MHz)
-  Total number of paths / destination ports: 1615 / 62
+  Clock period: 3.795ns (frequency: 263.498MHz)
+  Total number of paths / destination ports: 767 / 41
 -------------------------------------------------------------------------
-Delay:               3.956ns (Levels of Logic = 3)
-  Source:            clk_generate/count_20M_17 (FF)
-  Destination:       clk_generate/count_20M_24 (FF)
+Delay:               3.795ns (Levels of Logic = 3)
+  Source:            clk_generate/count_200K_6 (FF)
+  Destination:       clk_generate/count_200K_17 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: clk_generate/count_20M_17 to clk_generate/count_20M_24
+  Data Path: clk_generate/count_200K_6 to clk_generate/count_200K_17
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.981  clk_generate/count_20M_17 (clk_generate/count_20M_17)
-     LUT6:I0->O            3   0.203   0.879  clk_generate/GND_3_o_GND_3_o_equal_1_o<24>4 (clk_generate/GND_3_o_GND_3_o_equal_1_o<24>3)
-     LUT6:I3->O           13   0.205   0.933  clk_generate/GND_3_o_GND_3_o_equal_1_o<24>5 (clk_generate/GND_3_o_GND_3_o_equal_1_o)
-     LUT2:I1->O            1   0.205   0.000  clk_generate/Mcount_count_20M_eqn_241 (clk_generate/Mcount_count_20M_eqn_24)
-     FDC:D                     0.102          clk_generate/count_20M_24
+     FDC:C->Q              2   0.447   0.981  clk_generate/count_200K_6 (clk_generate/count_200K_6)
+     LUT6:I0->O            1   0.203   0.580  clk_generate/GND_3_o_GND_3_o_equal_5_o<17>1 (clk_generate/GND_3_o_GND_3_o_equal_5_o<17>)
+     LUT6:I5->O           19   0.205   1.072  clk_generate/GND_3_o_GND_3_o_equal_5_o<17>2 (clk_generate/GND_3_o_GND_3_o_equal_5_o<17>1)
+     LUT5:I4->O            1   0.205   0.000  clk_generate/Mcount_count_200K_eqn_121 (clk_generate/Mcount_count_200K_eqn_12)
+     FDC:D                     0.102          clk_generate/count_200K_12
     ----------------------------------------
-    Total                      3.956ns (1.162ns logic, 2.794ns route)
-                                       (29.4% logic, 70.6% route)
+    Total                      3.795ns (1.162ns logic, 2.633ns route)
+                                       (30.6% logic, 69.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_1'
-  Total number of paths / destination ports: 9 / 9
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_100'
+  Total number of paths / destination ports: 85 / 55
 -------------------------------------------------------------------------
-Offset:              4.405ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       de_pulse_add/pulse/in_trig_delay (FF)
-  Destination Clock: clk_generate/clk_1 rising
+Offset:              4.365ns (Levels of Logic = 3)
+  Source:            col_n<3> (PAD)
+  Destination:       key_scan/key_3 (FF)
+  Destination Clock: clk_generate/clk_100 rising
 
-  Data Path: rst_n to de_pulse_add/pulse/in_trig_delay
+  Data Path: col_n<3> to key_scan/key_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
-     FDP:PRE                   0.430          de_pulse_add/pulse/out_pulse
+     IBUF:I->O             5   1.222   1.079  col_n_3_IBUF (col_n_3_IBUF)
+     LUT6:I0->O            3   0.203   0.651  key_scan/Mmux_pressed_next11 (key_scan/Mmux_pressed_next11)
+     LUT2:I1->O            4   0.205   0.683  key_scan/_n0066_inv1 (key_scan/_n0066_inv)
+     FDCE:CE                   0.322          key_scan/key_0
     ----------------------------------------
-    Total                      4.405ns (1.858ns logic, 2.547ns route)
-                                       (42.2% logic, 57.8% route)
+    Total                      4.365ns (1.952ns logic, 2.413ns route)
+                                       (44.7% logic, 55.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'divider/clk_out'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              4.405ns (Levels of Logic = 2)
+Offset:              4.353ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       right/value_out_7 (FF)
   Destination Clock: divider/clk_out rising
@@ -774,37 +781,17 @@ Offset:              4.405ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
+     INV:I->O            115   0.206   1.916  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
      FDCE:CLR                  0.430          right/unit_out_0
     ----------------------------------------
-    Total                      4.405ns (1.858ns logic, 2.547ns route)
-                                       (42.2% logic, 57.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_100'
-  Total number of paths / destination ports: 76 / 46
--------------------------------------------------------------------------
-Offset:              4.405ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       key_scan/sel_1 (FF)
-  Destination Clock: clk_generate/clk_100 rising
-
-  Data Path: rst_n to key_scan/sel_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
-     FDC:CLR                   0.430          answer/pos_neg
-    ----------------------------------------
-    Total                      4.405ns (1.858ns logic, 2.547ns route)
-                                       (42.2% logic, 57.8% route)
+    Total                      4.353ns (1.858ns logic, 2.495ns route)
+                                       (42.7% logic, 57.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 61 / 61
+  Total number of paths / destination ports: 41 / 41
 -------------------------------------------------------------------------
-Offset:              4.405ns (Levels of Logic = 2)
+Offset:              4.353ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       divider/clk_ctl_1 (FF)
   Destination Clock: clk rising
@@ -814,11 +801,11 @@ Offset:              4.405ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            135   0.206   1.968  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
-     FDCE:CLR                  0.430          clk_generate/clk_100
+     INV:I->O            115   0.206   1.916  de_pulse_add/pulse/rst_n_inv1_INV_0 (answer/rst_n_inv)
+     FDC:CLR                   0.430          clk_generate/count_200K_0
     ----------------------------------------
-    Total                      4.405ns (1.858ns logic, 2.547ns route)
-                                       (42.2% logic, 57.8% route)
+    Total                      4.353ns (1.858ns logic, 2.495ns route)
+                                       (42.7% logic, 57.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -844,32 +831,8 @@ Offset:              8.668ns (Levels of Logic = 5)
                                        (44.2% logic, 55.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_generate/clk_1'
-  Total number of paths / destination ports: 649 / 9
--------------------------------------------------------------------------
-Offset:              9.486ns (Levels of Logic = 6)
-  Source:            fsm/state_FSM_FFd3 (FF)
-  Destination:       display<8> (PAD)
-  Source Clock:      clk_generate/clk_1 rising
-
-  Data Path: fsm/state_FSM_FFd3 to display<8>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             19   0.447   1.300  fsm/state_FSM_FFd3 (fsm/state_FSM_FFd3)
-     LUT3:I0->O            7   0.205   1.118  scan_control/Mmux_bcd_out151 (scan_control/Mmux_bcd_out15)
-     LUT5:I0->O            1   0.203   0.684  scan_control/Mmux_bcd_out26 (scan_control/Mmux_bcd_out25)
-     LUT6:I4->O            1   0.203   0.684  scan_control/Mmux_bcd_out28 (scan_control/Mmux_bcd_out27)
-     LUT5:I3->O            8   0.203   1.050  scan_control/Mmux_bcd_out29 (bcd_out<1>)
-     LUT4:I0->O            2   0.203   0.616  display<8>1 (display_8_OBUF)
-     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
-    ----------------------------------------
-    Total                      9.486ns (4.035ns logic, 5.451ns route)
-                                       (42.5% logic, 57.5% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_generate/clk_100'
-  Total number of paths / destination ports: 3546 / 13
+  Total number of paths / destination ports: 4195 / 13
 -------------------------------------------------------------------------
 Offset:              10.692ns (Levels of Logic = 7)
   Source:            answer/answer_out_5 (FF)
@@ -926,26 +889,16 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.956|         |         |         |
+clk            |    3.795|         |         |         |
 ---------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock clk_generate/clk_1
---------------------+---------+---------+---------+---------+
-                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------+---------+---------+---------+---------+
-clk_generate/clk_1  |    2.188|         |         |         |
-clk_generate/clk_100|    1.371|         |         |         |
---------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_generate/clk_100
 --------------------+---------+---------+---------+---------+
                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------+---------+---------+---------+---------+
-clk_generate/clk_1  |    4.066|         |         |         |
-clk_generate/clk_100|    3.472|         |         |         |
-divider/clk_out     |    7.175|         |         |         |
+clk_generate/clk_100|    3.670|         |         |         |
+divider/clk_out     |    7.306|         |         |         |
 --------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock divider/clk_out
@@ -953,22 +906,21 @@ Clock to Setup on destination clock divider/clk_out
                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------+---------+---------+---------+---------+
-clk_generate/clk_1  |    4.374|         |         |         |
-clk_generate/clk_100|    2.821|         |         |         |
+clk_generate/clk_100|    4.352|         |         |         |
 divider/clk_out     |    3.505|         |         |         |
 --------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 34.00 secs
-Total CPU time to Xst completion: 33.53 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.44 secs
  
 --> 
 
-Total memory usage is 291376 kilobytes
+Total memory usage is 184196 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    6 (   0 filtered)
-Number of infos    :   12 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

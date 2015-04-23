@@ -1,7 +1,7 @@
-Release 14.7 Drc P.20131013 (nt64)
+Release 14.7 Drc P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Apr 21 23:13:13 2015
+Thu Apr 23 15:59:40 2015
 
 drc -z two_digits_decimal_add_sub.ncd two_digits_decimal_add_sub.pcf
 

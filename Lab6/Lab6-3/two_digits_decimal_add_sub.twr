@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml two_digits_decimal_add_sub.twx
-two_digits_decimal_add_sub.ncd -o two_digits_decimal_add_sub.twr
-two_digits_decimal_add_sub.pcf -ucf two_digits_decimal_add_sub.ucf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml two_digits_decimal_add_sub.twx two_digits_decimal_add_sub.ncd
+-o two_digits_decimal_add_sub.twr two_digits_decimal_add_sub.pcf -ucf
+two_digits_decimal_add_sub.ucf
 
 Design file:              two_digits_decimal_add_sub.ncd
 Physical constraint file: two_digits_decimal_add_sub.pcf
@@ -38,7 +38,7 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rst_n       |    3.257(R)|      SLOW  |   -0.586(R)|      SLOW  |clk_BUFGP         |   0.000|
+rst_n       |    3.320(R)|      SLOW  |   -0.933(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -46,18 +46,18 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-control<0>  |         9.255(R)|      SLOW  |         4.949(R)|      FAST  |clk_BUFGP         |   0.000|
-control<1>  |         8.613(R)|      SLOW  |         4.390(R)|      FAST  |clk_BUFGP         |   0.000|
-control<2>  |         8.411(R)|      SLOW  |         4.308(R)|      FAST  |clk_BUFGP         |   0.000|
-display<0>  |        11.792(R)|      SLOW  |         5.039(R)|      FAST  |clk_BUFGP         |   0.000|
-display<7>  |        13.254(R)|      SLOW  |         5.236(R)|      FAST  |clk_BUFGP         |   0.000|
-display<8>  |        12.907(R)|      SLOW  |         4.968(R)|      FAST  |clk_BUFGP         |   0.000|
-display<9>  |        12.767(R)|      SLOW  |         4.905(R)|      FAST  |clk_BUFGP         |   0.000|
-display<10> |        13.331(R)|      SLOW  |         5.325(R)|      FAST  |clk_BUFGP         |   0.000|
-display<11> |        13.276(R)|      SLOW  |         5.243(R)|      FAST  |clk_BUFGP         |   0.000|
-display<12> |        12.931(R)|      SLOW  |         5.095(R)|      FAST  |clk_BUFGP         |   0.000|
-display<13> |        12.698(R)|      SLOW  |         4.924(R)|      FAST  |clk_BUFGP         |   0.000|
-display<14> |        12.869(R)|      SLOW  |         4.935(R)|      FAST  |clk_BUFGP         |   0.000|
+control<0>  |         8.942(R)|      SLOW  |         4.695(R)|      FAST  |clk_BUFGP         |   0.000|
+control<1>  |         9.388(R)|      SLOW  |         4.890(R)|      FAST  |clk_BUFGP         |   0.000|
+control<2>  |         9.186(R)|      SLOW  |         4.808(R)|      FAST  |clk_BUFGP         |   0.000|
+display<0>  |        11.862(R)|      SLOW  |         4.913(R)|      FAST  |clk_BUFGP         |   0.000|
+display<7>  |        13.001(R)|      SLOW  |         4.909(R)|      FAST  |clk_BUFGP         |   0.000|
+display<8>  |        13.716(R)|      SLOW  |         5.390(R)|      FAST  |clk_BUFGP         |   0.000|
+display<9>  |        12.803(R)|      SLOW  |         5.137(R)|      FAST  |clk_BUFGP         |   0.000|
+display<10> |        12.899(R)|      SLOW  |         5.200(R)|      FAST  |clk_BUFGP         |   0.000|
+display<11> |        13.273(R)|      SLOW  |         5.064(R)|      FAST  |clk_BUFGP         |   0.000|
+display<12> |        12.842(R)|      SLOW  |         4.926(R)|      FAST  |clk_BUFGP         |   0.000|
+display<13> |        13.174(R)|      SLOW  |         5.144(R)|      FAST  |clk_BUFGP         |   0.000|
+display<14> |        13.515(R)|      SLOW  |         5.248(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -65,18 +65,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.467|         |         |         |
+clk            |    3.077|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Apr 21 23:12:59 2015 
+Analysis completed Thu Apr 23 15:59:36 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 220 MB
+Peak Memory Usage: 150 MB
 
 
 

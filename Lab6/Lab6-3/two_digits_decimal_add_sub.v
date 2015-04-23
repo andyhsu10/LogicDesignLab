@@ -71,7 +71,7 @@ clock_generator clk_generate(
 
 debounce_one_pulse de_pulse_add(
 	.de_clk(clk_100), //debounce clock
-	.pulse_clk(clk_1), //one pulse clock
+	.pulse_clk(clk_100), //one pulse clock
 	.rst_n(rst_n), //low active reset
 	.in(add), //push button input
 	.out(de_add) //pulsed push button output
@@ -79,7 +79,7 @@ debounce_one_pulse de_pulse_add(
 
 debounce_one_pulse de_pulse_minus(
 	.de_clk(clk_100), //debounce clock
-	.pulse_clk(clk_1), //one pulse clock
+	.pulse_clk(clk_100), //one pulse clock
 	.rst_n(rst_n), //low active reset
 	.in(minus), //push button input
 	.out(de_minus) //pulsed push button output
@@ -87,7 +87,7 @@ debounce_one_pulse de_pulse_minus(
 
 debounce_one_pulse de_pulse_equal(
 	.de_clk(clk_100), //debounce clock
-	.pulse_clk(clk_1), //one pulse clock
+	.pulse_clk(clk_100), //one pulse clock
 	.rst_n(rst_n), //low active reset
 	.in(equal), //push button input
 	.out(de_equal) //pulsed push button output
@@ -111,7 +111,7 @@ fsm fsm(
 	.add(de_add), //add button input
 	.minus(de_minus), //minus button input
 	.equal(de_equal), //equal button input
-	.clk(clk_1), //global clock signal
+	.clk(clk_100), //global clock signal
 	.rst_n(rst_n) //active low reset
 );
 

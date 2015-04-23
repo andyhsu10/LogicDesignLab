@@ -1,12 +1,11 @@
-Release 14.7 ngdbuild P.20131013 (nt64)
+Release 14.7 ngdbuild P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -nt timestamp -uc two_digits_decimal_add_sub.ucf -p
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc two_digits_decimal_add_sub.ucf -p
 xc6slx16-csg324-3 two_digits_decimal_add_sub.ngc two_digits_decimal_add_sub.ngd
 
-Reading NGO file
-"D:/GitHub/LogicDesignLab/Lab6/Lab6-3/two_digits_decimal_add_sub.ngc" ...
+Reading NGO file "F:/Lab6/Lab6-3/two_digits_decimal_add_sub.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -29,10 +28,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 162496 kilobytes
+Total memory usage is 118084 kilobytes
 
 Writing NGD file "two_digits_decimal_add_sub.ngd" ...
-Total REAL time to NGDBUILD completion:  15 sec
-Total CPU time to NGDBUILD completion:   11 sec
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "two_digits_decimal_add_sub.bld"...

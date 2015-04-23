@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-23T01:10:17</DateModified>
+  <DateModified>2015-04-23T16:16:44</DateModified>
   <ModuleName>single_digit_add_sub_mult</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/GitHub/LogicDesignLab/Lab6/Lab6-4/iseconfig/single_digit_add_sub_mult.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab6/Lab6-4\</ImplementationReportsDirectory>
+  <SavedFilePath>F:/Lab6/Lab6-4/iseconfig/single_digit_add_sub_mult.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/Lab6/Lab6-4\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-22T18:20:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

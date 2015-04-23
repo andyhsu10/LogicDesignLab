@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-22T18:20:19</DateModified>
+  <DateModified>2015-04-23T15:50:22</DateModified>
   <ModuleName>two_digits_decimal_add_sub</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/GitHub/LogicDesignLab/Lab6/Lab6-3/iseconfig/two_digits_decimal_add_sub.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab6/Lab6-3\</ImplementationReportsDirectory>
+  <SavedFilePath>F:/Lab6/Lab6-3/iseconfig/two_digits_decimal_add_sub.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/Lab6/Lab6-3\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-20T02:56:52</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

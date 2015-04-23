@@ -61,7 +61,7 @@ clock_generator clk_generate(
 
 debounce_one_pulse de_pulse(
 	.de_clk(clk_100), //debounce clock
-	.pulse_clk(clk_1), //one pulse clock
+	.pulse_clk(clk_100), //one pulse clock
 	.rst_n(rst_n), //low active reset
 	.in(add_equal), //push button input
 	.out(de_add_equal) //pulsed push button output
@@ -81,7 +81,7 @@ fsm fsm(
 	.num_enable2(num_enable2), //number storage enabled 2
 	.ans_enable(ans_enable), //answer enable
 	.in(de_add_equal), //input control
-	.clk(clk_1), //global clock signal
+	.clk(clk_100), //global clock signal
 	.rst_n(rst_n)
 );
 

@@ -98,3 +98,15 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off two_digits_decimal_add_sub_map.ncd two_digits_decimal_add_sub.ncd two_digits_decimal_add_sub.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml two_digits_decimal_add_sub.twx two_digits_decimal_add_sub.ncd -o two_digits_decimal_add_sub.twr two_digits_decimal_add_sub.pcf -ucf two_digits_decimal_add_sub.ucf 
 bitgen -intstyle ise -f two_digits_decimal_add_sub.ut two_digits_decimal_add_sub.ncd 
+xst -intstyle ise -ifn "F:/Lab6/Lab6-3/two_digits_decimal_add_sub.xst" -ofn "F:/Lab6/Lab6-3/two_digits_decimal_add_sub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc two_digits_decimal_add_sub.ucf -p xc6slx16-csg324-3 two_digits_decimal_add_sub.ngc two_digits_decimal_add_sub.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o two_digits_decimal_add_sub_map.ncd two_digits_decimal_add_sub.ngd two_digits_decimal_add_sub.pcf 
+par -w -intstyle ise -ol high -mt off two_digits_decimal_add_sub_map.ncd two_digits_decimal_add_sub.ncd two_digits_decimal_add_sub.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml two_digits_decimal_add_sub.twx two_digits_decimal_add_sub.ncd -o two_digits_decimal_add_sub.twr two_digits_decimal_add_sub.pcf -ucf two_digits_decimal_add_sub.ucf 
+bitgen -intstyle ise -f two_digits_decimal_add_sub.ut two_digits_decimal_add_sub.ncd 
+xst -intstyle ise -ifn "F:/Lab6/Lab6-3/two_digits_decimal_add_sub.xst" -ofn "F:/Lab6/Lab6-3/two_digits_decimal_add_sub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc two_digits_decimal_add_sub.ucf -p xc6slx16-csg324-3 two_digits_decimal_add_sub.ngc two_digits_decimal_add_sub.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o two_digits_decimal_add_sub_map.ncd two_digits_decimal_add_sub.ngd two_digits_decimal_add_sub.pcf 
+par -w -intstyle ise -ol high -mt off two_digits_decimal_add_sub_map.ncd two_digits_decimal_add_sub.ncd two_digits_decimal_add_sub.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml two_digits_decimal_add_sub.twx two_digits_decimal_add_sub.ncd -o two_digits_decimal_add_sub.twr two_digits_decimal_add_sub.pcf -ucf two_digits_decimal_add_sub.ucf 
+bitgen -intstyle ise -f two_digits_decimal_add_sub.ut two_digits_decimal_add_sub.ncd 

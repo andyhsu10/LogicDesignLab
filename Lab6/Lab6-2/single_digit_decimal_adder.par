@@ -1,14 +1,14 @@
-Release 14.7 par P.20131013 (nt64)
+Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-HOME-2::  Mon Apr 20 19:22:01 2015
+USER-PC::  Thu Apr 23 15:54:06 2015
 
 par -w -intstyle ise -ol high -mt off single_digit_decimal_adder_map.ncd
 single_digit_decimal_adder.ncd single_digit_decimal_adder.pcf 
 
 
 Constraints file: single_digit_decimal_adder.pcf.
-Loading device for application Rf_Device from file '6slx16.nph' in environment D:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "single_digit_decimal_adder" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -45,12 +45,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    50 out of   2,278    2%
+  Number of occupied Slices:                    52 out of   2,278    2%
   Number of MUXCYs used:                        68 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          153
-    Number with an unused Flip Flop:            71 out of     153   46%
-    Number with an unused LUT:                   8 out of     153    5%
-    Number of fully used LUT-FF pairs:          74 out of     153   48%
+  Number of LUT Flip Flop pairs used:          155
+    Number with an unused Flip Flop:            72 out of     155   46%
+    Number with an unused LUT:                  10 out of     155    6%
+    Number of fully used LUT-FF pairs:          73 out of     155   47%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -93,35 +93,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 9 secs 
-Finished initial Timing Analysis.  REAL time: 9 secs 
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 Starting Router
 
 
-Phase  1  : 575 unrouted;      REAL time: 10 secs 
+Phase  1  : 583 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 478 unrouted;      REAL time: 10 secs 
+Phase  2  : 484 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 99 unrouted;      REAL time: 11 secs 
+Phase  3  : 112 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 102 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  4  : 112 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Updating file: single_digit_decimal_adder.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
-Total REAL time to Router completion: 13 secs 
-Total CPU time to Router completion: 13 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -141,14 +141,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.452ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.416ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.834ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.439ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     2.265ns|     N/A|           0
-  _generate/clk_1                           | HOLD        |     0.559ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.313ns|     N/A|           0
-  _generate/clk_100_BUFG                    | HOLD        |     0.400ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.542ns|     N/A|           0
+  _generate/clk_100_BUFG                    | HOLD        |     0.385ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -164,10 +161,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 14 secs 
-Total CPU time to PAR completion: 14 secs 
+Total REAL time to PAR completion: 45 secs 
+Total CPU time to PAR completion: 6 secs 
 
-Peak Memory Usage:  314 MB
+Peak Memory Usage:  261 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
