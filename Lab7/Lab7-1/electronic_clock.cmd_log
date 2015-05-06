@@ -1,0 +1,107 @@
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/Lab7-1/electronic_clock.xst" -ofn "D:/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/Lab7-1/electronic_clock.xst" -ofn "D:/Lab7-1/electronic_clock.syr" 
+xst -intstyle ise -ifn "D:/Lab7-1/electronic_clock.xst" -ofn "D:/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/Lab7-1/electronic_clock.xst" -ofn "D:/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/Lab7-1/electronic_clock.xst" -ofn "D:/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/Lab7-1/electronic_clock.xst" -ofn "D:/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/Lab7-1/electronic_clock.xst" -ofn "D:/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.xst" -ofn "D:/GitHub/LogicDesignLab/Lab7/Lab7-1/electronic_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_clock.ucf -p xc6slx16-csg324-3 electronic_clock.ngc electronic_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_clock_map.ncd electronic_clock.ngd electronic_clock.pcf 
+par -w -intstyle ise -ol high -mt off electronic_clock_map.ncd electronic_clock.ncd electronic_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_clock.twx electronic_clock.ncd -o electronic_clock.twr electronic_clock.pcf -ucf electronic_clock.ucf 
+bitgen -intstyle ise -f electronic_clock.ut electronic_clock.ncd 
