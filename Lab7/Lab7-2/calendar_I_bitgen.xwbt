@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\LogicDesignLab\Lab7\Lab7-2\calendar_I.ncd
+OUTFILE=D:\GitHub\LogicDesignLab\Lab7\Lab7-2\calendar_I.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\GitHub\LogicDesignLab\Lab7\Lab7-2
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143
