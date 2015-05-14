@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Lab8\Lab8-1\stop_watch.ncd
+OUTFILE=F:\Lab8\Lab8-1\stop_watch.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=F:\Lab8\Lab8-1
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143
