@@ -77,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1430945041" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1430945041">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1430945041" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7442279270619041888" xil_pn:start_ts="1430945041">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -165,6 +166,7 @@
     <transform xil_pn:end_ts="1430945111" xil_pn:in_ck="6723202016302631566" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1430945095">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="calendar_II.ut"/>
       <outfile xil_pn:name="calendar_ii.bgn"/>
