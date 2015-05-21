@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\LogicDesignLab\Lab10\bell\autoplay_music.ncd
+OUTFILE=D:\GitHub\LogicDesignLab\Lab10\bell\autoplay_music.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\GitHub\LogicDesignLab\Lab10\bell
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

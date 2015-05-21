@@ -1,0 +1,1417 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: autoplay_music.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "autoplay_music.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "autoplay_music"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : autoplay_music
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\ssd_decoder.v" into library work
+Parsing verilog file "global.v" included at line 12.
+Parsing module <ssd_decoder>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\speaker_ctl.v" into library work
+Parsing module <speaker_ctl>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\scan_ctl.v" into library work
+Parsing module <scan_ctl>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\note_ctl.v" into library work
+Parsing verilog file "global.v" included at line 12.
+Parsing module <note_ctl>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\music.v" into library work
+Parsing module <music>.
+WARNING:HDLCompiler:568 - "D:\GitHub\LogicDesignLab\Lab10\bell\music.v" Line 171: Constant value is truncated to fit in <6> bits.
+WARNING:HDLCompiler:568 - "D:\GitHub\LogicDesignLab\Lab10\bell\music.v" Line 172: Constant value is truncated to fit in <6> bits.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\freq_div.v" into library work
+Parsing module <freq_div>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\buzzer_ctl.v" into library work
+Parsing module <buzzer_ctl>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Lab10\bell\autoplay_music.v" into library work
+Parsing verilog file "global.v" included at line 12.
+Parsing module <autoplay_music>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\GitHub\LogicDesignLab\Lab10\bell\autoplay_music.v" Line 45: Port clk_out is not connected to this instance
+
+Elaborating module <autoplay_music>.
+
+Elaborating module <freq_div>.
+
+Elaborating module <music>.
+
+Elaborating module <note_ctl>.
+
+Elaborating module <buzzer_ctl>.
+
+Elaborating module <speaker_ctl>.
+
+Elaborating module <scan_ctl>.
+
+Elaborating module <ssd_decoder>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <autoplay_music>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\autoplay_music.v".
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Lab10\bell\autoplay_music.v" line 45: Output port <clk_out> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <autoplay_music> synthesized.
+
+Synthesizing Unit <freq_div>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\freq_div.v".
+    Found 2-bit register for signal <clk_ctl>.
+    Found 7-bit register for signal <cnt_h>.
+    Found 15-bit register for signal <cnt_l>.
+    Found 1-bit register for signal <clk_out>.
+    Found 25-bit adder for signal <cnt_tmp> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <freq_div> synthesized.
+
+Synthesizing Unit <music>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\music.v".
+    Found 10-bit register for signal <q1>.
+    Found 10-bit register for signal <q22>.
+    Found 10-bit register for signal <q55>.
+    Found 10-bit register for signal <q89>.
+    Found 10-bit register for signal <q95>.
+    Found 10-bit register for signal <q97>.
+    Found 10-bit register for signal <q106>.
+    Found 10-bit register for signal <q108>.
+    Found 10-bit register for signal <q2>.
+    Found 10-bit register for signal <q15>.
+    Found 10-bit register for signal <q23>.
+    Found 10-bit register for signal <q36>.
+    Found 10-bit register for signal <q48>.
+    Found 10-bit register for signal <q82>.
+    Found 10-bit register for signal <q90>.
+    Found 10-bit register for signal <q101>.
+    Found 10-bit register for signal <q125>.
+    Found 10-bit register for signal <q129>.
+    Found 10-bit register for signal <q3>.
+    Found 10-bit register for signal <q20>.
+    Found 10-bit register for signal <q24>.
+    Found 10-bit register for signal <q41>.
+    Found 10-bit register for signal <q49>.
+    Found 10-bit register for signal <q53>.
+    Found 10-bit register for signal <q64>.
+    Found 10-bit register for signal <q87>.
+    Found 10-bit register for signal <q128>.
+    Found 10-bit register for signal <q4>.
+    Found 10-bit register for signal <q6>.
+    Found 10-bit register for signal <q16>.
+    Found 10-bit register for signal <q17>.
+    Found 10-bit register for signal <q25>.
+    Found 10-bit register for signal <q27>.
+    Found 10-bit register for signal <q37>.
+    Found 10-bit register for signal <q38>.
+    Found 10-bit register for signal <q43>.
+    Found 10-bit register for signal <q50>.
+    Found 10-bit register for signal <q52>.
+    Found 10-bit register for signal <q56>.
+    Found 10-bit register for signal <q61>.
+    Found 10-bit register for signal <q65>.
+    Found 10-bit register for signal <q69>.
+    Found 10-bit register for signal <q70>.
+    Found 10-bit register for signal <q83>.
+    Found 10-bit register for signal <q84>.
+    Found 10-bit register for signal <q112>.
+    Found 10-bit register for signal <q113>.
+    Found 10-bit register for signal <q5>.
+    Found 10-bit register for signal <q26>.
+    Found 10-bit register for signal <q73>.
+    Found 10-bit register for signal <q116>.
+    Found 10-bit register for signal <q7>.
+    Found 10-bit register for signal <q13>.
+    Found 10-bit register for signal <q14>.
+    Found 10-bit register for signal <q28>.
+    Found 10-bit register for signal <q34>.
+    Found 10-bit register for signal <q35>.
+    Found 10-bit register for signal <q47>.
+    Found 10-bit register for signal <q51>.
+    Found 10-bit register for signal <q60>.
+    Found 10-bit register for signal <q72>.
+    Found 10-bit register for signal <q80>.
+    Found 10-bit register for signal <q81>.
+    Found 10-bit register for signal <q115>.
+    Found 10-bit register for signal <q123>.
+    Found 10-bit register for signal <q124>.
+    Found 10-bit register for signal <q8>.
+    Found 10-bit register for signal <q9>.
+    Found 10-bit register for signal <q11>.
+    Found 10-bit register for signal <q29>.
+    Found 10-bit register for signal <q30>.
+    Found 10-bit register for signal <q32>.
+    Found 10-bit register for signal <q44>.
+    Found 10-bit register for signal <q46>.
+    Found 10-bit register for signal <q57>.
+    Found 10-bit register for signal <q59>.
+    Found 10-bit register for signal <q75>.
+    Found 10-bit register for signal <q76>.
+    Found 10-bit register for signal <q78>.
+    Found 10-bit register for signal <q118>.
+    Found 10-bit register for signal <q119>.
+    Found 10-bit register for signal <q121>.
+    Found 10-bit register for signal <q10>.
+    Found 10-bit register for signal <q31>.
+    Found 10-bit register for signal <q77>.
+    Found 10-bit register for signal <q120>.
+    Found 10-bit register for signal <q12>.
+    Found 10-bit register for signal <q33>.
+    Found 10-bit register for signal <q79>.
+    Found 10-bit register for signal <q122>.
+    Found 10-bit register for signal <q18>.
+    Found 10-bit register for signal <q39>.
+    Found 10-bit register for signal <q85>.
+    Found 10-bit register for signal <q126>.
+    Found 10-bit register for signal <q19>.
+    Found 10-bit register for signal <q40>.
+    Found 10-bit register for signal <q54>.
+    Found 10-bit register for signal <q86>.
+    Found 10-bit register for signal <q93>.
+    Found 10-bit register for signal <q94>.
+    Found 10-bit register for signal <q104>.
+    Found 10-bit register for signal <q105>.
+    Found 10-bit register for signal <q127>.
+    Found 10-bit register for signal <q21>.
+    Found 10-bit register for signal <q42>.
+    Found 10-bit register for signal <q88>.
+    Found 10-bit register for signal <q45>.
+    Found 10-bit register for signal <q58>.
+    Found 10-bit register for signal <q62>.
+    Found 10-bit register for signal <q63>.
+    Found 10-bit register for signal <q66>.
+    Found 10-bit register for signal <q67>.
+    Found 10-bit register for signal <q74>.
+    Found 10-bit register for signal <q117>.
+    Found 10-bit register for signal <q131>.
+    Found 10-bit register for signal <q132>.
+    Found 10-bit register for signal <q68>.
+    Found 10-bit register for signal <q91>.
+    Found 10-bit register for signal <q92>.
+    Found 10-bit register for signal <q99>.
+    Found 10-bit register for signal <q100>.
+    Found 10-bit register for signal <q102>.
+    Found 10-bit register for signal <q103>.
+    Found 10-bit register for signal <q110>.
+    Found 10-bit register for signal <q111>.
+    Found 10-bit register for signal <q71>.
+    Found 10-bit register for signal <q114>.
+    Found 10-bit register for signal <q130>.
+    Found 10-bit register for signal <q96>.
+    Found 10-bit register for signal <q98>.
+    Found 10-bit register for signal <q107>.
+    Found 10-bit register for signal <q109>.
+    Found 10-bit register for signal <q0>.
+    Summary:
+	inferred 1330 D-type flip-flop(s).
+Unit <music> synthesized.
+
+Synthesizing Unit <note_ctl>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\note_ctl.v".
+    Found 6-bit register for signal <value>.
+    Found 1-bit register for signal <carry>.
+    Found 4-bit register for signal <note>.
+    Found 6-bit subtractor for signal <q[9]_GND_5_o_sub_3_OUT> created at line 56.
+    Found 6-bit adder for signal <value_tmp> created at line 42.
+    Found 16x27-bit Read Only RAM for signal <_n0110>
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <note_div<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <letter2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 6-bit comparator equal for signal <value[5]_q[9]_equal_2_o> created at line 51
+    Found 6-bit comparator lessequal for signal <n0004> created at line 56
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred  27 Latch(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <note_ctl> synthesized.
+
+Synthesizing Unit <buzzer_ctl>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\buzzer_ctl.v".
+    Found 20-bit register for signal <clk_cnt>.
+    Found 1-bit register for signal <b_clk>.
+    Found 20-bit adder for signal <clk_cnt[19]_GND_38_o_add_2_OUT> created at line 52.
+    Found 20-bit comparator equal for signal <clk_cnt[19]_note_div[19]_equal_2_o> created at line 45
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <buzzer_ctl> synthesized.
+
+Synthesizing Unit <speaker_ctl>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\speaker_ctl.v".
+    Found 4-bit register for signal <audio_cnt_h>.
+    Found 2-bit register for signal <audio_cnt_l>.
+    Found 1-bit register for signal <audio_bck>.
+    Found 1-bit register for signal <audio_ws>.
+    Found 8-bit adder for signal <audio_cnt> created at line 53.
+    Found 1-bit 32-to-1 multiplexer for signal <audio_data> created at line 62.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <speaker_ctl> synthesized.
+
+Synthesizing Unit <scan_ctl>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\scan_ctl.v".
+    Found 4x4-bit Read Only RAM for signal <ssd_ctl>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Multiplexer(s).
+Unit <scan_ctl> synthesized.
+
+Synthesizing Unit <ssd_decoder>.
+    Related source file is "D:\GitHub\LogicDesignLab\Lab10\bell\ssd_decoder.v".
+    Found 32x15-bit Read Only RAM for signal <_n0086>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <ssd_decoder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x27-bit single-port Read Only RAM                   : 1
+ 32x15-bit single-port Read Only RAM                   : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 5
+ 20-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 146
+ 1-bit register                                        : 5
+ 10-bit register                                       : 133
+ 15-bit register                                       : 1
+ 2-bit register                                        : 2
+ 20-bit register                                       : 1
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+# Latches                                              : 27
+ 1-bit latch                                           : 27
+# Comparators                                          : 3
+ 20-bit comparator equal                               : 1
+ 6-bit comparator equal                                : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 7
+ 1-bit 32-to-1 multiplexer                             : 1
+ 15-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <note_div_19> (without init value) has a constant value of 0 in block <note_controllor>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <buzzer_ctl>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+Unit <buzzer_ctl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <note_ctl>.
+The following registers are absorbed into counter <value>: 1 register on signal <value>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <note> prevents it from being combined with the RAM <Mram__n0110> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 27-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <note>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <note_ctl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <scan_ctl>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ssd_ctl> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <clk_ctl>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ssd_ctl>       |          |
+    -----------------------------------------------------------------------
+Unit <scan_ctl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ssd_decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0086> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 15-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bcd<4:0>>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ssd_decoder> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x27-bit single-port distributed Read Only RAM       : 1
+ 32x15-bit single-port distributed Read Only RAM       : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 3
+ 25-bit adder                                          : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 1369
+ Flip-Flops                                            : 1369
+# Comparators                                          : 3
+ 20-bit comparator equal                               : 1
+ 6-bit comparator equal                                : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 1-bit 32-to-1 multiplexer                             : 1
+ 15-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <note_div_19> (without init value) has a constant value of 0 in block <note_ctl>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <autoplay_music> ...
+
+Optimizing unit <freq_div> ...
+
+Optimizing unit <speaker_ctl> ...
+
+Optimizing unit <music> ...
+
+Optimizing unit <note_ctl> ...
+WARNING:Xst:2677 - Node <freqency_divider/clk_out> of sequential type is unconnected in block <autoplay_music>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_6> of sequential type is unconnected in block <autoplay_music>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_5> of sequential type is unconnected in block <autoplay_music>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_4> of sequential type is unconnected in block <autoplay_music>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_3> of sequential type is unconnected in block <autoplay_music>.
+WARNING:Xst:1710 - FF/Latch <music_play/q132_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <music_play/q132_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <music_play/q132_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q131_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q131_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q131_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q130_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q130_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q130_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q129_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q129_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q129_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q128_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q128_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q128_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q127_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q127_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q127_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q126_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q126_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q126_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q125_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q125_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q125_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q124_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q124_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q124_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q123_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q123_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q123_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q122_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q122_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q122_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q121_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q121_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q121_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q120_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q120_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q120_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q119_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q119_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q119_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q118_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q118_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q118_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q117_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q117_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q117_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q116_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q116_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q116_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q115_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q115_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q115_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q114_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q114_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q114_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q113_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q113_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q113_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q112_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q112_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q112_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q111_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q111_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q111_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q110_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q110_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q110_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q109_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q109_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q109_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q108_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q108_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q108_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q107_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q107_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q107_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q106_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q106_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q106_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q105_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q105_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q105_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q104_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q104_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q104_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q103_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q103_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q103_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q102_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q102_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q102_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q101_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q101_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q101_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q100_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q100_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q100_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q99_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q99_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q99_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q98_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q98_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q98_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q97_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q97_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q97_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q96_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q96_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q96_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q95_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q95_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q95_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q94_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q94_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q94_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q93_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q93_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q93_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q92_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q92_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q92_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q91_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q91_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q91_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q90_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q90_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q90_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q89_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q89_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q89_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q88_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q88_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q88_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q87_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q87_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q87_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q86_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q86_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q86_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q85_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q85_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q85_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q84_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q84_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q84_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q83_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q83_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q83_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q82_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q82_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q82_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q81_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q81_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q81_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q80_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q80_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q80_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q79_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q79_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q79_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q78_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q78_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q78_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q77_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q77_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q77_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q76_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q76_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q76_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q75_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q75_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q75_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q74_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q74_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q74_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q73_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q73_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q73_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q72_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q72_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q72_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q71_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q71_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q71_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q70_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q70_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q70_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q69_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q69_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q69_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q68_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q68_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q68_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q67_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q67_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q67_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q66_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q66_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q66_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q65_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q65_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q65_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q64_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q64_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q64_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q63_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q63_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q63_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q62_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q62_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q62_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q61_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q61_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q61_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q60_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q60_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q60_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q59_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q59_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q59_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q58_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q58_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q58_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q57_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q57_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q57_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q56_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q56_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q56_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q55_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q55_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q55_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q54_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q54_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q54_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q53_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q53_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q53_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q52_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q52_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q52_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q51_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q51_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q51_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q50_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q50_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q50_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q49_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q49_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q49_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q48_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q48_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q48_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q47_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q47_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q47_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q46_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q46_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q46_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q45_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q45_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q45_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q44_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q44_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q44_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q43_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q43_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q43_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q42_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q42_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q42_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q41_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q41_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q41_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q40_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q40_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q40_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q39_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q39_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q39_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q38_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q38_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q38_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q37_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q37_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q37_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q36_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q36_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q36_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q35_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q35_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q35_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q34_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q34_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q34_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q33_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q33_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q33_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q32_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q32_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q32_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q31_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q31_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q31_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q30_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q30_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q30_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q29_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q29_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q29_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q28_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q28_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q28_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q27_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q27_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q27_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q26_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q26_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q26_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q25_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q25_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q25_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q24_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q24_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q24_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q23_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q23_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q23_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q22_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q22_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q22_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q21_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q21_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q21_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q20_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q20_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q20_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q19_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q19_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q19_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q18_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q18_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q18_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q17_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q17_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q17_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q16_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q16_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q16_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q15_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q15_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q15_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q14_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q14_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q14_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q13_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q13_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q13_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q12_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q12_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q12_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q11_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q11_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q11_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q10_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q10_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q10_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q9_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q9_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q9_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q8_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q8_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q8_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q7_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q7_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q7_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q6_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q6_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q6_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q5_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q5_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q5_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q4_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q4_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q4_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q3_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q3_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q3_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q2_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q2_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q2_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q1_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q1_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q1_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q0_8> (without init value) has a constant value of 0 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q0_5> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q0_4> (without init value) has a constant value of 1 in block <autoplay_music>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block autoplay_music, actual ratio is 15.
+
+Final Macro Processing ...
+
+Processing Unit <autoplay_music> :
+	Found 20-bit shift register for signal <music_play/q1_9>.
+	Found 8-bit shift register for signal <music_play/q2_2>.
+	Found 6-bit shift register for signal <music_play/q6_7>.
+	Found 20-bit shift register for signal <music_play/q11_3>.
+	Found 4-bit shift register for signal <music_play/q11_1>.
+	Found 6-bit shift register for signal <music_play/q13_2>.
+	Found 4-bit shift register for signal <music_play/q15_1>.
+	Found 20-bit shift register for signal <music_play/q22_9>.
+	Found 8-bit shift register for signal <music_play/q23_2>.
+	Found 6-bit shift register for signal <music_play/q27_7>.
+	Found 13-bit shift register for signal <music_play/q32_3>.
+	Found 4-bit shift register for signal <music_play/q32_1>.
+	Found 6-bit shift register for signal <music_play/q34_2>.
+	Found 4-bit shift register for signal <music_play/q36_1>.
+	Found 4-bit shift register for signal <music_play/q41_2>.
+	Found 5-bit shift register for signal <music_play/q42_0>.
+	Found 23-bit shift register for signal <music_play/q43_9>.
+	Found 12-bit shift register for signal <music_play/q46_3>.
+	Found 8-bit shift register for signal <music_play/q46_2>.
+	Found 6-bit shift register for signal <music_play/q49_7>.
+	Found 4-bit shift register for signal <music_play/q56_0>.
+	Found 7-bit shift register for signal <music_play/q59_7>.
+	Found 18-bit shift register for signal <music_play/q59_3>.
+	Found 8-bit shift register for signal <music_play/q59_2>.
+	Found 69-bit shift register for signal <music_play/q64_6>.
+	Found 21-bit shift register for signal <music_play/q67_9>.
+	Found 4-bit shift register for signal <music_play/q67_7>.
+	Found 4-bit shift register for signal <music_play/q71_0>.
+	Found 5-bit shift register for signal <music_play/q74_7>.
+	Found 42-bit shift register for signal <music_play/q78_3>.
+	Found 4-bit shift register for signal <music_play/q78_1>.
+	Found 6-bit shift register for signal <music_play/q80_2>.
+	Found 4-bit shift register for signal <music_play/q82_1>.
+	Found 44-bit shift register for signal <music_play/q89_9>.
+	Found 4-bit shift register for signal <music_play/q91_7>.
+	Found 10-bit shift register for signal <music_play/q91_2>.
+	Found 5-bit shift register for signal <music_play/q91_1>.
+	Found 4-bit shift register for signal <music_play/q95_7>.
+	Found 4-bit shift register for signal <music_play/q102_7>.
+	Found 10-bit shift register for signal <music_play/q102_2>.
+	Found 5-bit shift register for signal <music_play/q102_1>.
+	Found 4-bit shift register for signal <music_play/q106_7>.
+	Found 4-bit shift register for signal <music_play/q110_7>.
+	Found 4-bit shift register for signal <music_play/q114_0>.
+	Found 5-bit shift register for signal <music_play/q117_7>.
+	Found 12-bit shift register for signal <music_play/q121_3>.
+	Found 4-bit shift register for signal <music_play/q121_1>.
+	Found 4-bit shift register for signal <music_play/q123_2>.
+	Found 5-bit shift register for signal <music_play/q128_1>.
+	Found 62-bit shift register for signal <music_play/q0_6>.
+	Found 10-bit shift register for signal <music_play/q0_3>.
+Unit <autoplay_music> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 408
+ Flip-Flops                                            : 408
+# Shift Registers                                      : 51
+ 10-bit shift register                                 : 3
+ 12-bit shift register                                 : 2
+ 13-bit shift register                                 : 1
+ 18-bit shift register                                 : 1
+ 20-bit shift register                                 : 3
+ 21-bit shift register                                 : 1
+ 23-bit shift register                                 : 1
+ 4-bit shift register                                  : 18
+ 42-bit shift register                                 : 1
+ 44-bit shift register                                 : 1
+ 5-bit shift register                                  : 6
+ 6-bit shift register                                  : 6
+ 62-bit shift register                                 : 1
+ 69-bit shift register                                 : 1
+ 7-bit shift register                                  : 1
+ 8-bit shift register                                  : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : autoplay_music.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 266
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 19
+#      LUT2                        : 76
+#      LUT3                        : 14
+#      LUT4                        : 34
+#      LUT5                        : 3
+#      LUT6                        : 28
+#      MUXCY                       : 46
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 604
+#      FD                          : 4
+#      FDC                         : 230
+#      FDCE                        : 73
+#      FDE                         : 8
+#      FDP                         : 174
+#      FDPE                        : 89
+#      LD                          : 26
+# Shift Registers                  : 56
+#      SRLC16E                     : 41
+#      SRLC32E                     : 15
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 26
+#      IBUF                        : 2
+#      OBUF                        : 24
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             604  out of  18224     3%  
+ Number of Slice LUTs:                  234  out of   9112     2%  
+    Number used as Logic:               178  out of   9112     1%  
+    Number used as Memory:               56  out of   2176     2%  
+       Number used as SRL:               56
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    690
+   Number with an unused Flip Flop:      86  out of    690    12%  
+   Number with an unused LUT:           456  out of    690    66%  
+   Number of fully used LUT-FF pairs:   148  out of    690    21%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------+-----------------------------------+-------+
+Clock Signal                                                   | Clock buffer(FF name)             | Load  |
+---------------------------------------------------------------+-----------------------------------+-------+
+clk                                                            | IBUF+BUFG                         | 49    |
+note_controllor/carry                                          | BUFG                              | 574   |
+freqency_divider/cnt_h_2                                       | NONE(note_controllor/value_5)     | 11    |
+note_controllor/Mram__n011026(note_controllor/Mram__n0110261:O)| BUFG(*)(note_controllor/letter2_1)| 26    |
+---------------------------------------------------------------+-----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.597ns (Maximum Frequency: 217.552MHz)
+   Minimum input arrival time before clock: 4.704ns
+   Maximum output required time after clock: 6.713ns
+   Maximum combinational path delay: 4.372ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.918ns (frequency: 255.213MHz)
+  Total number of paths / destination ports: 5077 / 49
+-------------------------------------------------------------------------
+Delay:               3.918ns (Levels of Logic = 29)
+  Source:            buzzer_controllor/clk_cnt_2 (FF)
+  Destination:       buzzer_controllor/clk_cnt_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: buzzer_controllor/clk_cnt_2 to buzzer_controllor/clk_cnt_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.845  buzzer_controllor/clk_cnt_2 (buzzer_controllor/clk_cnt_2)
+     LUT6:I3->O            1   0.205   0.000  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_lut<0> (buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<0> (buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<1> (buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<2> (buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<3> (buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<4> (buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<5> (buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<5>)
+     MUXCY:CI->O          22   0.019   1.134  buzzer_controllor/Mcompar_clk_cnt[19]_note_div[19]_equal_2_o_cy<6> (buzzer_controllor/clk_cnt[19]_note_div[19]_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  buzzer_controllor/Mcount_clk_cnt_lut<0> (buzzer_controllor/Mcount_clk_cnt_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  buzzer_controllor/Mcount_clk_cnt_cy<0> (buzzer_controllor/Mcount_clk_cnt_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<1> (buzzer_controllor/Mcount_clk_cnt_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<2> (buzzer_controllor/Mcount_clk_cnt_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<3> (buzzer_controllor/Mcount_clk_cnt_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<4> (buzzer_controllor/Mcount_clk_cnt_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<5> (buzzer_controllor/Mcount_clk_cnt_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<6> (buzzer_controllor/Mcount_clk_cnt_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<7> (buzzer_controllor/Mcount_clk_cnt_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<8> (buzzer_controllor/Mcount_clk_cnt_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<9> (buzzer_controllor/Mcount_clk_cnt_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<10> (buzzer_controllor/Mcount_clk_cnt_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<11> (buzzer_controllor/Mcount_clk_cnt_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<12> (buzzer_controllor/Mcount_clk_cnt_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<13> (buzzer_controllor/Mcount_clk_cnt_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<14> (buzzer_controllor/Mcount_clk_cnt_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<15> (buzzer_controllor/Mcount_clk_cnt_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<16> (buzzer_controllor/Mcount_clk_cnt_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<17> (buzzer_controllor/Mcount_clk_cnt_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  buzzer_controllor/Mcount_clk_cnt_cy<18> (buzzer_controllor/Mcount_clk_cnt_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  buzzer_controllor/Mcount_clk_cnt_xor<19> (buzzer_controllor/Mcount_clk_cnt19)
+     FDC:D                     0.102          buzzer_controllor/clk_cnt_19
+    ----------------------------------------
+    Total                      3.918ns (1.939ns logic, 1.979ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'note_controllor/carry'
+  Clock period: 2.302ns (frequency: 434.433MHz)
+  Total number of paths / destination ports: 608 / 566
+-------------------------------------------------------------------------
+Delay:               2.302ns (Levels of Logic = 1)
+  Source:            music_play/Mshreg_q102_7 (FF)
+  Destination:       music_play/q102_7 (FF)
+  Source Clock:      note_controllor/carry rising
+  Destination Clock: note_controllor/carry rising
+
+  Data Path: music_play/Mshreg_q102_7 to music_play/q102_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.313   0.684  music_play/Mshreg_q102_7 (music_play/Mshreg_q102_7)
+     LUT2:I0->O            1   0.203   0.000  music_play/Mshreg_q102_71 (music_play/Mshreg_q102_71)
+     FDCE:D                    0.102          music_play/q102_7
+    ----------------------------------------
+    Total                      2.302ns (1.618ns logic, 0.684ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'freqency_divider/cnt_h_2'
+  Clock period: 4.597ns (frequency: 217.552MHz)
+  Total number of paths / destination ports: 139 / 11
+-------------------------------------------------------------------------
+Delay:               4.597ns (Levels of Logic = 4)
+  Source:            note_controllor/value_5 (FF)
+  Destination:       note_controllor/note_3 (FF)
+  Source Clock:      freqency_divider/cnt_h_2 rising
+  Destination Clock: freqency_divider/cnt_h_2 rising
+
+  Data Path: note_controllor/value_5 to note_controllor/note_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.879  note_controllor/value_5 (note_controllor/value_5)
+     LUT4:I1->O            2   0.205   0.617  note_controllor/value[5]_q[9]_equal_2_o6_SW0 (N4)
+     LUT6:I5->O            8   0.205   0.803  note_controllor/value[5]_q[9]_equal_2_o6 (note_controllor/value[5]_q[9]_equal_2_o)
+     LUT3:I2->O            4   0.205   0.931  note_controllor/_n00902 (note_controllor/_n0090)
+     LUT4:I0->O            1   0.203   0.000  note_controllor/note_3_rstpot (note_controllor/note_3_rstpot)
+     FD:D                      0.102          note_controllor/note_3
+    ----------------------------------------
+    Total                      4.597ns (1.367ns logic, 3.230ns route)
+                                       (29.7% logic, 70.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 49 / 49
+-------------------------------------------------------------------------
+Offset:              4.704ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       buzzer_controllor/clk_cnt_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to buzzer_controllor/clk_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            566   0.206   2.103  buzzer_controllor/rst_n_inv1_INV_0 (buzzer_controllor/rst_n_inv)
+     FDC:CLR                   0.430          buzzer_controllor/clk_cnt_0
+    ----------------------------------------
+    Total                      4.704ns (1.858ns logic, 2.846ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'note_controllor/carry'
+  Total number of paths / destination ports: 510 / 510
+-------------------------------------------------------------------------
+Offset:              4.704ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       music_play/q1_7 (FF)
+  Destination Clock: note_controllor/carry rising
+
+  Data Path: rst_n to music_play/q1_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            566   0.206   2.103  buzzer_controllor/rst_n_inv1_INV_0 (buzzer_controllor/rst_n_inv)
+     FDC:CLR                   0.430          music_play/q0_0
+    ----------------------------------------
+    Total                      4.704ns (1.858ns logic, 2.846ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'freqency_divider/cnt_h_2'
+  Total number of paths / destination ports: 15 / 11
+-------------------------------------------------------------------------
+Offset:              4.704ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       note_controllor/value_5 (FF)
+  Destination Clock: freqency_divider/cnt_h_2 rising
+
+  Data Path: rst_n to note_controllor/value_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            566   0.206   2.103  buzzer_controllor/rst_n_inv1_INV_0 (buzzer_controllor/rst_n_inv)
+     FDC:CLR                   0.430          note_controllor/carry
+    ----------------------------------------
+    Total                      4.704ns (1.858ns logic, 2.846ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 83 / 20
+-------------------------------------------------------------------------
+Offset:              6.713ns (Levels of Logic = 3)
+  Source:            freqency_divider/clk_ctl_0 (FF)
+  Destination:       display<14> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: freqency_divider/clk_ctl_0 to display<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             22   0.447   1.362  freqency_divider/clk_ctl_0 (freqency_divider/clk_ctl_0)
+     LUT3:I0->O           15   0.205   1.346  scan_controllor/Mmux_bcd_out51 (letter<4>)
+     LUT6:I0->O            1   0.203   0.579  decoder/Mmux_ssd_out141 (display_8_OBUF)
+     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
+    ----------------------------------------
+    Total                      6.713ns (3.426ns logic, 3.287ns route)
+                                       (51.0% logic, 49.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'note_controllor/Mram__n011026'
+  Total number of paths / destination ports: 135 / 15
+-------------------------------------------------------------------------
+Offset:              6.084ns (Levels of Logic = 3)
+  Source:            note_controllor/letter2_3 (LATCH)
+  Destination:       display<14> (PAD)
+  Source Clock:      note_controllor/Mram__n011026 falling
+
+  Data Path: note_controllor/letter2_3 to display<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.684  note_controllor/letter2_3 (note_controllor/letter2_3)
+     LUT3:I1->O           15   0.203   1.346  scan_controllor/Mmux_bcd_out41 (letter<3>)
+     LUT6:I0->O            1   0.203   0.579  decoder/Mmux_ssd_out31 (display_11_OBUF)
+     OBUF:I->O                 2.571          display_11_OBUF (display<11>)
+    ----------------------------------------
+    Total                      6.084ns (3.475ns logic, 2.609ns route)
+                                       (57.1% logic, 42.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.372ns (Levels of Logic = 2)
+  Source:            clk (PAD)
+  Destination:       audio_sysclk (PAD)
+
+  Data Path: clk to audio_sysclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  clk_IBUF (clk_IBUF)
+     OBUF:I->O                 2.571          audio_sysclk_OBUF (audio_sysclk)
+    ----------------------------------------
+    Total                      4.372ns (3.793ns logic, 0.579ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk                          |    3.918|         |         |         |
+note_controllor/Mram__n011026|         |    4.066|         |         |
+-----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock freqency_divider/cnt_h_2
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+freqency_divider/cnt_h_2|    4.597|         |         |         |
+note_controllor/carry   |    4.614|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock note_controllor/Mram__n011026
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+freqency_divider/cnt_h_2|         |         |    2.184|         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock note_controllor/carry
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+note_controllor/carry|    2.302|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.09 secs
+ 
+--> 
+
+Total memory usage is 259936 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  436 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

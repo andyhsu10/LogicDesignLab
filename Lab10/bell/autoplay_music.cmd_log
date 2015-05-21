@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc autoplay_music.ucf -p xc6slx16-csg324-3 autoplay_music.ngc autoplay_music.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o autoplay_music_map.ncd autoplay_music.ngd autoplay_music.pcf 
+par -w -intstyle ise -ol high -mt off autoplay_music_map.ncd autoplay_music.ncd autoplay_music.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml autoplay_music.twx autoplay_music.ncd -o autoplay_music.twr autoplay_music.pcf -ucf autoplay_music.ucf 
+bitgen -intstyle ise -f autoplay_music.ut autoplay_music.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc autoplay_music.ucf -p xc6slx16-csg324-3 autoplay_music.ngc autoplay_music.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o autoplay_music_map.ncd autoplay_music.ngd autoplay_music.pcf 
+par -w -intstyle ise -ol high -mt off autoplay_music_map.ncd autoplay_music.ncd autoplay_music.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml autoplay_music.twx autoplay_music.ncd -o autoplay_music.twr autoplay_music.pcf -ucf autoplay_music.ucf 
+bitgen -intstyle ise -f autoplay_music.ut autoplay_music.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc autoplay_music.ucf -p xc6slx16-csg324-3 autoplay_music.ngc autoplay_music.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o autoplay_music_map.ncd autoplay_music.ngd autoplay_music.pcf 
+par -w -intstyle ise -ol high -mt off autoplay_music_map.ncd autoplay_music.ncd autoplay_music.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml autoplay_music.twx autoplay_music.ncd -o autoplay_music.twr autoplay_music.pcf -ucf autoplay_music.ucf 
+bitgen -intstyle ise -f autoplay_music.ut autoplay_music.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/bell/autoplay_music.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc autoplay_music.ucf -p xc6slx16-csg324-3 autoplay_music.ngc autoplay_music.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o autoplay_music_map.ncd autoplay_music.ngd autoplay_music.pcf 
+par -w -intstyle ise -ol high -mt off autoplay_music_map.ncd autoplay_music.ncd autoplay_music.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml autoplay_music.twx autoplay_music.ncd -o autoplay_music.twr autoplay_music.pcf -ucf autoplay_music.ucf 
+bitgen -intstyle ise -f autoplay_music.ut autoplay_music.ncd 
