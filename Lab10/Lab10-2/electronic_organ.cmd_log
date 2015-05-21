@@ -1,0 +1,97 @@
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.xst" -ofn "D:/GitHub/LogicDesignLab/Lab10/Lab10-2/electronic_organ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc electronic_organ.ucf -p xc6slx16-csg324-3 electronic_organ.ngc electronic_organ.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o electronic_organ_map.ncd electronic_organ.ngd electronic_organ.pcf 
+par -w -intstyle ise -ol high -mt off electronic_organ_map.ncd electronic_organ.ncd electronic_organ.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf 
+bitgen -intstyle ise -f electronic_organ.ut electronic_organ.ncd 

@@ -27,9 +27,6 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab9/Lab9-2/freq_div.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab9/Lab9-2/global.v&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab9/Lab9-2/one_pulse.v&quot; into library work</arg>
 </msg>
 
