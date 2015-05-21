@@ -1,0 +1,5 @@
+verilog work "speaker_ctl.v"
+verilog work "buzzer_ctl.v"
+verilog work "speaker.v"
+verilog work "test_speaker.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/GitHub/LogicDesignLab/Lab9/Lab9-1/test_speaker_isim_beh.exe" -prj "D:/GitHub/LogicDesignLab/Lab9/Lab9-1/test_speaker_beh.prj" "work.test_speaker" "work.glbl" 

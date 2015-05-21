@@ -1,0 +1,3 @@
+verilog work "speaker_ctl.v"
+verilog work "buzzer_ctl.v"
+verilog work "speaker.v"

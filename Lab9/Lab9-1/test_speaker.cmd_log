@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab9/Lab9-1/test_speaker.xst" -ofn "D:/GitHub/LogicDesignLab/Lab9/Lab9-1/test_speaker.syr" 

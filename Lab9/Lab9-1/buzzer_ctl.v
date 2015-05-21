@@ -19,11 +19,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module buzzer_ctl(
-	clk, //clock from crystal
-	rst_n, //active low reset
-	note_div, //div for note generation
-	audio_left, //left sound audio
-	audio_right //right sound audio
+	clk, //clock from crystal (I)
+	rst_n, //active low reset (I)
+	note_div, //div for note generation (I)
+	audio_left, //left sound audio (O)
+	audio_right //right sound audio (O)
 );
 
 //I/Os

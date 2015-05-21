@@ -1,0 +1,11 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = R10;
+NET "rst_n" LOC = T2;
+
+NET "audio_appsel" LOC = H18;
+NET "audio_sysclk" LOC = H17;
+NET "audio_bck" LOC = K16;
+NET "audio_ws" LOC = L15;
+NET "audio_data" LOC = L16;

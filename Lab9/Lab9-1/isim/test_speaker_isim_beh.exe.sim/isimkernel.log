@@ -1,0 +1,29 @@
+Command line:
+   test_speaker_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65176
+
+Wed May 20 19:46:03 2015
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 666.665 Meg
+
+ Total Signals          : 38
+ Total Nets             : 72
+ Total Signal Drivers   : 15
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 23
+ Total Traceable Variables  : 30
+ Total Scalar Nets and Variables : 213
+Total Line Count : 81
+
+ Total Simulation Time: 3.66602 sec
+
+ Current Memory Usage: 666.665 Meg
+
+Wed May 20 19:50:28 2015
+
