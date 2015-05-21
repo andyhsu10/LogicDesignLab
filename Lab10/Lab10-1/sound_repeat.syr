@@ -1,0 +1,590 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: sound_repeat.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sound_repeat.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sound_repeat"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : sound_repeat
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\LogicDesignLab\Lab10\Lab10-1\speaker_ctl.v" into library work
+Parsing module <speaker_ctl>.
+Analyzing Verilog file "F:\LogicDesignLab\Lab10\Lab10-1\note_decide.v" into library work
+Parsing verilog file "global.v" included at line 12.
+Parsing module <note_decide>.
+Analyzing Verilog file "F:\LogicDesignLab\Lab10\Lab10-1\clock_generator.v" into library work
+Parsing verilog file "global.v" included at line 21.
+Parsing module <clock_generator>.
+Analyzing Verilog file "F:\LogicDesignLab\Lab10\Lab10-1\buzzer_ctl.v" into library work
+Parsing module <buzzer_ctl>.
+Analyzing Verilog file "F:\LogicDesignLab\Lab10\Lab10-1\sound_repeat.v" into library work
+Parsing verilog file "global.v" included at line 12.
+Parsing module <sound_repeat>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "F:\LogicDesignLab\Lab10\Lab10-1\sound_repeat.v" Line 37: Port clk_100 is not connected to this instance
+
+Elaborating module <sound_repeat>.
+
+Elaborating module <clock_generator>.
+
+Elaborating module <note_decide>.
+
+Elaborating module <buzzer_ctl>.
+
+Elaborating module <speaker_ctl>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sound_repeat>.
+    Related source file is "F:\LogicDesignLab\Lab10\Lab10-1\sound_repeat.v".
+INFO:Xst:3210 - "F:\LogicDesignLab\Lab10\Lab10-1\sound_repeat.v" line 37: Output port <clk_100> of the instance <clk_generate> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sound_repeat> synthesized.
+
+Synthesizing Unit <clock_generator>.
+    Related source file is "F:\LogicDesignLab\Lab10\Lab10-1\clock_generator.v".
+    Found 18-bit register for signal <count_200K>.
+    Found 25-bit register for signal <count_20M>.
+    Found 1-bit register for signal <clk_1>.
+    Found 1-bit register for signal <clk_100>.
+    Found 25-bit adder for signal <count_20M[24]_GND_2_o_add_1_OUT> created at line 55.
+    Found 18-bit adder for signal <count_200K[17]_GND_2_o_add_5_OUT> created at line 84.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <clock_generator> synthesized.
+
+Synthesizing Unit <note_decide>.
+    Related source file is "F:\LogicDesignLab\Lab10\Lab10-1\note_decide.v".
+    Found 4-bit register for signal <value>.
+    Found 4-bit adder for signal <value_tmp> created at line 31.
+    Found 16x20-bit Read Only RAM for signal <note_div>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <note_decide> synthesized.
+
+Synthesizing Unit <buzzer_ctl>.
+    Related source file is "F:\LogicDesignLab\Lab10\Lab10-1\buzzer_ctl.v".
+    Found 20-bit register for signal <clk_cnt>.
+    Found 1-bit register for signal <b_clk>.
+    Found 20-bit adder for signal <clk_cnt[19]_GND_4_o_add_2_OUT> created at line 52.
+    Found 20-bit comparator equal for signal <clk_cnt[19]_note_div[19]_equal_2_o> created at line 45
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <buzzer_ctl> synthesized.
+
+Synthesizing Unit <speaker_ctl>.
+    Related source file is "F:\LogicDesignLab\Lab10\Lab10-1\speaker_ctl.v".
+    Found 4-bit register for signal <audio_cnt_h>.
+    Found 2-bit register for signal <audio_cnt_l>.
+    Found 1-bit register for signal <audio_bck>.
+    Found 1-bit register for signal <audio_ws>.
+    Found 8-bit adder for signal <audio_cnt> created at line 53.
+    Found 1-bit 32-to-1 multiplexer for signal <audio_data> created at line 62.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <speaker_ctl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x20-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 5
+ 18-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 5
+ 18-bit register                                       : 1
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 25-bit register                                       : 1
+ 4-bit register                                        : 2
+# Comparators                                          : 1
+ 20-bit comparator equal                               : 1
+# Multiplexers                                         : 4
+ 1-bit 32-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <buzzer_ctl>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+Unit <buzzer_ctl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_generator>.
+The following registers are absorbed into counter <count_200K>: 1 register on signal <count_200K>.
+The following registers are absorbed into counter <count_20M>: 1 register on signal <count_20M>.
+Unit <clock_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <note_decide>.
+The following registers are absorbed into counter <value>: 1 register on signal <value>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_note_div> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 20-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <value>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <note_div>      |          |
+    -----------------------------------------------------------------------
+Unit <note_decide> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x20-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 4
+ 18-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Comparators                                          : 1
+ 20-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 1-bit 32-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sound_repeat> ...
+
+Optimizing unit <clock_generator> ...
+
+Optimizing unit <speaker_ctl> ...
+WARNING:Xst:2677 - Node <clk_generate/count_200K_17> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_16> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_15> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_14> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_13> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_12> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_11> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_10> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_9> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_8> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_7> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_6> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_5> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_4> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_3> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_2> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_1> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/count_200K_0> of sequential type is unconnected in block <sound_repeat>.
+WARNING:Xst:2677 - Node <clk_generate/clk_100> of sequential type is unconnected in block <sound_repeat>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sound_repeat, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sound_repeat.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 215
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 24
+#      LUT2                        : 50
+#      LUT3                        : 3
+#      LUT4                        : 19
+#      LUT5                        : 3
+#      LUT6                        : 13
+#      MUXCY                       : 51
+#      VCC                         : 1
+#      XORCY                       : 45
+# FlipFlops/Latches                : 59
+#      FDC                         : 59
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 7
+#      IBUF                        : 2
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              59  out of  18224     0%  
+ Number of Slice LUTs:                  117  out of   9112     1%  
+    Number used as Logic:               117  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    118
+   Number with an unused Flip Flop:      59  out of    118    50%  
+   Number with an unused LUT:             1  out of    118     0%  
+   Number of fully used LUT-FF pairs:    58  out of    118    49%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    232     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)      | Load  |
+-----------------------------------+----------------------------+-------+
+clk                                | IBUF+BUFG                  | 55    |
+clk_generate/clk_1                 | NONE(note_decision/value_0)| 4     |
+-----------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.947ns (Maximum Frequency: 253.383MHz)
+   Minimum input arrival time before clock: 4.043ns
+   Maximum output required time after clock: 4.745ns
+   Maximum combinational path delay: 4.372ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.947ns (frequency: 253.383MHz)
+  Total number of paths / destination ports: 5843 / 55
+-------------------------------------------------------------------------
+Delay:               3.947ns (Levels of Logic = 3)
+  Source:            clk_generate/count_20M_17 (FF)
+  Destination:       clk_generate/count_20M_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_generate/count_20M_17 to clk_generate/count_20M_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.981  clk_generate/count_20M_17 (clk_generate/count_20M_17)
+     LUT6:I0->O            2   0.203   0.845  clk_generate/GND_2_o_GND_2_o_equal_1_o<24>4 (clk_generate/GND_2_o_GND_2_o_equal_1_o<24>3)
+     LUT6:I3->O           14   0.205   0.958  clk_generate/GND_2_o_GND_2_o_equal_1_o<24>5 (clk_generate/GND_2_o_GND_2_o_equal_1_o)
+     LUT2:I1->O            1   0.205   0.000  clk_generate/Mcount_count_20M_eqn_241 (clk_generate/Mcount_count_20M_eqn_24)
+     FDC:D                     0.102          clk_generate/count_20M_24
+    ----------------------------------------
+    Total                      3.947ns (1.162ns logic, 2.785ns route)
+                                       (29.4% logic, 70.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_generate/clk_1'
+  Clock period: 2.426ns (frequency: 412.184MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               2.426ns (Levels of Logic = 1)
+  Source:            note_decision/value_0 (FF)
+  Destination:       note_decision/value_0 (FF)
+  Source Clock:      clk_generate/clk_1 rising
+  Destination Clock: clk_generate/clk_1 rising
+
+  Data Path: note_decision/value_0 to note_decision/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.447   1.092  note_decision/value_0 (note_decision/value_0)
+     INV:I->O              1   0.206   0.579  note_decision/Mcount_value_xor<0>11_INV_0 (Result<0>)
+     FDC:D                     0.102          note_decision/value_0
+    ----------------------------------------
+    Total                      2.426ns (0.755ns logic, 1.671ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 55 / 55
+-------------------------------------------------------------------------
+Offset:              4.043ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       buzzer_controllor/clk_cnt_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to buzzer_controllor/clk_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             59   0.206   1.606  buzzer_controllor/rst_n_inv1_INV_0 (buzzer_controllor/rst_n_inv)
+     FDC:CLR                   0.430          buzzer_controllor/clk_cnt_0
+    ----------------------------------------
+    Total                      4.043ns (1.858ns logic, 2.185ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_generate/clk_1'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.043ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       note_decision/value_0 (FF)
+  Destination Clock: clk_generate/clk_1 rising
+
+  Data Path: rst_n to note_decision/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             59   0.206   1.606  buzzer_controllor/rst_n_inv1_INV_0 (buzzer_controllor/rst_n_inv)
+     FDC:CLR                   0.430          note_decision/value_0
+    ----------------------------------------
+    Total                      4.043ns (1.858ns logic, 2.185ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              4.745ns (Levels of Logic = 2)
+  Source:            speaker_controllor/audio_cnt_h_1 (FF)
+  Destination:       audio_data (PAD)
+  Source Clock:      clk rising
+
+  Data Path: speaker_controllor/audio_cnt_h_1 to audio_data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.943  speaker_controllor/audio_cnt_h_1 (speaker_controllor/audio_cnt_h_1)
+     LUT4:I1->O            1   0.205   0.579  speaker_controllor/Mmux_audio_data11 (audio_data_OBUF)
+     OBUF:I->O                 2.571          audio_data_OBUF (audio_data)
+    ----------------------------------------
+    Total                      4.745ns (3.223ns logic, 1.522ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.372ns (Levels of Logic = 2)
+  Source:            clk (PAD)
+  Destination:       audio_sysclk (PAD)
+
+  Data Path: clk to audio_sysclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  clk_IBUF (clk_IBUF)
+     OBUF:I->O                 2.571          audio_sysclk_OBUF (audio_sysclk)
+    ----------------------------------------
+    Total                      4.372ns (3.793ns logic, 0.579ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |    3.947|         |         |         |
+clk_generate/clk_1|    5.558|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_generate/clk_1
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk_generate/clk_1|    2.426|         |         |         |
+------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.05 secs
+ 
+--> 
+
+Total memory usage is 184264 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,5 @@
+verilog work "speaker_ctl.v"
+verilog work "note_decide.v"
+verilog work "clock_generator.v"
+verilog work "buzzer_ctl.v"
+verilog work "sound_repeat.v"

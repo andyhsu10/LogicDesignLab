@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\LogicDesignLab\Lab10\Lab10-1\sound_repeat.ncd
+OUTFILE=F:\LogicDesignLab\Lab10\Lab10-1\sound_repeat.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=F:\LogicDesignLab\Lab10\Lab10-1
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

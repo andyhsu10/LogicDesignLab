@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "F:/LogicDesignLab/Lab10/Lab10-1/sound_repeat.xst" -ofn "F:/LogicDesignLab/Lab10/Lab10-1/sound_repeat.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sound_repeat.ucf -p xc6slx16-csg324-3 sound_repeat.ngc sound_repeat.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sound_repeat_map.ncd sound_repeat.ngd sound_repeat.pcf 
+par -w -intstyle ise -ol high -mt off sound_repeat_map.ncd sound_repeat.ncd sound_repeat.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sound_repeat.twx sound_repeat.ncd -o sound_repeat.twr sound_repeat.pcf -ucf sound_repeat.ucf 
+bitgen -intstyle ise -f sound_repeat.ut sound_repeat.ncd 
