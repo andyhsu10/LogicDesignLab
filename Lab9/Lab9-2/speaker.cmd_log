@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab9/Lab9-2/speaker.xst" -ofn "D:/GitHub/LogicDesignLab/Lab9/Lab9-2/speaker.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc speaker.ucf -p xc6slx16-csg324-3 speaker.ngc speaker.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o speaker_map.ncd speaker.ngd speaker.pcf 
+par -w -intstyle ise -ol high -mt off speaker_map.ncd speaker.ncd speaker.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml speaker.twx speaker.ncd -o speaker.twr speaker.pcf -ucf speaker.ucf 
+bitgen -intstyle ise -f speaker.ut speaker.ncd 
