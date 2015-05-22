@@ -211,12 +211,12 @@ LAB4:    xsi_set_current_line(53, ng0);
     t14 = (t0 + 2408);
     t15 = (t14 + 56U);
     t16 = *((char **)t15);
-    xsi_vlogtype_concat(t4, 9, 9, 4U, t16, 1, t13, 5, t10, 1, t7, 2);
+    xsi_vlogtype_concat(t4, 8, 8, 4U, t16, 1, t13, 4, t10, 1, t7, 2);
     t17 = ((char*)((ng1)));
     memset(t18, 0, 8);
-    xsi_vlog_unsigned_add(t18, 9, t4, 9, t17, 9);
+    xsi_vlog_unsigned_add(t18, 8, t4, 8, t17, 8);
     t19 = (t0 + 3048);
-    xsi_vlogvar_assign_value(t19, t18, 0, 0, 9);
+    xsi_vlogvar_assign_value(t19, t18, 0, 0, 8);
     goto LAB2;
 
 }
@@ -323,9 +323,9 @@ LAB12:    xsi_set_current_line(57, ng0);
     t12 = (t0 + 2248);
     xsi_vlogvar_wait_assign_value(t12, t5, 2, 0, 1, 0LL);
     t13 = (t0 + 2888);
-    xsi_vlogvar_wait_assign_value(t13, t5, 3, 0, 5, 0LL);
+    xsi_vlogvar_wait_assign_value(t13, t5, 3, 0, 4, 0LL);
     t14 = (t0 + 2408);
-    xsi_vlogvar_wait_assign_value(t14, t5, 8, 0, 1, 0LL);
+    xsi_vlogvar_wait_assign_value(t14, t5, 7, 0, 1, 0LL);
 
 LAB13:    goto LAB2;
 
@@ -347,9 +347,9 @@ LAB11:    xsi_set_current_line(56, ng0);
     t31 = (t0 + 2248);
     xsi_vlogvar_wait_assign_value(t31, t29, 2, 0, 1, 0LL);
     t32 = (t0 + 2888);
-    xsi_vlogvar_wait_assign_value(t32, t29, 3, 0, 5, 0LL);
+    xsi_vlogvar_wait_assign_value(t32, t29, 3, 0, 4, 0LL);
     t33 = (t0 + 2408);
-    xsi_vlogvar_wait_assign_value(t33, t29, 8, 0, 1, 0LL);
+    xsi_vlogvar_wait_assign_value(t33, t29, 7, 0, 1, 0LL);
     goto LAB13;
 
 }
@@ -402,165 +402,165 @@ LAB4:    xsi_set_current_line(62, ng0);
     t8 = (t0 + 2408);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
-    xsi_vlogtype_concat(t4, 6, 6, 2U, t10, 1, t7, 5);
+    xsi_vlogtype_concat(t4, 5, 5, 2U, t10, 1, t7, 4);
 
 LAB5:    t11 = ((char*)((ng2)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t11, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t11, 5);
     if (t12 == 1)
         goto LAB6;
 
 LAB7:    t2 = ((char*)((ng1)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB8;
 
 LAB9:    t2 = ((char*)((ng3)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB10;
 
 LAB11:    t2 = ((char*)((ng4)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB12;
 
 LAB13:    t2 = ((char*)((ng5)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB14;
 
 LAB15:    t2 = ((char*)((ng6)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB16;
 
 LAB17:    t2 = ((char*)((ng7)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB18;
 
 LAB19:    t2 = ((char*)((ng8)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB20;
 
 LAB21:    t2 = ((char*)((ng9)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB22;
 
 LAB23:    t2 = ((char*)((ng10)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB24;
 
 LAB25:    t2 = ((char*)((ng11)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB26;
 
 LAB27:    t2 = ((char*)((ng12)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB28;
 
 LAB29:    t2 = ((char*)((ng13)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB30;
 
 LAB31:    t2 = ((char*)((ng14)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB32;
 
 LAB33:    t2 = ((char*)((ng15)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB34;
 
 LAB35:    t2 = ((char*)((ng16)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB36;
 
 LAB37:    t2 = ((char*)((ng17)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB38;
 
 LAB39:    t2 = ((char*)((ng18)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB40;
 
 LAB41:    t2 = ((char*)((ng19)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB42;
 
 LAB43:    t2 = ((char*)((ng20)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB44;
 
 LAB45:    t2 = ((char*)((ng21)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB46;
 
 LAB47:    t2 = ((char*)((ng22)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB48;
 
 LAB49:    t2 = ((char*)((ng23)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB50;
 
 LAB51:    t2 = ((char*)((ng24)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB52;
 
 LAB53:    t2 = ((char*)((ng25)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB54;
 
 LAB55:    t2 = ((char*)((ng26)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB56;
 
 LAB57:    t2 = ((char*)((ng27)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB58;
 
 LAB59:    t2 = ((char*)((ng28)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB60;
 
 LAB61:    t2 = ((char*)((ng29)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB62;
 
 LAB63:    t2 = ((char*)((ng30)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB64;
 
 LAB65:    t2 = ((char*)((ng31)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB66;
 
 LAB67:    t2 = ((char*)((ng32)));
-    t12 = xsi_vlog_unsigned_case_compare(t4, 6, t2, 6);
+    t12 = xsi_vlog_unsigned_case_compare(t4, 5, t2, 5);
     if (t12 == 1)
         goto LAB68;
 
