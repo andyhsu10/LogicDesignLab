@@ -68,7 +68,7 @@
 `define VOL_15 16'h0222
 `define VOL_16 16'h0249
 
-//Notes
+//Decode Notes
 `define NA 20'd0
 
 `define C3 20'd152894
@@ -109,6 +109,61 @@
 `define A5 20'd22727
 `define A5_ 20'd21452
 `define B5 20'd20248
+
+//Encode Notes
+`define ENCODE_NA 6'd0
+
+`define ENCODE_C3 6'd1
+`define ENCODE_C3_ 6'd2
+`define ENCODE_D3 6'd3
+`define ENCODE_D3_ 6'd4
+`define ENCODE_E3 6'd5
+`define ENCODE_F3 6'd6
+`define ENCODE_F3_ 6'd7
+`define ENCODE_G3 6'd8
+`define ENCODE_G3_ 6'd9
+`define ENCODE_A3 6'd10
+`define ENCODE_A3_ 6'd11
+`define ENCODE_B3 6'd12
+
+`define ENCODE_C4 6'd13
+`define ENCODE_C4_ 6'd14
+`define ENCODE_D4 6'd15
+`define ENCODE_D4_ 6'd16
+`define ENCODE_E4 6'd17
+`define ENCODE_F4 6'd18
+`define ENCODE_F4_ 6'd19
+`define ENCODE_G4 6'd20
+`define ENCODE_G4_ 6'd21
+`define ENCODE_A4 6'd22
+`define ENCODE_A4_ 6'd23
+`define ENCODE_B4 6'd24
+
+`define ENCODE_C5 6'd25
+`define ENCODE_C5_ 6'd26
+`define ENCODE_D5 6'd27
+`define ENCODE_D5_ 6'd28
+`define ENCODE_E5 6'd29
+`define ENCODE_F5 6'd30
+`define ENCODE_F5_ 6'd31
+`define ENCODE_G5 6'd32
+`define ENCODE_G5_ 6'd33
+`define ENCODE_A5 6'd34
+`define ENCODE_A5_ 6'd35
+`define ENCODE_B5 6'd36
+
+//Beats
+`define BEAT_0_25 3'd0
+`define BEAT_0_5 3'd1
+`define BEAT_1 3'd2
+`define BEAT_1_5 3'd3
+`define BEAT_2 3'd4
+`define BEAT_3 3'd5
+`define BEAT_4 3'd6
+
+//Ligature
+`define LIG_FALSE 1'd1
+`define LIG_TRUE 1'd1
 
 //14SD Letters
 `define FTSD_A 15'b0001_0000_1111_111 //A 0

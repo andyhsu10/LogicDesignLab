@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-22T04:57:21</DateModified>
+  <DateModified>2015-05-22T15:03:36</DateModified>
   <ModuleName>autoplay_music</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/GitHub/LogicDesignLab/Lab10/bell/iseconfig/autoplay_music.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab10/bell</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab10/bell\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-22T04:57:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
