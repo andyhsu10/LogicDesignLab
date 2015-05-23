@@ -73,6 +73,7 @@ always @(posedge clk or negedge rst_n)
 always @*
 	case(q[8:6])
 		`BEAT_0_25: beat = 6'd3;
+		`BEAT_0_3: beat = 6'd5;
 		`BEAT_0_5: beat = 6'd7;
 		`BEAT_1: beat = 6'd15;
 		`BEAT_1_5: beat = 6'd23;

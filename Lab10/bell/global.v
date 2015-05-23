@@ -154,15 +154,16 @@
 
 //Beats
 `define BEAT_0_25 3'd0
-`define BEAT_0_5 3'd1
-`define BEAT_1 3'd2
-`define BEAT_1_5 3'd3
-`define BEAT_2 3'd4
-`define BEAT_3 3'd5
-`define BEAT_4 3'd6
+`define BEAT_0_3 3'd1
+`define BEAT_0_5 3'd2
+`define BEAT_1 3'd3
+`define BEAT_1_5 3'd4
+`define BEAT_2 3'd5
+`define BEAT_3 3'd6
+`define BEAT_4 3'd7
 
 //Ligature
-`define LIG_FALSE 1'd1
+`define LIG_FALSE 1'd0
 `define LIG_TRUE 1'd1
 
 //14SD Letters
