@@ -12,7 +12,11 @@
 #include <vector>
 #include <fstream>
 #include <cstdlib>
+#include <ctime>
 using namespace std;
+
+#define YEAR_SET 1900
+#define MON_SET 1
 
 int main()
 {
@@ -63,9 +67,40 @@ int main()
         cout << "Fail to create the file!!" << endl;
         exit(-1);
     }
+
+    tm *ptrnow;
+    time_t loc_now=0, std_now=0;
+    time(&loc_now); //seconds from 1970/01/01
+
+    ptrnow = localtime(&loc_now);//get local time
+
     outFile << "`timescale 1ns / 1ps" << endl;
     outFile << "//////////////////////////////////////////////////////////////////////////////////" << endl;
     outFile << "// Engineer: An-Ting Hsu & Hsin-Ho Lu" << endl << "//" << endl;
+    outFile << "// Create Date:    ";
+
+    if((ptrnow -> tm_hour) < 10)
+        outFile << "0" << ptrnow -> tm_hour << ":";
+    else
+        outFile << ptrnow -> tm_hour << ":";
+    if((ptrnow -> tm_min) < 10)
+        outFile << "0" << ptrnow -> tm_min << ":";
+    else
+        outFile << ptrnow -> tm_min << ":";
+    if((ptrnow -> tm_sec) < 10)
+        outFile << "0" << ptrnow -> tm_sec << " ";
+    else
+        outFile << ptrnow -> tm_sec << " ";
+    if((ptrnow -> tm_mon + MON_SET) < 10)
+        outFile << "0" << ptrnow -> tm_mon + MON_SET << "/";
+    else
+        outFile << ptrnow -> tm_mon + MON_SET << "/";
+    if((ptrnow -> tm_mday) < 10)
+        outFile << "0" << ptrnow -> tm_mday << "/";
+    else
+        outFile << ptrnow -> tm_mday << "/";
+    outFile << ptrnow -> tm_year + YEAR_SET << endl;
+
     outFile << "// Module Name:    music" << endl;
     outFile << "// Project Name:   2015 Spring Logic Design Laboratory Final Project" << endl;
     outFile << "// Revision:" << endl << "// Revision 0.01 - File Created" << endl << "//" << endl;
