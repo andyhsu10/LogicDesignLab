@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\GitHub\LogicDesignLab\Lab10\Lab10-2\electronic_organ.ncd
-OUTFILE=D:\GitHub\LogicDesignLab\Lab10\Lab10-2\electronic_organ.bit
+INFILE=D:\Lab10\Lab10-2\electronic_organ.ncd
+OUTFILE=D:\Lab10\Lab10-2\electronic_organ.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=D:\GitHub\LogicDesignLab\Lab10\Lab10-2
+WORKINGDIR=D:\Lab10\Lab10-2
 LICENSE=WebPack
 USER_INFO=210913348_0_0_143

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Lab10\Lab10-3\electronic_organ.ncd
+OUTFILE=D:\Lab10\Lab10-3\electronic_organ.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Lab10\Lab10-3
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (nt)
 Xilinx Mapping Report File for Design 'electronic_organ'
 
 Design Information
@@ -11,7 +11,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri May 22 02:16:38 2015
+Mapped Date    : Thu May 28 16:11:51 2015
 
 Design Summary
 --------------
@@ -83,9 +83,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.02
 
-Peak Memory Usage:  350 MB
-Total REAL time to MAP completion:  6 secs 
-Total CPU time to MAP completion:   6 secs 
+Peak Memory Usage:  257 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   5 secs 
 
 Table of Contents
 -----------------

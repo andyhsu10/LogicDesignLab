@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-22T04:56:42</DateModified>
+  <DateModified>2015-05-28T16:11:24</DateModified>
   <ModuleName>electronic_organ</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/GitHub/LogicDesignLab/Lab10/Lab10-2/iseconfig/electronic_organ.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab10/Lab10-2\</ImplementationReportsDirectory>
-  <DateInitialized>2015-05-21T23:02:40</DateInitialized>
+  <SavedFilePath>D:/Lab10/Lab10-2/iseconfig/electronic_organ.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Lab10/Lab10-2</ImplementationReportsDirectory>
+  <DateInitialized>2015-05-28T16:11:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

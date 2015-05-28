@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml electronic_organ.twx electronic_organ.ncd -o
 electronic_organ.twr electronic_organ.pcf -ucf electronic_organ.ucf
 
 Design file:              electronic_organ.ncd
@@ -98,14 +98,14 @@ rst_n          |display<14>    |    8.301|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri May 22 02:16:59 2015 
+Analysis completed Thu May 28 16:12:11 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 216 MB
+Peak Memory Usage: 149 MB
 
 
 

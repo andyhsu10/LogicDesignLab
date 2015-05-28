@@ -54,7 +54,7 @@ int main()
 		note.push_back(note_tmp);
 
         inFile >> ligature_tmp;
-    }while(ligature_tmp != -1);
+    }while((ligature_tmp == 0) || (ligature_tmp == 1));
 
     inFile.close();
 
