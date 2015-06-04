@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 04 17:17:36 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "lcd_cs<0>" LOCATE = SITE "F4" LEVEL 1;
+COMP "lcd_cs<1>" LOCATE = SITE "E1" LEVEL 1;
+COMP "lcd_e" LOCATE = SITE "F5" LEVEL 1;
+COMP "lcd_rst" LOCATE = SITE "E3" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "N3" LEVEL 1;
+COMP "data_request" LOCATE = SITE "H5" LEVEL 1;
+COMP "data_ack" LOCATE = SITE "H6" LEVEL 1;
+COMP "lcd_d<0>" LOCATE = SITE "F6" LEVEL 1;
+COMP "lcd_d<1>" LOCATE = SITE "D3" LEVEL 1;
+COMP "lcd_d<2>" LOCATE = SITE "E4" LEVEL 1;
+COMP "lcd_d<3>" LOCATE = SITE "G6" LEVEL 1;
+COMP "lcd_d<4>" LOCATE = SITE "H7" LEVEL 1;
+COMP "lcd_d<5>" LOCATE = SITE "D1" LEVEL 1;
+COMP "lcd_d<6>" LOCATE = SITE "D2" LEVEL 1;
+COMP "lcd_d<7>" LOCATE = SITE "F3" LEVEL 1;
+COMP "lcd_di" LOCATE = SITE "C1" LEVEL 1;
+COMP "lcd_rw" LOCATE = SITE "C2" LEVEL 1;
+SCHEMATIC END;
+

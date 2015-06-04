@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/ROM.v"
+verilog work "rom_ctrl.v"
+verilog work "lcd_ctrl.v"
+verilog work "clock_divider.v"
+verilog work "lcd_display1.v"

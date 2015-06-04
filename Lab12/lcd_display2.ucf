@@ -1,0 +1,30 @@
+## pin mapping
+NET "clk"           LOC = "R10";
+NET "rst_n"         LOC = "N3";
+#NET "LED"           LOC = "P4";
+
+## LCD control signals
+NET "LCD_rst"       LOC = "E3";
+NET "LCD_cs[1]"     LOC = "E1";
+NET "LCD_cs[0]"     LOC = "F4";
+NET "LCD_data[7]"   LOC = "F3";
+NET "LCD_data[6]"   LOC = "D2";
+NET "LCD_data[5]"   LOC = "D1";
+NET "LCD_data[4]"   LOC = "H7";
+NET "LCD_data[3]"   LOC = "G6";
+NET "LCD_data[2]"   LOC = "E4";
+NET "LCD_data[1]"   LOC = "D3";
+NET "LCD_data[0]"   LOC = "F6";
+NET "LCD_en"        LOC = "F5";
+NET "LCD_rw"        LOC = "C2";
+NET "LCD_di"        LOC = "C1";
+
+## KeyPad
+NET "col[3]"        LOC = "H1";
+NET "col[2]"        LOC = "H2";
+NET "col[1]"        LOC = "J1";
+NET "col[0]"        LOC = "J3";
+NET "row[3]"        LOC = "L3";
+NET "row[2]"        LOC = "L4";
+NET "row[1]"        LOC = "K1";
+NET "row[0]"        LOC = "K2";

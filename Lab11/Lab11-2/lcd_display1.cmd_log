@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/Lab11/Lab11-2/lcd_display1.xst" -ofn "D:/Lab11/Lab11-2/lcd_display1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_display.ucf -p xc6slx16-csg324-3 lcd_display1.ngc lcd_display1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_display1_map.ncd lcd_display1.ngd lcd_display1.pcf 
+par -w -intstyle ise -ol high -mt off lcd_display1_map.ncd lcd_display1.ncd lcd_display1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display1.twx lcd_display1.ncd -o lcd_display1.twr lcd_display1.pcf -ucf lcd_display.ucf 
+bitgen -intstyle ise -f lcd_display1.ut lcd_display1.ncd 

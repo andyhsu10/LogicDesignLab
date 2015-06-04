@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\Lab11\Lab11-1\impact.xsl
+OUTFILE=D:\Lab11\Lab11-1\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\Lab11\Lab11-1
+LICENSE=iMPACT
+USER_INFO=iMPACT
