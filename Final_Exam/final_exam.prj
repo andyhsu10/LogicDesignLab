@@ -1,0 +1,7 @@
+verilog work "ssd_decoder.v"
+verilog work "shifter.v"
+verilog work "scan_ctl.v"
+verilog work "keypad_scan.v"
+verilog work "freq_div.v"
+verilog work "clock_generator.v"
+verilog work "final_exam.v"

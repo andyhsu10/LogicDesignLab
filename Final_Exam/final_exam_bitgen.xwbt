@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Final_Exam\final_exam.ncd
+OUTFILE=D:\Final_Exam\final_exam.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Final_Exam
+LICENSE=WebPack
+USER_INFO=210913348_0_0_143

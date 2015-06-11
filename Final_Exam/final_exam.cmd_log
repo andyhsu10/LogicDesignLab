@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_exam.ucf -p xc6slx16-csg324-3 final_exam.ngc final_exam.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_exam_map.ncd final_exam.ngd final_exam.pcf 
+par -w -intstyle ise -ol high -mt off final_exam_map.ncd final_exam.ncd final_exam.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_exam.twx final_exam.ncd -o final_exam.twr final_exam.pcf -ucf final_exam.ucf 
+bitgen -intstyle ise -f final_exam.ut final_exam.ncd 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_exam.ucf -p xc6slx16-csg324-3 final_exam.ngc final_exam.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_exam_map.ncd final_exam.ngd final_exam.pcf 
+par -w -intstyle ise -ol high -mt off final_exam_map.ncd final_exam.ncd final_exam.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_exam.twx final_exam.ncd -o final_exam.twr final_exam.pcf -ucf final_exam.ucf 
+bitgen -intstyle ise -f final_exam.ut final_exam.ncd 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_exam.ucf -p xc6slx16-csg324-3 final_exam.ngc final_exam.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_exam_map.ncd final_exam.ngd final_exam.pcf 
+par -w -intstyle ise -ol high -mt off final_exam_map.ncd final_exam.ncd final_exam.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_exam.twx final_exam.ncd -o final_exam.twr final_exam.pcf -ucf final_exam.ucf 
+bitgen -intstyle ise -f final_exam.ut final_exam.ncd 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_exam.ucf -p xc6slx16-csg324-3 final_exam.ngc final_exam.ngd  
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_exam.ucf -p xc6slx16-csg324-3 final_exam.ngc final_exam.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_exam_map.ncd final_exam.ngd final_exam.pcf 
+par -w -intstyle ise -ol high -mt off final_exam_map.ncd final_exam.ncd final_exam.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_exam.twx final_exam.ncd -o final_exam.twr final_exam.pcf -ucf final_exam.ucf 
+bitgen -intstyle ise -f final_exam.ut final_exam.ncd 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_exam.ucf -p xc6slx16-csg324-3 final_exam.ngc final_exam.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_exam_map.ncd final_exam.ngd final_exam.pcf 
+par -w -intstyle ise -ol high -mt off final_exam_map.ncd final_exam.ncd final_exam.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_exam.twx final_exam.ncd -o final_exam.twr final_exam.pcf -ucf final_exam.ucf 
+bitgen -intstyle ise -f final_exam.ut final_exam.ncd 
+xst -intstyle ise -ifn "D:/Final_Exam/final_exam.xst" -ofn "D:/Final_Exam/final_exam.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_exam.ucf -p xc6slx16-csg324-3 final_exam.ngc final_exam.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_exam_map.ncd final_exam.ngd final_exam.pcf 
+par -w -intstyle ise -ol high -mt off final_exam_map.ncd final_exam.ncd final_exam.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_exam.twx final_exam.ncd -o final_exam.twr final_exam.pcf -ucf final_exam.ucf 
+bitgen -intstyle ise -f final_exam.ut final_exam.ncd 
