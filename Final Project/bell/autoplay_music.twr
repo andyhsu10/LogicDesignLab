@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml autoplay_music.twx autoplay_music.ncd -o
+autoplay_music.twr autoplay_music.pcf -ucf autoplay_music.ucf
+
+Design file:              autoplay_music.ncd
+Physical constraint file: autoplay_music.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst_n       |    4.494(R)|      SLOW  |   -0.716(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+audio_bck   |         7.337(R)|      SLOW  |         3.843(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_data  |         7.790(R)|      SLOW  |         3.949(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_ws    |         7.131(R)|      SLOW  |         3.724(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+control<0>  |         7.659(R)|      SLOW  |         4.081(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+control<1>  |         8.191(R)|      SLOW  |         4.386(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<0>  |        10.505(R)|      SLOW  |         4.581(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<1>  |        10.356(R)|      SLOW  |         4.771(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<2>  |        10.538(R)|      SLOW  |         4.785(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<3>  |         9.610(R)|      SLOW  |         4.753(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<4>  |        10.711(R)|      SLOW  |         4.924(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<5>  |        10.965(R)|      SLOW  |         5.225(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<6>  |        10.127(R)|      SLOW  |         4.959(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<7>  |        10.221(R)|      SLOW  |         4.642(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<8>  |        10.512(R)|      SLOW  |         4.851(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<9>  |        10.569(R)|      SLOW  |         4.832(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<10> |         9.902(R)|      SLOW  |         4.622(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<11> |         9.625(R)|      SLOW  |         4.546(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<12> |         9.998(R)|      SLOW  |         4.693(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<13> |         9.656(R)|      SLOW  |         4.602(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<14> |        11.032(R)|      SLOW  |         4.954(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.642|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |audio_sysclk   |    7.915|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Jun 13 23:27:42 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 221 MB
+
+
+

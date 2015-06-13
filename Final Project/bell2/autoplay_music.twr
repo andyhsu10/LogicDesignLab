@@ -1,0 +1,296 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml autoplay_music.twx autoplay_music.ncd -o
+autoplay_music.twr autoplay_music.pcf -ucf autoplay_music.ucf
+
+Design file:              autoplay_music.ncd
+Physical constraint file: autoplay_music.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+note_div<0> |    4.776(R)|      SLOW  |   -1.657(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<1> |    4.898(R)|      SLOW  |   -1.758(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<2> |    4.070(R)|      SLOW  |   -1.288(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<3> |    3.766(R)|      SLOW  |   -1.057(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<4> |    3.844(R)|      SLOW  |   -1.139(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<5> |    3.268(R)|      SLOW  |   -0.732(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<6> |    2.896(R)|      SLOW  |   -0.435(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+note_div<7> |    2.681(R)|      SLOW  |   -0.233(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+note_div<8> |    2.707(R)|      SLOW  |   -0.257(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+note_div<9> |    3.364(R)|      SLOW  |   -0.818(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<10>|    2.933(R)|      SLOW  |   -0.471(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+note_div<11>|    3.601(R)|      SLOW  |   -0.946(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<12>|    3.502(R)|      SLOW  |   -0.977(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<13>|    3.616(R)|      SLOW  |   -1.004(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<14>|    4.233(R)|      SLOW  |   -1.464(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<15>|    4.170(R)|      SLOW  |   -1.403(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<16>|    4.158(R)|      SLOW  |   -1.403(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<17>|    4.514(R)|      SLOW  |   -1.649(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<18>|    4.076(R)|      SLOW  |   -1.340(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+note_div<19>|    4.100(R)|      SLOW  |   -1.345(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rst_n       |    4.787(R)|      SLOW  |   -1.034(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+audio_bck   |         8.014(R)|      SLOW  |         4.262(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_data  |         8.460(R)|      SLOW  |         4.382(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_ws    |         7.728(R)|      SLOW  |         4.070(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+control<0>  |         8.058(R)|      SLOW  |         4.317(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+control<1>  |         8.527(R)|      SLOW  |         4.570(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<0>  |        11.769(R)|      SLOW  |         5.317(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<1>  |        12.112(R)|      SLOW  |         5.474(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<2>  |        11.369(R)|      SLOW  |         5.283(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<3>  |        11.080(R)|      SLOW  |         5.012(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<4>  |        12.082(R)|      SLOW  |         5.781(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<5>  |        12.017(R)|      SLOW  |         5.766(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<6>  |        11.160(R)|      SLOW  |         5.037(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<7>  |        11.697(R)|      SLOW  |         5.405(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<8>  |        12.319(R)|      SLOW  |         5.736(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<9>  |        12.093(R)|      SLOW  |         5.707(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<10> |        11.289(R)|      SLOW  |         5.108(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<11> |        11.529(R)|      SLOW  |         5.324(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<12> |        11.815(R)|      SLOW  |         5.321(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<13> |        11.907(R)|      SLOW  |         5.582(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<14> |        12.476(R)|      SLOW  |         5.833(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.867|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |audio_sysclk   |    8.045|
+letter1<0>     |display<0>     |   11.426|
+letter1<0>     |display<1>     |   11.769|
+letter1<0>     |display<2>     |   11.026|
+letter1<0>     |display<3>     |   10.737|
+letter1<0>     |display<4>     |   11.739|
+letter1<0>     |display<5>     |   11.674|
+letter1<0>     |display<6>     |   10.622|
+letter1<0>     |display<7>     |   11.354|
+letter1<0>     |display<8>     |   11.976|
+letter1<0>     |display<9>     |   11.750|
+letter1<0>     |display<10>    |   10.946|
+letter1<0>     |display<11>    |   11.186|
+letter1<0>     |display<12>    |   11.472|
+letter1<0>     |display<13>    |   11.564|
+letter1<0>     |display<14>    |   12.133|
+letter1<1>     |display<0>     |   10.711|
+letter1<1>     |display<1>     |   10.916|
+letter1<1>     |display<2>     |   10.369|
+letter1<1>     |display<3>     |   10.133|
+letter1<1>     |display<4>     |   10.905|
+letter1<1>     |display<5>     |   10.541|
+letter1<1>     |display<6>     |   10.556|
+letter1<1>     |display<7>     |   10.939|
+letter1<1>     |display<8>     |   11.085|
+letter1<1>     |display<9>     |   10.626|
+letter1<1>     |display<10>    |   10.488|
+letter1<1>     |display<11>    |   10.515|
+letter1<1>     |display<12>    |   10.640|
+letter1<1>     |display<13>    |   10.951|
+letter1<1>     |display<14>    |   10.944|
+letter1<2>     |display<0>     |   10.817|
+letter1<2>     |display<1>     |   11.715|
+letter1<2>     |display<2>     |   10.993|
+letter1<2>     |display<3>     |   10.550|
+letter1<2>     |display<4>     |   11.566|
+letter1<2>     |display<5>     |   11.801|
+letter1<2>     |display<6>     |   10.600|
+letter1<2>     |display<7>     |   11.461|
+letter1<2>     |display<8>     |   11.953|
+letter1<2>     |display<9>     |   11.496|
+letter1<2>     |display<10>    |   10.462|
+letter1<2>     |display<11>    |   10.866|
+letter1<2>     |display<12>    |   11.112|
+letter1<2>     |display<13>    |   11.325|
+letter1<2>     |display<14>    |   11.733|
+letter1<3>     |display<0>     |   10.198|
+letter1<3>     |display<1>     |   10.445|
+letter1<3>     |display<2>     |   10.313|
+letter1<3>     |display<3>     |    9.638|
+letter1<3>     |display<4>     |   10.980|
+letter1<3>     |display<5>     |   10.763|
+letter1<3>     |display<6>     |    9.618|
+letter1<3>     |display<7>     |   10.303|
+letter1<3>     |display<8>     |   11.194|
+letter1<3>     |display<9>     |   10.915|
+letter1<3>     |display<10>    |   10.023|
+letter1<3>     |display<11>    |   10.175|
+letter1<3>     |display<12>    |   10.393|
+letter1<3>     |display<13>    |   10.672|
+letter1<3>     |display<14>    |   11.148|
+letter1<4>     |display<0>     |   10.071|
+letter1<4>     |display<1>     |    9.951|
+letter1<4>     |display<2>     |    9.846|
+letter1<4>     |display<3>     |    9.411|
+letter1<4>     |display<4>     |   10.339|
+letter1<4>     |display<5>     |   10.470|
+letter1<4>     |display<6>     |    9.925|
+letter1<4>     |display<7>     |    9.963|
+letter1<4>     |display<8>     |   10.464|
+letter1<4>     |display<9>     |   10.197|
+letter1<4>     |display<10>    |    9.433|
+letter1<4>     |display<11>    |    9.631|
+letter1<4>     |display<12>    |    9.655|
+letter1<4>     |display<13>    |   10.334|
+letter1<4>     |display<14>    |   10.424|
+letter1<5>     |display<0>     |   10.150|
+letter1<5>     |display<1>     |   10.275|
+letter1<5>     |display<2>     |    9.601|
+letter1<5>     |display<3>     |    9.194|
+letter1<5>     |display<4>     |   10.302|
+letter1<5>     |display<5>     |   10.370|
+letter1<5>     |display<6>     |    9.854|
+letter1<5>     |display<7>     |    9.908|
+letter1<5>     |display<8>     |   10.318|
+letter1<5>     |display<9>     |   10.548|
+letter1<5>     |display<10>    |    9.535|
+letter1<5>     |display<11>    |   10.367|
+letter1<5>     |display<12>    |    9.919|
+letter1<5>     |display<13>    |   10.168|
+letter1<5>     |display<14>    |   10.672|
+letter2<0>     |display<0>     |    9.856|
+letter2<0>     |display<1>     |   10.199|
+letter2<0>     |display<2>     |    9.456|
+letter2<0>     |display<3>     |    9.167|
+letter2<0>     |display<4>     |   10.169|
+letter2<0>     |display<5>     |   10.104|
+letter2<0>     |display<6>     |    9.052|
+letter2<0>     |display<7>     |    9.784|
+letter2<0>     |display<8>     |   10.406|
+letter2<0>     |display<9>     |   10.180|
+letter2<0>     |display<10>    |    9.376|
+letter2<0>     |display<11>    |    9.616|
+letter2<0>     |display<12>    |    9.902|
+letter2<0>     |display<13>    |    9.994|
+letter2<0>     |display<14>    |   10.563|
+letter2<1>     |display<0>     |    9.586|
+letter2<1>     |display<1>     |    9.791|
+letter2<1>     |display<2>     |    9.244|
+letter2<1>     |display<3>     |    9.008|
+letter2<1>     |display<4>     |    9.780|
+letter2<1>     |display<5>     |    9.416|
+letter2<1>     |display<6>     |    9.431|
+letter2<1>     |display<7>     |    9.814|
+letter2<1>     |display<8>     |    9.960|
+letter2<1>     |display<9>     |    9.501|
+letter2<1>     |display<10>    |    9.363|
+letter2<1>     |display<11>    |    9.390|
+letter2<1>     |display<12>    |    9.515|
+letter2<1>     |display<13>    |    9.826|
+letter2<1>     |display<14>    |    9.819|
+letter2<2>     |display<0>     |    8.737|
+letter2<2>     |display<1>     |    9.635|
+letter2<2>     |display<2>     |    8.913|
+letter2<2>     |display<3>     |    8.470|
+letter2<2>     |display<4>     |    9.486|
+letter2<2>     |display<5>     |    9.721|
+letter2<2>     |display<6>     |    8.520|
+letter2<2>     |display<7>     |    9.381|
+letter2<2>     |display<8>     |    9.873|
+letter2<2>     |display<9>     |    9.416|
+letter2<2>     |display<10>    |    8.382|
+letter2<2>     |display<11>    |    8.786|
+letter2<2>     |display<12>    |    9.032|
+letter2<2>     |display<13>    |    9.245|
+letter2<2>     |display<14>    |    9.653|
+letter2<3>     |display<0>     |    8.660|
+letter2<3>     |display<1>     |    8.907|
+letter2<3>     |display<2>     |    8.775|
+letter2<3>     |display<3>     |    8.100|
+letter2<3>     |display<4>     |    9.442|
+letter2<3>     |display<5>     |    9.225|
+letter2<3>     |display<6>     |    8.080|
+letter2<3>     |display<7>     |    8.765|
+letter2<3>     |display<8>     |    9.656|
+letter2<3>     |display<9>     |    9.377|
+letter2<3>     |display<10>    |    8.485|
+letter2<3>     |display<11>    |    8.637|
+letter2<3>     |display<12>    |    8.855|
+letter2<3>     |display<13>    |    9.134|
+letter2<3>     |display<14>    |    9.610|
+letter2<4>     |display<0>     |    8.898|
+letter2<4>     |display<1>     |    8.778|
+letter2<4>     |display<2>     |    8.673|
+letter2<4>     |display<3>     |    8.238|
+letter2<4>     |display<4>     |    9.166|
+letter2<4>     |display<5>     |    9.297|
+letter2<4>     |display<6>     |    8.752|
+letter2<4>     |display<7>     |    8.790|
+letter2<4>     |display<8>     |    9.291|
+letter2<4>     |display<9>     |    9.024|
+letter2<4>     |display<10>    |    8.260|
+letter2<4>     |display<11>    |    8.458|
+letter2<4>     |display<12>    |    8.482|
+letter2<4>     |display<13>    |    9.161|
+letter2<4>     |display<14>    |    9.251|
+letter2<5>     |display<0>     |    9.059|
+letter2<5>     |display<1>     |    9.184|
+letter2<5>     |display<2>     |    8.510|
+letter2<5>     |display<3>     |    8.103|
+letter2<5>     |display<4>     |    9.211|
+letter2<5>     |display<5>     |    9.279|
+letter2<5>     |display<6>     |    8.763|
+letter2<5>     |display<7>     |    8.817|
+letter2<5>     |display<8>     |    9.227|
+letter2<5>     |display<9>     |    9.457|
+letter2<5>     |display<10>    |    8.444|
+letter2<5>     |display<11>    |    9.276|
+letter2<5>     |display<12>    |    8.828|
+letter2<5>     |display<13>    |    9.077|
+letter2<5>     |display<14>    |    9.581|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Jun 13 23:38:30 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 214 MB
+
+
+
