@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jun 15 23:26:07 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "T2" LEVEL 1;
+COMP "LCD_data<0>" LOCATE = SITE "F6" LEVEL 1;
+COMP "LCD_data<1>" LOCATE = SITE "D3" LEVEL 1;
+COMP "LCD_data<2>" LOCATE = SITE "E4" LEVEL 1;
+COMP "LCD_data<3>" LOCATE = SITE "G6" LEVEL 1;
+COMP "LCD_data<4>" LOCATE = SITE "H7" LEVEL 1;
+COMP "LCD_data<5>" LOCATE = SITE "D1" LEVEL 1;
+COMP "LCD_data<6>" LOCATE = SITE "D2" LEVEL 1;
+COMP "LCD_data<7>" LOCATE = SITE "F3" LEVEL 1;
+COMP "DIP<0>" LOCATE = SITE "L2" LEVEL 1;
+COMP "DIP<1>" LOCATE = SITE "P2" LEVEL 1;
+COMP "DIP<2>" LOCATE = SITE "T1" LEVEL 1;
+COMP "LCD_di" LOCATE = SITE "C1" LEVEL 1;
+COMP "LCD_en" LOCATE = SITE "F5" LEVEL 1;
+COMP "LCD_rw" LOCATE = SITE "C2" LEVEL 1;
+COMP "LCD_cs<0>" LOCATE = SITE "F4" LEVEL 1;
+COMP "LCD_cs<1>" LOCATE = SITE "E1" LEVEL 1;
+COMP "LCD_rst" LOCATE = SITE "E3" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v" Line 49: Port <arg fmt="%s" index="1">clk_out</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v" Line 50: Assignment to <arg fmt="%s" index="1">clk_ctl</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v" Line 69: Assignment to <arg fmt="%s" index="1">clk_1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v" Line 70: Assignment to <arg fmt="%s" index="1">clk_100</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Lab12\Lab12-1\ten.v" Line 78: Assignment to <arg fmt="%s" index="1">cout_tens</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Lab12\Lab12-1\thousand.v" Line 99: Assignment to <arg fmt="%s" index="1">cout_thou</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\GitHub\LogicDesignLab\Lab12\Lab12-1\ipcore_dir\RAM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">RAM</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v</arg>&quot; line <arg fmt="%d" index="2">66</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">clk_generate</arg>&gt; of block &lt;<arg fmt="%s" index="4">clock_generator</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">calendar_II</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">clk_ctl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frequency_divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frequency_divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v</arg>&quot; line <arg fmt="%s" index="2">66</arg>: Output port &lt;<arg fmt="%s" index="3">clk_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clk_generate</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Lab12\Lab12-1\calendar_II.v</arg>&quot; line <arg fmt="%s" index="2">66</arg>: Output port &lt;<arg fmt="%s" index="3">clk_100</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clk_generate</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Lab12\Lab12-1\ten.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">carry</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tens_part</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Lab12\Lab12-1\thousand.v</arg>&quot; line <arg fmt="%s" index="2">97</arg>: Output port &lt;<arg fmt="%s" index="3">carry</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">thou_part</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">year[11]_PWR_6_o_mod_20/Madd_GND_10_o_b[8]_add_1_OUT_Madd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">day_ctl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">frequency_divider/clk_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">calendar_II</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">frequency_divider/cnt_h_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">calendar_II</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">frequency_divider/cnt_h_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">calendar_II</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">frequency_divider/cnt_h_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">calendar_II</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">frequency_divider/cnt_h_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">calendar_II</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">frequency_divider/cnt_h_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">calendar_II</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">frequency_divider/cnt_h_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">calendar_II</arg>&gt;.
+</msg>
+
+</messages>
+

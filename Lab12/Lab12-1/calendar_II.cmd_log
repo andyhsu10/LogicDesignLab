@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.xst" -ofn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.xst" -ofn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.xst" -ofn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.xst" -ofn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.syr" 
+xst -intstyle ise -ifn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.xst" -ofn "D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc calendar_II.ucf -p xc6slx16-csg324-3 calendar_II.ngc calendar_II.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calendar_II_map.ncd calendar_II.ngd calendar_II.pcf 
+par -w -intstyle ise -ol high -mt off calendar_II_map.ncd calendar_II.ncd calendar_II.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calendar_II.twx calendar_II.ncd -o calendar_II.twr calendar_II.pcf -ucf calendar_II.ucf 
+bitgen -intstyle ise -f calendar_II.ut calendar_II.ncd 
