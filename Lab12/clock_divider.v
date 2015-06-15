@@ -2,9 +2,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer: An-Ting Hsu
 // 
-// Create Date:    17:10:06 05/28/2015 
+// Create Date:    17:48:51 06/04/2015 
 // Module Name:    clock_divider
-// Project Name:   Lab11-1
+// Project Name:   Lab12-1
 // Revision: 
 // Revision 0.01 - File Created
 //

@@ -1,7 +1,12 @@
-## pin mapping
-NET "clk"           LOC = "R10";
-NET "rst_n"         LOC = "N3";
-#NET "LED"           LOC = "P4";
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = R10;
+NET "rst_n" LOC = T2;
+
+NET "DIP[0]" LOC = L2;
+NET "DIP[1]" LOC = P2;
+NET "DIP[2]" LOC = T1;
 
 ## LCD control signals
 NET "LCD_rst"       LOC = "E3";
@@ -18,13 +23,3 @@ NET "LCD_data[0]"   LOC = "F6";
 NET "LCD_en"        LOC = "F5";
 NET "LCD_rw"        LOC = "C2";
 NET "LCD_di"        LOC = "C1";
-
-## KeyPad
-NET "col[3]"        LOC = "H1";
-NET "col[2]"        LOC = "H2";
-NET "col[1]"        LOC = "J1";
-NET "col[0]"        LOC = "J3";
-NET "row[3]"        LOC = "L3";
-NET "row[2]"        LOC = "L4";
-NET "row[1]"        LOC = "K1";
-NET "row[0]"        LOC = "K2";
