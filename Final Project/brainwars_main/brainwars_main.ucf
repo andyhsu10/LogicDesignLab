@@ -1,0 +1,56 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = R10;
+NET "rst_n" LOC = T2;
+
+NET "control[0]" LOC = V8;
+NET "control[1]" LOC = U8;
+NET "control[2]" LOC = V6;
+NET "control[3]" LOC = T6;
+
+NET "display[14]" LOC = P6;
+NET "display[13]" LOC = N4;
+NET "display[12]" LOC = V5;
+NET "display[11]" LOC = T5;
+NET "display[10]" LOC = U7;
+NET "display[9]" LOC = R3;
+NET "display[8]" LOC = N5;
+NET "display[7]" LOC = R5;
+NET "display[6]" LOC = T3;
+NET "display[5]" LOC = T4;
+NET "display[4]" LOC = V4;
+NET "display[3]" LOC = V7;
+NET "display[2]" LOC = R7;
+NET "display[1]" LOC = T7;
+NET "display[0]" LOC = U5;
+
+NET "audio_appsel" LOC = H18;
+NET "audio_sysclk" LOC = H17;
+NET "audio_bck" LOC = K16;
+NET "audio_ws" LOC = L15;
+NET "audio_data" LOC = L16;
+
+NET "note[0]" LOC = K13;
+NET "note[1]" LOC = H13;
+NET "note[2]" LOC = H16;
+NET "note[3]" LOC = J13;
+NET "note[4]" LOC = L13;
+NET "note[5]" LOC = K17;
+
+NET "letter1[0]" LOC = L18;
+NET "letter1[1]" LOC = N17;
+NET "letter1[2]" LOC = P18;
+NET "letter1[3]" LOC = T17;
+NET "letter1[4]" LOC = U18;
+NET "letter1[5]" LOC = L14;
+
+NET "letter2[0]" LOC = P16;
+NET "letter2[1]" LOC = T14;
+NET "letter2[2]" LOC = U13;
+NET "letter2[3]" LOC = V11;
+NET "letter2[4]" LOC = U10;
+NET "letter2[5]" LOC = K12;
+
+NET "rst_n_in" LOC = G16;
+NET "rst_n_out" LOC = H14;

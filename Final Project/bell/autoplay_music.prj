@@ -1,8 +1,0 @@
-verilog work "ssd_decoder.v"
-verilog work "speaker_ctl.v"
-verilog work "scan_ctl.v"
-verilog work "note_ctl.v"
-verilog work "music.v"
-verilog work "freq_div.v"
-verilog work "buzzer_ctl.v"
-verilog work "autoplay_music.v"
