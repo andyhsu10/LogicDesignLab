@@ -54,3 +54,36 @@ NET "letter2[5]" LOC = B2;
 
 NET "rst_n_in" LOC = A3;
 NET "rst_n_out" LOC = C5;
+
+NET "dialogue_in[2]" LOC = B6;
+NET "dialogue_in[1]" LOC = C8;
+NET "dialogue_in[0]" LOC = D9;
+
+NET "dialogue_out[2]" LOC = C6;
+NET "dialogue_out[1]" LOC = B4;
+NET "dialogue_out[0]" LOC = A5;
+
+## LCD control signals
+NET "LCD_rst"       LOC = "E3";
+NET "LCD_cs[1]"     LOC = "E1";
+NET "LCD_cs[0]"     LOC = "F4";
+NET "LCD_data[7]"   LOC = "F3";
+NET "LCD_data[6]"   LOC = "D2";
+NET "LCD_data[5]"   LOC = "D1";
+NET "LCD_data[4]"   LOC = "H7";
+NET "LCD_data[3]"   LOC = "G6";
+NET "LCD_data[2]"   LOC = "E4";
+NET "LCD_data[1]"   LOC = "D3";
+NET "LCD_data[0]"   LOC = "F6";
+NET "LCD_en"        LOC = "F5";
+NET "LCD_rw"        LOC = "C2";
+NET "LCD_di"        LOC = "C1";
+
+NET "col_n[0]" LOC = J3;
+NET "col_n[1]" LOC = J1;
+NET "col_n[2]" LOC = H2;
+NET "col_n[3]" LOC = H1;
+NET "row_n[0]" LOC = K2;
+NET "row_n[1]" LOC = K1;
+NET "row_n[2]" LOC = L4;
+NET "row_n[3]" LOC = L3;
