@@ -12,6 +12,7 @@
 `include "global.v"
 module count_down_screen(
 	clk, //global clock (I)
+	clk_100, //100 Hz clock (I)
 	enable, //module enable signal (I)
 	key, //returned pressed key (I)
 	pressed, //whether key pressed (1) or not (0) (I)
@@ -24,21 +25,25 @@ module count_down_screen(
 
 //I/Os
 input clk; //global clock
+input clk_100; //100 Hz clock
 input enable; //module enable signal
 input [3:0] key; //returned pressed key
 input pressed; //whether key pressed (1) or not (0)
-input [2:0] dialogue_in; //dialogue from another board
+input [3:0] dialogue_in; //dialogue from another board
 input rst_n; //active low reset
 output count_down_next_state;
-output [2:0] dialogue_out; //dialogue sent to another board
+output [3:0] dialogue_out; //dialogue sent to another board
 output [127:0] data_out; //data output
 
 reg [6:0] value, value_tmp;
 reg clk_count;
 reg count_down_next_state;
-reg [2:0] dialogue_out;
+reg [3:0] dialogue_out;
+reg [3:0] key_tmp;
 reg [7:0] dialogue1, dialogue2;
+reg [127:0] data_out;
 
+wire de_pressed;
 wire [31:0] q0;
 
 //Combinational logics
@@ -68,64 +73,83 @@ always @(posedge clk or negedge rst_n)
 
 count_down counting_down(
 	.q0(q0), //shifter output
-	.clk(clk_count), // global clock
+	.clk(clk), // global clock
 	.rst_n(rst_n) //active low reset
 );
 
-always @(key)
-	case(key)
+debounce(
+	.clk(clk_100), //clock control
+	.rst_n(rst_n), //reset
+	.pb_in(pressed), //push button input
+	.pb_debounced(de_pressed) //debounced push button output
+);
+
+always @*
+	if(de_pressed == 1'b0)
+		key_tmp = key;
+	else
+		key_tmp = `KEY_F;
+
+always @(key_tmp)
+	case(key_tmp)
 		`KEY_A:
 			begin
-				dialogue_out = 3'd0;
+				dialogue_out = 4'd0;
 				dialogue1 = `GRAPH_SMILE;
 			end
 		`KEY_2:
 			begin
-				dialogue_out = 3'd1;
+				dialogue_out = 4'd1;
 				dialogue1 = `GRAPH_ANGRY;
 			end
 		`KEY_5:
 			begin
-				dialogue_out = 3'd2;
+				dialogue_out = 4'd2;
 				dialogue1 = `GRAPH_SLEEPY;
 			end
 		`KEY_8:
 			begin
-				dialogue_out = 3'd3;
+				dialogue_out = 4'd3;
 				dialogue1 = `GRAPH_SHINE;
 			end
 		`KEY_0:
 			begin
-				dialogue_out = 3'd4;
+				dialogue_out = 4'd4;
 				dialogue1 = `GRAPH_LOVE;
 			end
 		`KEY_1:
 			begin
-				dialogue_out = 3'd5;
+				dialogue_out = 4'd5;
 				dialogue1 = `GRAPH_SAD;
 			end
 		`KEY_4:
 			begin
-				dialogue_out = 3'd6;
+				dialogue_out = 4'd6;
 				dialogue1 = `GRAPH_LIKE;
 			end
 		`KEY_7:
 			begin
-				dialogue_out = 3'd7;
+				dialogue_out = 4'd7;
 				dialogue1 = `GRAPH_FUCK;
+			end
+		default:
+			begin
+				dialogue_out = 4'd8;
+				dialogue1 = `FONT_NONE;
 			end
 	endcase
 
 always @(dialogue_in)
 	case(dialogue_in)
-		3'd0: dialogue2 = `GRAPH_SMILE;
-		3'd1: dialogue2 = `GRAPH_ANGRY;
-		3'd2: dialogue2 = `GRAPH_SLEEPY;
-		3'd3: dialogue2 = `GRAPH_SHINE;
-		3'd4: dialogue2 = `GRAPH_LOVE;
-		3'd5: dialogue2 = `GRAPH_SAD;
-		3'd6: dialogue2 = `GRAPH_LIKE;
-		3'd7: dialogue2 = `GRAPH_FUCK;
+		4'd0: dialogue2 = `GRAPH_SMILE;
+		4'd1: dialogue2 = `GRAPH_ANGRY;
+		4'd2: dialogue2 = `GRAPH_SLEEPY;
+		4'd3: dialogue2 = `GRAPH_SHINE;
+		4'd4: dialogue2 = `GRAPH_LOVE;
+		4'd5: dialogue2 = `GRAPH_SAD;
+		4'd6: dialogue2 = `GRAPH_LIKE;
+		4'd7: dialogue2 = `GRAPH_FUCK;
+		default: dialogue2 = `FONT_NONE;
 	endcase
 
 always @*

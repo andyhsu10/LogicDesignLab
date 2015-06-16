@@ -31,7 +31,7 @@ reg clk_100; // generated 100 Hz clock
 // Declare internal nodes
 reg [`DIV_BY_20M_BIT_WIDTH-1:0] count_20M, count_20M_next;
 reg [`DIV_BY_200K_BIT_WIDTH-1:0] count_200K, count_200K_next;
-reg [`DIV_BY_303030_BIT_WIDTH-1:0] count_303030, count_303030_next;
+reg [`DIV_BY_1515151_BIT_WIDTH-1:0] count_1515151, count_1515151_next;
 reg clk_1_next;
 reg clk_100_next;
 reg clk_66_next;
@@ -100,14 +100,14 @@ always @(posedge clk or negedge rst_n)
 // *********************
 // Clock Divider: Counter operation 
 always @*
-  if (count_303030 == `DIV_BY_303030-1)
+  if (count_1515151 == `DIV_BY_1515151-1)
   begin
-    count_303030_next = `DIV_BY_303030_BIT_WIDTH'd0;
+    count_1515151_next = `DIV_BY_1515151_BIT_WIDTH'd0;
     clk_66_next = ~clk_66;
   end
   else
   begin
-    count_303030_next = count_303030 + 1'b1;
+    count_1515151_next = count_1515151 + 1'b1;
     clk_66_next = clk_66;
   end
 
@@ -116,12 +116,12 @@ always @*
 always @(posedge clk or negedge rst_n)
   if (~rst_n)
   begin
-    count_303030 <=`DIV_BY_303030_BIT_WIDTH'b0;
+    count_1515151 <=`DIV_BY_1515151_BIT_WIDTH'b0;
     clk_66 <=1'b0;
   end
   else
   begin
-    count_303030 <= count_303030_next;
+    count_1515151 <= count_1515151_next;
     clk_66 <= clk_66_next;
   end
 

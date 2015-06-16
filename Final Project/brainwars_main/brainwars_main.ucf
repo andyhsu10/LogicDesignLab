@@ -55,13 +55,15 @@ NET "letter2[5]" LOC = K12;
 NET "rst_n_in" LOC = G16;
 NET "rst_n_out" LOC = H14;
 
-NET "dialogue_in[2]" LOC = F18;
-NET "dialogue_in[1]" LOC = H15;
-NET "dialogue_in[0]" LOC = G18;
+NET "dialogue_in[3]" LOC = F18;
+NET "dialogue_in[2]" LOC = H15;
+NET "dialogue_in[1]" LOC = G18;
+NET "dialogue_in[0]" LOC = L12;
 
-NET "dialogue_out[2]" LOC = L12;
-NET "dialogue_out[1]" LOC = J18;
-NET "dialogue_out[0]" LOC = L17;
+NET "dialogue_out[3]" LOC = J18;
+NET "dialogue_out[2]" LOC = L17;
+NET "dialogue_out[1]" LOC = M18;
+NET "dialogue_out[0]" LOC = P17;
 
 ## LCD control signals
 NET "LCD_rst"       LOC = "E3";

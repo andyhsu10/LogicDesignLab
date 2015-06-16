@@ -43,10 +43,10 @@ input rst_n; //active low reset
 input rst_n_in; //reset signal from second board (I)
 input [5:0] note_in;
 input [5:0] letter1, letter2;
-input [2:0] dialogue_in; //dialogue from another board
+input [3:0] dialogue_in; //dialogue from another board
 input [`KEYPAD_WIDTH-1:0] col_n;
 output [`KEYPAD_WIDTH-1:0] row_n;
-output [2:0] dialogue_out; //dialogue sent to another board
+output [3:0] dialogue_out; //dialogue sent to another board
 output rst_n_out; //reset signal for second board (O)
 output [14:0] display; //SSD output
 output [3:0] control; //SSD control signal
@@ -66,6 +66,7 @@ output LCD_en; //LCD enable
 wire rst;
 wire pressed;
 wire out_valid;
+wire count_down_next_state;
 wire clk_1, clk_66, clk_100, clk_fast, clk_div;
 wire [1:0] clk_ctl;
 wire [3:0] key;
@@ -110,12 +111,13 @@ keypad_scan keypad_scanner(
 
 count_down_screen counting_down(
 	.clk(clk_66), //global clock (I)
+	.clk_100(clk_100), //100 Hz clock (I)
 	.enable(1'b1), //module enable signal (I)
 	.key(key), //returned pressed key (I)
 	.pressed(pressed), //whether key pressed (1) or not (0) (I)
 	.dialogue_in(dialogue_in), //dialogue from another board (I)
 	.rst_n(rst), //active low reset (I)
-	.count_down_next_state, //(O)
+	.count_down_next_state(count_down_next_state), //(O)
 	.dialogue_out(dialogue_out), //dialogue sent to another board (O)
 	.data_out(data_output) //data output (O)
 );
