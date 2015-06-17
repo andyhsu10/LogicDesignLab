@@ -18,7 +18,6 @@ module lcd_ctrl(
     LCD_rw, //LCD Read/Write (O)
     LCD_en, //LCD enable (O)
     LCD_rst, //LCD reset (O)
-    LCD_cs, //LCD frame select (O)
     LCD_data, //LCD data (O)
     en_tran //data transfer enable (O)
 );
@@ -32,7 +31,6 @@ output LCD_di; //LCD data/instruction
 output LCD_rw; //LCD Read/Write 
 output LCD_en; //LCD enable
 output LCD_rst; //LCD reset
-output [1:0] LCD_cs; //LCD frame select
 output [7:0] LCD_data; //LCD data
 output en_tran; //data transfer enable
  
@@ -44,7 +42,6 @@ parameter IDLE = 3'd4;
 parameter EARSE = 3'd5;
 
 assign LCD_rst = rst_n;
-assign LCD_cs = 2'b10;
 assign LCD_rw = 1'b0;
 
 reg LCD_di;

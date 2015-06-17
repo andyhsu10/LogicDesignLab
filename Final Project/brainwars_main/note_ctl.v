@@ -14,8 +14,6 @@ module note_ctl(
 	carry, //carryout to enable counting in next stage (O)
 	note, //note for another board (O)
 	note_div, //div for note generation (O)
-	letter1, //letter 1 output  (O)
-	letter2, //letter 2 output (O)
 	clk, //global clock (I)
 	q, //music input (I)
 	rst_n //active low reset
@@ -23,8 +21,6 @@ module note_ctl(
 
 //I/Os
 output carry; //carryout to enable counting in next stage
-output [5:0] letter1; //letter 1 output
-output [5:0] letter2; //letter 2 output
 output [5:0] note; //note for another board
 output [19:0] note_div; //div for note generation
 input clk; //global clock
@@ -36,8 +32,6 @@ reg [5:0] note;
 reg [5:0] beat;
 reg [5:0] value; //counter value (in always block)
 reg [5:0] value_tmp; //input to dff (in always block)
-reg [5:0] letter1; //letter 1 output
-reg [5:0] letter2; //letter 2 output
 reg [19:0] note_div; //div for note generation
 
 //Combinational logics
@@ -87,228 +81,44 @@ always @*
 //Note decision
 always @*
 	case(note)
-		`ENCODE_NA:
-			begin
-			 	note_div = `NA;
-			 	letter1 = 6'd26;
-			 	letter2 = 6'd26;
-			end
-		`ENCODE_C3:
-			begin
-				note_div = `C3;
-				letter1 = 6'd3;
-				letter2 = 6'd14;
-			end
-		`ENCODE_C3_:
-			begin
-				note_div = `C3_;
-				letter1 = 6'd3;
-				letter2 = 6'd14;
-			end
-		`ENCODE_D3:
-			begin
-				note_div = `D3;
-				letter1 = 6'd17;
-				letter2 = 6'd4;
-			end
-		`ENCODE_D3_:
-			begin
-				note_div = `D3_;
-				letter1 = 6'd17;
-				letter2 = 6'd4;
-			end
-		`ENCODE_E3:
-			begin
-				note_div = `E3;
-				letter1 = 6'd12;
-				letter2 = 6'd8;
-			end
-		`ENCODE_F3:
-			begin
-				note_div = `F3;
-				letter1 = 6'd5;
-				letter2 = 6'd0;
-			end
-		`ENCODE_F3_:
-			begin
-				note_div = `F3_;
-				letter1 = 6'd5;
-				letter2 = 6'd0;
-			end
-		`ENCODE_G3:
-			begin
-				note_div = `G3;
-				letter1 = 6'd18;
-				letter2 = 6'd14;
-			end
-		`ENCODE_G3_:
-			begin
-				note_div = `G3_;
-				letter1 = 6'd18;
-				letter2 = 6'd14;
-			end
-		`ENCODE_A3:
-			begin
-				note_div = `A3;
-				letter1 = 6'd11;
-				letter2 = 6'd0;
-			end
-		`ENCODE_A3_:
-			begin
-				note_div = `A3_;
-				letter1 = 6'd11;
-				letter2 = 6'd0;
-			end
-		`ENCODE_B3:
-			begin
-				note_div = `B3;
-				letter1 = 6'd18;
-				letter2 = 6'd8;
-			end
-		`ENCODE_C4:
-			begin
-				note_div = `C4;
-				letter1 = 6'd3;
-				letter2 = 6'd14;
-			end
-		`ENCODE_C4_:
-			begin
-				note_div = `C4_;
-				letter1 = 6'd3;
-				letter2 = 6'd14;
-			end
-		`ENCODE_D4:
-			begin
-				note_div = `D4;
-				letter1 = 6'd17;
-				letter2 = 6'd4;
-			end
-		`ENCODE_D4_:
-			begin
-				note_div = `D4_;
-				letter1 = 6'd17;
-				letter2 = 6'd4;
-			end
-		`ENCODE_E4:
-			begin
-				note_div = `E4;
-				letter1 = 6'd12;
-				letter2 = 6'd8;
-			end
-		`ENCODE_F4:
-			begin
-				note_div = `F4;
-				letter1 = 6'd5;
-				letter2 = 6'd0;
-			end
-		`ENCODE_F4_:
-			begin
-				note_div = `F4_;
-				letter1 = 6'd5;
-				letter2 = 6'd0;
-			end
-		`ENCODE_G4:
-			begin
-				note_div = `G4;
-				letter1 = 6'd18;
-				letter2 = 6'd14;
-			end
-		`ENCODE_G4_:
-			begin
-				note_div = `G4_;
-				letter1 = 6'd18;
-				letter2 = 6'd14;
-			end
-		`ENCODE_A4:
-			begin
-				note_div = `A4;
-				letter1 = 6'd11;
-				letter2 = 6'd0;
-			end
-		`ENCODE_A4_:
-			begin
-				note_div = `A4_;
-				letter1 = 6'd11;
-				letter2 = 6'd0;
-			end
-		`ENCODE_B4:
-			begin
-				note_div = `B4;
-				letter1 = 6'd18;
-				letter2 = 6'd8;
-			end
-		`ENCODE_C5:
-			begin
-				note_div = `C5;
-				letter1 = 6'd3;
-				letter2 = 6'd14;
-			end
-		`ENCODE_C5_:
-			begin
-				note_div = `C5_;
-				letter1 = 6'd3;
-				letter2 = 6'd14;
-			end
-		`ENCODE_D5:
-			begin
-				note_div = `D5;
-				letter1 = 6'd17;
-				letter2 = 6'd4;
-			end
-		`ENCODE_D5_:
-			begin
-				note_div = `D5_;
-				letter1 = 6'd17;
-				letter2 = 6'd4;
-			end
-		`ENCODE_E5:
-			begin
-				note_div = `E5;
-				letter1 = 6'd12;
-				letter2 = 6'd8;
-			end
-		`ENCODE_F5:
-			begin
-				note_div = `F5;
-				letter1 = 6'd5;
-				letter2 = 6'd0;
-			end
-		`ENCODE_F5_:
-			begin
-				note_div = `F5_;
-				letter1 = 6'd5;
-				letter2 = 6'd0;
-			end
-		`ENCODE_G5:
-			begin
-				note_div = `G5;
-				letter1 = 6'd18;
-				letter2 = 6'd14;
-			end
-		`ENCODE_G5_:
-			begin
-				note_div = `G5_;
-				letter1 = 6'd18;
-				letter2 = 6'd14;
-			end
-		`ENCODE_A5:
-			begin
-				note_div = `A5;
-				letter1 = 6'd11;
-				letter2 = 6'd0;
-			end
-		`ENCODE_A5_:
-			begin
-				note_div = `A5_;
-				letter1 = 6'd11;
-				letter2 = 6'd0;
-			end
-		`ENCODE_B5:
-			begin
-				note_div = `B5;
-				letter1 = 6'd18;
-				letter2 = 6'd8;
-			end
+		`ENCODE_NA: note_div = `NA;
+		`ENCODE_C3: note_div = `C3;
+		`ENCODE_C3_: note_div = `C3_;
+		`ENCODE_D3: note_div = `D3;
+		`ENCODE_D3_: note_div = `D3_;
+		`ENCODE_E3: note_div = `E3;
+		`ENCODE_F3: note_div = `F3;
+		`ENCODE_F3_: note_div = `F3_;
+		`ENCODE_G3: note_div = `G3;
+		`ENCODE_G3_: note_div = `G3_;
+		`ENCODE_A3: note_div = `A3;
+		`ENCODE_A3_: note_div = `A3_;
+		`ENCODE_B3: note_div = `B3;
+		`ENCODE_C4: note_div = `C4;
+		`ENCODE_C4_: note_div = `C4_;
+		`ENCODE_D4: note_div = `D4;
+		`ENCODE_D4_: note_div = `D4_;
+		`ENCODE_E4: note_div = `E4;
+		`ENCODE_F4: note_div = `F4;
+		`ENCODE_F4_: note_div = `F4_;
+		`ENCODE_G4: note_div = `G4;
+		`ENCODE_G4_: note_div = `G4_;
+		`ENCODE_A4: note_div = `A4;
+		`ENCODE_A4_: note_div = `A4_;
+		`ENCODE_B4: note_div = `B4;
+		`ENCODE_C5: note_div = `C5;
+		`ENCODE_C5_: note_div = `C5_;
+		`ENCODE_D5: note_div = `D5;
+		`ENCODE_D5_: note_div = `D5_;
+		`ENCODE_E5: note_div = `E5;
+		`ENCODE_F5: note_div = `F5;
+		`ENCODE_F5_: note_div = `F5_;
+		`ENCODE_G5: note_div = `G5;
+		`ENCODE_G5_: note_div = `G5_;
+		`ENCODE_A5: note_div = `A5;
+		`ENCODE_A5_: note_div = `A5_;
+		`ENCODE_B5: note_div = `B5;
+		default: note_div = `NA;
 	endcase
 	
 endmodule

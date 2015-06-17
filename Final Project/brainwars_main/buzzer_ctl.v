@@ -54,7 +54,7 @@ always @*
 		end
 
 //Assign the amplitude of the note
-assign audio_left = (b_clk == 1'b0) ? 16'hC000:16'h3FFF;
-assign audio_right = (b_clk == 1'b0) ? 16'hC000:16'h3FFF;
+assign audio_left = (b_clk == 1'b0) ? 16'hC000:16'h009c;
+assign audio_right = (b_clk == 1'b0) ? 16'hC000:16'h009c;
 
 endmodule

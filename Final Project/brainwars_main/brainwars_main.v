@@ -19,8 +19,8 @@ module brainwars_main(
 	row_n, //scanned row index (O)
 	dialogue_out, //dialogue sent to another board (O)
 	rst_n_out, //reset signal for second board (O)
-	display, //SSD output (O)
-	control, //SSD control signal (O)
+//	display, //SSD output (O)
+//	control, //SSD control signal (O)
 	audio_appsel, //playing mode selection (O)
 	audio_sysclk, //control clock for DAC (from crystal) (O)
 	audio_bck, //bit clock of audio data (5MHz) (O)
@@ -32,9 +32,7 @@ module brainwars_main(
     LCD_di, //LCD data/instruction (O)
     LCD_data, //LCD data (O)
     LCD_en, //LCD enable (O)
-	note,
-	letter1,
-	letter2
+	note
 );
 
 //I/Os
@@ -46,10 +44,9 @@ input [`KEYPAD_WIDTH-1:0] col_n;
 output [`KEYPAD_WIDTH-1:0] row_n;
 output [3:0] dialogue_out; //dialogue sent to another board
 output rst_n_out; //reset signal for second board
-output [14:0] display; //SSD output
-output [3:0] control; //SSD control signal
+//output [14:0] display; //SSD output
+//output [3:0] control; //SSD control signal
 output [5:0] note;
-output [5:0] letter1, letter2;
 output audio_appsel; //playing mode selection
 output audio_sysclk; //control clock for DAC (from crystal)
 output audio_bck; //bit clock of audio data (5MHz)
@@ -68,15 +65,24 @@ wire carry;
 wire pressed;
 wire out_valid;
 wire count_down_next_state;
-wire clk_1, clk_66, clk_100, clk_fast, clk_div;
+wire clk_1, clk_66, clk_100, clk_fast, clk_div, clk_50k;
 wire [1:0] clk_ctl;
 wire [3:0] key;
-wire [5:0] letter;
+//wire [5:0] letter;
 wire [7:0] data_out;
 wire [9:0] q;
 wire [15:0] audio_in_left, audio_in_right;
 wire [19:0] note_div;
 wire [127:0] data_output;
+
+wire [7:0] data; // byte data transfer from buffer
+wire [6:0] addr; // Address for each picture
+
+wire LCD_rst1, LCD_rst2;
+wire LCD_rw1, LCD_rw2;
+wire LCD_di1, LCD_di2;
+wire LCD_en1, LCD_en2;
+wire [7:0] LCD_data1, LCD_data2;
 
 assign rst_n_out = rst_n;
 assign rst = rst_n & rst_n_in;
@@ -120,7 +126,7 @@ count_down_screen counting_down(
 
 RAM_ctrl RAM_controller(
     .clk(clk_div), //global clock input
-    .rst_n(rst_n), //active low reset
+    .rst_n(rst), //active low reset
     .pressed(1'b1), //whether key pressed (1) or not (0)
     .en(en), //LCD enable
     .input_data(data_output), //data input (I)
@@ -130,15 +136,14 @@ RAM_ctrl RAM_controller(
 
 lcd_ctrl LCD_controller(
     .clk(clk_div), //LCD controller clock (I)
-    .rst_n(rst_n), //active low reset (I)
+    .rst_n(rst), //active low reset (I)
     .data(data_out), //data re-arrangement buffer ready indicator (I)
     .data_valid(out_valid), //if data_valid = 1 the data is valid (I)
-    .LCD_di(LCD_di), //LCD data/instruction (O)
-    .LCD_rw(LCD_rw), //LCD Read/Write (O)
-    .LCD_en(LCD_en), //LCD enable (O)
-    .LCD_rst(LCD_rst), //LCD reset (O)
-    .LCD_cs(LCD_cs), //LCD frame select (O)
-    .LCD_data(LCD_data), //LCD data (O)
+    .LCD_di(LCD_di2), //LCD data/instruction (O)
+    .LCD_rw(LCD_rw2), //LCD Read/Write (O)
+    .LCD_en(LCD_en2), //LCD enable (O)
+    .LCD_rst(LCD_rst2), //LCD reset (O)
+    .LCD_data(LCD_data2), //LCD data (O)
     .en_tran(en) //data transfer enable (O)
 );
 
@@ -148,7 +153,60 @@ clock_divider #(
   ) clk100K (
     .clk_div(clk_div), //divided clock signal (O)
     .clk(clk), //global clock input (I)
-    .rst_n(rst_n) //active low reset (I)
+    .rst_n(rst) //active low reset (I)
+);
+
+rom_lcd_ctrl U_LCDctrl(
+  .clk(clk_50k), // LCD controller clock
+  .rst_n(rst), // active low reset
+  .data_ack(data_ack), // data re-arrangement buffer ready indicator
+  .data(data), // byte data transfer from buffer
+  .lcd_di(LCD_di1), // LCD data/instruction 
+  .lcd_rw(LCD_rw1), // LCD Read/Write
+  .lcd_en(LCD_en1), // LCD enable
+  .lcd_rst(LCD_rst1), // LCD reset
+  .lcd_data(LCD_data1), // LCD data
+  .addr(addr), // Address for each picture
+  .data_request(data_request) // request for the memory data
+);
+
+rom_ctrl U_romctrl(
+  .clk(clk_50k), // rom controller clock
+  .rst_n(rst), // active low reset
+  .en(LCD_en1), // LCD enable
+  .data_request(data_request), // request signal from LCD
+  .address(addr), // requested address
+  .data_ack(data_ack), // data ready acknowledge
+  .data(data) // data to be transferred (byte)
+);
+
+clock_divider #(
+    .half_cycle(400),
+    .counter_width(9)
+  ) clk50k (
+    .rst_n(rst),
+    .clk(clk),
+    .clk_div(clk_50k)
+  );
+
+lcd_switcher lcd_switch(
+	.LCD_rst1(LCD_rst1),
+	.LCD_rst2(LCD_rst2),
+	.LCD_rw1(LCD_rw1),
+	.LCD_rw2(LCD_rw2),
+	.LCD_di1(LCD_di1),
+	.LCD_di2(LCD_di2),
+	.LCD_en1(LCD_en1),
+	.LCD_en2(LCD_en2),
+	.LCD_data1(LCD_data1),
+	.LCD_data2(LCD_data2),
+	.clk(clk_50k), //global clock input (I)
+	.LCD_rst(LCD_rst),
+	.LCD_rw(LCD_rw),
+	.LCD_di(LCD_di),
+	.LCD_en(LCD_en),
+	.LCD_cs(LCD_cs),
+	.LCD_data(LCD_data)
 );
 
 music music_play(
@@ -161,8 +219,6 @@ note_ctl note_controllor(
 	.carry(carry), //carryout to enable counting in next stage (O)
 	.note(note), //note for another board (O)
 	.note_div(note_div), //div for note generation (O)
-	.letter1(letter1), //letter 1 output (O)
-	.letter2(letter2), //letter 2 output (O)
 	.clk(clk_fast), //global clock (I)
 	.q(q), //music input (I)
 	.rst_n(rst) //active low reset
@@ -190,6 +246,7 @@ speaker_ctl speaker_controllor(
 	.audio_data(audio_data) //serial output audio data (O)
 );
 
+/*
 scan_ctl scan_controllor(
     .bcd_in1(letter1),
     .bcd_in2(letter2),
@@ -202,5 +259,6 @@ ssd_decoder decoder(
 	.ssd_out(display), //14-segment display output
 	.bcd(letter) //BCD input
 );
+*/
 
 endmodule

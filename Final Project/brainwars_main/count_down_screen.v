@@ -77,7 +77,7 @@ count_down counting_down(
 	.rst_n(rst_n) //active low reset
 );
 
-debounce(
+debounce pressed_debounce(
 	.clk(clk_100), //clock control
 	.rst_n(rst_n), //reset
 	.pb_in(pressed), //push button input

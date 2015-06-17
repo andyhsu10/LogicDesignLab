@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: brainwars_main.prj
 
@@ -111,6 +111,8 @@ Cores Search Directories           : {"ipcore_dir"  }
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_decoder.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <lcd_decoder>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ipcore_dir\ROM.v" into library work
+Parsing module <ROM>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ipcore_dir\RAM.v" into library work
 Parsing module <RAM>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\debounce.v" into library work
@@ -118,13 +120,12 @@ Parsing module <debounce>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\count_down.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <count_down>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ssd_decoder.v" into library work
-Parsing verilog file "global.v" included at line 12.
-Parsing module <ssd_decoder>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\speaker_ctl.v" into library work
 Parsing module <speaker_ctl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\scan_ctl.v" into library work
-Parsing module <scan_ctl>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_lcd_ctrl.v" into library work
+Parsing module <rom_lcd_ctrl>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_ctrl.v" into library work
+Parsing module <rom_ctrl>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\RAM_ctrl.v" into library work
 Parsing module <RAM_ctrl>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\note_ctl.v" into library work
@@ -133,6 +134,8 @@ Parsing module <note_ctl>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\music.v" into library work
 Parsing verilog file "global.v" included at line 14.
 Parsing module <music>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" into library work
+Parsing module <lcd_switcher>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_ctrl.v" into library work
 Parsing module <lcd_ctrl>.
 Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\keypad_scan.v" into library work
@@ -157,24 +160,24 @@ Parsing module <brainwars_main>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 84: Port clk_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 90: Port clk_out is not connected to this instance
 
 Elaborating module <brainwars_main>.
 
 Elaborating module <freq_div>.
+WARNING:HDLCompiler:1127 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 92: Assignment to clk_ctl ignored, since the identifier is never used
 
 Elaborating module <clock_generator>.
-WARNING:HDLCompiler:1127 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 94: Assignment to clk_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 100: Assignment to clk_1 ignored, since the identifier is never used
 
 Elaborating module <keypad_scan>.
 
 Elaborating module <count_down_screen>.
 
 Elaborating module <count_down>.
-WARNING:HDLCompiler:604 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\count_down_screen.v" Line 80: Module instantiation should have an instance name
 
 Elaborating module <debounce>.
-WARNING:HDLCompiler:1127 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 116: Assignment to count_down_next_state ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 122: Assignment to count_down_next_state ignored, since the identifier is never used
 
 Elaborating module <RAM_ctrl>.
 
@@ -187,6 +190,27 @@ Elaborating module <lcd_ctrl>.
 
 Elaborating module <clock_divider(half_cycle=200,counter_width=8)>.
 
+Elaborating module <rom_lcd_ctrl>.
+
+Elaborating module <rom_ctrl>.
+
+Elaborating module <ROM>.
+WARNING:HDLCompiler:1499 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ipcore_dir\ROM.v" Line 39: Empty module <ROM> remains a black box.
+
+Elaborating module <clock_divider(half_cycle=400,counter_width=9)>.
+
+Elaborating module <lcd_switcher>.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 57: Signal <LCD_rst1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 58: Signal <LCD_rw1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 59: Signal <LCD_di1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 60: Signal <LCD_en1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 62: Signal <LCD_data1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 66: Signal <LCD_rst2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 67: Signal <LCD_rw2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 68: Signal <LCD_di2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 69: Signal <LCD_en2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 71: Signal <LCD_data2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
 Elaborating module <music>.
 
 Elaborating module <note_ctl>.
@@ -195,19 +219,16 @@ Elaborating module <buzzer_ctl>.
 
 Elaborating module <speaker_ctl>.
 
-Elaborating module <scan_ctl>.
-
-Elaborating module <ssd_decoder>.
-
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <brainwars_main>.
     Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v".
-INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 84: Output port <clk_out> of the instance <freqency_divider> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 91: Output port <clk_1> of the instance <clock_generate> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 108: Output port <count_down_next_state> of the instance <counting_down> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 90: Output port <clk_ctl> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 90: Output port <clk_out> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 97: Output port <clk_1> of the instance <clock_generate> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 114: Output port <count_down_next_state> of the instance <counting_down> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <brainwars_main> synthesized.
@@ -449,9 +470,9 @@ Synthesizing Unit <lcd_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <flag[1]_GND_13_o_add_19_OUT> created at line 142.
-    Found 3-bit adder for signal <x_cnt[2]_GND_13_o_add_21_OUT> created at line 152.
-    Found 6-bit adder for signal <y_cnt[5]_GND_13_o_add_22_OUT> created at line 155.
+    Found 2-bit adder for signal <flag[1]_GND_13_o_add_18_OUT> created at line 139.
+    Found 3-bit adder for signal <x_cnt[2]_GND_13_o_add_20_OUT> created at line 149.
+    Found 6-bit adder for signal <y_cnt[5]_GND_13_o_add_21_OUT> created at line 152.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  22 D-type flip-flop(s).
@@ -459,7 +480,7 @@ Synthesizing Unit <lcd_ctrl>.
 	inferred   1 Finite State Machine(s).
 Unit <lcd_ctrl> synthesized.
 
-Synthesizing Unit <clock_divider>.
+Synthesizing Unit <clock_divider_1>.
     Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\clock_divider.v".
         counter_width = 8
         half_cycle = 200
@@ -470,7 +491,114 @@ Synthesizing Unit <clock_divider>.
 	inferred   1 Adder/Subtractor(s).
 	inferred   9 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
-Unit <clock_divider> synthesized.
+Unit <clock_divider_1> synthesized.
+
+Synthesizing Unit <rom_lcd_ctrl>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_lcd_ctrl.v".
+    Found 8-bit register for signal <counter_y>.
+    Found 8-bit register for signal <lcd_data>.
+    Found 4-bit register for signal <counter_page>.
+    Found 4-bit register for signal <image>.
+    Found 14-bit register for signal <idle_counter>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <data_request>.
+    Found 1-bit register for signal <lcd_di>.
+    Found 1-bit register for signal <lcd_en>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 22                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <idle_counter[13]_GND_16_o_add_41_OUT> created at line 136.
+    Found 8-bit adder for signal <counter_y[7]_GND_16_o_add_53_OUT> created at line 160.
+    Found 4-bit adder for signal <counter_page[3]_GND_16_o_add_54_OUT> created at line 161.
+    Found 4-bit adder for signal <image[3]_GND_16_o_add_57_OUT> created at line 168.
+    Found 4-bit comparator greater for signal <n0004> created at line 98
+    Found 14-bit comparator greater for signal <n0039> created at line 126
+    Found 8-bit comparator greater for signal <counter_y[7]_GND_16_o_LessThan_51_o> created at line 152
+    WARNING:Xst:2404 -  FFs/Latches <lcd_rw<0:0>> (without init value) have a constant value of 0 in block <rom_lcd_ctrl>.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  31 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <rom_lcd_ctrl> synthesized.
+
+Synthesizing Unit <rom_ctrl>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_ctrl.v".
+    Found 6-bit register for signal <counter_byte>.
+    Found 512-bit register for signal <mem>.
+    Found 8-bit register for signal <data>.
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <counter_word>.
+    Found 1-bit register for signal <data_ack>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <GND_17_o_GND_17_o_sub_531_OUT> created at line 98.
+    Found 9-bit subtractor for signal <GND_17_o_GND_17_o_sub_533_OUT> created at line 99.
+    Found 8-bit subtractor for signal <GND_17_o_GND_17_o_sub_535_OUT> created at line 100.
+    Found 7-bit subtractor for signal <GND_17_o_GND_17_o_sub_537_OUT> created at line 101.
+    Found 4-bit adder for signal <counter_word[3]_GND_17_o_add_3_OUT> created at line 78.
+    Found 6-bit adder for signal <counter_byte[5]_GND_17_o_add_521_OUT> created at line 93.
+    Found 4-bit subtractor for signal <GND_17_o_GND_17_o_sub_5_OUT<3:0>> created at line 79.
+    Found 9-bit subtractor for signal <GND_17_o_GND_17_o_sub_523_OUT<8:0>> created at line 94.
+    Found 9-bit subtractor for signal <GND_17_o_GND_17_o_sub_525_OUT<8:0>> created at line 95.
+    Found 9-bit subtractor for signal <GND_17_o_GND_17_o_sub_527_OUT<8:0>> created at line 96.
+    Found 9-bit subtractor for signal <GND_17_o_GND_17_o_sub_529_OUT<8:0>> created at line 97.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_523_o> created at line 94.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_525_o> created at line 95.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_527_o> created at line 96.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_529_o> created at line 97.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_531_o> created at line 98.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_533_o> created at line 99.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_535_o> created at line 100.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_17_o_mem[511]_Mux_537_o> created at line 101.
+    Found 10-bit 3-to-1 multiplexer for signal <addr_rom> created at line 63.
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred 531 D-type flip-flop(s).
+	inferred 528 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <rom_ctrl> synthesized.
+
+Synthesizing Unit <clock_divider_2>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\clock_divider.v".
+        counter_width = 9
+        half_cycle = 400
+    Found 9-bit register for signal <count>.
+    Found 1-bit register for signal <clk_div>.
+    Found 9-bit adder for signal <count[8]_GND_19_o_add_1_OUT> created at line 40.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clock_divider_2> synthesized.
+
+Synthesizing Unit <lcd_switcher>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v".
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <lcd_switcher> synthesized.
 
 Synthesizing Unit <music>.
     Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\music.v".
@@ -616,42 +744,13 @@ Synthesizing Unit <note_ctl>.
     Found 6-bit register for signal <value>.
     Found 6-bit register for signal <note>.
     Found 1-bit register for signal <carry>.
-    Found 6-bit adder for signal <value_tmp> created at line 45.
-    Found 64x28-bit Read Only RAM for signal <_n0158>
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <note_div<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <letter2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 6-bit comparator equal for signal <value[5]_beat[5]_equal_4_o> created at line 61
+    Found 6-bit adder for signal <value_tmp> created at line 39.
+    Found 64x20-bit Read Only RAM for signal <note_div>
+    Found 6-bit comparator equal for signal <value[5]_beat[5]_equal_4_o> created at line 55
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred  13 D-type flip-flop(s).
-	inferred  28 Latch(s).
 	inferred   1 Comparator(s).
 	inferred   4 Multiplexer(s).
 Unit <note_ctl> synthesized.
@@ -660,7 +759,7 @@ Synthesizing Unit <buzzer_ctl>.
     Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\buzzer_ctl.v".
     Found 20-bit register for signal <clk_cnt>.
     Found 1-bit register for signal <b_clk>.
-    Found 20-bit adder for signal <clk_cnt[19]_GND_51_o_add_2_OUT> created at line 52.
+    Found 20-bit adder for signal <clk_cnt[19]_GND_24_o_add_2_OUT> created at line 52.
     Found 20-bit comparator equal for signal <clk_cnt[19]_note_div[19]_equal_2_o> created at line 45
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -683,31 +782,15 @@ Synthesizing Unit <speaker_ctl>.
 	inferred   1 Multiplexer(s).
 Unit <speaker_ctl> synthesized.
 
-Synthesizing Unit <scan_ctl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\scan_ctl.v".
-    Found 4x4-bit Read Only RAM for signal <ssd_ctl>
-    Summary:
-	inferred   1 RAM(s).
-	inferred   3 Multiplexer(s).
-Unit <scan_ctl> synthesized.
-
-Synthesizing Unit <ssd_decoder>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ssd_decoder.v".
-    Found 32x15-bit Read Only RAM for signal <_n0086>
-    Summary:
-	inferred   1 RAM(s).
-	inferred   1 Multiplexer(s).
-Unit <ssd_decoder> synthesized.
-
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 4
- 32x15-bit single-port Read Only RAM                   : 1
- 4x4-bit single-port Read Only RAM                     : 2
- 64x28-bit single-port Read Only RAM                   : 1
-# Adders/Subtractors                                   : 27
+# RAMs                                                 : 2
+ 4x4-bit single-port Read Only RAM                     : 1
+ 64x20-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 43
+ 14-bit adder                                          : 1
  18-bit adder                                          : 1
  2-bit adder                                           : 3
  20-bit adder                                          : 1
@@ -715,16 +798,19 @@ Macro Statistics
  25-bit adder                                          : 2
  3-bit adder                                           : 1
  3-bit subtractor                                      : 1
- 4-bit adder                                           : 1
- 6-bit adder                                           : 4
+ 4-bit adder                                           : 4
+ 4-bit subtractor                                      : 1
+ 6-bit adder                                           : 5
  7-bit adder                                           : 1
- 7-bit subtractor                                      : 1
- 8-bit adder                                           : 2
- 8-bit subtractor                                      : 2
- 9-bit subtractor                                      : 6
-# Registers                                            : 245
- 1-bit register                                        : 20
+ 7-bit subtractor                                      : 2
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 12
+# Registers                                            : 260
+ 1-bit register                                        : 25
  10-bit register                                       : 133
+ 14-bit register                                       : 1
  15-bit register                                       : 1
  18-bit register                                       : 1
  2-bit register                                        : 5
@@ -733,88 +819,91 @@ Macro Statistics
  25-bit register                                       : 1
  3-bit register                                        : 1
  32-bit register                                       : 66
- 4-bit register                                        : 4
- 512-bit register                                      : 1
- 6-bit register                                        : 5
+ 4-bit register                                        : 7
+ 512-bit register                                      : 2
+ 6-bit register                                        : 6
  7-bit register                                        : 2
- 8-bit register                                        : 3
-# Latches                                              : 28
- 1-bit latch                                           : 28
-# Comparators                                          : 3
+ 8-bit register                                        : 6
+ 9-bit register                                        : 1
+# Comparators                                          : 6
+ 14-bit comparator greater                             : 1
  20-bit comparator equal                               : 1
  3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 1
  6-bit comparator equal                                : 1
-# Multiplexers                                         : 564
- 1-bit 2-to-1 multiplexer                              : 13
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 1125
+ 1-bit 2-to-1 multiplexer                              : 28
  1-bit 32-to-1 multiplexer                             : 1
- 1-bit 512-to-1 multiplexer                            : 8
- 10-bit 2-to-1 multiplexer                             : 1
- 11-bit 2-to-1 multiplexer                             : 1
- 12-bit 2-to-1 multiplexer                             : 1
- 13-bit 2-to-1 multiplexer                             : 1
- 14-bit 2-to-1 multiplexer                             : 1
+ 1-bit 512-to-1 multiplexer                            : 16
+ 10-bit 2-to-1 multiplexer                             : 3
+ 10-bit 3-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 2
+ 12-bit 2-to-1 multiplexer                             : 2
+ 13-bit 2-to-1 multiplexer                             : 2
+ 14-bit 2-to-1 multiplexer                             : 3
  15-bit 2-to-1 multiplexer                             : 2
- 16-bit 2-to-1 multiplexer                             : 1
- 17-bit 2-to-1 multiplexer                             : 1
- 18-bit 2-to-1 multiplexer                             : 2
- 19-bit 2-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 4
- 20-bit 2-to-1 multiplexer                             : 2
- 21-bit 2-to-1 multiplexer                             : 1
- 22-bit 2-to-1 multiplexer                             : 2
- 23-bit 2-to-1 multiplexer                             : 1
- 24-bit 2-to-1 multiplexer                             : 1
- 25-bit 2-to-1 multiplexer                             : 2
- 26-bit 2-to-1 multiplexer                             : 1
- 27-bit 2-to-1 multiplexer                             : 1
- 28-bit 2-to-1 multiplexer                             : 1
- 29-bit 2-to-1 multiplexer                             : 1
- 3-bit 2-to-1 multiplexer                              : 1
- 30-bit 2-to-1 multiplexer                             : 1
- 31-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 17-bit 2-to-1 multiplexer                             : 2
+ 18-bit 2-to-1 multiplexer                             : 3
+ 19-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 5
+ 20-bit 2-to-1 multiplexer                             : 3
+ 21-bit 2-to-1 multiplexer                             : 2
+ 22-bit 2-to-1 multiplexer                             : 3
+ 23-bit 2-to-1 multiplexer                             : 2
+ 24-bit 2-to-1 multiplexer                             : 2
+ 25-bit 2-to-1 multiplexer                             : 3
+ 26-bit 2-to-1 multiplexer                             : 2
+ 27-bit 2-to-1 multiplexer                             : 2
+ 28-bit 2-to-1 multiplexer                             : 2
+ 29-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 2
+ 30-bit 2-to-1 multiplexer                             : 2
+ 31-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 2
  32-bit 4-to-1 multiplexer                             : 1
- 33-bit 2-to-1 multiplexer                             : 1
- 34-bit 2-to-1 multiplexer                             : 1
- 35-bit 2-to-1 multiplexer                             : 1
- 36-bit 2-to-1 multiplexer                             : 1
- 37-bit 2-to-1 multiplexer                             : 1
- 38-bit 2-to-1 multiplexer                             : 1
- 39-bit 2-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 4
- 40-bit 2-to-1 multiplexer                             : 1
- 41-bit 2-to-1 multiplexer                             : 1
- 42-bit 2-to-1 multiplexer                             : 1
- 43-bit 2-to-1 multiplexer                             : 1
- 44-bit 2-to-1 multiplexer                             : 1
- 45-bit 2-to-1 multiplexer                             : 1
- 46-bit 2-to-1 multiplexer                             : 1
- 47-bit 2-to-1 multiplexer                             : 1
- 48-bit 2-to-1 multiplexer                             : 1
- 49-bit 2-to-1 multiplexer                             : 1
- 5-bit 2-to-1 multiplexer                              : 1
- 50-bit 2-to-1 multiplexer                             : 1
- 51-bit 2-to-1 multiplexer                             : 1
- 52-bit 2-to-1 multiplexer                             : 1
- 53-bit 2-to-1 multiplexer                             : 1
- 54-bit 2-to-1 multiplexer                             : 1
- 55-bit 2-to-1 multiplexer                             : 1
- 56-bit 2-to-1 multiplexer                             : 1
- 57-bit 2-to-1 multiplexer                             : 1
- 58-bit 2-to-1 multiplexer                             : 1
- 59-bit 2-to-1 multiplexer                             : 1
- 6-bit 2-to-1 multiplexer                              : 9
- 60-bit 2-to-1 multiplexer                             : 1
- 61-bit 2-to-1 multiplexer                             : 1
- 62-bit 2-to-1 multiplexer                             : 1
- 63-bit 2-to-1 multiplexer                             : 1
- 64-bit 2-to-1 multiplexer                             : 450
- 7-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 11
- 9-bit 2-to-1 multiplexer                              : 1
+ 33-bit 2-to-1 multiplexer                             : 2
+ 34-bit 2-to-1 multiplexer                             : 2
+ 35-bit 2-to-1 multiplexer                             : 2
+ 36-bit 2-to-1 multiplexer                             : 2
+ 37-bit 2-to-1 multiplexer                             : 2
+ 38-bit 2-to-1 multiplexer                             : 2
+ 39-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 11
+ 40-bit 2-to-1 multiplexer                             : 2
+ 41-bit 2-to-1 multiplexer                             : 2
+ 42-bit 2-to-1 multiplexer                             : 2
+ 43-bit 2-to-1 multiplexer                             : 2
+ 44-bit 2-to-1 multiplexer                             : 2
+ 45-bit 2-to-1 multiplexer                             : 2
+ 46-bit 2-to-1 multiplexer                             : 2
+ 47-bit 2-to-1 multiplexer                             : 2
+ 48-bit 2-to-1 multiplexer                             : 2
+ 49-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 50-bit 2-to-1 multiplexer                             : 2
+ 51-bit 2-to-1 multiplexer                             : 2
+ 52-bit 2-to-1 multiplexer                             : 2
+ 53-bit 2-to-1 multiplexer                             : 2
+ 54-bit 2-to-1 multiplexer                             : 2
+ 55-bit 2-to-1 multiplexer                             : 2
+ 56-bit 2-to-1 multiplexer                             : 2
+ 57-bit 2-to-1 multiplexer                             : 2
+ 58-bit 2-to-1 multiplexer                             : 2
+ 59-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 8
+ 60-bit 2-to-1 multiplexer                             : 2
+ 61-bit 2-to-1 multiplexer                             : 2
+ 62-bit 2-to-1 multiplexer                             : 2
+ 63-bit 2-to-1 multiplexer                             : 2
+ 64-bit 2-to-1 multiplexer                             : 899
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 32
+ 9-bit 2-to-1 multiplexer                              : 3
 # Logic shifters                                       : 4
  496-bit shifter logical right                         : 4
-# FSMs                                                 : 2
+# FSMs                                                 : 4
 
 =========================================================================
 
@@ -823,8 +912,9 @@ Macro Statistics
 =========================================================================
 
 Reading core <ipcore_dir/RAM.ngc>.
+Reading core <ipcore_dir/ROM.ngc>.
 Loading core <RAM> for timing and area information for instance <R1>.
-WARNING:Xst:1710 - FF/Latch <note_div_19> (without init value) has a constant value of 0 in block <note_controllor>. This FF/Latch will be trimmed during the optimization process.
+Loading core <ROM> for timing and area information for instance <R1>.
 
 Synthesizing (advanced) Unit <RAM_ctrl>.
 The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
@@ -836,9 +926,13 @@ Synthesizing (advanced) Unit <buzzer_ctl>.
 The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
 Unit <buzzer_ctl> synthesized (advanced).
 
-Synthesizing (advanced) Unit <clock_divider>.
+Synthesizing (advanced) Unit <clock_divider_1>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <clock_divider> synthesized (advanced).
+Unit <clock_divider_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_divider_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <clock_divider_2> synthesized (advanced).
 
 Synthesizing (advanced) Unit <clock_generator>.
 The following registers are absorbed into counter <count_1515151>: 1 register on signal <count_1515151>.
@@ -870,159 +964,148 @@ The following registers are absorbed into counter <x_cnt>: 1 register on signal 
 Unit <lcd_ctrl> synthesized (advanced).
 
 Synthesizing (advanced) Unit <note_ctl>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0158> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_note_div> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 64-word x 28-bit                    |          |
+    |     aspect ratio   | 64-word x 20-bit                    |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <note>          |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
+    |     doA            | connected to signal <note_div>      |          |
     -----------------------------------------------------------------------
 Unit <note_ctl> synthesized (advanced).
 
-Synthesizing (advanced) Unit <scan_ctl>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ssd_ctl> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 4-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <clk_ctl>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <ssd_ctl>       |          |
-    -----------------------------------------------------------------------
-Unit <scan_ctl> synthesized (advanced).
+Synthesizing (advanced) Unit <rom_ctrl>.
+The following registers are absorbed into counter <counter_word>: 1 register on signal <counter_word>.
+The following registers are absorbed into counter <counter_byte>: 1 register on signal <counter_byte>.
+Unit <rom_ctrl> synthesized (advanced).
 
-Synthesizing (advanced) Unit <ssd_decoder>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0086> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 32-word x 15-bit                    |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <bcd<4:0>>      |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <ssd_decoder> synthesized (advanced).
+Synthesizing (advanced) Unit <rom_lcd_ctrl>.
+The following registers are absorbed into counter <image>: 1 register on signal <image>.
+The following registers are absorbed into counter <idle_counter>: 1 register on signal <idle_counter>.
+Unit <rom_lcd_ctrl> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 4
- 32x15-bit single-port distributed Read Only RAM       : 1
- 4x4-bit single-port distributed Read Only RAM         : 2
- 64x28-bit single-port distributed Read Only RAM       : 1
-# Adders/Subtractors                                   : 16
+# RAMs                                                 : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 64x20-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 27
  2-bit adder                                           : 1
  25-bit adder                                          : 1
  3-bit subtractor                                      : 1
- 4-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 1
  6-bit adder                                           : 2
- 7-bit subtractor                                      : 1
- 8-bit adder                                           : 1
- 8-bit subtractor                                      : 2
- 9-bit subtractor                                      : 6
-# Counters                                             : 11
+ 7-bit subtractor                                      : 2
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 3
+ 9-bit subtractor                                      : 12
+# Counters                                             : 16
+ 14-bit up counter                                     : 1
  18-bit up counter                                     : 1
  2-bit up counter                                      : 2
  20-bit up counter                                     : 1
  22-bit up counter                                     : 1
  25-bit up counter                                     : 1
  3-bit up counter                                      : 1
- 6-bit up counter                                      : 2
+ 4-bit up counter                                      : 2
+ 6-bit up counter                                      : 3
  7-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 4052
- Flip-Flops                                            : 4052
-# Comparators                                          : 3
+ 9-bit up counter                                      : 1
+# Registers                                            : 4597
+ Flip-Flops                                            : 4597
+# Comparators                                          : 6
+ 14-bit comparator greater                             : 1
  20-bit comparator equal                               : 1
  3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 1
  6-bit comparator equal                                : 1
-# Multiplexers                                         : 559
- 1-bit 2-to-1 multiplexer                              : 13
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 1115
+ 1-bit 2-to-1 multiplexer                              : 28
  1-bit 32-to-1 multiplexer                             : 1
- 1-bit 512-to-1 multiplexer                            : 8
- 10-bit 2-to-1 multiplexer                             : 1
- 11-bit 2-to-1 multiplexer                             : 1
- 12-bit 2-to-1 multiplexer                             : 1
- 13-bit 2-to-1 multiplexer                             : 1
- 14-bit 2-to-1 multiplexer                             : 1
+ 1-bit 512-to-1 multiplexer                            : 16
+ 10-bit 2-to-1 multiplexer                             : 3
+ 10-bit 3-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 2
+ 12-bit 2-to-1 multiplexer                             : 2
+ 13-bit 2-to-1 multiplexer                             : 2
+ 14-bit 2-to-1 multiplexer                             : 2
  15-bit 2-to-1 multiplexer                             : 2
- 16-bit 2-to-1 multiplexer                             : 1
- 17-bit 2-to-1 multiplexer                             : 1
- 18-bit 2-to-1 multiplexer                             : 1
- 19-bit 2-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 4
- 20-bit 2-to-1 multiplexer                             : 1
- 21-bit 2-to-1 multiplexer                             : 1
- 22-bit 2-to-1 multiplexer                             : 1
- 23-bit 2-to-1 multiplexer                             : 1
- 24-bit 2-to-1 multiplexer                             : 1
- 25-bit 2-to-1 multiplexer                             : 1
- 26-bit 2-to-1 multiplexer                             : 1
- 27-bit 2-to-1 multiplexer                             : 1
- 28-bit 2-to-1 multiplexer                             : 1
- 29-bit 2-to-1 multiplexer                             : 1
- 3-bit 2-to-1 multiplexer                              : 1
- 30-bit 2-to-1 multiplexer                             : 1
- 31-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 17-bit 2-to-1 multiplexer                             : 2
+ 18-bit 2-to-1 multiplexer                             : 2
+ 19-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 5
+ 20-bit 2-to-1 multiplexer                             : 2
+ 21-bit 2-to-1 multiplexer                             : 2
+ 22-bit 2-to-1 multiplexer                             : 2
+ 23-bit 2-to-1 multiplexer                             : 2
+ 24-bit 2-to-1 multiplexer                             : 2
+ 25-bit 2-to-1 multiplexer                             : 2
+ 26-bit 2-to-1 multiplexer                             : 2
+ 27-bit 2-to-1 multiplexer                             : 2
+ 28-bit 2-to-1 multiplexer                             : 2
+ 29-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 2
+ 30-bit 2-to-1 multiplexer                             : 2
+ 31-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 2
  32-bit 4-to-1 multiplexer                             : 1
- 33-bit 2-to-1 multiplexer                             : 1
- 34-bit 2-to-1 multiplexer                             : 1
- 35-bit 2-to-1 multiplexer                             : 1
- 36-bit 2-to-1 multiplexer                             : 1
- 37-bit 2-to-1 multiplexer                             : 1
- 38-bit 2-to-1 multiplexer                             : 1
- 39-bit 2-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 4
- 40-bit 2-to-1 multiplexer                             : 1
- 41-bit 2-to-1 multiplexer                             : 1
- 42-bit 2-to-1 multiplexer                             : 1
- 43-bit 2-to-1 multiplexer                             : 1
- 44-bit 2-to-1 multiplexer                             : 1
- 45-bit 2-to-1 multiplexer                             : 1
- 46-bit 2-to-1 multiplexer                             : 1
- 47-bit 2-to-1 multiplexer                             : 1
- 48-bit 2-to-1 multiplexer                             : 1
- 49-bit 2-to-1 multiplexer                             : 1
- 5-bit 2-to-1 multiplexer                              : 1
- 50-bit 2-to-1 multiplexer                             : 1
- 51-bit 2-to-1 multiplexer                             : 1
- 52-bit 2-to-1 multiplexer                             : 1
- 53-bit 2-to-1 multiplexer                             : 1
- 54-bit 2-to-1 multiplexer                             : 1
- 55-bit 2-to-1 multiplexer                             : 1
- 56-bit 2-to-1 multiplexer                             : 1
- 57-bit 2-to-1 multiplexer                             : 1
- 58-bit 2-to-1 multiplexer                             : 1
- 59-bit 2-to-1 multiplexer                             : 1
- 6-bit 2-to-1 multiplexer                              : 9
- 60-bit 2-to-1 multiplexer                             : 1
- 61-bit 2-to-1 multiplexer                             : 1
- 62-bit 2-to-1 multiplexer                             : 1
- 63-bit 2-to-1 multiplexer                             : 1
- 64-bit 2-to-1 multiplexer                             : 450
- 7-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 10
- 9-bit 2-to-1 multiplexer                              : 1
+ 33-bit 2-to-1 multiplexer                             : 2
+ 34-bit 2-to-1 multiplexer                             : 2
+ 35-bit 2-to-1 multiplexer                             : 2
+ 36-bit 2-to-1 multiplexer                             : 2
+ 37-bit 2-to-1 multiplexer                             : 2
+ 38-bit 2-to-1 multiplexer                             : 2
+ 39-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 9
+ 40-bit 2-to-1 multiplexer                             : 2
+ 41-bit 2-to-1 multiplexer                             : 2
+ 42-bit 2-to-1 multiplexer                             : 2
+ 43-bit 2-to-1 multiplexer                             : 2
+ 44-bit 2-to-1 multiplexer                             : 2
+ 45-bit 2-to-1 multiplexer                             : 2
+ 46-bit 2-to-1 multiplexer                             : 2
+ 47-bit 2-to-1 multiplexer                             : 2
+ 48-bit 2-to-1 multiplexer                             : 2
+ 49-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 50-bit 2-to-1 multiplexer                             : 2
+ 51-bit 2-to-1 multiplexer                             : 2
+ 52-bit 2-to-1 multiplexer                             : 2
+ 53-bit 2-to-1 multiplexer                             : 2
+ 54-bit 2-to-1 multiplexer                             : 2
+ 55-bit 2-to-1 multiplexer                             : 2
+ 56-bit 2-to-1 multiplexer                             : 2
+ 57-bit 2-to-1 multiplexer                             : 2
+ 58-bit 2-to-1 multiplexer                             : 2
+ 59-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 7
+ 60-bit 2-to-1 multiplexer                             : 2
+ 61-bit 2-to-1 multiplexer                             : 2
+ 62-bit 2-to-1 multiplexer                             : 2
+ 63-bit 2-to-1 multiplexer                             : 2
+ 64-bit 2-to-1 multiplexer                             : 899
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 31
+ 9-bit 2-to-1 multiplexer                              : 2
 # Logic shifters                                       : 4
  496-bit shifter logical right                         : 4
-# FSMs                                                 : 2
+# FSMs                                                 : 4
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <note_div_19> (without init value) has a constant value of 0 in block <note_ctl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <clock_generate/clk_1> of sequential type is unconnected in block <brainwars_main>.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <RAM_controller/FSM_0> on signal <state[1:2]> with user encoding.
 -------------------
@@ -1045,6 +1128,26 @@ Optimizing FSM <LCD_controller/FSM_1> on signal <state[1:3]> with user encoding.
  011   | 011
  010   | 010
 -------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U_LCDctrl/FSM_2> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U_romctrl/FSM_3> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
 
 Optimizing unit <brainwars_main> ...
 
@@ -1058,15 +1161,17 @@ Optimizing unit <keypad_scan> ...
 
 Optimizing unit <freq_div> ...
 
-Optimizing unit <clock_generator> ...
-
 Optimizing unit <speaker_ctl> ...
 
 Optimizing unit <RAM_ctrl> ...
 
+Optimizing unit <note_ctl> ...
+
 Optimizing unit <lcd_ctrl> ...
 
-Optimizing unit <note_ctl> ...
+Optimizing unit <rom_lcd_ctrl> ...
+
+Optimizing unit <rom_ctrl> ...
 
 Optimizing unit <music> ...
 WARNING:Xst:2677 - Node <counting_down/value_6> of sequential type is unconnected in block <brainwars_main>.
@@ -1082,32 +1187,6 @@ WARNING:Xst:2677 - Node <freqency_divider/cnt_h_6> of sequential type is unconne
 WARNING:Xst:2677 - Node <freqency_divider/cnt_h_5> of sequential type is unconnected in block <brainwars_main>.
 WARNING:Xst:2677 - Node <freqency_divider/cnt_h_4> of sequential type is unconnected in block <brainwars_main>.
 WARNING:Xst:2677 - Node <freqency_divider/cnt_h_3> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_24> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_23> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_22> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_21> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_20> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_19> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_18> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_17> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_16> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_15> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_14> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_13> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_12> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_11> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_10> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_9> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_8> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_7> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_6> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_5> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_4> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_3> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_2> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_1> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/count_20M_0> of sequential type is unconnected in block <brainwars_main>.
-WARNING:Xst:2677 - Node <clock_generate/clk_1> of sequential type is unconnected in block <brainwars_main>.
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q65_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q65_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q65_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1118,6 +1197,7 @@ WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q65_7> (without init va
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q65_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q65_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <note_controllor/note_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U_LCDctrl/counter_y_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <music_play/q132_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <music_play/q132_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q131_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1220,6 +1300,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q123_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q123_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1227,7 +1308,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q55_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q122_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q122_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q54_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1415,30 +1495,30 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q38_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q38_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q38_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q105_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q105_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q105_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q104_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q104_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q37_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q36_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q103_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q103_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q103_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q102_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q102_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q35_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1455,14 +1535,14 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q101_5> 
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q100_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q34_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q100_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q100_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q33_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q33_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q33_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1472,19 +1552,21 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q33_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q33_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q33_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q99_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q99_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q99_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q99_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q32_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q98_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q98_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1492,21 +1574,21 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q31_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q97_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q97_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q30_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q97_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q97_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q96_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q96_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1514,21 +1596,19 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q29_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q95_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q95_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q94_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q28_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q94_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q94_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q27_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q27_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q27_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1538,30 +1618,30 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q27_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q27_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q27_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q93_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q93_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q93_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q26_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q92_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q92_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q91_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q25_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q91_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q91_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q24_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q24_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q24_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1571,28 +1651,28 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q24_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q24_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q24_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q90_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q90_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q90_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q89_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q89_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q23_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q89_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q89_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q22_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q88_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q88_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q21_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1604,52 +1684,52 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/count
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q21_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q21_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q21_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q87_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q87_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q87_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q87_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q20_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q86_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q86_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q85_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q19_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q86_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q86_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q85_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q18_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q85_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q84_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_29> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_23> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_15> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_14> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q17_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q84_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q83_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q84_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q83_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q83_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q16_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q16_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <counting_down/counting_down/q16_7> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -1969,33 +2049,10 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q1_9> (w
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q1_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q0_9> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_play/q0_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1294 - Latch <note_controllor/letter2_1> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter2_2> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter2_3> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter2_4> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter1_0> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter1_1> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter1_3> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter1_4> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/letter1_2> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_0> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_1> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_3> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_4> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_2> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_5> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_6> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_8> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_9> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_7> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_10> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_11> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_12> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_13> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_14> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_15> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_17> is equivalent to a wire in block <brainwars_main>.
-WARNING:Xst:1294 - Latch <note_controllor/note_div_16> is equivalent to a wire in block <brainwars_main>.
+INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_0> in Unit <brainwars_main> is equivalent to the following 2 FFs/Latches, which will be removed : <clk50k/count_0> <clk100K/count_0> 
+INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_1> in Unit <brainwars_main> is equivalent to the following 2 FFs/Latches, which will be removed : <clk50k/count_1> <clk100K/count_1> 
+INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_2> in Unit <brainwars_main> is equivalent to the following 2 FFs/Latches, which will be removed : <clk50k/count_2> <clk100K/count_2> 
+INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_3> in Unit <brainwars_main> is equivalent to the following FF/Latch, which will be removed : <clk50k/count_3> 
 INFO:Xst:3203 - The FF/Latch <counting_down/counting_down/q19_22> in Unit <brainwars_main> is the opposite to the following 2 FFs/Latches, which will be removed : <counting_down/counting_down/q19_21> <counting_down/counting_down/q19_20> 
 INFO:Xst:3203 - The FF/Latch <counting_down/counting_down/q24_22> in Unit <brainwars_main> is the opposite to the following 2 FFs/Latches, which will be removed : <counting_down/counting_down/q24_21> <counting_down/counting_down/q24_20> 
 INFO:Xst:3203 - The FF/Latch <counting_down/counting_down/q56_22> in Unit <brainwars_main> is the opposite to the following 2 FFs/Latches, which will be removed : <counting_down/counting_down/q56_21> <counting_down/counting_down/q56_20> 
@@ -2066,10 +2123,9 @@ INFO:Xst:3203 - The FF/Latch <counting_down/counting_down/q64_22> in Unit <brain
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <counting_down/counting_down/q0_21> in Unit <brainwars_main> is equivalent to the following FF/Latch, which will be removed : <counting_down/counting_down/q0_20> 
-Found area constraint ratio of 100 (+ 5) on block brainwars_main, actual ratio is 75.
+Found area constraint ratio of 100 (+ 5) on block brainwars_main, actual ratio is 86.
 FlipFlop RAM_controller/addr_0 has been replicated 1 time(s)
-FlipFlop RAM_controller/addr_1 has been replicated 1 time(s)
-FlipFlop RAM_controller/cnt_0 has been replicated 10 time(s)
+FlipFlop RAM_controller/cnt_0 has been replicated 8 time(s)
 FlipFlop RAM_controller/cnt_1 has been replicated 11 time(s)
 
 Final Macro Processing ...
@@ -2228,8 +2284,8 @@ Unit <brainwars_main> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1233
- Flip-Flops                                            : 1233
+# Registers                                            : 1809
+ Flip-Flops                                            : 1809
 # Shift Registers                                      : 147
  10-bit shift register                                 : 5
  11-bit shift register                                 : 4
@@ -2284,35 +2340,35 @@ Top Level Output File Name         : brainwars_main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3565
-#      GND                         : 2
-#      INV                         : 19
+# BELS                             : 4412
+#      GND                         : 3
+#      INV                         : 20
 #      LUT1                        : 57
-#      LUT2                        : 223
-#      LUT3                        : 183
-#      LUT4                        : 292
-#      LUT5                        : 1061
-#      LUT6                        : 1458
-#      MUXCY                       : 90
-#      MUXF7                       : 90
-#      VCC                         : 2
-#      XORCY                       : 88
-# FlipFlops/Latches                : 1676
-#      FDC                         : 400
-#      FDCE                        : 745
+#      LUT2                        : 238
+#      LUT3                        : 212
+#      LUT4                        : 325
+#      LUT5                        : 1067
+#      LUT6                        : 2177
+#      MUXCY                       : 111
+#      MUXF7                       : 95
+#      VCC                         : 3
+#      XORCY                       : 104
+# FlipFlops/Latches                : 2252
+#      FDC                         : 428
+#      FDCE                        : 1293
 #      FDE                         : 86
 #      FDP                         : 260
 #      FDPE                        : 185
-# RAMS                             : 1
-#      RAMB16BWER                  : 1
+# RAMS                             : 5
+#      RAMB16BWER                  : 5
 # Shift Registers                  : 158
 #      SRLC16E                     : 112
 #      SRLC32E                     : 46
-# Clock Buffers                    : 4
-#      BUFG                        : 4
-# IO Buffers                       : 76
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 45
 #      IBUF                        : 11
-#      OBUF                        : 65
+#      OBUF                        : 34
 
 Device utilization summary:
 ---------------------------
@@ -2321,27 +2377,27 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1676  out of  18224     9%  
- Number of Slice LUTs:                 3451  out of   9112    37%  
-    Number used as Logic:              3293  out of   9112    36%  
+ Number of Slice Registers:            2252  out of  18224    12%  
+ Number of Slice LUTs:                 4254  out of   9112    46%  
+    Number used as Logic:              4096  out of   9112    44%  
     Number used as Memory:              158  out of   2176     7%  
        Number used as SRL:              158
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4109
-   Number with an unused Flip Flop:    2433  out of   4109    59%  
-   Number with an unused LUT:           658  out of   4109    16%  
-   Number of fully used LUT-FF pairs:  1018  out of   4109    24%  
-   Number of unique control sets:        20
+ Number of LUT Flip Flop pairs used:   4902
+   Number with an unused Flip Flop:    2650  out of   4902    54%  
+   Number with an unused LUT:           648  out of   4902    13%  
+   Number of fully used LUT-FF pairs:  1604  out of   4902    32%  
+   Number of unique control sets:        27
 
 IO Utilization: 
- Number of IOs:                          76
- Number of bonded IOBs:                  76  out of    232    32%  
+ Number of IOs:                          45
+ Number of bonded IOBs:                  45  out of    232    19%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                1  out of     32     3%  
-    Number using Block RAM only:          1
- Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of Block RAM/FIFO:                5  out of     32    15%  
+    Number using Block RAM only:          5
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
 
 ---------------------------
 Partition Resource Summary:
@@ -2361,16 +2417,18 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                    | Load  |
------------------------------------+------------------------------------------+-------+
-clk                                | IBUF+BUFG                                | 100   |
-clock_generate/clk_66              | BUFG                                     | 477   |
-clock_generate/clk_100             | NONE(counting_down/_i000008/pb_debounced)| 17    |
-clk100K/clk_div                    | BUFG                                     | 589   |
-freqency_divider/cnt_h_2           | NONE(note_controllor/value_5)            | 12    |
-note_controllor/carry              | BUFG                                     | 640   |
------------------------------------+------------------------------------------+-------+
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                 | Load  |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | IBUF+BUFG                                                                                                                             | 103   |
+clock_generate/clk_66              | BUFG                                                                                                                                  | 477   |
+clock_generate/clk_100             | NONE(counting_down/pressed_debounce/pb_debounced)                                                                                     | 17    |
+clk100K/clk_div                    | BUFG                                                                                                                                  | 586   |
+freqency_divider/cnt_h_2           | NONE(note_controllor/value_5)                                                                                                         | 12    |
+clk50k/clk_div                     | BUFG                                                                                                                                  | 580   |
+note_controllor/carry              | BUFG                                                                                                                                  | 640   |
+U_romctrl/R1/N1                    | NONE(U_romctrl/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -2383,8 +2441,8 @@ Speed Grade: -3
 
    Minimum period: 8.941ns (Maximum Frequency: 111.839MHz)
    Minimum input arrival time before clock: 9.202ns
-   Maximum output required time after clock: 7.852ns
-   Maximum combinational path delay: 4.476ns
+   Maximum output required time after clock: 5.877ns
+   Maximum combinational path delay: 5.330ns
 
 Timing Details:
 ---------------
@@ -2393,7 +2451,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.672ns (frequency: 214.034MHz)
-  Total number of paths / destination ports: 6727 / 100
+  Total number of paths / destination ports: 7075 / 103
 -------------------------------------------------------------------------
 Delay:               4.672ns (Levels of Logic = 29)
   Source:            buzzer_controllor/clk_cnt_0 (FF)
@@ -2487,7 +2545,7 @@ Delay:               2.772ns (Levels of Logic = 1)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk100K/clk_div'
   Clock period: 8.941ns (frequency: 111.839MHz)
-  Total number of paths / destination ports: 31237 / 1241
+  Total number of paths / destination ports: 31340 / 1235
 -------------------------------------------------------------------------
 Delay:               8.941ns (Levels of Logic = 7)
   Source:            RAM_controller/cnt_1_1 (FF)
@@ -2504,7 +2562,7 @@ Delay:               8.941ns (Levels of Logic = 7)
      LUT6:I5->O           13   0.205   0.933  RAM_controller/decoder2/font[7]_GND_10_o_equal_116_o<7>1 (RAM_controller/decoder2/font[7]_GND_10_o_equal_116_o)
      LUT6:I5->O            4   0.205   0.931  RAM_controller/decoder2/mark<78>11 (RAM_controller/decoder2/mark<78>1)
      LUT6:I2->O            1   0.203   0.808  RAM_controller/Mmux_data_in283 (RAM_controller/Mmux_data_in282)
-     LUT6:I3->O            1   0.205   0.580  RAM_controller/Mmux_data_in2818_SW0 (N666)
+     LUT6:I3->O            1   0.205   0.580  RAM_controller/Mmux_data_in2818_SW0 (N694)
      LUT6:I5->O            1   0.205   0.579  RAM_controller/Mmux_data_in2818 (RAM_controller/data_in<34>)
      begin scope: 'RAM_controller/R1:dina<34>'
      RAMB16BWER:DIB2           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
@@ -2528,13 +2586,39 @@ Delay:               4.052ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              5   0.447   0.943  note_controllor/value_3 (note_controllor/value_3)
-     LUT5:I2->O            3   0.205   0.755  note_controllor/value[5]_beat[5]_equal_4_o64_SW0 (N1625)
+     LUT5:I2->O            3   0.205   0.755  note_controllor/value[5]_beat[5]_equal_4_o64_SW0 (N1676)
      LUT6:I4->O            9   0.203   1.194  note_controllor/value[5]_beat[5]_equal_4_o64 (note_controllor/value[5]_beat[5]_equal_4_o)
-     LUT6:I0->O            1   0.203   0.000  note_controllor/Mmux_value_tmp[5]_GND_18_o_mux_7_OUT51 (note_controllor/value_tmp[5]_GND_18_o_mux_7_OUT<4>)
+     LUT6:I0->O            1   0.203   0.000  note_controllor/Mmux_value_tmp[5]_GND_23_o_mux_7_OUT51 (note_controllor/value_tmp[5]_GND_23_o_mux_7_OUT<4>)
      FDC:D                     0.102          note_controllor/value_4
     ----------------------------------------
     Total                      4.052ns (1.160ns logic, 2.892ns route)
                                        (28.6% logic, 71.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50k/clk_div'
+  Clock period: 6.766ns (frequency: 147.795MHz)
+  Total number of paths / destination ports: 8353 / 1167
+-------------------------------------------------------------------------
+Delay:               6.766ns (Levels of Logic = 5)
+  Source:            U_LCDctrl/counter_page_0 (FF)
+  Destination:       U_LCDctrl/counter_page_3 (FF)
+  Source Clock:      clk50k/clk_div rising
+  Destination Clock: clk50k/clk_div rising
+
+  Data Path: U_LCDctrl/counter_page_0 to U_LCDctrl/counter_page_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.447   1.077  U_LCDctrl/counter_page_0 (U_LCDctrl/counter_page_0)
+     LUT4:I0->O            9   0.203   1.058  U_LCDctrl/_n0329_inv211 (U_LCDctrl/state_FSM_FFd2-In2)
+     LUT6:I3->O            5   0.205   0.715  U_LCDctrl/state_FSM_FFd2-In11 (U_LCDctrl/state_FSM_FFd2-In11)
+     LUT6:I5->O            2   0.205   0.864  U_LCDctrl/_n02511 (U_LCDctrl/_n0251)
+     LUT6:I2->O            1   0.203   0.580  U_LCDctrl/_n0282_inv1 (U_LCDctrl/_n0282_inv1)
+     LUT6:I5->O            4   0.205   0.683  U_LCDctrl/_n0282_inv2 (U_LCDctrl/_n0282_inv)
+     FDCE:CE                   0.322          U_LCDctrl/counter_page_0
+    ----------------------------------------
+    Total                      6.766ns (1.790ns logic, 4.976ns route)
+                                       (26.5% logic, 73.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'note_controllor/carry'
@@ -2560,29 +2644,29 @@ Delay:               2.302ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 191 / 100
+  Total number of paths / destination ports: 206 / 103
 -------------------------------------------------------------------------
-Offset:              4.848ns (Levels of Logic = 2)
+Offset:              5.097ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       buzzer_controllor/clk_cnt_0 (FF)
+  Destination:       clock_generate/count_200K_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to buzzer_controllor/clk_cnt_0
+  Data Path: rst_n to clock_generate/count_200K_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.788  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O          993   0.203   2.205  buzzer_controllor/rst_n_inv1 (buzzer_controllor/rst_n_inv)
+     IBUF:I->O             3   1.222   0.755  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         2166   0.203   2.486  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          buzzer_controllor/clk_cnt_0
     ----------------------------------------
-    Total                      4.848ns (1.855ns logic, 2.993ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      5.097ns (1.855ns logic, 3.242ns route)
+                                       (36.4% logic, 63.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_66'
   Total number of paths / destination ports: 652 / 326
 -------------------------------------------------------------------------
-Offset:              4.848ns (Levels of Logic = 2)
+Offset:              5.097ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       counting_down/counting_down/q1_18 (FF)
   Destination Clock: clock_generate/clk_66 rising
@@ -2591,36 +2675,36 @@ Offset:              4.848ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.788  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O          993   0.203   2.205  buzzer_controllor/rst_n_inv1 (buzzer_controllor/rst_n_inv)
+     IBUF:I->O             3   1.222   0.755  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         2166   0.203   2.486  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          counting_down/counting_down/q0_16
     ----------------------------------------
-    Total                      4.848ns (1.855ns logic, 2.993ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      5.097ns (1.855ns logic, 3.242ns route)
+                                       (36.4% logic, 63.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_100'
   Total number of paths / destination ports: 74 / 27
 -------------------------------------------------------------------------
-Offset:              4.848ns (Levels of Logic = 2)
+Offset:              5.097ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       counting_down/_i000008/pb_debounced (FF)
+  Destination:       counting_down/pressed_debounce/pb_debounced (FF)
   Destination Clock: clock_generate/clk_100 rising
 
-  Data Path: rst_n to counting_down/_i000008/pb_debounced
+  Data Path: rst_n to counting_down/pressed_debounce/pb_debounced
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.788  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O          993   0.203   2.205  buzzer_controllor/rst_n_inv1 (buzzer_controllor/rst_n_inv)
-     FDC:CLR                   0.430          counting_down/_i000008/debounce_window_0
+     IBUF:I->O             3   1.222   0.755  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         2166   0.203   2.486  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     FDC:CLR                   0.430          counting_down/pressed_debounce/debounce_window_0
     ----------------------------------------
-    Total                      4.848ns (1.855ns logic, 2.993ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      5.097ns (1.855ns logic, 3.242ns route)
+                                       (36.4% logic, 63.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk100K/clk_div'
-  Total number of paths / destination ports: 3045 / 604
+  Total number of paths / destination ports: 3627 / 601
 -------------------------------------------------------------------------
 Offset:              9.202ns (Levels of Logic = 8)
   Source:            dialogue_in<1> (PAD)
@@ -2648,7 +2732,7 @@ Offset:              9.202ns (Levels of Logic = 8)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'freqency_divider/cnt_h_2'
   Total number of paths / destination ports: 24 / 12
 -------------------------------------------------------------------------
-Offset:              4.848ns (Levels of Logic = 2)
+Offset:              5.097ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       note_controllor/value_5 (FF)
   Destination Clock: freqency_divider/cnt_h_2 rising
@@ -2657,18 +2741,38 @@ Offset:              4.848ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.788  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O          993   0.203   2.205  buzzer_controllor/rst_n_inv1 (buzzer_controllor/rst_n_inv)
+     IBUF:I->O             3   1.222   0.755  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         2166   0.203   2.486  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          note_controllor/carry
     ----------------------------------------
-    Total                      4.848ns (1.855ns logic, 2.993ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      5.097ns (1.855ns logic, 3.242ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50k/clk_div'
+  Total number of paths / destination ports: 1152 / 576
+-------------------------------------------------------------------------
+Offset:              5.097ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       U_LCDctrl/image_3 (FF)
+  Destination Clock: clk50k/clk_div rising
+
+  Data Path: rst_n to U_LCDctrl/image_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         2166   0.203   2.486  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     FDC:CLR                   0.430          U_LCDctrl/lcd_en
+    ----------------------------------------
+    Total                      5.097ns (1.855ns logic, 3.242ns route)
+                                       (36.4% logic, 63.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'note_controllor/carry'
   Total number of paths / destination ports: 1094 / 547
 -------------------------------------------------------------------------
-Offset:              4.848ns (Levels of Logic = 2)
+Offset:              5.097ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       music_play/q1_6 (FF)
   Destination Clock: note_controllor/carry rising
@@ -2677,81 +2781,78 @@ Offset:              4.848ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.788  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O          993   0.203   2.205  buzzer_controllor/rst_n_inv1 (buzzer_controllor/rst_n_inv)
+     IBUF:I->O             3   1.222   0.755  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         2166   0.203   2.486  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          music_play/q0_0
     ----------------------------------------
-    Total                      4.848ns (1.855ns logic, 2.993ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      5.097ns (1.855ns logic, 3.242ns route)
+                                       (36.4% logic, 63.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_generate/clk_100'
   Total number of paths / destination ports: 28 / 8
 -------------------------------------------------------------------------
-Offset:              5.870ns (Levels of Logic = 2)
-  Source:            counting_down/_i000008/pb_debounced (FF)
+Offset:              5.877ns (Levels of Logic = 2)
+  Source:            counting_down/pressed_debounce/pb_debounced (FF)
   Destination:       dialogue_out<3> (PAD)
   Source Clock:      clock_generate/clk_100 rising
 
-  Data Path: counting_down/_i000008/pb_debounced to dialogue_out<3>
+  Data Path: counting_down/pressed_debounce/pb_debounced to dialogue_out<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             77   0.447   2.070  counting_down/_i000008/pb_debounced (counting_down/_i000008/pb_debounced)
+     FDC:C->Q             78   0.447   2.077  counting_down/pressed_debounce/pb_debounced (counting_down/pressed_debounce/pb_debounced)
      LUT5:I0->O            1   0.203   0.579  counting_down/dialogue_out<3>11 (dialogue_out_3_OBUF)
      OBUF:I->O                 2.571          dialogue_out_3_OBUF (dialogue_out<3>)
     ----------------------------------------
-    Total                      5.870ns (3.221ns logic, 2.649ns route)
-                                       (54.9% logic, 45.1% route)
+    Total                      5.877ns (3.221ns logic, 2.656ns route)
+                                       (54.8% logic, 45.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 83 / 20
+  Total number of paths / destination ports: 19 / 15
 -------------------------------------------------------------------------
-Offset:              6.713ns (Levels of Logic = 3)
-  Source:            freqency_divider/clk_ctl_0 (FF)
-  Destination:       display<14> (PAD)
+Offset:              4.963ns (Levels of Logic = 2)
+  Source:            clk50k/clk_div (FF)
+  Destination:       LCD_data<7> (PAD)
   Source Clock:      clk rising
 
-  Data Path: freqency_divider/clk_ctl_0 to display<14>
+  Data Path: clk50k/clk_div to LCD_data<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             22   0.447   1.362  freqency_divider/clk_ctl_0 (freqency_divider/clk_ctl_0)
-     LUT3:I0->O           15   0.205   1.346  scan_controllor/Mmux_bcd_out51 (letter<4>)
-     LUT6:I0->O            1   0.203   0.579  decoder/Mmux_ssd_out141 (display_8_OBUF)
-     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
+     FDC:C->Q             13   0.447   1.161  clk50k/clk_div (clk50k/clk_div)
+     LUT3:I0->O            1   0.205   0.579  lcd_switch/Mmux_LCD_en11 (LCD_en_OBUF)
+     OBUF:I->O                 2.571          LCD_en_OBUF (LCD_en)
     ----------------------------------------
-    Total                      6.713ns (3.426ns logic, 3.287ns route)
-                                       (51.0% logic, 49.0% route)
+    Total                      4.963ns (3.223ns logic, 1.740ns route)
+                                       (64.9% logic, 35.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'freqency_divider/cnt_h_2'
-  Total number of paths / destination ports: 725 / 29
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50k/clk_div'
+  Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              7.852ns (Levels of Logic = 4)
-  Source:            note_controllor/note_2 (FF)
-  Destination:       display<14> (PAD)
-  Source Clock:      freqency_divider/cnt_h_2 rising
+Offset:              5.253ns (Levels of Logic = 2)
+  Source:            U_LCDctrl/lcd_en (FF)
+  Destination:       LCD_en (PAD)
+  Source Clock:      clk50k/clk_div rising
 
-  Data Path: note_controllor/note_2 to display<14>
+  Data Path: U_LCDctrl/lcd_en to LCD_en
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             28   0.447   1.579  note_controllor/note_2 (note_controllor/note_2)
-     LUT5:I0->O            2   0.203   0.721  note_controllor_Mram__n015827 (letter2_3_OBUF)
-     LUT3:I1->O           15   0.203   1.346  scan_controllor/Mmux_bcd_out41 (letter<3>)
-     LUT6:I0->O            1   0.203   0.579  decoder/Mmux_ssd_out31 (display_11_OBUF)
-     OBUF:I->O                 2.571          display_11_OBUF (display<11>)
+     FDC:C->Q             36   0.447   1.453  U_LCDctrl/lcd_en (U_LCDctrl/lcd_en)
+     LUT3:I1->O            1   0.203   0.579  lcd_switch/Mmux_LCD_en11 (LCD_en_OBUF)
+     OBUF:I->O                 2.571          LCD_en_OBUF (LCD_en)
     ----------------------------------------
-    Total                      7.852ns (3.627ns logic, 4.225ns route)
-                                       (46.2% logic, 53.8% route)
+    Total                      5.253ns (3.221ns logic, 2.032ns route)
+                                       (61.3% logic, 38.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk100K/clk_div'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              3.874ns (Levels of Logic = 1)
+Offset:              4.659ns (Levels of Logic = 2)
   Source:            LCD_controller/LCD_en (FF)
   Destination:       LCD_en (PAD)
   Source Clock:      clk100K/clk_div rising
@@ -2760,29 +2861,50 @@ Offset:              3.874ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q             10   0.447   0.856  LCD_controller/LCD_en (LCD_controller/LCD_en)
+     FDP:C->Q             10   0.447   0.857  LCD_controller/LCD_en (LCD_controller/LCD_en)
+     LUT3:I2->O            1   0.205   0.579  lcd_switch/Mmux_LCD_en11 (LCD_en_OBUF)
      OBUF:I->O                 2.571          LCD_en_OBUF (LCD_en)
     ----------------------------------------
-    Total                      3.874ns (3.018ns logic, 0.856ns route)
-                                       (77.9% logic, 22.1% route)
+    Total                      4.659ns (3.223ns logic, 1.436ns route)
+                                       (69.2% logic, 30.8% route)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 3 / 3
+Timing constraint: Default OFFSET OUT AFTER for Clock 'freqency_divider/cnt_h_2'
+  Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Delay:               4.476ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       rst_n_out (PAD)
+Offset:              4.089ns (Levels of Logic = 1)
+  Source:            note_controllor/note_4 (FF)
+  Destination:       note<4> (PAD)
+  Source Clock:      freqency_divider/cnt_h_2 rising
 
-  Data Path: rst_n to rst_n_out
+  Data Path: note_controllor/note_4 to note<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.683  rst_n_IBUF (rst_n_out_OBUF)
-     OBUF:I->O                 2.571          rst_n_out_OBUF (rst_n_out)
+     FDC:C->Q             19   0.447   1.071  note_controllor/note_4 (note_controllor/note_4)
+     OBUF:I->O                 2.571          note_4_OBUF (note<4>)
     ----------------------------------------
-    Total                      4.476ns (3.793ns logic, 0.683ns route)
-                                       (84.7% logic, 15.3% route)
+    Total                      4.089ns (3.018ns logic, 1.071ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 3
+-------------------------------------------------------------------------
+Delay:               5.330ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       LCD_rst (PAD)
+
+  Data Path: rst_n to LCD_rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O            1   0.203   0.579  rst1 (LCD_rst_OBUF)
+     OBUF:I->O                 2.571          LCD_rst_OBUF (LCD_rst)
+    ----------------------------------------
+    Total                      5.330ns (3.996ns logic, 1.334ns route)
+                                       (75.0% logic, 25.0% route)
 
 =========================================================================
 
@@ -2795,7 +2917,7 @@ Clock to Setup on destination clock clk
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
 clk                     |    4.672|         |         |         |
-freqency_divider/cnt_h_2|    6.397|         |         |         |
+freqency_divider/cnt_h_2|    6.234|         |         |         |
 ------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk100K/clk_div
@@ -2804,9 +2926,17 @@ Clock to Setup on destination clock clk100K/clk_div
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
 clk100K/clk_div       |    8.941|         |         |         |
-clock_generate/clk_100|   11.872|         |         |         |
-clock_generate/clk_66 |   10.026|         |         |         |
+clock_generate/clk_100|   12.359|         |         |         |
+clock_generate/clk_66 |    9.927|         |         |         |
 ----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk50k/clk_div
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk50k/clk_div |    6.766|         |         |         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_generate/clk_100
 ----------------------+---------+---------+---------+---------+
@@ -2844,14 +2974,14 @@ note_controllor/carry|    2.302|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 150.00 secs
-Total CPU time to Xst completion: 149.27 secs
+Total REAL time to Xst completion: 231.00 secs
+Total CPU time to Xst completion: 231.54 secs
  
 --> 
 
-Total memory usage is 393732 kilobytes
+Total memory usage is 402612 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  962 (   0 filtered)
-Number of infos    :   75 (   0 filtered)
+Number of warnings :  893 (   0 filtered)
+Number of infos    :   78 (   0 filtered)
 

@@ -37,8 +37,8 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rst_n       |    7.441(R)|      SLOW  |   -1.793(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-rst_n_in    |    6.463(R)|      SLOW  |   -1.776(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rst_n       |   10.330(R)|      SLOW  |   -3.102(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rst_n_in    |    9.180(R)|      SLOW  |   -2.443(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -46,26 +46,21 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-audio_bck   |         7.227(R)|      SLOW  |         3.740(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_data  |         9.559(R)|      SLOW  |         4.569(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_ws    |         6.913(R)|      SLOW  |         3.544(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-control<0>  |         7.469(R)|      SLOW  |         3.914(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-control<1>  |         8.022(R)|      SLOW  |         4.153(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<0>  |        10.724(R)|      SLOW  |         4.432(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<1>  |        10.874(R)|      SLOW  |         4.276(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<2>  |        10.724(R)|      SLOW  |         4.459(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<3>  |        10.537(R)|      SLOW  |         4.097(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<4>  |        11.267(R)|      SLOW  |         4.625(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<5>  |        10.803(R)|      SLOW  |         4.396(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<6>  |        11.111(R)|      SLOW  |         4.909(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<7>  |        10.635(R)|      SLOW  |         4.591(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<8>  |        11.260(R)|      SLOW  |         4.797(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<9>  |        11.036(R)|      SLOW  |         4.658(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<10> |        10.624(R)|      SLOW  |         4.390(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<11> |        10.736(R)|      SLOW  |         4.788(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<12> |        10.590(R)|      SLOW  |         4.741(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<13> |        10.687(R)|      SLOW  |         4.523(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-display<14> |        11.100(R)|      SLOW  |         4.538(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_cs<0>   |         8.731(R)|      SLOW  |         4.723(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_cs<1>   |         8.182(R)|      SLOW  |         4.430(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<0> |        11.338(R)|      SLOW  |         6.400(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<1> |        11.278(R)|      SLOW  |         6.358(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<2> |        10.817(R)|      SLOW  |         6.061(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<3> |        10.703(R)|      SLOW  |         5.995(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<4> |        10.666(R)|      SLOW  |         5.993(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<5> |        10.522(R)|      SLOW  |         5.906(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<6> |        11.362(R)|      SLOW  |         6.350(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<7> |        11.124(R)|      SLOW  |         6.192(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_di      |        10.018(R)|      SLOW  |         5.496(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_en      |         9.599(R)|      SLOW  |         5.253(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_bck   |         6.754(R)|      SLOW  |         3.472(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_data  |         8.280(R)|      SLOW  |         3.719(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_ws    |         6.962(R)|      SLOW  |         3.578(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -73,7 +68,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.058|         |         |         |
+clk            |    3.969|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
@@ -81,19 +76,20 @@ Pad to Pad
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
 clk            |audio_sysclk   |    7.915|
-rst_n          |LCD_rst        |    9.557|
-rst_n          |rst_n_out      |    9.364|
+rst_n          |LCD_rst        |   10.259|
+rst_n          |rst_n_out      |   10.032|
+rst_n_in       |LCD_rst        |    9.109|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Jun 16 21:23:53 2015 
+Analysis completed Thu Jun 18 00:59:56 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 276 MB
+Peak Memory Usage: 294 MB
 
 
 
