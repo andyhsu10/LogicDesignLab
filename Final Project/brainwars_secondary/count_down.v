@@ -11,14 +11,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 `include "global.v"
 module count_down(
-	q0, //shifter output
-	clk, // global clock
-	rst_n //active low reset
+	q0, //shifter output (O)
+	clk, //global clock (I)
+	state, //fsm state (I)
+	rst_n //active low reset (I)
 );
 
 //I/Os
 output [31:0] q0; //output
 input clk, rst_n; //clock & global clock
+input [3:0] state; //fsm state
 
 reg [31:0] q0, q1, q2, q3, q4, q5, q6, q7, q8, q9;
 reg [31:0] q10, q11, q12, q13, q14, q15, q16, q17, q18, q19;
@@ -30,7 +32,7 @@ reg [31:0] q60, q61, q62, q63, q64, q65;
 
 //Sequential logics: Flip Flops
 always @(posedge clk or negedge rst_n)
-	if(~rst_n)
+	if(~rst_n || ((state != `STAT_STAGE1_DES) && (state != `STAT_STAGE2_DES) && (state != `STAT_STAGE3_DES)))
 		begin
 			q0 <= {`GRAPH_LU_1, `GRAPH_RU_1, `GRAPH_LD_1, `GRAPH_RD_1};
 			q1 <= {`GRAPH_LU_1, `GRAPH_RU_2, `GRAPH_LD_1, `GRAPH_RD_1};

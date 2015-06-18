@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\GitHub\LogicDesignLab\Final Project\brainwars_main\impact.xsl
+OUTFILE=D:\GitHub\LogicDesignLab\Final Project\brainwars_main\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\GitHub\LogicDesignLab\Final Project\brainwars_main
+LICENSE=iMPACT
+USER_INFO=iMPACT

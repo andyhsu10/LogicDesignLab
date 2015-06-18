@@ -12,10 +12,16 @@
 `include "global.v"
 module brainwars_main(
 	clk, //clock from crystal (I)
+	music_on_off, //DIP switch for music on or off (I)
 	rst_n, //active low reset (I)
 	rst_n_in, //reset signal from second board (I)
 	dialogue_in, //dialogue from another board (I)
 	col_n, //pressed column index (I)
+	game_invite, //game invitation from button (I)
+	game_invite_out, //game invitation to secondary board (O)
+	game_cancel, //game cancellation from button (I)
+	game_cancel_out, //game cancellation to secondary board (O)
+	state, //fsm state (I)
 	row_n, //scanned row index (O)
 	dialogue_out, //dialogue sent to another board (O)
 	rst_n_out, //reset signal for second board (O)
@@ -37,8 +43,12 @@ module brainwars_main(
 
 //I/Os
 input clk; //clock from the crystal
+input music_on_off; //DIP switch for music on or off
 input rst_n; //active low reset
 input rst_n_in; //reset signal from second board
+input game_invite; //game invitation from button
+input game_cancel; //game cancellation from button
+input [3:0] state; //fsm state
 input [3:0] dialogue_in; //dialogue from another board
 input [`KEYPAD_WIDTH-1:0] col_n;
 output [`KEYPAD_WIDTH-1:0] row_n;
@@ -58,6 +68,8 @@ output LCD_rw; //LCD read/write control
 output LCD_di; //LCD data/instruction
 output [7:0] LCD_data; //LCD data
 output LCD_en; //LCD enable
+output game_invite_out; //game invitation to secondary board
+output game_cancel_out; //game cancellation to secondary board
 
 //Declare internal nodes
 wire rst;
@@ -86,6 +98,8 @@ wire [7:0] LCD_data1, LCD_data2;
 
 assign rst_n_out = rst_n;
 assign rst = rst_n & rst_n_in;
+assign game_invite_out = game_invite;
+assign game_cancel_out = game_cancel;
 
 freq_div freqency_divider(
 	.clk_fast(clk_fast),
@@ -114,12 +128,11 @@ keypad_scan keypad_scanner(
 count_down_screen counting_down(
 	.clk(clk_66), //global clock (I)
 	.clk_100(clk_100), //100 Hz clock (I)
-	.enable(1'b1), //module enable signal (I)
+	.state(state), //fsm state (I)
 	.key(key), //returned pressed key (I)
 	.pressed(pressed), //whether key pressed (1) or not (0) (I)
 	.dialogue_in(dialogue_in), //dialogue from another board (I)
 	.rst_n(rst), //active low reset (I)
-	.count_down_next_state(count_down_next_state), //(O)
 	.dialogue_out(dialogue_out), //dialogue sent to another board (O)
 	.data_out(data_output) //data output (O)
 );
@@ -210,9 +223,10 @@ lcd_switcher lcd_switch(
 );
 
 music music_play(
-	.q0(q), //shifter output
-	.clk(carry), // global clock
-	.rst_n(rst) //active low reset
+	.q0(q), //shifter output (O)
+	.clk(carry), // global clock (I)
+	.music_on_off(music_on_off), //DIP switch for music on or off (I)
+	.rst_n(rst) //active low reset (I)
 );
 
 note_ctl note_controllor(

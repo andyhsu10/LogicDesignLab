@@ -109,12 +109,14 @@ int main()
     outFile << "`include \"global.v\"" << endl;
     outFile << "`define BIT_WIDTH 10" << endl;
     outFile << "module music(" << endl;
-    outFile << "\tq0, //shifter output" << endl;
-    outFile << "\tclk, // global clock" << endl;
-    outFile << "\trst_n //active low reset" << endl << ");" << endl << endl;
+    outFile << "\tq0, //shifter output (O)" << endl;
+    outFile << "\tclk, // global clock (I)" << endl;
+    outFile << "\tmusic_on_off, //DIP switch for music on or off (I)" << endl;
+    outFile << "\trst_n //active low reset (I)" << endl << ");" << endl << endl;
 	outFile << "//I/Os" << endl;
 	outFile << "output [`BIT_WIDTH-1:0] q0; //output" << endl;
-	outFile << "input clk, rst_n; //clock & global clock" << endl << endl;
+	outFile << "input clk, rst_n; //clock & global clock" << endl;
+	outFile << "input music_on_off; //DIP switch for music on or off" << endl << endl;
 
 	for(int i=0; i<vector_size; i++){
 		if(i%10 == 0)
@@ -130,7 +132,7 @@ int main()
     outFile << endl;
     outFile << "//Sequential logics: Flip Flops" << endl;
 	outFile << "always @(posedge clk or negedge rst_n)" << endl;
-	outFile << "\tif(~rst_n)" << endl;
+	outFile << "\tif(~rst_n || music_on_off)" << endl;
     outFile << "\t\tbegin" << endl;
 
 	for(int i=0; i<vector_size; i++){

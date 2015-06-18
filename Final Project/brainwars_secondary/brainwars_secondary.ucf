@@ -3,6 +3,8 @@
 
 NET "clk" LOC = R10;
 NET "rst_n" LOC = T2;
+NET "game_invite" LOC = N3;
+NET "game_cancel" LOC = P4;
 
 /*
 NET "control[0]" LOC = V8;
@@ -52,6 +54,14 @@ NET "dialogue_out[3]" LOC = C9;
 NET "dialogue_out[2]" LOC = D11;
 NET "dialogue_out[1]" LOC = A10;
 NET "dialogue_out[0]" LOC = B11;
+
+NET "state[3]" LOC = F16;
+NET "state[2]" LOC = F14;
+NET "state[1]" LOC = D18;
+NET "state[0]" LOC = B2;
+
+NET "game_invite_in" LOC = B6;
+NET "game_cancel_in" LOC = C8;
 
 ## LCD control signals
 NET "LCD_rst"       LOC = "E3";

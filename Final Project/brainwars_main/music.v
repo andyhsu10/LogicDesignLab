@@ -14,14 +14,16 @@
 `include "global.v"
 `define BIT_WIDTH 10
 module music(
-	q0, //shifter output
-	clk, // global clock
-	rst_n //active low reset
+	q0, //shifter output (O)
+	clk, // global clock (I)
+	music_on_off, //DIP switch for music on or off (I)
+	rst_n //active low reset (I)
 );
 
 //I/Os
 output [`BIT_WIDTH-1:0] q0; //output
 input clk, rst_n; //clock & global clock
+input music_on_off; //DIP switch for music on or off
 
 reg [`BIT_WIDTH-1:0] q0, q1, q2, q3, q4, q5, q6, q7, q8, q9;
 reg [`BIT_WIDTH-1:0] q10, q11, q12, q13, q14, q15, q16, q17, q18, q19;
@@ -40,7 +42,7 @@ reg [`BIT_WIDTH-1:0] q130, q131, q132;
 
 //Sequential logics: Flip Flops
 always @(posedge clk or negedge rst_n)
-	if(~rst_n)
+	if(~rst_n || music_on_off)
 		begin
 			q0 <= {`LIG_FALSE, `BEAT_3, `ENCODE_NA};
 			q1 <= {`LIG_FALSE, `BEAT_1, `ENCODE_D4};

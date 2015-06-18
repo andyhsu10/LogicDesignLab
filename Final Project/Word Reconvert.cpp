@@ -1,18 +1,39 @@
 #include <iostream>
+#include <fstream>
 #include <string>
+#include <cstdlib>
 using namespace std;
+
+void convert(string a);
 
 int main()
 {
 	string code;
+	ifstream inFile;
+	inFile.open("data.txt");
 
+	if(!inFile){
+		cout << "Input file \"BitFont.txt\" is not valid." << endl << endl;
+		exit(-1);
+	}
+
+	getline(inFile, code);
 	do
 	{
-		cout << "Enter the codes: ";
-		cin >> code;
+	    convert(code);
+		getline(inFile, code);
+		cout << endl << endl;
+	}while(!code.empty());
 
-		for(int i=0; i<code.size(); i++){
-			switch(code[i])
+	inFile.close();
+
+	return 0;
+}
+
+void convert(string a)
+{
+	for(int i=0; i<a.size(); i++){
+			switch(a[i])
 			{
 				case '0': cout << "        "; break;
 				case '1': cout << "      0 "; break;
@@ -35,9 +56,4 @@ int main()
 			if(i % 5 == 4)
 				cout << endl;
 		}
-
-		cout << endl << endl;
-	}while(code != "Exit" && code != "exit" && code != "EXIT");
-
-	return 0;
 }

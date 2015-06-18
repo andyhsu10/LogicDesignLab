@@ -1,3 +1,14 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: An-Ting Hsu & Hsin-Ho Lu
+// 
+// Create Date:    22:17:10 06/18/2015 
+// Module Name:    rom_lcd_ctrl
+// Project Name:   2015 Spring Logic Design Laboratory Final Project
+// Revision: 
+// Revision 0.01 - File Created
+//
+//////////////////////////////////////////////////////////////////////////////////
 `define LCD_SET_DSL      10'b0_0_11000000
 `define LCD_ERASE        10'b1_0_00000000
 `define LCD_DISPLAY_IDLE 10'b0_0_00111111
@@ -8,7 +19,6 @@
 `define READ_DATA    3'b100
 `define ENABLED  1'b1
 `define DISABLED 1'b0
-
 module rom_lcd_ctrl(
   clk, // LCD controller clock
   rst_n, // active low reset

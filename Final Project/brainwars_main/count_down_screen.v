@@ -13,12 +13,11 @@
 module count_down_screen(
 	clk, //global clock (I)
 	clk_100, //100 Hz clock (I)
-	enable, //module enable signal (I)
+	state, //fsm state (I)
 	key, //returned pressed key (I)
 	pressed, //whether key pressed (1) or not (0) (I)
 	dialogue_in, //dialogue from another board (I)
 	rst_n, //active low reset (I)
-	count_down_next_state, //(O)
 	dialogue_out, //dialogue sent to another board (O)
 	data_out //data output (O)
 );
@@ -26,18 +25,16 @@ module count_down_screen(
 //I/Os
 input clk; //global clock
 input clk_100; //100 Hz clock
-input enable; //module enable signal
+input [3:0] state; //fsm state
 input [3:0] key; //returned pressed key
 input pressed; //whether key pressed (1) or not (0)
 input [3:0] dialogue_in; //dialogue from another board
 input rst_n; //active low reset
-output count_down_next_state;
 output [3:0] dialogue_out; //dialogue sent to another board
 output [127:0] data_out; //data output
 
 reg [6:0] value, value_tmp;
 reg clk_count;
-reg count_down_next_state;
 reg [3:0] dialogue_out;
 reg [3:0] key_tmp;
 reg [7:0] dialogue1, dialogue2;
@@ -46,35 +43,11 @@ reg [127:0] data_out;
 wire de_pressed;
 wire [31:0] q0;
 
-//Combinational logics
-always @(value)
-	value_tmp = value + 1'b1;
-
-//Sequential lodics: Flip flops
-always @(posedge clk or negedge rst_n)
-	if(~rst_n)
-		value <= 7'd0;
-	else if((value == 7'd66) && (enable == 1'b1))
-		begin
-			clk_count = 1'b0;
-			count_down_next_state = 1'b1;
-		end
-	else if(enable == 1'b0)
-		begin
-			clk_count = 1'b0;
-			count_down_next_state = 1'b0;
-		end
-	else
-		begin
-			clk_count = clk;
-			value <= value_tmp;
-			count_down_next_state = 1'b0;
-		end
-
 count_down counting_down(
-	.q0(q0), //shifter output
-	.clk(clk), // global clock
-	.rst_n(rst_n) //active low reset
+	.q0(q0), //shifter output (O)
+	.clk(clk), // global clock (I)
+	.state(state), //fsm state (I)
+	.rst_n(rst_n) //active low reset (I)
 );
 
 debounce pressed_debounce(

@@ -40,9 +40,28 @@
 `define KEY_E 4'd14
 `define KEY_F 4'd15
 
-//FSM State
+//Keypad FSM State
 `define SCAN 1'b1
 `define PAUSE 1'b0
+
+//FSM State
+`define STAT_INITIAL 4'd0
+`define STAT_GAME_INVITE 4'd1
+`define STAT_STAGE1_DES 4'd2
+`define STAT_STAGE1 4'd3
+`define STAT_STAGE2_DES 4'd4
+`define STAT_STAGE2 4'd5
+`define STAT_STAGE3_DES 4'd6
+`define STAT_STAGE3 4'd7
+`define STAT_RESULT 4'd8
+
+//Game Enable
+`define GAME_1 3'd0
+`define GAME_2 3'd1
+`define GAME_3 3'd2
+`define GAME_4 3'd3
+`define GAME_5 3'd4
+`define GAME_6 3'd5
 
 //Clock Generator
 `define DIV_BY_20M 20_000_000
@@ -374,6 +393,47 @@
 `define GRAPH_LIKE 8'd127
 `define GRAPH_FUCK 8'd128
 
+//Flick Master (Encode)
+`define GRAPH_FLICK_MASTER_1_up_lu 8'd129
+`define GRAPH_FLICK_MASTER_1_up_ru 8'd130
+`define GRAPH_FLICK_MASTER_1_up_ld 8'd131
+`define GRAPH_FLICK_MASTER_1_up_rd 8'd132
+
+`define GRAPH_FLICK_MASTER_1_down_lu 8'd133
+`define GRAPH_FLICK_MASTER_1_down_ru 8'd134
+`define GRAPH_FLICK_MASTER_1_down_ld 8'd135
+`define GRAPH_FLICK_MASTER_1_down_rd 8'd136
+
+`define GRAPH_FLICK_MASTER_1_right_lu 8'd137
+`define GRAPH_FLICK_MASTER_1_right_ru 8'd138
+`define GRAPH_FLICK_MASTER_1_right_ld 8'd139
+`define GRAPH_FLICK_MASTER_1_right_rd 8'd140
+
+`define GRAPH_FLICK_MASTER_1_left_lu 8'd141
+`define GRAPH_FLICK_MASTER_1_left_ru 8'd142
+`define GRAPH_FLICK_MASTER_1_left_ld 8'd143
+`define GRAPH_FLICK_MASTER_1_left_rd 8'd144
+
+`define GRAPH_FLICK_MASTER_0_up_lu 8'd145
+`define GRAPH_FLICK_MASTER_0_up_ru 8'd146
+`define GRAPH_FLICK_MASTER_0_up_ld 8'd147
+`define GRAPH_FLICK_MASTER_0_up_rd 8'd148
+
+`define GRAPH_FLICK_MASTER_0_down_lu 8'd149
+`define GRAPH_FLICK_MASTER_0_down_ru 8'd150
+`define GRAPH_FLICK_MASTER_0_down_ld 8'd151
+`define GRAPH_FLICK_MASTER_0_down_rd 8'd152
+
+`define GRAPH_FLICK_MASTER_0_right_lu 8'd153
+`define GRAPH_FLICK_MASTER_0_right_ru 8'd154
+`define GRAPH_FLICK_MASTER_0_right_ld 8'd155
+`define GRAPH_FLICK_MASTER_0_right_rd 8'd156
+
+`define GRAPH_FLICK_MASTER_0_left_lu 8'd157
+`define GRAPH_FLICK_MASTER_0_left_ru 8'd158
+`define GRAPH_FLICK_MASTER_0_left_ld 8'd159
+`define GRAPH_FLICK_MASTER_0_left_rd 8'd160
+
 //Count Down (Decode)
 `define LCD_LU_1 256'h001f_00f0_01c0_0700_0e00_1800_3000_3000_6000_6000_403f_c03f_803c_803c_803f_803f
 `define LCD_LU_2 256'h001f_00f0_01c0_0700_0e00_1800_3000_3000_6000_6000_4000_c000_8003_8003_800f_800f
@@ -469,3 +529,44 @@
 `define LCD_SAD 256'h0000_0000_1008_0810_0420_0810_1008_0000_0000_0810_15a8_2244_0000_0000_0000_0000
 `define LCD_LIKE 256'h0000_0000_0400_0600_0600_0c00_1ffc_1ff0_1ff8_1ff0_1ff8_0ff0_07f8_03f0_0000_0000
 `define LCD_FUCK 256'h0000_03c0_0240_0240_0240_0240_0240_0240_3e7c_2004_2004_2004_2004_300c_1ff8_0000
+
+//Flick Master
+`define LCD_FLICK_MASTER_1_up_lu 256'h0001_0003_0007_000f_001f_003f_007f_00ff_01ff_03ff_07ff_0fff_0003_0003_0003_0003
+`define LCD_FLICK_MASTER_1_up_ru 256'h8000_c000_e000_f000_f800_fc00_fe00_ff00_ff80_ffc0_ffe0_fff0_c000_c000_c000_c000
+`define LCD_FLICK_MASTER_1_up_ld 256'h0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003
+`define LCD_FLICK_MASTER_1_up_rd 256'hc000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000
+
+`define LCD_FLICK_MASTER_1_down_lu 256'h0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003_0003
+`define LCD_FLICK_MASTER_1_down_ru 256'hc000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000_c000
+`define LCD_FLICK_MASTER_1_down_ld 256'h0003_0003_0003_0003_0fff_07ff_03ff_01ff_00ff_007f_003f_001f_000f_0007_0003_0001
+`define LCD_FLICK_MASTER_1_down_rd 256'hc000_c000_c000_c000_fff0_ffe0_ffc0_ff80_ff00_fe00_fc00_f800_f000_e000_c000_8000
+
+`define LCD_FLICK_MASTER_1_right_lu 256'h0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_ffff_ffff
+`define LCD_FLICK_MASTER_1_right_ru 256'h0000_0000_0000_0000_0800_0c00_0e00_0f00_0f80_0fc0_0fe0_0ff0_0ff8_0ffc_fffe_ffff
+`define LCD_FLICK_MASTER_1_right_ld 256'hffff_ffff_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000
+`define LCD_FLICK_MASTER_1_right_rd 256'hffff_fffe_0ffc_0ff8_0ff0_0fe0_0fc0_0f80_0f00_0e00_0c00_0800_0000_0000_0000_0000
+
+`define LCD_FLICK_MASTER_1_left_lu 256'h0000_0000_0000_0000_0010_0030_0070_00f0_01f0_03f0_07f0_0ff0_1ff0_3ff0_7fff_ffff
+`define LCD_FLICK_MASTER_1_left_ru 256'h0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_ffff_ffff
+`define LCD_FLICK_MASTER_1_left_ld 256'hffff_7fff_3ff0_1ff0_0ff0_07f0_03f0_01f0_00f0_0070_0030_0010_0000_0000_0000_0000
+`define LCD_FLICK_MASTER_1_left_rd 256'hffff_ffff_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000
+
+`define LCD_FLICK_MASTER_0_up_lu 256'hfffe_fffc_fff8_fff0_ffe0_ffc0_ff80_ff00_fe00_fc00_f800_f000_fffc_fffc_fffc_fffc
+`define LCD_FLICK_MASTER_0_up_ru 256'h7fff_3fff_1fff_0fff_07ff_03ff_01ff_00ff_007f_003f_001f_000f_3fff_3fff_3fff_3fff
+`define LCD_FLICK_MASTER_0_up_ld 256'hfffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc
+`define LCD_FLICK_MASTER_0_up_rd 256'h3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff
+
+`define LCD_FLICK_MASTER_0_down_lu 256'hfffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc_fffc
+`define LCD_FLICK_MASTER_0_down_ru 256'h3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff_3fff
+`define LCD_FLICK_MASTER_0_down_ld 256'hfffc_fffc_fffc_fffc_f000_f800_fc00_fe00_ff00_ff80_ffc0_ffe0_fff0_fff8_fffc_fffe
+`define LCD_FLICK_MASTER_0_down_rd 256'h3fff_3fff_3fff_3fff_000f_001f_003f_007f_00ff_01ff_03ff_07ff_0fff_1fff_3fff_7fff
+
+`define LCD_FLICK_MASTER_0_right_lu 256'hffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_0000_0000
+`define LCD_FLICK_MASTER_0_right_ru 256'hffff_ffff_ffff_ffff_f7ff_f3ff_f1ff_f0ff_f07f_f03f_f01f_f00f_f007_f003_f001_f000
+`define LCD_FLICK_MASTER_0_right_ld 256'h0000_0000_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff
+`define LCD_FLICK_MASTER_0_right_rd 256'h0000_0001_f003_f007_f00f_f01f_f03f_f07f_f0ff_f1ff_f3ff_f7ff_ffff_ffff_ffff_ffff
+
+`define LCD_FLICK_MASTER_0_left_lu 256'hffff_ffff_ffff_ffff_ffef_ffcf_ff8f_ff0f_fe0f_fc0f_f80f_f00f_e00f_c00f_8000_0000
+`define LCD_FLICK_MASTER_0_left_ru 256'hffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_0000_0000
+`define LCD_FLICK_MASTER_0_left_ld 256'h0000_8000_c00f_e00f_f00f_f80f_fc0f_fe0f_ff0f_ff8f_ffcf_ffef_ffff_ffff_ffff_ffff
+`define LCD_FLICK_MASTER_0_left_rd 256'h0000_0000_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff

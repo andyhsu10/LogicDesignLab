@@ -30,7 +30,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 177348 kilobytes
+Total memory usage is 183108 kilobytes
 
 Writing NGD file "brainwars_secondary.ngd" ...
 Total REAL time to NGDBUILD completion:  6 sec

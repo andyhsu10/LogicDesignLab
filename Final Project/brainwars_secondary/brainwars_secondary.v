@@ -16,6 +16,10 @@ module brainwars_secondary(
 	rst_n_in, //reset signal from second board (I)
 	dialogue_in, //dialogue from another board (I)
 	col_n, //pressed column index (I)
+	game_invite, //game invitation from button (I)
+	game_invite_in, //game invitation from main board (I)
+	game_cancel, //game cancellation from button (I)
+	game_cancel_in, //game cancellation from main board (I)
 	row_n, //scanned row index (O)
 	dialogue_out, //dialogue sent to another board (O)
 	rst_n_out, //reset signal for second board (O)
@@ -32,19 +36,24 @@ module brainwars_secondary(
     LCD_di, //LCD data/instruction (O)
     LCD_data, //LCD data (O)
     LCD_en, //LCD enable (O)
-	note_in
+	note_in,
+	state //fsm state (O)
 );
 
 //I/Os
 input clk; //clock from the crystal
 input rst_n; //active low reset
-input rst_n_in; //reset signal from second board (I)
+input rst_n_in; //reset signal from second board
 input [5:0] note_in;
 input [3:0] dialogue_in; //dialogue from another board
 input [`KEYPAD_WIDTH-1:0] col_n;
+input game_invite; //game invitation from button
+input game_invite_in; //game invitation from main board
+input game_cancel; //game cancellation from button
+input game_cancel_in; //game cancellation from main board
 output [`KEYPAD_WIDTH-1:0] row_n;
 output [3:0] dialogue_out; //dialogue sent to another board
-output rst_n_out; //reset signal for second board (O)
+output rst_n_out; //reset signal for second board
 //output [14:0] display; //SSD output
 //output [3:0] control; //SSD control signal
 output audio_appsel; //playing mode selection
@@ -58,6 +67,7 @@ output LCD_rw; //LCD read/write control
 output LCD_di; //LCD data/instruction
 output [7:0] LCD_data; //LCD data
 output LCD_en; //LCD enable
+output [3:0] state; //fsm state
 
 //Declare internal nodes
 wire rst;
@@ -106,6 +116,18 @@ clock_generator clock_generate(
   .clk_100(clk_100) // generated 100 Hz clock (O)
 );
 
+fsm finite_state_machine(
+	.state(state), //state signal (O)
+	.game_invite(game_invite & game_invite_in), //game invitation button (I)
+	.game_cancel(game_cancel & game_cancel_in), //game cancellation button (I)
+	.game_invite_back_state(1'b0), //game invitation screen to next state (I)
+	.count_down_next_state(count_down_next_state), //count down screen to next state (I)
+	.game_next_state(1'b1), //game to next state (I)
+	.result_next_state(1'b1), //result next state (I)
+	.clk(clk_100), //global clock signal (I)
+	.rst_n(rst) //low active reset (I)
+);
+
 keypad_scan keypad_scanner(
 	.clk(clk_100), //scan clock
 	.rst_n(rst), //scan clock
@@ -118,7 +140,7 @@ keypad_scan keypad_scanner(
 count_down_screen counting_down(
 	.clk(clk_66), //global clock (I)
 	.clk_100(clk_100), //100 Hz clock (I)
-	.enable(1'b1), //module enable signal (I)
+	.state(state), //fsm state (I)
 	.key(key), //returned pressed key (I)
 	.pressed(pressed), //whether key pressed (1) or not (0) (I)
 	.dialogue_in(dialogue_in), //dialogue from another board (I)

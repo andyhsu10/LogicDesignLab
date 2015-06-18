@@ -1,9 +1,19 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: An-Ting Hsu & Hsin-Ho Lu
+// 
+// Create Date:    22:19:10 06/18/2015 
+// Module Name:    rom_ctrl
+// Project Name:   2015 Spring Logic Design Laboratory Final Project
+// Revision: 
+// Revision 0.01 - File Created
+//
+//////////////////////////////////////////////////////////////////////////////////
 `define IDLE      2'b00
 `define READ_ROM  2'b01
 `define TRANS2LCD 2'b10
 `define DISABLED 1'b0
 `define ENABLED  1'b1
-
 module rom_ctrl(
   clk, // rom controller clock
   rst_n, // active low reset
