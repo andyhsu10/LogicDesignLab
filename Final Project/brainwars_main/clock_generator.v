@@ -14,6 +14,7 @@ module clock_generator(
   clk, // clock from crystal (I)
   rst_n, // active low reset (I)
   clk_1, // generated 1 Hz clock (O)
+  clk_2, // generated 2 Hz clock (O)
   clk_66, // generated 66 Hz clock (O)
   clk_100 // generated 100 Hz clock (O)
 );
@@ -22,17 +23,21 @@ module clock_generator(
 input clk; // clock from crystal
 input rst_n; // active low reset
 output clk_1; // generated 1 Hz clock
+output clk_2; // generated 2 Hz clock
 output clk_66; // generated 66 Hz clock
 output clk_100; // generated 100 Hz clock
 reg clk_1; // generated 1 Hz clock
+reg clk_2; // generated 2 Hz clock
 reg clk_66; // generated 66 Hz clock
 reg clk_100; // generated 100 Hz clock
 
 // Declare internal nodes
 reg [`DIV_BY_20M_BIT_WIDTH-1:0] count_20M, count_20M_next;
+reg [`DIV_BY_10M_BIT_WIDTH-1:0] count_10M, count_10M_next;
 reg [`DIV_BY_200K_BIT_WIDTH-1:0] count_200K, count_200K_next;
 reg [`DIV_BY_1515151_BIT_WIDTH-1:0] count_1515151, count_1515151_next;
 reg clk_1_next;
+reg clk_2_next;
 reg clk_100_next;
 reg clk_66_next;
 
@@ -63,6 +68,35 @@ always @(posedge clk or negedge rst_n)
   begin
     count_20M <= count_20M_next;
     clk_1 <= clk_1_next;
+  end
+
+// *******************
+// Clock divider for 2 Hz
+// *******************
+// Clock Divider: Counter operation
+always @*
+  if (count_10M == `DIV_BY_10M-1)
+  begin
+    count_10M_next = `DIV_BY_10M_BIT_WIDTH'd0;
+    clk_2_next = ~clk_2;
+  end
+  else
+  begin
+    count_10M_next = count_10M + 1'b1;
+    clk_2_next = clk_2;
+  end
+
+// Counter flip-flops
+always @(posedge clk or negedge rst_n)
+  if (~rst_n)
+  begin
+    count_10M <=`DIV_BY_10M_BIT_WIDTH'b0;
+    clk_2 <=1'b0;
+  end
+  else
+  begin
+    count_10M <= count_10M_next;
+    clk_2 <= clk_2_next;
   end
 
 // *********************

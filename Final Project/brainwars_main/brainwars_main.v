@@ -76,8 +76,8 @@ wire rst;
 wire carry;
 wire pressed;
 wire out_valid;
-wire count_down_next_state;
-wire clk_1, clk_66, clk_100, clk_fast, clk_div, clk_50k;
+wire clk_1, clk_2, clk_66, clk_100, clk_fast, clk_div, clk_50k;
+wire de_game_invite, de_game_cancel;
 wire [1:0] clk_ctl;
 wire [3:0] key;
 //wire [5:0] letter;
@@ -86,6 +86,8 @@ wire [9:0] q;
 wire [15:0] audio_in_left, audio_in_right;
 wire [19:0] note_div;
 wire [127:0] data_output;
+wire [127:0] initial_data_in, invite_data_in, count_down_data_in;
+wire [127:0] game1_data_in, game2_data_in, game3_data_in, result_data_in;
 
 wire [7:0] data; // byte data transfer from buffer
 wire [6:0] addr; // Address for each picture
@@ -98,8 +100,8 @@ wire [7:0] LCD_data1, LCD_data2;
 
 assign rst_n_out = rst_n;
 assign rst = rst_n & rst_n_in;
-assign game_invite_out = game_invite;
-assign game_cancel_out = game_cancel;
+assign game_invite_out = de_game_invite;
+assign game_cancel_out = de_game_cancel;
 
 freq_div freqency_divider(
 	.clk_fast(clk_fast),
@@ -112,8 +114,25 @@ clock_generator clock_generate(
   .clk(clk), // clock from crystal (I)
   .rst_n(rst), // active low reset (I)
   .clk_1(clk_1), // generated 1 Hz clock (O)
+  .clk_2(clk_2), // generated 2 Hz clock (O)
   .clk_66(clk_66), // generated 66 Hz clock (O)
   .clk_100(clk_100) // generated 100 Hz clock (O)
+);
+
+debounce_one_pulse debounce_game_invite(
+	.de_clk(clk_100), //debounce clock (I)
+	.pulse_clk(clk_100), //one pulse clock (I)
+	.rst_n(rst), //low active reset (I)
+	.in(game_invite), //push button input (I)
+	.out(de_game_invite) //pulsed push button output (O)
+);
+
+debounce_one_pulse debounce_game_cancel(
+	.de_clk(clk_100), //debounce clock (I)
+	.pulse_clk(clk_100), //one pulse clock (I)
+	.rst_n(rst), //low active reset (I)
+	.in(game_cancel), //push button input (I)
+	.out(de_game_cancel) //pulsed push button output (O)
 );
 
 keypad_scan keypad_scanner(
@@ -125,6 +144,20 @@ keypad_scan keypad_scanner(
 	.pressed(pressed) //whether key pressed (1) or not (0)
 );
 
+initial_screen game_initial_screen(
+	.clk(clk_2), //2Hz clock (I)
+	.state(state), //fsm state (I)
+	.rst_n(rst), //active low reset (I)
+	.data_out(initial_data_in) //data output (O)
+);
+
+invite_screen_main invite_screen(
+	.clk(clk_1), //1Hz clock (I)
+	.state(state), //fsm state (I)
+	.rst_n(rst), //active low reset (I)
+	.data_out(invite_data_in) //data output (O)
+);
+
 count_down_screen counting_down(
 	.clk(clk_66), //global clock (I)
 	.clk_100(clk_100), //100 Hz clock (I)
@@ -134,7 +167,19 @@ count_down_screen counting_down(
 	.dialogue_in(dialogue_in), //dialogue from another board (I)
 	.rst_n(rst), //active low reset (I)
 	.dialogue_out(dialogue_out), //dialogue sent to another board (O)
-	.data_out(data_output) //data output (O)
+	.data_out(count_down_data_in) //data output (O)
+);
+
+display_ctl display_controller(
+    .data_out(data_output), //data output (O)
+    .state(state), //fsm state (I)
+    .initial_data_in(initial_data_in), //initial screen lcd data (I)
+	.invite_data_in(invite_data_in), //invite screen lcd data (I)
+	.count_down_data_in(count_down_data_in), //count down screen lcd data (I)
+	.game1_data_in(128'd0), //game1 screen lcd data (I)
+	.game2_data_in(128'd0), //game2 screen lcd data (I)
+	.game3_data_in(128'd0), //game3 screen lcd data (I)
+	.result_data_in(128'd0) //result screen lcd data (I)
 );
 
 RAM_ctrl RAM_controller(

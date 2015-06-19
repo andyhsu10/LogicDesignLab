@@ -5,16 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 99: Port <arg fmt="%s" index="1">clk_out</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 103: Port <arg fmt="%s" index="1">clk_out</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 100: Assignment to <arg fmt="%s" index="1">clk_fast</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 104: Assignment to <arg fmt="%s" index="1">clk_fast</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 101: Assignment to <arg fmt="%s" index="1">clk_ctl</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 114: Assignment to <arg fmt="%s" index="1">clk_1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 105: Assignment to <arg fmt="%s" index="1">clk_ctl</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ipcore_dir\RAM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">RAM</arg>&gt; remains a black box.
@@ -53,19 +50,16 @@
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 71: Signal &lt;<arg fmt="%s" index="1">LCD_data2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%d" index="2">99</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">freqency_divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">brainwars_secondary</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%d" index="2">103</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">freqency_divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">brainwars_secondary</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">clk_ctl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">103</arg>: Output port &lt;<arg fmt="%s" index="3">clk_ctl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">103</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">clk_fast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">111</arg>: Output port &lt;<arg fmt="%s" index="3">clk_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clock_generate</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">103</arg>: Output port &lt;<arg fmt="%s" index="3">clk_fast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note_div&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -131,16 +125,19 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">note_div_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">note_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0034</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_row_n</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_mark</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0106</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">note_div_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">note_decode</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clock_generate/clk_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q44_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">brainwars_secondary</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1928,6 +1925,27 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q23_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">brainwars_secondary</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_10M_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_0&gt; &lt;clk100K/count_0&gt; &lt;clock_generate/count_10M_0&gt; &lt;clk50k/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_1&gt; &lt;clk100K/count_1&gt; &lt;clock_generate/count_10M_1&gt; &lt;clk50k/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_2&gt; &lt;clk100K/count_2&gt; &lt;clock_generate/count_10M_2&gt; &lt;clk50k/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_3&gt; &lt;clock_generate/count_10M_3&gt; &lt;clk50k/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_4&gt; &lt;clock_generate/count_10M_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_5&gt; &lt;clock_generate/count_10M_5&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q19_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;counting_down/counting_down/q19_21&gt; &lt;counting_down/counting_down/q19_20&gt; </arg>
 </msg>
 
@@ -2054,7 +2072,7 @@
 <msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q65_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;counting_down/counting_down/q65_21&gt; &lt;counting_down/counting_down/q65_20&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q0_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;counting_down/counting_down/q0_22&gt; </arg>
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q0_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;counting_down/counting_down/q0_22&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q25_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;counting_down/counting_down/q25_21&gt; &lt;counting_down/counting_down/q25_20&gt; </arg>
