@@ -3,7 +3,7 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
-ProjectID=1cc993931b3c470badcd9426b18794c3
+ProjectID=2bde453757d2410da6e4e7eea1661b73
 ProjectIteration=1
 
 WebTalk Summary
@@ -13,4 +13,4 @@ INFO:WebTalk:2 - WebTalk is enabled.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:4 - D:/GitHub/LogicDesignLab/Final Project/brainwars_main/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2015-06-19T19:41:45.  For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:4 - D:/GitHub/LogicDesignLab/Final Project/brainwars_main/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2015-06-19T20:42:30.  For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
