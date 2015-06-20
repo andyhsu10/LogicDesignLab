@@ -1,0 +1,1012 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'brainwars_secondary'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o brainwars_secondary_map.ncd
+brainwars_secondary.ngd brainwars_secondary.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sat Jun 20 00:19:10 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                   644 out of  18,224    3%
+    Number used as Flip Flops:                 643
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                1
+  Number of Slice LUTs:                      1,906 out of   9,112   20%
+    Number used as logic:                    1,688 out of   9,112   18%
+      Number using O6 output only:           1,603
+      Number using O5 output only:              40
+      Number using O5 and O6:                   45
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   2,176    0%
+    Number used exclusively as route-thrus:    218
+      Number with same-slice register load:      1
+      Number with same-slice carry load:         2
+      Number with other load:                  215
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   633 out of   2,278   27%
+  Number of MUXCYs used:                        56 out of   4,556    1%
+  Number of LUT Flip Flop pairs used:        1,906
+    Number with an unused Flip Flop:         1,289 out of   1,906   67%
+    Number with an unused LUT:                   0 out of   1,906    0%
+    Number of fully used LUT-FF pairs:         617 out of   1,906   32%
+    Number of unique control sets:              19
+    Number of slice register sites lost
+      to control set restrictions:              85 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        24 out of     232   10%
+    Number of LOCed IOBs:                       24 out of      24  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         1 out of      32    3%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                5.29
+
+Peak Memory Usage:  406 MB
+Total REAL time to MAP completion:  1 mins 21 secs 
+Total CPU time to MAP completion:   1 mins 19 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 266 block(s) removed
+   4 block(s) optimized away
+ 266 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "RAM_controller_decoder2/Mram_mark448_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark448_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark446_f72" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark446_f72" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark440_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark440_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark438_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark438_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark436_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark436_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark406_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark406_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark404_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark404_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark399_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark399_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark369_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark369_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark325_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark325_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark315_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark315_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark313_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark313_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark282_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark282_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark272_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark272_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark232_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark232_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark202_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark202_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark194_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark194_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark164_f71" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark164_f71" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark629_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark629_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark607_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark607_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark607_f73" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark607_f72" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark490_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark490_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark490_f73" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark490_f72" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark481_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark481_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark454_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark454_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark446_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark446_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark446_f73" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark446_f72" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark442_f72" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark442_f71" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark438_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark438_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark432_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark432_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark408_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark408_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark406_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark406_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark282_f72" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark282_f71" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark186_f72" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark186_f71" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark170_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark170_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark166_f72" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark166_f71" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark88_f72" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark88_f71" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark86_f7_0" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark86_f7_01" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark68_f73" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark68_f72" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4_f7_01" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4_f7_02" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4_f72" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4_f71" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark605" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark605" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark603" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark603" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark510" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark510" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark508" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark508" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark506" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark506" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark483" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark483" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark448" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark448" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark446" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark446" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark444" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark444" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark436" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark436" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark408" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark408" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark404" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark404" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark399" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark399" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark397" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark397" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark369" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark369" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark365" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark365" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark327" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark327" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark325" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark325" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark282" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark282" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark280" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark280" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark2721" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark2721" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark270" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark270" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark241" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark241" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark239" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark239" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark237" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark237" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark232" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark232" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark230" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark230" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark228" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark228" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark202" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark202" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark198" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark198" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark194" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark194" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark192" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark192" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark168" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark168" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark166" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark166" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark164" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark164" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark162" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder2/Mram_mark162" (ROM) removed.
+The signal "RAM_controller_decoder2/Mram_mark76" is unused and has been removed.
+ Unused block "RAM_controller_decoder2/Mram_mark76" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark6352" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark6352" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark635" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark635" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark633" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark633" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark6292" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark6292" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark629" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark629" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark6272" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark6272" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark627" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark627" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark6071" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark6071" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark607" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark607" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark605" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark605" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark603" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark603" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark5872" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark5872" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark587" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark587" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark5711" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark5711" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark571" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark571" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark5332" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark5332" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark533" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark533" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark5102" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark5102" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark510" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark510" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark5082" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark5082" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark508" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark508" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark5062" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark5062" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark506" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark506" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4982" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4982" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark498" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark498" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark496" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark496" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4942" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4942" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4941" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4941" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark494" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark494" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark490" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark490" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4882" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4882" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark488" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark488" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4831" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4831" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4811" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4811" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4792" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4792" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark479" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark479" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4772" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4772" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark477" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark477" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4752" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4752" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark475" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark475" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark473" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark473" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4662" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4662" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark466" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark466" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark464" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark464" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4542" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4542" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark454" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark454" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4522" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4522" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark452" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark452" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4502" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4502" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark450" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark450" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4482" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4482" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark446" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark446" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4422" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4422" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark442" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark442" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4402" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4402" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark440" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark440" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4382" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4382" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark438" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark438" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4362" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4362" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark436" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark436" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark434" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark434" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4322" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4322" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark432" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark432" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4122" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4122" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark412" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark412" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4102" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4102" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark410" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark410" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4082" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4082" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark408" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark408" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4062" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4062" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark406" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark406" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4042" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark4042" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark404" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark404" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3992" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3992" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark399" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark399" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3972" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3972" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark397" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark397" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark395" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark395" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3692" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3692" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark369" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark369" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3672" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3672" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark367" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark367" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3572" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3572" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark357" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark357" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3552" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3552" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark355" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark355" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3533" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3533" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3531" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3531" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3252" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3252" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark323" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark323" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3152" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3152" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark315" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark315" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3133" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3133" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark3131" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3131" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2842" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2842" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark284" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark284" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2822" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2822" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark282" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark282" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2802" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2802" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark280" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark280" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2723" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2723" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2721" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2721" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2702" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2702" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark270" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark270" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2413" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2413" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2411" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2411" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2322" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2322" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark232" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark232" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2302" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2302" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark230" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark230" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2282" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2282" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark228" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark228" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2262" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2262" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark226" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark226" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2242" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2242" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark224" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark224" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2222" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2222" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark222" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark222" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2082" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2082" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark208" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark208" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2062" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2062" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark206" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark206" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2042" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2042" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark204" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark204" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2022" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark2022" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark202" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark202" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1982" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1982" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark198" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark198" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1962" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1962" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark196" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark196" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1942" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1942" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark194" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark194" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1922" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1922" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark192" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark192" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1902" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1902" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark190" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark190" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1882" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1882" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1862" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1862" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark186" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark186" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark172" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark172" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1702" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1702" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark170" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark170" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1682" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1682" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1662" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1662" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark166" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark166" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1642" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1642" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark164" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark164" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1622" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1622" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark162" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark162" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1602" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1602" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark160" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark160" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1312" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1312" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark131" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark131" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1292" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1292" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark129" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark88" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1272" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1272" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark127" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark127" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1192" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1192" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark119" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark119" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark1172" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1172" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark117" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark117" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark862" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark862" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark86" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark86" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark813" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark813" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark811" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark811" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark742" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark742" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark74" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark74" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark722" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark722" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark72" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark72" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark702" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark702" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark682" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark682" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark68" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark68" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark462" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark462" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark46" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark46" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark352" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark352" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark35" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark35" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark332" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark332" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark33" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark33" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark312" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark313" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark31" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark311" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark272" is unused and has been
+removed.
+ Unused block "RAM_controller_decoder3/Mram_mark272" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark27" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark27" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark42" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark43" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark4" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark41" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark23" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark23" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark21" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark21" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark2" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark3" (ROM) removed.
+The signal "RAM_controller_decoder3/Mram_mark" is unused and has been removed.
+ Unused block "RAM_controller_decoder3/Mram_mark1" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		RAM_controller/R1/XST_GND
+VCC 		RAM_controller/R1/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LCD_cs<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_cs<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_data<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_di                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_en                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_rst                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LCD_rw                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| col_n<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| col_n<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| col_n<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| col_n<3>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| row_n<0>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| row_n<1>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| row_n<2>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| row_n<3>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rst_n                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

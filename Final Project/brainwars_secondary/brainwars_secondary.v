@@ -20,6 +20,7 @@ module brainwars_secondary(
 	game_invite_in, //game invitation from main board (I)
 	game_cancel, //game cancellation from button (I)
 	game_cancel_in, //game cancellation from main board (I)
+	game_en, //game enable (O)
 	row_n, //scanned row index (O)
 	dialogue_out, //dialogue sent to another board (O)
 	rst_n_out, //reset signal for second board (O)
@@ -51,6 +52,7 @@ input game_invite; //game invitation from button
 input game_invite_in; //game invitation from main board
 input game_cancel; //game cancellation from button
 input game_cancel_in; //game cancellation from main board
+output [2:0] game_en; //game enable
 output [`KEYPAD_WIDTH-1:0] row_n;
 output [3:0] dialogue_out; //dialogue sent to another board
 output rst_n_out; //reset signal for second board
@@ -82,6 +84,7 @@ wire [3:0] key;
 wire [5:0] letter;
 wire [7:0] data_out;
 wire [9:0] q;
+wire [15:0] random;
 wire [15:0] audio_in_left, audio_in_right;
 wire [19:0] note_div;
 wire [127:0] data_output;
@@ -96,6 +99,9 @@ wire LCD_rw1, LCD_rw2;
 wire LCD_di1, LCD_di2;
 wire LCD_en1, LCD_en2;
 wire [7:0] LCD_data1, LCD_data2;
+
+wire point;
+wire game_next_state;
 
 assign rst_n_out = rst_n;
 assign rst = rst_n & rst_n_in;
@@ -143,10 +149,16 @@ fsm finite_state_machine(
 	.game_cancel(de_game_cancel & game_cancel_in), //game cancellation button (I)
 	.game_invite_back_state(game_invite_back_state), //game invitation screen to next state (I)
 	.count_down_next_state(count_down_next_state), //count down screen to next state (I)
-	.game_next_state(1'b1), //game to next state (I)
+	.game_next_state(game_next_state), //game to next state (I)
 	.result_next_state(1'b1), //result next state (I)
 	.clk(clk_100), //global clock signal (I)
 	.rst_n(rst) //low active reset (I)
+);
+
+random_secondary random_producer(
+	.rand(random), //random value output (O)
+	.clk(clk_100), //global clock input (I)
+	.rst_n(rst) //active low reset (I)
 );
 
 keypad_scan keypad_scanner(
@@ -173,9 +185,18 @@ invite_screen_secondary invite_screen(
 	.data_out(invite_data_in) //data output (O)
 );
 
+game_ctl game_controller(
+    .game_en(game_en), //game enable (O)
+    .clk(clk_100), //100 Hz clock (I)
+    .state(state), //fsm state (I)
+    .random(random[9:0]), //randow value 10-bit (I)
+    .rst_n(rst) //active low reset (I)
+);
+
 count_down_screen counting_down(
 	.clk(clk_66), //global clock (I)
 	.clk_100(clk_100), //100 Hz clock (I)
+	.game_en(game_en), //game enable (I)
 	.state(state), //fsm state (I)
 	.key(key), //returned pressed key (I)
 	.pressed(pressed), //whether key pressed (1) or not (0) (I)
@@ -186,13 +207,25 @@ count_down_screen counting_down(
 	.data_out(count_down_data_in) //data output (O)
 );
 
+flick_master game_flick_master(
+	.clk_100(clk_100), // 100 HZ (I)
+	.clk_1(clk_1), // 1Hz (I)
+	.rst_n(rst), // reset (I)
+	.game_en(3'b000), // enable to play game (I)
+	.key(key), // keypad (I)
+	.pressed(pressed), // if key pad was pressed (I)
+	.data_output(game1_data_in), // to ram_ctrl 128b (O)
+	.game_next_state(game_next_state),	// 1: finish 0:playing (O)
+	.point(point) // 1:get point 0:no point got (O)
+);
+
 display_ctl display_controller(
     .data_out(data_output), //data output (O)
     .state(state), //fsm state (I)
     .initial_data_in(initial_data_in), //initial screen lcd data (I)
 	.invite_data_in(invite_data_in), //invite screen lcd data (I)
 	.count_down_data_in(count_down_data_in), //count down screen lcd data (I)
-	.game1_data_in(128'd0), //game1 screen lcd data (I)
+	.game1_data_in(game1_data_in), //game1 screen lcd data (I)
 	.game2_data_in(128'd0), //game2 screen lcd data (I)
 	.game3_data_in(128'd0), //game3 screen lcd data (I)
 	.result_data_in(128'd0) //result screen lcd data (I)

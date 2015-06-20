@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Jun 19 19:31:36 2015
+// Written by: Map P.20131013 on Sat Jun 20 20:55:24 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,6 +15,9 @@ COMP "audio_bck" LOCATE = SITE "K16" LEVEL 1;
 COMP "audio_appsel" LOCATE = SITE "H18" LEVEL 1;
 COMP "rst_n" LOCATE = SITE "T2" LEVEL 1;
 COMP "audio_sysclk" LOCATE = SITE "H17" LEVEL 1;
+COMP "game_en<0>" LOCATE = SITE "A5" LEVEL 1;
+COMP "game_en<1>" LOCATE = SITE "B4" LEVEL 1;
+COMP "game_en<2>" LOCATE = SITE "C6" LEVEL 1;
 COMP "LCD_data<0>" LOCATE = SITE "F6" LEVEL 1;
 COMP "LCD_data<1>" LOCATE = SITE "D3" LEVEL 1;
 COMP "LCD_data<2>" LOCATE = SITE "E4" LEVEL 1;

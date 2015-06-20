@@ -58,7 +58,17 @@
 </arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/flick_master.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Final Project/brainwars_main/flick_master.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/flick_master.v&quot; line 21
+</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/freq_div.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/game_duration_cnt.v&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/initial_screen.v&quot; into library work</arg>
@@ -110,6 +120,9 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/one_pulse.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/rand_0_to_7.v&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Final Project/brainwars_main/rom_ctrl.v&quot; into library work</arg>

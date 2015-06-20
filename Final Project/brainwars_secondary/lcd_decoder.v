@@ -21,42 +21,6 @@ output reg [255:0] mark;
 
 always @(font)
 	case(font)
-		`FONT_0: mark = `LCD_0;
-		`FONT_1: mark = `LCD_1;
-		`FONT_2: mark = `LCD_2;
-		`FONT_3: mark = `LCD_3;
-		`FONT_4: mark = `LCD_4;
-		`FONT_5: mark = `LCD_5;
-		`FONT_6: mark = `LCD_6;
-		`FONT_7: mark = `LCD_7;
-		`FONT_8: mark = `LCD_8;
-		`FONT_9: mark = `LCD_9;
-		`FONT_A: mark = `LCD_A;
-		`FONT_B: mark = `LCD_B;
-		`FONT_C: mark = `LCD_C;
-		`FONT_D: mark = `LCD_D;
-		`FONT_E: mark = `LCD_E;
-		`FONT_F: mark = `LCD_F;
-		`FONT_G: mark = `LCD_G;
-		`FONT_H: mark = `LCD_H;
-		`FONT_I: mark = `LCD_I;
-		`FONT_J: mark = `LCD_J;
-		`FONT_K: mark = `LCD_K;
-		`FONT_L: mark = `LCD_L;
-		`FONT_M: mark = `LCD_M;
-		`FONT_N: mark = `LCD_N;
-		`FONT_O: mark = `LCD_O;
-		`FONT_P: mark = `LCD_P;
-/*		`FONT_Q: mark = `LCD_Q;
-		`FONT_R: mark = `LCD_R;
-		`FONT_S: mark = `LCD_S;
-		`FONT_T: mark = `LCD_T;
-		`FONT_U: mark = `LCD_U;
-		`FONT_V: mark = `LCD_V;
-		`FONT_W: mark = `LCD_W;
-		`FONT_X: mark = `LCD_X;
-		`FONT_Y: mark = `LCD_Y;
-		`FONT_Z: mark = `LCD_Z;	*/
 		`FONT_NONE: mark = `LCD_NONE;
 		`GRAPH_LU_1: mark = `LCD_LU_1;
 		`GRAPH_LU_2: mark = `LCD_LU_2;
@@ -223,6 +187,30 @@ always @(font)
 		`GRAPH_INVITE_2_2: mark = `LCD_INVITE_2_2;
 		`GRAPH_INVITE_1_1: mark = `LCD_INVITE_1_1;
 		`GRAPH_INVITE_1_2: mark = `LCD_INVITE_1_2;
+		`GRAPH_FLICK_MASTER_1: mark = `LCD_FLICK_MASTER_1;
+		`GRAPH_FLICK_MASTER_2: mark = `LCD_FLICK_MASTER_2;
+		`GRAPH_FLICK_MASTER_3: mark = `LCD_FLICK_MASTER_3;
+		`GRAPH_FLICK_MASTER_4: mark = `LCD_FLICK_MASTER_4;
+		`GRAPH_TOUCH_NUMBER_1: mark = `LCD_TOUCH_NUMBER_1;
+		`GRAPH_TOUCH_NUMBER_2: mark = `LCD_TOUCH_NUMBER_2;
+		`GRAPH_TOUCH_NUMBER_3: mark = `LCD_TOUCH_NUMBER_3;
+		`GRAPH_TOUCH_NUMBER_4: mark = `LCD_TOUCH_NUMBER_4;
+		`GRAPH_FOLLOW_ORDER_1: mark = `LCD_FOLLOW_ORDER_1;
+		`GRAPH_FOLLOW_ORDER_2: mark = `LCD_FOLLOW_ORDER_2;
+		`GRAPH_FOLLOW_ORDER_3: mark = `LCD_FOLLOW_ORDER_3;
+		`GRAPH_FOLLOW_ORDER_4: mark = `LCD_FOLLOW_ORDER_4;
+		`GRAPH_UNFOLLOW_ORDER_1: mark = `LCD_UNFOLLOW_ORDER_1;
+		`GRAPH_UNFOLLOW_ORDER_2: mark = `LCD_UNFOLLOW_ORDER_2;
+		`GRAPH_UNFOLLOW_ORDER_3: mark = `LCD_UNFOLLOW_ORDER_3;
+		`GRAPH_UNFOLLOW_ORDER_4: mark = `LCD_UNFOLLOW_ORDER_4;
+		`GRAPH_HIGH_OR_LOW_1: mark = `LCD_HIGH_OR_LOW_1;
+		`GRAPH_HIGH_OR_LOW_2: mark = `LCD_HIGH_OR_LOW_2;
+		`GRAPH_HIGH_OR_LOW_3: mark = `LCD_HIGH_OR_LOW_3;
+		`GRAPH_HIGH_OR_LOW_4: mark = `LCD_HIGH_OR_LOW_4;
+		`GRAPH_RAINFALL_1: mark = `LCD_RAINFALL_1;
+		`GRAPH_RAINFALL_2: mark = `LCD_RAINFALL_2;
+		`GRAPH_RAINFALL_3: mark = `LCD_RAINFALL_3;
+		`GRAPH_RAINFALL_4: mark = `LCD_RAINFALL_4;
 		default: mark = `LCD_NONE;
 	endcase
 

@@ -5,61 +5,70 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 103: Port <arg fmt="%s" index="1">clk_out</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 109: Port <arg fmt="%s" index="1">clk_out</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 104: Assignment to <arg fmt="%s" index="1">clk_fast</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 110: Assignment to <arg fmt="%s" index="1">clk_fast</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 105: Assignment to <arg fmt="%s" index="1">clk_ctl</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 111: Assignment to <arg fmt="%s" index="1">clk_ctl</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ipcore_dir\RAM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">RAM</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 214: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">game_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">3</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ipcore_dir\ROM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ROM</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 219: Assignment to <arg fmt="%s" index="1">point</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 57: Signal &lt;<arg fmt="%s" index="1">LCD_rst1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\ipcore_dir\RAM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">RAM</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 58: Signal &lt;<arg fmt="%s" index="1">LCD_rw1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\ipcore_dir\ROM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ROM</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 59: Signal &lt;<arg fmt="%s" index="1">LCD_di1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 57: Signal &lt;<arg fmt="%s" index="1">LCD_rst1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 60: Signal &lt;<arg fmt="%s" index="1">LCD_en1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 58: Signal &lt;<arg fmt="%s" index="1">LCD_rw1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 62: Signal &lt;<arg fmt="%s" index="1">LCD_data1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 59: Signal &lt;<arg fmt="%s" index="1">LCD_di1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 66: Signal &lt;<arg fmt="%s" index="1">LCD_rst2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 60: Signal &lt;<arg fmt="%s" index="1">LCD_en1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 67: Signal &lt;<arg fmt="%s" index="1">LCD_rw2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 62: Signal &lt;<arg fmt="%s" index="1">LCD_data1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 68: Signal &lt;<arg fmt="%s" index="1">LCD_di2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 66: Signal &lt;<arg fmt="%s" index="1">LCD_rst2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 69: Signal &lt;<arg fmt="%s" index="1">LCD_en2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 67: Signal &lt;<arg fmt="%s" index="1">LCD_rw2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 71: Signal &lt;<arg fmt="%s" index="1">LCD_data2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 68: Signal &lt;<arg fmt="%s" index="1">LCD_di2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%d" index="2">103</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">freqency_divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">brainwars_secondary</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 69: Signal &lt;<arg fmt="%s" index="1">LCD_en2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">103</arg>: Output port &lt;<arg fmt="%s" index="3">clk_ctl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 71: Signal &lt;<arg fmt="%s" index="1">LCD_data2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">103</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%d" index="2">109</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">freqency_divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">brainwars_secondary</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">103</arg>: Output port &lt;<arg fmt="%s" index="3">clk_fast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_ctl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_fast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">210</arg>: Output port &lt;<arg fmt="%s" index="3">point</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">game_flick_master</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note_div&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -119,13 +128,26 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note_div&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">game_en</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">lcd_rw</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">rom_lcd_ctrl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ONE_P</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">RAND</arg>&gt;.
+It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">note_div_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">note_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0034</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_game</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0042</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0034</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_row_n</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -138,6 +160,12 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">note_div_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">note_decode</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">game_flick_master/RAND/ONE_P/out_pulse</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">game_flick_master/RAND/ONE_P/in_trig_delay</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q44_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">brainwars_secondary</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1928,13 +1956,13 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_10M_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_6&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_0&gt; &lt;clk100K/count_0&gt; &lt;clock_generate/count_10M_0&gt; &lt;clk50k/count_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_0&gt; &lt;clock_generate/count_10M_0&gt; &lt;clk100K/count_0&gt; &lt;clk50k/count_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_1&gt; &lt;clk100K/count_1&gt; &lt;clock_generate/count_10M_1&gt; &lt;clk50k/count_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_1&gt; &lt;clock_generate/count_10M_1&gt; &lt;clk100K/count_1&gt; &lt;clk50k/count_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_2&gt; &lt;clk100K/count_2&gt; &lt;clock_generate/count_10M_2&gt; &lt;clk50k/count_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_2&gt; &lt;clock_generate/count_10M_2&gt; &lt;clk100K/count_2&gt; &lt;clk50k/count_2&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clock_generate/count_200K_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clock_generate/count_20M_3&gt; &lt;clock_generate/count_10M_3&gt; &lt;clk50k/count_3&gt; </arg>

@@ -119,3 +119,32 @@ par -w -intstyle ise -ol high -mt off brainwars_secondary_map.ncd brainwars_seco
 par -w -intstyle ise -ol high -mt off brainwars_secondary_map.ncd brainwars_secondary.ncd brainwars_secondary.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml brainwars_secondary.twx brainwars_secondary.ncd -o brainwars_secondary.twr brainwars_secondary.pcf -ucf brainwars_secondary.ucf 
 bitgen -intstyle ise -f brainwars_secondary.ut brainwars_secondary.ncd 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc brainwars_secondary.ucf -p xc6slx16-csg324-3 brainwars_secondary.ngc brainwars_secondary.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o brainwars_secondary_map.ncd brainwars_secondary.ngd brainwars_secondary.pcf 
+par -w -intstyle ise -ol high -mt off brainwars_secondary_map.ncd brainwars_secondary.ncd brainwars_secondary.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml brainwars_secondary.twx brainwars_secondary.ncd -o brainwars_secondary.twr brainwars_secondary.pcf -ucf brainwars_secondary.ucf 
+bitgen -intstyle ise -f brainwars_secondary.ut brainwars_secondary.ncd 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc brainwars_secondary.ucf -p xc6slx16-csg324-3 brainwars_secondary.ngc brainwars_secondary.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o brainwars_secondary_map.ncd brainwars_secondary.ngd brainwars_secondary.pcf 
+par -w -intstyle ise -ol high -mt off brainwars_secondary_map.ncd brainwars_secondary.ncd brainwars_secondary.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml brainwars_secondary.twx brainwars_secondary.ncd -o brainwars_secondary.twr brainwars_secondary.pcf -ucf brainwars_secondary.ucf 
+bitgen -intstyle ise -f brainwars_secondary.ut brainwars_secondary.ncd 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc brainwars_secondary.ucf -p xc6slx16-csg324-3 brainwars_secondary.ngc brainwars_secondary.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o brainwars_secondary_map.ncd brainwars_secondary.ngd brainwars_secondary.pcf 
+par -w -intstyle ise -ol high -mt off brainwars_secondary_map.ncd brainwars_secondary.ncd brainwars_secondary.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml brainwars_secondary.twx brainwars_secondary.ncd -o brainwars_secondary.twr brainwars_secondary.pcf -ucf brainwars_secondary.ucf 
+bitgen -intstyle ise -f brainwars_secondary.ut brainwars_secondary.ncd 
+xst -intstyle ise -ifn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.xst" -ofn "C:/Users/Andy/Desktop/Working/brainwars_secondary/brainwars_secondary.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc brainwars_secondary.ucf -p xc6slx16-csg324-3 brainwars_secondary.ngc brainwars_secondary.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o brainwars_secondary_map.ncd brainwars_secondary.ngd brainwars_secondary.pcf 
+par -w -intstyle ise -ol high -mt off brainwars_secondary_map.ncd brainwars_secondary.ncd brainwars_secondary.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml brainwars_secondary.twx brainwars_secondary.ncd -o brainwars_secondary.twr brainwars_secondary.pcf -ucf brainwars_secondary.ucf 
+bitgen -intstyle ise -f brainwars_secondary.ut brainwars_secondary.ncd 

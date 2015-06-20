@@ -13,6 +13,7 @@
 module count_down_screen(
 	clk, //global clock (I)
 	clk_100, //100 Hz clock (I)
+	game_en, //game enable (I)
 	state, //fsm state (I)
 	key, //returned pressed key (I)
 	pressed, //whether key pressed (1) or not (0) (I)
@@ -25,6 +26,7 @@ module count_down_screen(
 //I/Os
 input clk; //global clock
 input clk_100; //100 Hz clock
+input [2:0] game_en; //game enable
 input [3:0] state; //fsm state
 input [3:0] key; //returned pressed key
 input pressed; //whether key pressed (1) or not (0)
@@ -38,6 +40,7 @@ reg clk_count;
 reg [3:0] dialogue_out;
 reg [3:0] key_tmp;
 reg [7:0] dialogue1, dialogue2;
+reg [31:0] game;
 reg [127:0] data_out;
 
 wire de_pressed;
@@ -125,6 +128,17 @@ always @(dialogue_in)
 		default: dialogue2 = `FONT_NONE;
 	endcase
 
+always @(game_en)
+	case(game_en)
+		3'd0: game = {`GRAPH_FLICK_MASTER_1, `GRAPH_FLICK_MASTER_2, `GRAPH_FLICK_MASTER_3, `GRAPH_FLICK_MASTER_4};
+		3'd1: game = {`GRAPH_TOUCH_NUMBER_1, `GRAPH_TOUCH_NUMBER_2, `GRAPH_TOUCH_NUMBER_3, `GRAPH_TOUCH_NUMBER_4};
+		3'd2: game = {`GRAPH_FOLLOW_ORDER_1, `GRAPH_FOLLOW_ORDER_2, `GRAPH_FOLLOW_ORDER_3, `GRAPH_FOLLOW_ORDER_4};
+		3'd3: game = {`GRAPH_UNFOLLOW_ORDER_1, `GRAPH_UNFOLLOW_ORDER_2, `GRAPH_UNFOLLOW_ORDER_3, `GRAPH_UNFOLLOW_ORDER_4};
+		3'd4: game = {`GRAPH_HIGH_OR_LOW_1, `GRAPH_HIGH_OR_LOW_2, `GRAPH_HIGH_OR_LOW_3, `GRAPH_HIGH_OR_LOW_4};
+		3'd5: game = {`GRAPH_RAINFALL_1, `GRAPH_RAINFALL_2, `GRAPH_RAINFALL_3, `GRAPH_RAINFALL_4};
+		default: game = 32'd0;
+	endcase
+
 always @*
 	data_out = {`FONT_NONE,
 				`FONT_NONE,
@@ -138,9 +152,6 @@ always @*
 				q0[15:8],
 				q0[7:0], 
 				dialogue2,
-				`FONT_NONE,
-				`FONT_NONE,
-				`FONT_NONE,
-				`FONT_NONE};
+				game};
 
 endmodule

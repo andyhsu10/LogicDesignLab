@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-HOME-2::  Fri Jun 19 19:28:57 2015
+HOME-2::  Sat Jun 20 20:55:35 2015
 
 par -w -intstyle ise -ol high -mt off brainwars_main_map.ncd brainwars_main.ncd
 brainwars_main.pcf 
@@ -27,16 +27,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 3,783 out of  18,224   20%
-    Number used as Flip Flops:               3,783
+  Number of Slice Registers:                 3,793 out of  18,224   20%
+    Number used as Flip Flops:               3,793
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      7,897 out of   9,112   86%
-    Number used as logic:                    7,892 out of   9,112   86%
-      Number using O6 output only:           7,113
+  Number of Slice LUTs:                      7,870 out of   9,112   86%
+    Number used as logic:                    7,865 out of   9,112   86%
+      Number using O6 output only:           7,085
       Number using O5 output only:             101
-      Number using O5 and O6:                  678
+      Number using O5 and O6:                  679
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
     Number used exclusively as route-thrus:      5
@@ -45,12 +45,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,065 out of   2,278   90%
+  Number of occupied Slices:                 2,205 out of   2,278   96%
   Number of MUXCYs used:                       180 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:        7,899
-    Number with an unused Flip Flop:         4,683 out of   7,899   59%
-    Number with an unused LUT:                   2 out of   7,899    1%
-    Number of fully used LUT-FF pairs:       3,214 out of   7,899   40%
+  Number of LUT Flip Flop pairs used:        7,881
+    Number with an unused Flip Flop:         4,660 out of   7,881   59%
+    Number with an unused LUT:                  11 out of   7,881    1%
+    Number of fully used LUT-FF pairs:       3,210 out of   7,881   40%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -61,8 +61,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        54 out of     232   23%
-    Number of LOCed IOBs:                       54 out of      54  100%
+  Number of bonded IOBs:                        57 out of     232   24%
+    Number of LOCed IOBs:                       57 out of      57  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         5 out of      32   15%
@@ -93,35 +93,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 14 secs 
-Finished initial Timing Analysis.  REAL time: 14 secs 
+Starting initial Timing Analysis.  REAL time: 10 secs 
+Finished initial Timing Analysis.  REAL time: 10 secs 
 
 Starting Router
 
 
-Phase  1  : 45209 unrouted;      REAL time: 15 secs 
+Phase  1  : 45043 unrouted;      REAL time: 10 secs 
 
-Phase  2  : 43065 unrouted;      REAL time: 18 secs 
+Phase  2  : 42867 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 17935 unrouted;      REAL time: 1 mins 20 secs 
+Phase  3  : 19080 unrouted;      REAL time: 1 mins 
 
-Phase  4  : 17967 unrouted; (Par is working to improve performance)     REAL time: 1 mins 24 secs 
+Phase  4  : 19103 unrouted; (Par is working to improve performance)     REAL time: 1 mins 2 secs 
 
 Updating file: brainwars_main.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 18 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 52 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 23 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 55 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 23 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 55 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 23 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 55 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 24 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 57 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 26 secs 
-Total REAL time to Router completion: 2 mins 27 secs 
-Total CPU time to Router completion: 2 mins 30 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 59 secs 
+Total REAL time to Router completion: 1 mins 59 secs 
+Total CPU time to Router completion: 2 mins 5 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -132,7 +132,7 @@ Partition Implementation Status
 
 Generating "PAR" statistics.
 INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
-Timing Score: 132 (Setup: 132, Hold: 0)
+Timing Score: 381 (Setup: 381, Hold: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -141,29 +141,29 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     2.123ns|     N/A|           0
-  ck_generate/clk_66_BUFG                   | HOLD        |     0.498ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.940ns|     N/A|           0
+  ck_generate/clk_66_BUFG                   | HOLD        |     0.496ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     9.740ns|     N/A|           0
-  100K/clk_div_BUFG                         | HOLD        |     0.411ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.339ns|     N/A|           0
-  _IBUF_BUFG                                | HOLD        |     0.379ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.511ns|     N/A|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.500ns|     N/A|           0
   50k/clk_div_BUFG                          | HOLD        |     0.411ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net not | SETUP       |         N/A|     1.659ns|     N/A|           0
-  e_controllor/carry_BUFG                   | HOLD        |     0.457ns|            |       0|           0
+  Autotimespec constraint for clock net not | SETUP       |         N/A|     1.970ns|     N/A|           0
+  e_controllor/carry_BUFG                   | HOLD        |     0.499ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     2.134ns|     N/A|         132
-  ck_generate/clk_100_BUFG                  | HOLD        |     0.388ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    10.546ns|     N/A|           0
+  100K/clk_div_BUFG                         | HOLD        |     0.412ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     2.146ns|     N/A|           0
-  ck_generate/clk_1                         | HOLD        |     0.451ns|            |       0|           0
+  Autotimespec constraint for clock net fre | SETUP       |         N/A|     4.598ns|     N/A|         381
+  qency_divider/cnt_h<2>                    | HOLD        |     0.043ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net fre | SETUP       |         N/A|     3.527ns|     N/A|           0
-  qency_divider/cnt_h<2>                    | HOLD        |     0.421ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     3.128ns|     N/A|           0
+  ck_generate/clk_100_BUFG                  | HOLD        |     0.399ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.794ns|     N/A|           0
+  _IBUF_BUFG                                | HOLD        |     0.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.971ns|     N/A|           0
+  ck_generate/clk_1                         | HOLD        |     0.431ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -179,10 +179,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 2 mins 28 secs 
-Total CPU time to PAR completion: 2 mins 32 secs 
+Total REAL time to PAR completion: 2 mins 
+Total CPU time to PAR completion: 2 mins 6 secs 
 
-Peak Memory Usage:  486 MB
+Peak Memory Usage:  496 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

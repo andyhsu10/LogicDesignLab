@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jun 19 19:31:26 2015
+Sat Jun 20 20:57:36 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -127,7 +127,7 @@ Pinout by Pin Number:
 |F15       |               |IOBM     |IO_L1P_A25_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |F16       |               |IOBS     |IO_L1N_A24_VREF_1            |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |F17       |               |IOBM     |IO_L35P_A11_M1A7_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|F18       |               |IOBS     |IO_L35N_A10_M1A2_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|F18       |game_en<2>     |IOB      |IO_L35N_A10_M1A2_1           |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |G1        |               |IOBS     |IO_L46N_M3CLKN_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |G2        |               |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
 |G3        |               |IOBM     |IO_L46P_M3CLK_3              |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -145,7 +145,7 @@ Pinout by Pin Number:
 |G15       |               |         |VCCO_1                       |         |           |1             |          |         |           |         |2.50     |          |           |                |
 |G16       |rst_n_in       |IOB      |IO_L38P_A5_M1CLK_1           |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |G17       |               |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
-|G18       |               |IOBS     |IO_L38N_A4_M1CLKN_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|G18       |game_en<0>     |IOB      |IO_L38N_A4_M1CLKN_1          |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |H1        |col_n<3>       |IOB      |IO_L41N_GCLK26_M3DQ5_3       |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |H2        |col_n<2>       |IOB      |IO_L41P_GCLK27_M3DQ4_3       |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |H3        |               |IOBS     |IO_L44N_GCLK20_M3A6_3        |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -160,7 +160,7 @@ Pinout by Pin Number:
 |H12       |               |IOBM     |IO_L32P_A17_M1A8_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |H13       |note<1>        |IOB      |IO_L36P_A9_M1BA0_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |H14       |rst_n_out      |IOB      |IO_L36N_A8_M1BA1_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|H15       |               |IOBM     |IO_L37P_A7_M1A0_1            |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|H15       |game_en<1>     |IOB      |IO_L37P_A7_M1A0_1            |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |H16       |note<2>        |IOB      |IO_L37N_A6_M1A1_1            |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |H17       |audio_sysclk   |IOB      |IO_L43P_GCLK5_M1DQ4_1        |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |H18       |audio_appsel   |IOB      |IO_L43N_GCLK4_M1DQ5_1        |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |

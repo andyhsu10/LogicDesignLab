@@ -60,6 +60,10 @@ NET "state[2]" LOC = F14;
 NET "state[1]" LOC = D18;
 NET "state[0]" LOC = B2;
 
+NET "game_en[2]" LOC = C6;
+NET "game_en[1]" LOC = B4;
+NET "game_en[0]" LOC = A5;
+
 NET "game_invite_in" LOC = B6;
 NET "game_cancel_in" LOC = C8;
 

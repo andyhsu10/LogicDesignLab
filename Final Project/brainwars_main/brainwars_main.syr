@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Reading design: brainwars_main.prj
 
@@ -108,77 +108,85 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\one_pulse.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\one_pulse.v" into library work
 Parsing module <one_pulse>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_decoder.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\rand_0_to_7.v" into library work
+Parsing module <rand_0_to_7>.
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_decoder.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <lcd_decoder>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ipcore_dir\ROM.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\ipcore_dir\ROM.v" into library work
 Parsing module <ROM>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ipcore_dir\RAM.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\ipcore_dir\RAM.v" into library work
 Parsing module <RAM>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\debounce.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\game_duration_cnt.v" into library work
+Parsing module <game_duration_cnt>.
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\debounce.v" into library work
 Parsing module <debounce>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\count_down.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\count_down.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <count_down>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\speaker_ctl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\speaker_ctl.v" into library work
 Parsing module <speaker_ctl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_lcd_ctrl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\rom_lcd_ctrl.v" into library work
 Parsing module <rom_lcd_ctrl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_ctrl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\rom_ctrl.v" into library work
 Parsing module <rom_ctrl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\RAM_ctrl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\RAM_ctrl.v" into library work
 Parsing module <RAM_ctrl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\note_ctl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\note_ctl.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <note_ctl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\music.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\music.v" into library work
 Parsing verilog file "global.v" included at line 14.
 Parsing module <music>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" into library work
 Parsing module <lcd_switcher>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_ctrl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_ctrl.v" into library work
 Parsing module <lcd_ctrl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\keypad_scan.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\keypad_scan.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <keypad_scan>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\invite_screen_main.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\invite_screen_main.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <invite_screen_main>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\initial_screen.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\initial_screen.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <initial_screen>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\freq_div.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\freq_div.v" into library work
 Parsing module <freq_div>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\display_ctl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\flick_master.v" into library work
+Parsing verilog file "global.v" included at line 21.
+Parsing module <flick_master>.
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\display_ctl.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <display_ctl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\debounce_one_pulse.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\debounce_one_pulse.v" into library work
 Parsing module <debounce_one_pulse>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\count_down_screen.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\count_down_screen.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <count_down_screen>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\clock_generator.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\clock_generator.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <clock_generator>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\clock_divider.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\clock_divider.v" into library work
 Parsing module <clock_divider>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\buzzer_ctl.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\buzzer_ctl.v" into library work
 Parsing module <buzzer_ctl>.
-Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" into library work
+Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <brainwars_main>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 106: Port clk_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" Line 110: Port clk_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" Line 178: Port game_next_state is not connected to this instance
 
 Elaborating module <brainwars_main>.
 
 Elaborating module <freq_div>.
-WARNING:HDLCompiler:1127 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" Line 108: Assignment to clk_ctl ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" Line 112: Assignment to clk_ctl ignored, since the identifier is never used
 
 Elaborating module <clock_generator>.
 
@@ -198,6 +206,14 @@ Elaborating module <count_down_screen>.
 
 Elaborating module <count_down>.
 
+Elaborating module <flick_master>.
+
+Elaborating module <game_duration_cnt>.
+
+Elaborating module <rand_0_to_7>.
+WARNING:HDLCompiler:189 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" Line 182: Size mismatch in connection of port <game_en>. Formal port size is 4-bit while actual signal size is 3-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" Line 186: Assignment to point ignored, since the identifier is never used
+
 Elaborating module <display_ctl>.
 
 Elaborating module <RAM_ctrl>.
@@ -205,7 +221,7 @@ Elaborating module <RAM_ctrl>.
 Elaborating module <lcd_decoder>.
 
 Elaborating module <RAM>.
-WARNING:HDLCompiler:1499 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ipcore_dir\RAM.v" Line 39: Empty module <RAM> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\Andy\Desktop\Working\brainwars_main\ipcore_dir\RAM.v" Line 39: Empty module <RAM> remains a black box.
 
 Elaborating module <lcd_ctrl>.
 
@@ -216,21 +232,21 @@ Elaborating module <rom_lcd_ctrl>.
 Elaborating module <rom_ctrl>.
 
 Elaborating module <ROM>.
-WARNING:HDLCompiler:1499 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\ipcore_dir\ROM.v" Line 39: Empty module <ROM> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\Andy\Desktop\Working\brainwars_main\ipcore_dir\ROM.v" Line 39: Empty module <ROM> remains a black box.
 
 Elaborating module <clock_divider(half_cycle=400,counter_width=9)>.
 
 Elaborating module <lcd_switcher>.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 57: Signal <LCD_rst1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 58: Signal <LCD_rw1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 59: Signal <LCD_di1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 60: Signal <LCD_en1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 62: Signal <LCD_data1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 66: Signal <LCD_rst2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 67: Signal <LCD_rw2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 68: Signal <LCD_di2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 69: Signal <LCD_en2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v" Line 71: Signal <LCD_data2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 57: Signal <LCD_rst1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 58: Signal <LCD_rw1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 59: Signal <LCD_di1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 60: Signal <LCD_en1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 62: Signal <LCD_data1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 66: Signal <LCD_rst2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 67: Signal <LCD_rw2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 68: Signal <LCD_di2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 69: Signal <LCD_en2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v" Line 71: Signal <LCD_data2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <music>.
 
@@ -245,15 +261,17 @@ Elaborating module <speaker_ctl>.
 =========================================================================
 
 Synthesizing Unit <brainwars_main>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v".
-INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 106: Output port <clk_ctl> of the instance <freqency_divider> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\brainwars_main.v" line 106: Output port <clk_out> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v".
+INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" line 110: Output port <clk_ctl> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" line 110: Output port <clk_out> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" line 178: Output port <game_next_state> of the instance <game_flick_master> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_main\brainwars_main.v" line 178: Output port <point> of the instance <game_flick_master> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <brainwars_main> synthesized.
 
 Synthesizing Unit <freq_div>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\freq_div.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\freq_div.v".
     Found 2-bit register for signal <clk_ctl>.
     Found 7-bit register for signal <cnt_h>.
     Found 15-bit register for signal <cnt_l>.
@@ -265,7 +283,7 @@ Synthesizing Unit <freq_div>.
 Unit <freq_div> synthesized.
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\clock_generator.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\clock_generator.v".
     Found 24-bit register for signal <count_10M>.
     Found 18-bit register for signal <count_200K>.
     Found 22-bit register for signal <count_1515151>.
@@ -285,13 +303,13 @@ Synthesizing Unit <clock_generator>.
 Unit <clock_generator> synthesized.
 
 Synthesizing Unit <debounce_one_pulse>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\debounce_one_pulse.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\debounce_one_pulse.v".
     Summary:
 	no macro.
 Unit <debounce_one_pulse> synthesized.
 
 Synthesizing Unit <debounce>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\debounce.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\debounce.v".
     Found 4-bit register for signal <debounce_window>.
     Found 1-bit register for signal <pb_debounced>.
     Summary:
@@ -299,7 +317,7 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 Synthesizing Unit <one_pulse>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\one_pulse.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\one_pulse.v".
     Found 1-bit register for signal <out_pulse>.
     Found 1-bit register for signal <in_trig_delay>.
     Summary:
@@ -307,7 +325,7 @@ Synthesizing Unit <one_pulse>.
 Unit <one_pulse> synthesized.
 
 Synthesizing Unit <keypad_scan>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\keypad_scan.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\keypad_scan.v".
     Found 4-bit register for signal <pause_delay>.
     Found 4-bit register for signal <key>.
     Found 2-bit register for signal <sel>.
@@ -324,13 +342,13 @@ Synthesizing Unit <keypad_scan>.
 Unit <keypad_scan> synthesized.
 
 Synthesizing Unit <initial_screen>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\initial_screen.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\initial_screen.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <initial_screen> synthesized.
 
 Synthesizing Unit <invite_screen_main>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\invite_screen_main.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\invite_screen_main.v".
     Found 4-bit register for signal <cnt>.
     Found 4-bit subtractor for signal <cnt_tmp> created at line 32.
     Found 16x16-bit Read Only RAM for signal <count_down>
@@ -342,13 +360,15 @@ Synthesizing Unit <invite_screen_main>.
 Unit <invite_screen_main> synthesized.
 
 Synthesizing Unit <count_down_screen>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\count_down_screen.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\count_down_screen.v".
+    Found 8x32-bit Read Only RAM for signal <game>
     Summary:
+	inferred   1 RAM(s).
 	inferred   2 Multiplexer(s).
 Unit <count_down_screen> synthesized.
 
 Synthesizing Unit <count_down>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\count_down.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\count_down.v".
     Found 32-bit register for signal <q1>.
     Found 32-bit register for signal <q2>.
     Found 32-bit register for signal <q3>.
@@ -420,14 +440,44 @@ Synthesizing Unit <count_down>.
 	inferred  66 Multiplexer(s).
 Unit <count_down> synthesized.
 
+Synthesizing Unit <flick_master>.
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\flick_master.v".
+    Found 8x128-bit Read Only RAM for signal <_n0041>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <flick_master> synthesized.
+
+Synthesizing Unit <game_duration_cnt>.
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\game_duration_cnt.v".
+WARNING:Xst:647 - Input <game_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <CNT>.
+    Found 4-bit subtractor for signal <CNT[3]_GND_16_o_sub_2_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <game_duration_cnt> synthesized.
+
+Synthesizing Unit <rand_0_to_7>.
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\rand_0_to_7.v".
+    Found 4-bit register for signal <rand_out>.
+    Found 4-bit register for signal <rand>.
+    Found 4-bit adder for signal <rand[3]_GND_18_o_add_0_OUT> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <rand_0_to_7> synthesized.
+
 Synthesizing Unit <display_ctl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\display_ctl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\display_ctl.v".
     Summary:
 	inferred   8 Multiplexer(s).
 Unit <display_ctl> synthesized.
 
 Synthesizing Unit <RAM_ctrl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\RAM_ctrl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\RAM_ctrl.v".
         IDLE = 2'b00
         WRITE = 2'b01
         GETDATA = 2'b10
@@ -455,32 +505,32 @@ Synthesizing Unit <RAM_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit subtractor for signal <GND_16_o_GND_16_o_sub_561_OUT> created at line 193.
-    Found 9-bit subtractor for signal <GND_16_o_GND_16_o_sub_563_OUT> created at line 194.
-    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_565_OUT> created at line 195.
-    Found 7-bit subtractor for signal <GND_16_o_GND_16_o_sub_567_OUT> created at line 196.
-    Found 2-bit adder for signal <cnt[1]_GND_16_o_add_31_OUT> created at line 170.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_561_OUT> created at line 193.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_563_OUT> created at line 194.
+    Found 8-bit subtractor for signal <GND_20_o_GND_20_o_sub_565_OUT> created at line 195.
+    Found 7-bit subtractor for signal <GND_20_o_GND_20_o_sub_567_OUT> created at line 196.
+    Found 2-bit adder for signal <cnt[1]_GND_20_o_add_31_OUT> created at line 170.
     Found 6-bit adder for signal <addr_next> created at line 175.
-    Found 6-bit adder for signal <counter_word[5]_GND_16_o_add_551_OUT> created at line 187.
-    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2_OUT<7:0>> created at line 82.
-    Found 3-bit subtractor for signal <GND_16_o_GND_16_o_sub_38_OUT<2:0>> created at line 181.
-    Found 9-bit subtractor for signal <GND_16_o_GND_16_o_sub_553_OUT<8:0>> created at line 189.
-    Found 9-bit subtractor for signal <GND_16_o_GND_16_o_sub_555_OUT<8:0>> created at line 190.
-    Found 9-bit subtractor for signal <GND_16_o_GND_16_o_sub_557_OUT<8:0>> created at line 191.
-    Found 9-bit subtractor for signal <GND_16_o_GND_16_o_sub_559_OUT<8:0>> created at line 192.
+    Found 6-bit adder for signal <counter_word[5]_GND_20_o_add_551_OUT> created at line 187.
+    Found 8-bit subtractor for signal <GND_20_o_GND_20_o_sub_2_OUT<7:0>> created at line 82.
+    Found 3-bit subtractor for signal <GND_20_o_GND_20_o_sub_38_OUT<2:0>> created at line 181.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_553_OUT<8:0>> created at line 189.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_555_OUT<8:0>> created at line 190.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_557_OUT<8:0>> created at line 191.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_559_OUT<8:0>> created at line 192.
     Found 496-bit shifter logical right for signal <n0613> created at line 82
     Found 496-bit shifter logical right for signal <n0614> created at line 83
     Found 496-bit shifter logical right for signal <n0615> created at line 84
     Found 496-bit shifter logical right for signal <n0616> created at line 85
     Found 32-bit 4-to-1 multiplexer for signal <translate> created at line 55.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_553_o> created at line 189.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_555_o> created at line 190.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_557_o> created at line 191.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_559_o> created at line 192.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_561_o> created at line 193.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_563_o> created at line 194.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_565_o> created at line 195.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_16_o_mem[511]_Mux_567_o> created at line 196.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_553_o> created at line 189.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_555_o> created at line 190.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_557_o> created at line 191.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_559_o> created at line 192.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_561_o> created at line 193.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_563_o> created at line 194.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_565_o> created at line 195.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_20_o_mem[511]_Mux_567_o> created at line 196.
     Found 3-bit comparator lessequal for signal <n0040> created at line 180
     Summary:
 	inferred  13 Adder/Subtractor(s).
@@ -492,14 +542,14 @@ Synthesizing Unit <RAM_ctrl>.
 Unit <RAM_ctrl> synthesized.
 
 Synthesizing Unit <lcd_decoder>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_decoder.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_decoder.v".
     Found 256x256-bit Read Only RAM for signal <mark>
     Summary:
 	inferred   1 RAM(s).
 Unit <lcd_decoder> synthesized.
 
 Synthesizing Unit <lcd_ctrl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_ctrl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_ctrl.v".
         SETDSL = 3'b000
         SetY = 3'b001
         SetX = 3'b010
@@ -527,9 +577,9 @@ Synthesizing Unit <lcd_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <flag[1]_GND_20_o_add_18_OUT> created at line 139.
-    Found 3-bit adder for signal <x_cnt[2]_GND_20_o_add_20_OUT> created at line 149.
-    Found 6-bit adder for signal <y_cnt[5]_GND_20_o_add_21_OUT> created at line 152.
+    Found 2-bit adder for signal <flag[1]_GND_24_o_add_18_OUT> created at line 139.
+    Found 3-bit adder for signal <x_cnt[2]_GND_24_o_add_20_OUT> created at line 149.
+    Found 6-bit adder for signal <y_cnt[5]_GND_24_o_add_21_OUT> created at line 152.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  22 D-type flip-flop(s).
@@ -538,12 +588,12 @@ Synthesizing Unit <lcd_ctrl>.
 Unit <lcd_ctrl> synthesized.
 
 Synthesizing Unit <clock_divider_1>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\clock_divider.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\clock_divider.v".
         counter_width = 8
         half_cycle = 200
     Found 8-bit register for signal <count>.
     Found 1-bit register for signal <clk_div>.
-    Found 8-bit adder for signal <count[7]_GND_22_o_add_1_OUT> created at line 40.
+    Found 8-bit adder for signal <count[7]_GND_26_o_add_1_OUT> created at line 40.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   9 D-type flip-flop(s).
@@ -551,7 +601,7 @@ Synthesizing Unit <clock_divider_1>.
 Unit <clock_divider_1> synthesized.
 
 Synthesizing Unit <rom_lcd_ctrl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_lcd_ctrl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\rom_lcd_ctrl.v".
     Found 8-bit register for signal <counter_y>.
     Found 8-bit register for signal <lcd_data>.
     Found 4-bit register for signal <counter_page>.
@@ -574,13 +624,13 @@ Synthesizing Unit <rom_lcd_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 14-bit adder for signal <idle_counter[13]_GND_23_o_add_41_OUT> created at line 146.
-    Found 8-bit adder for signal <counter_y[7]_GND_23_o_add_53_OUT> created at line 170.
-    Found 4-bit adder for signal <counter_page[3]_GND_23_o_add_54_OUT> created at line 171.
-    Found 4-bit adder for signal <image[3]_GND_23_o_add_57_OUT> created at line 178.
+    Found 14-bit adder for signal <idle_counter[13]_GND_27_o_add_41_OUT> created at line 146.
+    Found 8-bit adder for signal <counter_y[7]_GND_27_o_add_53_OUT> created at line 170.
+    Found 4-bit adder for signal <counter_page[3]_GND_27_o_add_54_OUT> created at line 171.
+    Found 4-bit adder for signal <image[3]_GND_27_o_add_57_OUT> created at line 178.
     Found 4-bit comparator greater for signal <n0004> created at line 108
     Found 14-bit comparator greater for signal <n0039> created at line 136
-    Found 8-bit comparator greater for signal <counter_y[7]_GND_23_o_LessThan_51_o> created at line 162
+    Found 8-bit comparator greater for signal <counter_y[7]_GND_27_o_LessThan_51_o> created at line 162
     WARNING:Xst:2404 -  FFs/Latches <lcd_rw<0:0>> (without init value) have a constant value of 0 in block <rom_lcd_ctrl>.
     Summary:
 	inferred   4 Adder/Subtractor(s).
@@ -591,7 +641,7 @@ Synthesizing Unit <rom_lcd_ctrl>.
 Unit <rom_lcd_ctrl> synthesized.
 
 Synthesizing Unit <rom_ctrl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\rom_ctrl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\rom_ctrl.v".
     Found 6-bit register for signal <counter_byte>.
     Found 512-bit register for signal <mem>.
     Found 8-bit register for signal <data>.
@@ -611,25 +661,25 @@ Synthesizing Unit <rom_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit subtractor for signal <GND_24_o_GND_24_o_sub_531_OUT> created at line 108.
-    Found 9-bit subtractor for signal <GND_24_o_GND_24_o_sub_533_OUT> created at line 109.
-    Found 8-bit subtractor for signal <GND_24_o_GND_24_o_sub_535_OUT> created at line 110.
-    Found 7-bit subtractor for signal <GND_24_o_GND_24_o_sub_537_OUT> created at line 111.
-    Found 4-bit adder for signal <counter_word[3]_GND_24_o_add_3_OUT> created at line 88.
-    Found 6-bit adder for signal <counter_byte[5]_GND_24_o_add_521_OUT> created at line 103.
-    Found 4-bit subtractor for signal <GND_24_o_GND_24_o_sub_5_OUT<3:0>> created at line 89.
-    Found 9-bit subtractor for signal <GND_24_o_GND_24_o_sub_523_OUT<8:0>> created at line 104.
-    Found 9-bit subtractor for signal <GND_24_o_GND_24_o_sub_525_OUT<8:0>> created at line 105.
-    Found 9-bit subtractor for signal <GND_24_o_GND_24_o_sub_527_OUT<8:0>> created at line 106.
-    Found 9-bit subtractor for signal <GND_24_o_GND_24_o_sub_529_OUT<8:0>> created at line 107.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_523_o> created at line 104.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_525_o> created at line 105.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_527_o> created at line 106.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_529_o> created at line 107.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_531_o> created at line 108.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_533_o> created at line 109.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_535_o> created at line 110.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_24_o_mem[511]_Mux_537_o> created at line 111.
+    Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_531_OUT> created at line 108.
+    Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_533_OUT> created at line 109.
+    Found 8-bit subtractor for signal <GND_28_o_GND_28_o_sub_535_OUT> created at line 110.
+    Found 7-bit subtractor for signal <GND_28_o_GND_28_o_sub_537_OUT> created at line 111.
+    Found 4-bit adder for signal <counter_word[3]_GND_28_o_add_3_OUT> created at line 88.
+    Found 6-bit adder for signal <counter_byte[5]_GND_28_o_add_521_OUT> created at line 103.
+    Found 4-bit subtractor for signal <GND_28_o_GND_28_o_sub_5_OUT<3:0>> created at line 89.
+    Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_523_OUT<8:0>> created at line 104.
+    Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_525_OUT<8:0>> created at line 105.
+    Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_527_OUT<8:0>> created at line 106.
+    Found 9-bit subtractor for signal <GND_28_o_GND_28_o_sub_529_OUT<8:0>> created at line 107.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_523_o> created at line 104.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_525_o> created at line 105.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_527_o> created at line 106.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_529_o> created at line 107.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_531_o> created at line 108.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_533_o> created at line 109.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_535_o> created at line 110.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_28_o_mem[511]_Mux_537_o> created at line 111.
     Found 10-bit 3-to-1 multiplexer for signal <addr_rom> created at line 73.
     Summary:
 	inferred  11 Adder/Subtractor(s).
@@ -639,12 +689,12 @@ Synthesizing Unit <rom_ctrl>.
 Unit <rom_ctrl> synthesized.
 
 Synthesizing Unit <clock_divider_2>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\clock_divider.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\clock_divider.v".
         counter_width = 9
         half_cycle = 400
     Found 9-bit register for signal <count>.
     Found 1-bit register for signal <clk_div>.
-    Found 9-bit adder for signal <count[8]_GND_26_o_add_1_OUT> created at line 40.
+    Found 9-bit adder for signal <count[8]_GND_30_o_add_1_OUT> created at line 40.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  10 D-type flip-flop(s).
@@ -652,13 +702,13 @@ Synthesizing Unit <clock_divider_2>.
 Unit <clock_divider_2> synthesized.
 
 Synthesizing Unit <lcd_switcher>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\lcd_switcher.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\lcd_switcher.v".
     Summary:
 	inferred   5 Multiplexer(s).
 Unit <lcd_switcher> synthesized.
 
 Synthesizing Unit <music>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\music.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\music.v".
     Found 10-bit register for signal <q1>.
     Found 10-bit register for signal <q22>.
     Found 10-bit register for signal <q55>.
@@ -798,7 +848,7 @@ Synthesizing Unit <music>.
 Unit <music> synthesized.
 
 Synthesizing Unit <note_ctl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\note_ctl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\note_ctl.v".
     Found 6-bit register for signal <value>.
     Found 6-bit register for signal <note>.
     Found 1-bit register for signal <carry>.
@@ -814,10 +864,10 @@ Synthesizing Unit <note_ctl>.
 Unit <note_ctl> synthesized.
 
 Synthesizing Unit <buzzer_ctl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\buzzer_ctl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\buzzer_ctl.v".
     Found 20-bit register for signal <clk_cnt>.
     Found 1-bit register for signal <b_clk>.
-    Found 20-bit adder for signal <clk_cnt[19]_GND_31_o_add_2_OUT> created at line 52.
+    Found 20-bit adder for signal <clk_cnt[19]_GND_35_o_add_2_OUT> created at line 52.
     Found 20-bit comparator equal for signal <clk_cnt[19]_note_div[19]_equal_2_o> created at line 45
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -827,7 +877,7 @@ Synthesizing Unit <buzzer_ctl>.
 Unit <buzzer_ctl> synthesized.
 
 Synthesizing Unit <speaker_ctl>.
-    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_main\speaker_ctl.v".
+    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_main\speaker_ctl.v".
     Found 4-bit register for signal <audio_cnt_h>.
     Found 2-bit register for signal <audio_cnt_l>.
     Found 1-bit register for signal <audio_bck>.
@@ -844,12 +894,14 @@ Unit <speaker_ctl> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 7
+# RAMs                                                 : 9
  16x16-bit single-port Read Only RAM                   : 1
  256x256-bit single-port Read Only RAM                 : 4
  4x4-bit single-port Read Only RAM                     : 1
  64x20-bit single-port Read Only RAM                   : 1
-# Adders/Subtractors                                   : 44
+ 8x128-bit single-port Read Only RAM                   : 1
+ 8x32-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 46
  14-bit adder                                          : 1
  18-bit adder                                          : 1
  2-bit adder                                           : 3
@@ -859,16 +911,16 @@ Macro Statistics
  25-bit adder                                          : 2
  3-bit adder                                           : 1
  3-bit subtractor                                      : 1
- 4-bit adder                                           : 4
- 4-bit subtractor                                      : 2
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 3
  6-bit adder                                           : 5
  7-bit subtractor                                      : 2
  8-bit adder                                           : 3
  8-bit subtractor                                      : 3
  9-bit adder                                           : 1
  9-bit subtractor                                      : 12
-# Registers                                            : 269
- 1-bit register                                        : 31
+# Registers                                            : 274
+ 1-bit register                                        : 33
  10-bit register                                       : 133
  14-bit register                                       : 1
  15-bit register                                       : 1
@@ -880,7 +932,7 @@ Macro Statistics
  25-bit register                                       : 1
  3-bit register                                        : 1
  32-bit register                                       : 66
- 4-bit register                                        : 10
+ 4-bit register                                        : 13
  512-bit register                                      : 2
  6-bit register                                        : 6
  7-bit register                                        : 1
@@ -893,15 +945,15 @@ Macro Statistics
  4-bit comparator greater                              : 1
  6-bit comparator equal                                : 1
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 1336
- 1-bit 2-to-1 multiplexer                              : 28
+# Multiplexers                                         : 1341
+ 1-bit 2-to-1 multiplexer                              : 31
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 512-to-1 multiplexer                            : 16
  10-bit 2-to-1 multiplexer                             : 136
  10-bit 3-to-1 multiplexer                             : 1
  11-bit 2-to-1 multiplexer                             : 2
  12-bit 2-to-1 multiplexer                             : 2
- 128-bit 2-to-1 multiplexer                            : 10
+ 128-bit 2-to-1 multiplexer                            : 11
  13-bit 2-to-1 multiplexer                             : 2
  14-bit 2-to-1 multiplexer                             : 3
  15-bit 2-to-1 multiplexer                             : 2
@@ -932,7 +984,7 @@ Macro Statistics
  37-bit 2-to-1 multiplexer                             : 2
  38-bit 2-to-1 multiplexer                             : 2
  39-bit 2-to-1 multiplexer                             : 2
- 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 2-to-1 multiplexer                              : 13
  40-bit 2-to-1 multiplexer                             : 2
  41-bit 2-to-1 multiplexer                             : 2
  42-bit 2-to-1 multiplexer                             : 2
@@ -977,6 +1029,8 @@ Reading core <ipcore_dir/RAM.ngc>.
 Reading core <ipcore_dir/ROM.ngc>.
 Loading core <RAM> for timing and area information for instance <R1>.
 Loading core <ROM> for timing and area information for instance <R1>.
+WARNING:Xst:1290 - Hierarchical block <ONE_P> is unconnected in block <RAND>.
+   It will be removed from the design.
 
 Synthesizing (advanced) Unit <RAM_ctrl>.
 The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
@@ -1002,6 +1056,38 @@ The following registers are absorbed into counter <count_200K>: 1 register on si
 The following registers are absorbed into counter <count_1515151>: 1 register on signal <count_1515151>.
 The following registers are absorbed into counter <count_20M>: 1 register on signal <count_20M>.
 Unit <clock_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <count_down_screen>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_game> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <game_en>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <game>          |          |
+    -----------------------------------------------------------------------
+Unit <count_down_screen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <flick_master>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0041> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 128-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rand_number<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <flick_master> synthesized (advanced).
+
+Synthesizing (advanced) Unit <game_duration_cnt>.
+The following registers are absorbed into counter <CNT>: 1 register on signal <CNT>.
+Unit <game_duration_cnt> synthesized (advanced).
 
 Synthesizing (advanced) Unit <invite_screen_main>.
 The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
@@ -1065,6 +1151,10 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_note_div> will be implemented on LUT
     -----------------------------------------------------------------------
 Unit <note_ctl> synthesized (advanced).
 
+Synthesizing (advanced) Unit <rand_0_to_7>.
+The following registers are absorbed into counter <rand>: 1 register on signal <rand>.
+Unit <rand_0_to_7> synthesized (advanced).
+
 Synthesizing (advanced) Unit <rom_ctrl>.
 The following registers are absorbed into counter <counter_word>: 1 register on signal <counter_word>.
 The following registers are absorbed into counter <counter_byte>: 1 register on signal <counter_byte>.
@@ -1079,11 +1169,13 @@ Unit <rom_lcd_ctrl> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 7
+# RAMs                                                 : 9
  16x16-bit single-port distributed Read Only RAM       : 1
  256x256-bit single-port distributed Read Only RAM     : 4
  4x4-bit single-port distributed Read Only RAM         : 1
  64x20-bit single-port distributed Read Only RAM       : 1
+ 8x128-bit single-port distributed Read Only RAM       : 1
+ 8x32-bit single-port distributed Read Only RAM        : 1
 # Adders/Subtractors                                   : 27
  2-bit adder                                           : 1
  25-bit adder                                          : 1
@@ -1095,7 +1187,7 @@ Macro Statistics
  8-bit adder                                           : 2
  8-bit subtractor                                      : 3
  9-bit subtractor                                      : 12
-# Counters                                             : 17
+# Counters                                             : 19
  14-bit up counter                                     : 1
  18-bit up counter                                     : 1
  2-bit up counter                                      : 2
@@ -1104,13 +1196,13 @@ Macro Statistics
  24-bit up counter                                     : 1
  25-bit up counter                                     : 1
  3-bit up counter                                      : 1
- 4-bit down counter                                    : 1
- 4-bit up counter                                      : 2
+ 4-bit down counter                                    : 2
+ 4-bit up counter                                      : 3
  6-bit up counter                                      : 3
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 4611
- Flip-Flops                                            : 4611
+# Registers                                            : 4617
+ Flip-Flops                                            : 4617
 # Comparators                                          : 6
  14-bit comparator greater                             : 1
  20-bit comparator equal                               : 1
@@ -1118,15 +1210,15 @@ Macro Statistics
  4-bit comparator greater                              : 1
  6-bit comparator equal                                : 1
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 1323
- 1-bit 2-to-1 multiplexer                              : 28
+# Multiplexers                                         : 1327
+ 1-bit 2-to-1 multiplexer                              : 31
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 512-to-1 multiplexer                            : 16
  10-bit 2-to-1 multiplexer                             : 136
  10-bit 3-to-1 multiplexer                             : 1
  11-bit 2-to-1 multiplexer                             : 2
  12-bit 2-to-1 multiplexer                             : 2
- 128-bit 2-to-1 multiplexer                            : 9
+ 128-bit 2-to-1 multiplexer                            : 10
  13-bit 2-to-1 multiplexer                             : 2
  14-bit 2-to-1 multiplexer                             : 2
  15-bit 2-to-1 multiplexer                             : 2
@@ -1256,6 +1348,8 @@ Optimizing unit <speaker_ctl> ...
 
 Optimizing unit <music> ...
 
+Optimizing unit <rand_0_to_7> ...
+
 Optimizing unit <RAM_ctrl> ...
 
 Optimizing unit <note_ctl> ...
@@ -1270,6 +1364,8 @@ WARNING:Xst:2677 - Node <freqency_divider/cnt_h_6> of sequential type is unconne
 WARNING:Xst:2677 - Node <freqency_divider/cnt_h_5> of sequential type is unconnected in block <brainwars_main>.
 WARNING:Xst:2677 - Node <freqency_divider/cnt_h_4> of sequential type is unconnected in block <brainwars_main>.
 WARNING:Xst:2677 - Node <freqency_divider/cnt_h_3> of sequential type is unconnected in block <brainwars_main>.
+WARNING:Xst:2677 - Node <game_flick_master/RAND/ONE_P/out_pulse> of sequential type is unconnected in block <brainwars_main>.
+WARNING:Xst:2677 - Node <game_flick_master/RAND/ONE_P/in_trig_delay> of sequential type is unconnected in block <brainwars_main>.
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q63_5> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q64_31> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q64_30> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
@@ -2133,9 +2229,9 @@ WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q33_7> (without init va
 WARNING:Xst:1710 - FF/Latch <counting_down/counting_down/q33_6> (without init value) has a constant value of 1 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <note_controllor/note_5> (without init value) has a constant value of 0 in block <brainwars_main>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <clock_generate/count_10M_6> in Unit <brainwars_main> is equivalent to the following FF/Latch, which will be removed : <clock_generate/count_20M_6> 
-INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_0> in Unit <brainwars_main> is equivalent to the following 4 FFs/Latches, which will be removed : <clock_generate/count_20M_0> <clock_generate/count_10M_0> <clk100K/count_0> <clk50k/count_0> 
-INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_1> in Unit <brainwars_main> is equivalent to the following 4 FFs/Latches, which will be removed : <clock_generate/count_20M_1> <clock_generate/count_10M_1> <clk100K/count_1> <clk50k/count_1> 
-INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_2> in Unit <brainwars_main> is equivalent to the following 4 FFs/Latches, which will be removed : <clock_generate/count_20M_2> <clock_generate/count_10M_2> <clk100K/count_2> <clk50k/count_2> 
+INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_0> in Unit <brainwars_main> is equivalent to the following 4 FFs/Latches, which will be removed : <clock_generate/count_20M_0> <clk100K/count_0> <clock_generate/count_10M_0> <clk50k/count_0> 
+INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_1> in Unit <brainwars_main> is equivalent to the following 4 FFs/Latches, which will be removed : <clock_generate/count_20M_1> <clk100K/count_1> <clock_generate/count_10M_1> <clk50k/count_1> 
+INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_2> in Unit <brainwars_main> is equivalent to the following 4 FFs/Latches, which will be removed : <clock_generate/count_20M_2> <clk100K/count_2> <clock_generate/count_10M_2> <clk50k/count_2> 
 INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_3> in Unit <brainwars_main> is equivalent to the following 3 FFs/Latches, which will be removed : <clock_generate/count_20M_3> <clock_generate/count_10M_3> <clk50k/count_3> 
 INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_4> in Unit <brainwars_main> is equivalent to the following 2 FFs/Latches, which will be removed : <clock_generate/count_20M_4> <clock_generate/count_10M_4> 
 INFO:Xst:2261 - The FF/Latch <clock_generate/count_200K_5> in Unit <brainwars_main> is equivalent to the following 2 FFs/Latches, which will be removed : <clock_generate/count_20M_5> <clock_generate/count_10M_5> 
@@ -2209,11 +2305,11 @@ INFO:Xst:3203 - The FF/Latch <counting_down/counting_down/q64_22> in Unit <brain
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <counting_down/counting_down/q0_21> in Unit <brainwars_main> is equivalent to the following FF/Latch, which will be removed : <counting_down/counting_down/q0_20> 
-Found area constraint ratio of 100 (+ 5) on block brainwars_main, actual ratio is 115.
+Found area constraint ratio of 100 (+ 5) on block brainwars_main, actual ratio is 112.
 Optimizing block <brainwars_main> to meet ratio 100 (+ 5) of 2278 slices :
-WARNING:Xst:2254 - Area constraint could not be met for block <brainwars_main>, final ratio is 117.
-FlipFlop RAM_controller/cnt_0 has been replicated 2 time(s)
-FlipFlop RAM_controller/cnt_1 has been replicated 2 time(s)
+WARNING:Xst:2254 - Area constraint could not be met for block <brainwars_main>, final ratio is 113.
+FlipFlop RAM_controller/cnt_0 has been replicated 1 time(s)
+FlipFlop RAM_controller/cnt_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -2221,8 +2317,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 3783
- Flip-Flops                                            : 3783
+# Registers                                            : 3793
+ Flip-Flops                                            : 3793
 
 =========================================================================
 
@@ -2245,31 +2341,31 @@ Top Level Output File Name         : brainwars_main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 10621
+# BELS                             : 10327
 #      GND                         : 3
-#      INV                         : 28
+#      INV                         : 29
 #      LUT1                        : 104
-#      LUT2                        : 1158
-#      LUT3                        : 188
-#      LUT4                        : 204
-#      LUT5                        : 2199
-#      LUT6                        : 4245
+#      LUT2                        : 1179
+#      LUT3                        : 179
+#      LUT4                        : 210
+#      LUT5                        : 2341
+#      LUT6                        : 4133
 #      MUXCY                       : 159
-#      MUXF7                       : 1478
-#      MUXF8                       : 712
+#      MUXF7                       : 1263
+#      MUXF8                       : 584
 #      VCC                         : 3
 #      XORCY                       : 140
-# FlipFlops/Latches                : 3783
-#      FDC                         : 1464
-#      FDCE                        : 1111
-#      FDP                         : 1207
+# FlipFlops/Latches                : 3793
+#      FDC                         : 1468
+#      FDCE                        : 1115
+#      FDP                         : 1209
 #      FDPE                        : 1
 # RAMS                             : 5
 #      RAMB16BWER                  : 5
 # Clock Buffers                    : 6
 #      BUFG                        : 6
-# IO Buffers                       : 54
-#      IBUF                        : 18
+# IO Buffers                       : 57
+#      IBUF                        : 21
 #      OBUF                        : 36
 
 Device utilization summary:
@@ -2279,20 +2375,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            3783  out of  18224    20%  
- Number of Slice LUTs:                 8126  out of   9112    89%  
-    Number used as Logic:              8126  out of   9112    89%  
+ Number of Slice Registers:            3793  out of  18224    20%  
+ Number of Slice LUTs:                 8175  out of   9112    89%  
+    Number used as Logic:              8175  out of   9112    89%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   8136
-   Number with an unused Flip Flop:    4353  out of   8136    53%  
-   Number with an unused LUT:            10  out of   8136     0%  
-   Number of fully used LUT-FF pairs:  3773  out of   8136    46%  
-   Number of unique control sets:        33
+ Number of LUT Flip Flop pairs used:   8186
+   Number with an unused Flip Flop:    4393  out of   8186    53%  
+   Number with an unused LUT:            11  out of   8186     0%  
+   Number of fully used LUT-FF pairs:  3782  out of   8186    46%  
+   Number of unique control sets:        36
 
 IO Utilization: 
- Number of IOs:                          54
- Number of bonded IOBs:                  54  out of    232    23%  
+ Number of IOs:                          57
+ Number of bonded IOBs:                  57  out of    232    24%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                5  out of     32    15%  
@@ -2321,11 +2417,11 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)                                                                                                                 | Load  |
 -----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
 clk                                | IBUF+BUFG                                                                                                                             | 141   |
-clock_generate/clk_100             | BUFG                                                                                                                                  | 31    |
-clock_generate/clk_1               | NONE(invite_screen/cnt_0)                                                                                                             | 4     |
+clock_generate/clk_100             | BUFG                                                                                                                                  | 39    |
+clock_generate/clk_1               | NONE(invite_screen/cnt_0)                                                                                                             | 8     |
 clock_generate/clk_66              | BUFG                                                                                                                                  | 1386  |
 note_controllor/carry              | BUFG                                                                                                                                  | 1064  |
-clk100K/clk_div                    | BUFG                                                                                                                                  | 570   |
+clk100K/clk_div                    | BUFG                                                                                                                                  | 568   |
 freqency_divider/cnt_h_2           | NONE(note_controllor/value_5)                                                                                                         | 12    |
 clk50k/clk_div                     | BUFG                                                                                                                                  | 580   |
 U_romctrl/R1/N1                    | NONE(U_romctrl/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
@@ -2340,10 +2436,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.709ns (Maximum Frequency: 114.824MHz)
-   Minimum input arrival time before clock: 14.441ns
+   Minimum period: 8.871ns (Maximum Frequency: 112.728MHz)
+   Minimum input arrival time before clock: 14.474ns
    Maximum output required time after clock: 5.267ns
-   Maximum combinational path delay: 5.889ns
+   Maximum combinational path delay: 5.934ns
 
 Timing Details:
 ---------------
@@ -2351,10 +2447,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.029ns (frequency: 198.855MHz)
+  Clock period: 4.801ns (frequency: 208.299MHz)
   Total number of paths / destination ports: 8569 / 148
 -------------------------------------------------------------------------
-Delay:               5.029ns (Levels of Logic = 3)
+Delay:               4.801ns (Levels of Logic = 3)
   Source:            clock_generate/count_200K_2 (FF)
   Destination:       clock_generate/clk_100 (FF)
   Source Clock:      clk rising
@@ -2365,57 +2461,58 @@ Delay:               5.029ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             14   0.447   1.186  clock_generate/count_200K_2 (clock_generate/count_200K_2)
-     LUT6:I3->O            1   0.205   0.808  clock_generate/GND_3_o_GND_3_o_equal_9_o<17>1 (clock_generate/GND_3_o_GND_3_o_equal_9_o<17>)
-     LUT6:I3->O           19   0.205   1.072  clock_generate/GND_3_o_GND_3_o_equal_9_o<17>2 (clock_generate/GND_3_o_GND_3_o_equal_9_o<17>1)
+     LUT6:I3->O            1   0.205   0.580  clock_generate/GND_3_o_GND_3_o_equal_9_o<17>1 (clock_generate/GND_3_o_GND_3_o_equal_9_o<17>)
+     LUT6:I5->O           19   0.205   1.072  clock_generate/GND_3_o_GND_3_o_equal_9_o<17>2 (clock_generate/GND_3_o_GND_3_o_equal_9_o<17>1)
      LUT4:I3->O            1   0.205   0.579  clock_generate/GND_3_o_GND_3_o_equal_9_o<17>4 (clock_generate/GND_3_o_GND_3_o_equal_9_o)
      FDCE:CE                   0.322          clock_generate/clk_100
     ----------------------------------------
-    Total                      5.029ns (1.384ns logic, 3.645ns route)
-                                       (27.5% logic, 72.5% route)
+    Total                      4.801ns (1.384ns logic, 3.417ns route)
+                                       (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_generate/clk_100'
-  Clock period: 2.772ns (frequency: 360.724MHz)
-  Total number of paths / destination ports: 69 / 33
+  Clock period: 3.822ns (frequency: 261.640MHz)
+  Total number of paths / destination ports: 119 / 45
 -------------------------------------------------------------------------
-Delay:               2.772ns (Levels of Logic = 1)
-  Source:            keypad_scanner/keypad_state (FF)
-  Destination:       keypad_scanner/key_3 (FF)
+Delay:               3.822ns (Levels of Logic = 2)
+  Source:            game_flick_master/RAND/rand_out_0 (FF)
+  Destination:       game_flick_master/RAND/rand_out_3 (FF)
   Source Clock:      clock_generate/clk_100 rising
   Destination Clock: clock_generate/clk_100 rising
 
-  Data Path: keypad_scanner/keypad_state to keypad_scanner/key_3
+  Data Path: game_flick_master/RAND/rand_out_0 to game_flick_master/RAND/rand_out_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              7   0.447   1.118  keypad_scanner/keypad_state (keypad_scanner/keypad_state)
-     LUT5:I0->O            4   0.203   0.683  keypad_scanner/_n0078_inv1 (keypad_scanner/_n0078_inv)
-     FDCE:CE                   0.322          keypad_scanner/key_0
+     FDCE:C->Q             7   0.447   1.138  game_flick_master/RAND/rand_out_0 (game_flick_master/RAND/rand_out_0)
+     LUT6:I0->O            1   0.203   0.827  game_flick_master/RAND/point_out_t1 (game_flick_master/RAND/point_out_t1)
+     LUT4:I0->O            4   0.203   0.683  game_flick_master/RAND/point_out_t2 (game_flick_master/RAND/point_out_t)
+     FDCE:CE                   0.322          game_flick_master/RAND/rand_out_0
     ----------------------------------------
-    Total                      2.772ns (0.972ns logic, 1.800ns route)
-                                       (35.1% logic, 64.9% route)
+    Total                      3.822ns (1.175ns logic, 2.647ns route)
+                                       (30.7% logic, 69.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_generate/clk_1'
-  Clock period: 2.101ns (frequency: 475.998MHz)
-  Total number of paths / destination ports: 10 / 4
+  Clock period: 2.918ns (frequency: 342.659MHz)
+  Total number of paths / destination ports: 40 / 12
 -------------------------------------------------------------------------
-Delay:               2.101ns (Levels of Logic = 1)
-  Source:            invite_screen/cnt_0 (FF)
-  Destination:       invite_screen/cnt_0 (FF)
+Delay:               2.918ns (Levels of Logic = 1)
+  Source:            game_flick_master/D_CNT/CNT_3 (FF)
+  Destination:       game_flick_master/D_CNT/CNT_0 (FF)
   Source Clock:      clock_generate/clk_1 rising
   Destination Clock: clock_generate/clk_1 rising
 
-  Data Path: invite_screen/cnt_0 to invite_screen/cnt_0
+  Data Path: game_flick_master/D_CNT/CNT_3 to game_flick_master/D_CNT/CNT_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q             16   0.447   1.349  invite_screen/cnt_0 (invite_screen/cnt_0)
-     LUT6:I1->O            1   0.203   0.000  invite_screen/Mcount_cnt_xor<1>11 (invite_screen/Mcount_cnt1)
-     FDP:D                     0.102          invite_screen/cnt_1
+     FDP:C->Q              4   0.447   0.931  game_flick_master/D_CNT/CNT_3 (game_flick_master/D_CNT/CNT_3)
+     LUT6:I2->O           12   0.203   0.908  game_flick_master/reset_n_inv1 (game_flick_master/RAND/ONE_P/rst_n_inv)
+     FDC:CLR                   0.430          game_flick_master/D_CNT/CNT_0
     ----------------------------------------
-    Total                      2.101ns (0.752ns logic, 1.349ns route)
-                                       (35.8% logic, 64.2% route)
+    Total                      2.918ns (1.080ns logic, 1.838ns route)
+                                       (37.0% logic, 63.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_generate/clk_66'
@@ -2455,7 +2552,7 @@ Delay:               1.469ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              5   0.447   0.715  music_play/q0_6 (music_play/q0_6)
-     LUT2:I1->O            1   0.205   0.000  music_play/Mmux_q0[9]_GND_28_o_mux_264_OUT71 (music_play/q0[9]_GND_28_o_mux_264_OUT<6>)
+     LUT2:I1->O            1   0.205   0.000  music_play/Mmux_q0[9]_GND_32_o_mux_264_OUT71 (music_play/q0[9]_GND_32_o_mux_264_OUT<6>)
      FDP:D                     0.102          music_play/q132_6
     ----------------------------------------
     Total                      1.469ns (0.754ns logic, 0.715ns route)
@@ -2463,32 +2560,31 @@ Delay:               1.469ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk100K/clk_div'
-  Clock period: 8.709ns (frequency: 114.824MHz)
-  Total number of paths / destination ports: 54870 / 1204
+  Clock period: 8.871ns (frequency: 112.728MHz)
+  Total number of paths / destination ports: 63425 / 1200
 -------------------------------------------------------------------------
-Delay:               8.709ns (Levels of Logic = 8)
-  Source:            RAM_controller/cnt_1_2 (FF)
+Delay:               8.871ns (Levels of Logic = 7)
+  Source:            RAM_controller/cnt_1_1 (FF)
   Destination:       RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram (RAM)
   Source Clock:      clk100K/clk_div rising
   Destination Clock: clk100K/clk_div rising
 
-  Data Path: RAM_controller/cnt_1_2 to RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
+  Data Path: RAM_controller/cnt_1_1 to RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            10   0.447   0.961  RAM_controller/cnt_1_2 (RAM_controller/cnt_1_2)
-     LUT6:I4->O          682   0.203   2.495  RAM_controller/Mmux_translate107 (RAM_controller/translate<18>)
-     LUT6:I0->O            1   0.203   0.684  RAM_controller_decoder2/Mram_mark463111 (RAM_controller_decoder2/Mram_mark46311)
-     LUT4:I2->O            1   0.203   0.684  RAM_controller_decoder2/Mram_mark463113 (RAM_controller/Sh2441)
-     LUT6:I4->O            2   0.203   0.617  RAM_controller/Mmux_data_in363 (RAM_controller/Mmux_data_in363)
-     LUT6:I5->O            1   0.205   0.000  RAM_controller/Mmux_data_in364_G (N307)
-     MUXF7:I1->O           1   0.140   0.580  RAM_controller/Mmux_data_in364 (RAM_controller/Mmux_data_in364)
-     LUT6:I5->O            1   0.205   0.579  RAM_controller/Mmux_data_in368 (RAM_controller/data_in<41>)
-     begin scope: 'RAM_controller/R1:dina<41>'
-     RAMB16BWER:DIB9           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
+     FDCE:C->Q            15   0.447   1.086  RAM_controller/cnt_1_1 (RAM_controller/cnt_1_1)
+     LUT6:I4->O          625   0.203   2.482  RAM_controller/Mmux_translate173 (RAM_controller/translate<24>)
+     LUT6:I0->O            1   0.203   0.684  RAM_controller_decoder1/Mram_mark11011_SW4 (RAM_controller_N712)
+     LUT4:I2->O            1   0.203   0.684  RAM_controller_decoder1/Mram_mark11011 (RAM_controller/Sh284)
+     LUT6:I4->O            1   0.203   0.808  RAM_controller/Mmux_data_in571 (RAM_controller/Mmux_data_in57)
+     LUT6:I3->O            1   0.205   0.580  RAM_controller/Mmux_data_in575 (RAM_controller/Mmux_data_in574)
+     LUT3:I2->O            1   0.205   0.579  RAM_controller/Mmux_data_in576 (RAM_controller/data_in<60>)
+     begin scope: 'RAM_controller/R1:dina<60>'
+     RAMB16BWER:DIB28          0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
     ----------------------------------------
-    Total                      8.709ns (2.109ns logic, 6.600ns route)
-                                       (24.2% logic, 75.8% route)
+    Total                      8.871ns (1.969ns logic, 6.902ns route)
+                                       (22.2% logic, 77.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'freqency_divider/cnt_h_2'
@@ -2506,9 +2602,9 @@ Delay:               4.052ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              5   0.447   0.943  note_controllor/value_3 (note_controllor/value_3)
-     LUT5:I2->O            3   0.205   0.755  note_controllor/value[5]_beat[5]_equal_4_o64_SW0 (N76)
+     LUT5:I2->O            3   0.205   0.755  note_controllor/value[5]_beat[5]_equal_4_o64_SW0 (N60)
      LUT6:I4->O            9   0.203   1.194  note_controllor/value[5]_beat[5]_equal_4_o64 (note_controllor/value[5]_beat[5]_equal_4_o)
-     LUT6:I0->O            1   0.203   0.000  note_controllor/Mmux_value_tmp[5]_GND_30_o_mux_7_OUT51 (note_controllor/value_tmp[5]_GND_30_o_mux_7_OUT<4>)
+     LUT6:I0->O            1   0.203   0.000  note_controllor/Mmux_value_tmp[5]_GND_34_o_mux_7_OUT51 (note_controllor/value_tmp[5]_GND_34_o_mux_7_OUT<4>)
      FDC:D                     0.102          note_controllor/value_4
     ----------------------------------------
     Total                      4.052ns (1.160ns logic, 2.892ns route)
@@ -2516,35 +2612,35 @@ Delay:               4.052ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50k/clk_div'
-  Clock period: 6.956ns (frequency: 143.765MHz)
-  Total number of paths / destination ports: 8593 / 1166
+  Clock period: 6.890ns (frequency: 145.145MHz)
+  Total number of paths / destination ports: 8559 / 1168
 -------------------------------------------------------------------------
-Delay:               6.956ns (Levels of Logic = 5)
-  Source:            U_LCDctrl/counter_page_0 (FF)
-  Destination:       U_LCDctrl/counter_y_5 (FF)
+Delay:               6.890ns (Levels of Logic = 5)
+  Source:            U_LCDctrl/counter_y_2 (FF)
+  Destination:       U_LCDctrl/image_3 (FF)
   Source Clock:      clk50k/clk_div rising
   Destination Clock: clk50k/clk_div rising
 
-  Data Path: U_LCDctrl/counter_page_0 to U_LCDctrl/counter_y_5
+  Data Path: U_LCDctrl/counter_y_2 to U_LCDctrl/image_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            10   0.447   1.104  U_LCDctrl/counter_page_0 (U_LCDctrl/counter_page_0)
-     LUT4:I0->O            9   0.203   1.058  U_LCDctrl/_n0329_inv211 (U_LCDctrl/state_FSM_FFd2-In2)
-     LUT6:I3->O            5   0.205   1.059  U_LCDctrl/state_FSM_FFd2-In11 (U_LCDctrl/state_FSM_FFd2-In11)
-     LUT6:I1->O            1   0.203   0.580  U_LCDctrl/_n0238_inv1_SW0 (N141)
-     LUT6:I5->O            3   0.205   0.651  U_LCDctrl/_n0238_inv2 (U_LCDctrl/_n0238_inv2)
-     LUT6:I5->O            5   0.205   0.714  U_LCDctrl/_n0238_inv3 (U_LCDctrl/_n0238_inv3)
-     FDCE:CE                   0.322          U_LCDctrl/counter_y_0
+     FDCE:C->Q             7   0.447   0.878  U_LCDctrl/counter_y_2 (U_LCDctrl/counter_y_2)
+     LUT2:I0->O            4   0.203   0.788  U_LCDctrl/counter_y[7]_GND_27_o_equal_12_o<7>_SW0 (N42)
+     LUT6:I4->O           12   0.203   1.273  U_LCDctrl/counter_y[7]_GND_27_o_equal_12_o<7> (U_LCDctrl/counter_y[7]_GND_27_o_equal_12_o)
+     LUT6:I0->O            2   0.203   0.616  U_LCDctrl/_n02511 (U_LCDctrl/_n0251)
+     MUXF7:S->O            1   0.148   0.924  U_LCDctrl/_n0329_inv2 (U_LCDctrl/_n0329_inv2)
+     LUT5:I0->O            4   0.203   0.683  U_LCDctrl/_n0329_inv3 (U_LCDctrl/_n0329_inv)
+     FDCE:CE                   0.322          U_LCDctrl/image_0
     ----------------------------------------
-    Total                      6.956ns (1.790ns logic, 5.166ns route)
-                                       (25.7% logic, 74.3% route)
+    Total                      6.890ns (1.729ns logic, 5.161ns route)
+                                       (25.1% logic, 74.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 282 / 141
 -------------------------------------------------------------------------
-Offset:              5.767ns (Levels of Logic = 2)
+Offset:              5.663ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       clock_generate/clk_66 (FF)
   Destination Clock: clk rising
@@ -2553,18 +2649,18 @@ Offset:              5.767ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         3783   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         3781   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDCE:CLR                  0.430          buzzer_controllor/b_clk
     ----------------------------------------
-    Total                      5.767ns (1.855ns logic, 3.912ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      5.663ns (1.855ns logic, 3.808ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_100'
-  Total number of paths / destination ports: 104 / 43
+  Total number of paths / destination ports: 144 / 51
 -------------------------------------------------------------------------
-Offset:              5.767ns (Levels of Logic = 2)
+Offset:              5.663ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       debounce_game_invite/pulse/in_trig_delay (FF)
   Destination Clock: clock_generate/clk_100 rising
@@ -2573,18 +2669,18 @@ Offset:              5.767ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         3783   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         3781   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDP:PRE                   0.430          debounce_game_invite/pulse/out_pulse
     ----------------------------------------
-    Total                      5.767ns (1.855ns logic, 3.912ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      5.663ns (1.855ns logic, 3.808ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_1'
-  Total number of paths / destination ports: 24 / 8
+  Total number of paths / destination ports: 44 / 12
 -------------------------------------------------------------------------
-Offset:              5.767ns (Levels of Logic = 2)
+Offset:              5.663ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       invite_screen/cnt_0 (FF)
   Destination Clock: clock_generate/clk_1 rising
@@ -2593,18 +2689,18 @@ Offset:              5.767ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         3783   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         3781   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDP:PRE                   0.430          invite_screen/cnt_0
     ----------------------------------------
-    Total                      5.767ns (1.855ns logic, 3.912ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      5.663ns (1.855ns logic, 3.808ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_66'
   Total number of paths / destination ports: 8316 / 2772
 -------------------------------------------------------------------------
-Offset:              5.767ns (Levels of Logic = 2)
+Offset:              5.663ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       counting_down/counting_down/q1_28 (FF)
   Destination Clock: clock_generate/clk_66 rising
@@ -2613,18 +2709,18 @@ Offset:              5.767ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         3783   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         3781   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          counting_down/counting_down/q0_0
     ----------------------------------------
-    Total                      5.767ns (1.855ns logic, 3.912ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      5.663ns (1.855ns logic, 3.808ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'note_controllor/carry'
   Total number of paths / destination ports: 3192 / 2128
 -------------------------------------------------------------------------
-Offset:              5.767ns (Levels of Logic = 2)
+Offset:              5.663ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       music_play/q1_8 (FF)
   Destination Clock: note_controllor/carry rising
@@ -2633,18 +2729,18 @@ Offset:              5.767ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         3783   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         3781   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          music_play/q0_0
     ----------------------------------------
-    Total                      5.767ns (1.855ns logic, 3.912ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      5.663ns (1.855ns logic, 3.808ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk100K/clk_div'
-  Total number of paths / destination ports: 385669 / 633
+  Total number of paths / destination ports: 594903 / 631
 -------------------------------------------------------------------------
-Offset:              14.441ns (Levels of Logic = 11)
+Offset:              14.474ns (Levels of Logic = 11)
   Source:            state<0> (PAD)
   Destination:       RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram (RAM)
   Destination Clock: clk100K/clk_div rising
@@ -2653,27 +2749,27 @@ Offset:              14.441ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1424   1.222   2.556  state_0_IBUF (state_0_IBUF)
-     LUT4:I0->O           22   0.203   1.498  display_controller/Mmux_data_out1291 (display_controller/Mmux_data_out1010)
-     LUT6:I0->O            1   0.203   0.580  RAM_controller/Mmux_translate193 (RAM_controller/Mmux_translate192)
-     LUT2:I1->O            1   0.205   0.944  RAM_controller/Mmux_translate194_SW0 (N105)
-     LUT6:I0->O          677   0.203   2.377  RAM_controller/Mmux_translate194 (RAM_controller/translate<26>)
-     LUT6:I2->O            1   0.203   0.808  RAM_controller_decoder1/Mram_mark279 (RAM_controller_decoder1/Mram_mark279)
-     LUT5:I2->O            1   0.205   0.580  RAM_controller_decoder1/Mram_mark279_f8 (RAM_controller/Sh369)
-     LUT3:I2->O            1   0.205   0.580  RAM_controller/Mmux_data_in441 (RAM_controller/Mmux_data_in441)
-     LUT6:I5->O            1   0.205   0.580  RAM_controller/Mmux_data_in442 (RAM_controller/Mmux_data_in442)
-     LUT6:I5->O            1   0.205   0.579  RAM_controller/Mmux_data_in447 (RAM_controller/data_in<49>)
-     begin scope: 'RAM_controller/R1:dina<49>'
-     RAMB16BWER:DIB17          0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
+     IBUF:I->O          1424   1.222   2.537  state_0_IBUF (state_0_IBUF)
+     LUT3:I0->O            7   0.205   1.138  display_controller/Mmux_data_out131011 (display_controller/Mmux_data_out12731)
+     LUT6:I0->O            3   0.203   1.015  display_controller/Mmux_data_out12731 (display_controller/Mmux_data_out1273)
+     LUT6:I0->O            1   0.203   0.808  RAM_controller/Mmux_translate134_SW2 (N161)
+     LUT6:I3->O          653   0.205   2.488  RAM_controller/Mmux_translate134 (RAM_controller/translate<20>)
+     LUT6:I0->O            1   0.203   0.808  RAM_controller_decoder2/Mram_mark2341 (RAM_controller_decoder2/Mram_mark2341)
+     LUT5:I2->O            1   0.205   0.580  RAM_controller_decoder2/Mram_mark234_f8 (RAM_controller/Sh2325)
+     LUT6:I5->O            1   0.205   0.580  RAM_controller/Mmux_data_in3115 (RAM_controller/Mmux_data_in317)
+     LUT2:I1->O            1   0.205   0.580  RAM_controller/Mmux_data_in3116 (RAM_controller/Mmux_data_in318)
+     LUT6:I5->O            1   0.205   0.579  RAM_controller/Mmux_data_in3117 (RAM_controller/data_in<37>)
+     begin scope: 'RAM_controller/R1:dina<37>'
+     RAMB16BWER:DIB5           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
     ----------------------------------------
-    Total                     14.441ns (3.359ns logic, 11.082ns route)
-                                       (23.3% logic, 76.7% route)
+    Total                     14.474ns (3.361ns logic, 11.113ns route)
+                                       (23.2% logic, 76.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'freqency_divider/cnt_h_2'
   Total number of paths / destination ports: 24 / 12
 -------------------------------------------------------------------------
-Offset:              5.767ns (Levels of Logic = 2)
+Offset:              5.663ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       note_controllor/value_5 (FF)
   Destination Clock: freqency_divider/cnt_h_2 rising
@@ -2682,18 +2778,18 @@ Offset:              5.767ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         3783   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         3781   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          note_controllor/carry
     ----------------------------------------
-    Total                      5.767ns (1.855ns logic, 3.912ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      5.663ns (1.855ns logic, 3.808ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50k/clk_div'
   Total number of paths / destination ports: 1152 / 576
 -------------------------------------------------------------------------
-Offset:              5.767ns (Levels of Logic = 2)
+Offset:              5.663ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       U_LCDctrl/image_3 (FF)
   Destination Clock: clk50k/clk_div rising
@@ -2702,32 +2798,32 @@ Offset:              5.767ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         3783   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O         3781   0.203   2.874  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          U_LCDctrl/lcd_en
     ----------------------------------------
-    Total                      5.767ns (1.855ns logic, 3.912ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      5.663ns (1.855ns logic, 3.808ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_generate/clk_100'
   Total number of paths / destination ports: 30 / 10
 -------------------------------------------------------------------------
-Offset:              4.974ns (Levels of Logic = 2)
-  Source:            keypad_scanner/key_1 (FF)
-  Destination:       dialogue_out<3> (PAD)
+Offset:              5.027ns (Levels of Logic = 2)
+  Source:            counting_down/pressed_debounce/pb_debounced (FF)
+  Destination:       dialogue_out<2> (PAD)
   Source Clock:      clock_generate/clk_100 rising
 
-  Data Path: keypad_scanner/key_1 to dialogue_out<3>
+  Data Path: counting_down/pressed_debounce/pb_debounced to dialogue_out<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             9   0.447   1.174  keypad_scanner/key_1 (keypad_scanner/key_1)
-     LUT5:I0->O            1   0.203   0.579  counting_down/_n0069<1>1 (dialogue_out_3_OBUF)
-     OBUF:I->O                 2.571          dialogue_out_3_OBUF (dialogue_out<3>)
+     FDC:C->Q             11   0.447   1.227  counting_down/pressed_debounce/pb_debounced (counting_down/pressed_debounce/pb_debounced)
+     LUT5:I0->O            1   0.203   0.579  counting_down/dialogue_out<4>1 (dialogue_out_0_OBUF)
+     OBUF:I->O                 2.571          dialogue_out_0_OBUF (dialogue_out<0>)
     ----------------------------------------
-    Total                      4.974ns (3.221ns logic, 1.753ns route)
-                                       (64.8% logic, 35.2% route)
+    Total                      5.027ns (3.221ns logic, 1.806ns route)
+                                       (64.1% logic, 35.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -2812,7 +2908,7 @@ Offset:              4.089ns (Levels of Logic = 1)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 3
 -------------------------------------------------------------------------
-Delay:               5.889ns (Levels of Logic = 3)
+Delay:               5.934ns (Levels of Logic = 3)
   Source:            rst_n (PAD)
   Destination:       LCD_rst (PAD)
 
@@ -2820,12 +2916,12 @@ Delay:               5.889ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   1.222   1.037  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O           10   0.203   0.856  rst1 (LCD_rst_OBUF)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O           16   0.203   1.004  rst1 (LCD_rst_OBUF)
      OBUF:I->O                 2.571          LCD_rst_OBUF (LCD_rst)
     ----------------------------------------
-    Total                      5.889ns (3.996ns logic, 1.893ns route)
-                                       (67.9% logic, 32.1% route)
+    Total                      5.934ns (3.996ns logic, 1.938ns route)
+                                       (67.3% logic, 32.7% route)
 
 =========================================================================
 
@@ -2837,7 +2933,7 @@ Clock to Setup on destination clock clk
                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
-clk                     |    5.029|         |         |         |
+clk                     |    4.801|         |         |         |
 freqency_divider/cnt_h_2|    5.719|         |         |         |
 ------------------------+---------+---------+---------+---------+
 
@@ -2846,11 +2942,11 @@ Clock to Setup on destination clock clk100K/clk_div
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-clk                   |   10.692|         |         |         |
-clk100K/clk_div       |    8.709|         |         |         |
-clock_generate/clk_1  |   11.063|         |         |         |
-clock_generate/clk_100|   10.582|         |         |         |
-clock_generate/clk_66 |    9.739|         |         |         |
+clk                   |   11.673|         |         |         |
+clk100K/clk_div       |    8.871|         |         |         |
+clock_generate/clk_1  |   10.970|         |         |         |
+clock_generate/clk_100|   11.254|         |         |         |
+clock_generate/clk_66 |   10.569|         |         |         |
 ----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk50k/clk_div
@@ -2858,7 +2954,7 @@ Clock to Setup on destination clock clk50k/clk_div
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50k/clk_div |    6.956|         |         |         |
+clk50k/clk_div |    6.890|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_generate/clk_1
@@ -2866,7 +2962,7 @@ Clock to Setup on destination clock clock_generate/clk_1
                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------+---------+---------+---------+---------+
-clock_generate/clk_1|    2.101|         |         |         |
+clock_generate/clk_1|    2.918|         |         |         |
 --------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_generate/clk_100
@@ -2874,7 +2970,8 @@ Clock to Setup on destination clock clock_generate/clk_100
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-clock_generate/clk_100|    2.772|         |         |         |
+clock_generate/clk_1  |    2.918|         |         |         |
+clock_generate/clk_100|    3.822|         |         |         |
 ----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_generate/clk_66
@@ -2905,14 +3002,14 @@ note_controllor/carry|    1.469|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 170.00 secs
-Total CPU time to Xst completion: 169.73 secs
+Total REAL time to Xst completion: 166.00 secs
+Total CPU time to Xst completion: 166.17 secs
  
 --> 
 
-Total memory usage is 398132 kilobytes
+Total memory usage is 405364 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  883 (   0 filtered)
-Number of infos    :   81 (   0 filtered)
+Number of warnings :  890 (   0 filtered)
+Number of infos    :   85 (   0 filtered)
 

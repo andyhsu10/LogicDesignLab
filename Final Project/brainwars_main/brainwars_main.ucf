@@ -61,6 +61,10 @@ NET "state[2]" LOC = V11;
 NET "state[1]" LOC = U10;
 NET "state[0]" LOC = K12;
 
+NET "game_en[2]" LOC = F18;
+NET "game_en[1]" LOC = H15;
+NET "game_en[0]" LOC = G18;
+
 NET "game_invite_out" LOC = L12;
 NET "game_cancel_out" LOC = J18;
 

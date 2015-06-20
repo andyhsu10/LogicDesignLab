@@ -7,6 +7,8 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/brainwars_main C:|Users|Andy|Desktop|Working|brainwars_main|brainwars_main.v/debounce_game_invite - debounce_one_pulse</ClosedNode>
+         <ClosedNode>/brainwars_main C:|Users|Andy|Desktop|Working|brainwars_main|brainwars_main.v/game_flick_master - flick_master</ClosedNode>
          <ClosedNode>/brainwars_main D:|GitHub|LogicDesignLab|Final Project|brainwars_main|brainwars_main.v/RAM_controller - RAM_ctrl</ClosedNode>
          <ClosedNode>/brainwars_main D:|GitHub|LogicDesignLab|Final Project|brainwars_main|brainwars_main.v/U_romctrl - rom_ctrl</ClosedNode>
          <ClosedNode>/brainwars_main D:|GitHub|LogicDesignLab|Final Project|brainwars_main|brainwars_main.v/counting_down - count_down_screen</ClosedNode>
@@ -66,13 +68,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Manage Configuration Project (iMPACT)</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Manage Configuration Project (iMPACT)</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>

@@ -15,6 +15,7 @@ module brainwars_main(
 	music_on_off, //DIP switch for music on or off (I)
 	rst_n, //active low reset (I)
 	rst_n_in, //reset signal from second board (I)
+	game_en, //game enable (I)
 	dialogue_in, //dialogue from another board (I)
 	col_n, //pressed column index (I)
 	game_invite, //game invitation from button (I)
@@ -48,6 +49,7 @@ input rst_n; //active low reset
 input rst_n_in; //reset signal from second board
 input game_invite; //game invitation from button
 input game_cancel; //game cancellation from button
+input [2:0] game_en; //game enable
 input [3:0] state; //fsm state
 input [3:0] dialogue_in; //dialogue from another board
 input [`KEYPAD_WIDTH-1:0] col_n;
@@ -97,6 +99,8 @@ wire LCD_rw1, LCD_rw2;
 wire LCD_di1, LCD_di2;
 wire LCD_en1, LCD_en2;
 wire [7:0] LCD_data1, LCD_data2;
+
+wire point;
 
 assign rst_n_out = rst_n;
 assign rst = rst_n & rst_n_in;
@@ -161,6 +165,7 @@ invite_screen_main invite_screen(
 count_down_screen counting_down(
 	.clk(clk_66), //global clock (I)
 	.clk_100(clk_100), //100 Hz clock (I)
+	.game_en(game_en), //game enable (I)
 	.state(state), //fsm state (I)
 	.key(key), //returned pressed key (I)
 	.pressed(pressed), //whether key pressed (1) or not (0) (I)
@@ -170,13 +175,24 @@ count_down_screen counting_down(
 	.data_out(count_down_data_in) //data output (O)
 );
 
+flick_master game_flick_master(
+	.clk_100(clk_100), // 100 HZ (I)
+	.clk_1(clk_1), // 1Hz (I)
+	.rst_n(rst), // reset (I)
+	.game_en(game_en), // enable to play game (I)
+	.key(key), // keypad (I)
+	.pressed(pressed), // if key pad was pressed (I)
+	.data_output(game1_data_in), // to ram_ctrl 128b (O)
+	.point(point) // 1:get point 0:no point got (O)
+);
+
 display_ctl display_controller(
     .data_out(data_output), //data output (O)
     .state(state), //fsm state (I)
     .initial_data_in(initial_data_in), //initial screen lcd data (I)
 	.invite_data_in(invite_data_in), //invite screen lcd data (I)
 	.count_down_data_in(count_down_data_in), //count down screen lcd data (I)
-	.game1_data_in(128'd0), //game1 screen lcd data (I)
+	.game1_data_in(game1_data_in), //game1 screen lcd data (I)
 	.game2_data_in(128'd0), //game2 screen lcd data (I)
 	.game3_data_in(128'd0), //game3 screen lcd data (I)
 	.result_data_in(128'd0) //result screen lcd data (I)
