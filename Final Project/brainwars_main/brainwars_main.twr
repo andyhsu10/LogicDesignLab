@@ -32,35 +32,26 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock clk
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-rst_n       |    8.440(R)|      SLOW  |   -3.089(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-rst_n_in    |    6.330(R)|      SLOW  |   -1.809(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
-
 Clock clk to Pad
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-LCD_cs<0>   |         6.968(R)|      SLOW  |         3.531(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_cs<1>   |         6.588(R)|      SLOW  |         3.362(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<0> |         9.409(R)|      SLOW  |         5.124(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<1> |         9.319(R)|      SLOW  |         5.088(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<2> |         9.265(R)|      SLOW  |         5.041(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<3> |         9.190(R)|      SLOW  |         4.970(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<4> |        10.416(R)|      SLOW  |         5.891(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<5> |        10.577(R)|      SLOW  |         6.009(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<6> |         9.062(R)|      SLOW  |         4.971(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<7> |         9.141(R)|      SLOW  |         5.039(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_di      |         9.346(R)|      SLOW  |         5.124(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_en      |         9.329(R)|      SLOW  |         5.071(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_bck   |         7.013(R)|      SLOW  |         3.611(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_data  |         8.363(R)|      SLOW  |         4.207(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_ws    |         7.409(R)|      SLOW  |         3.856(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_cs<0>   |         7.750(R)|      SLOW  |         4.039(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_cs<1>   |         8.276(R)|      SLOW  |         4.425(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<0> |         9.496(R)|      SLOW  |         5.141(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<1> |         9.432(R)|      SLOW  |         5.097(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<2> |         9.457(R)|      SLOW  |         5.113(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<3> |         9.365(R)|      SLOW  |         5.050(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<4> |        10.195(R)|      SLOW  |         5.573(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<5> |        10.157(R)|      SLOW  |         5.508(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<6> |         9.920(R)|      SLOW  |         5.385(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<7> |         9.846(R)|      SLOW  |         5.334(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_di      |         8.900(R)|      SLOW  |         4.694(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_en      |         8.930(R)|      SLOW  |         4.730(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_bck   |         6.731(R)|      SLOW  |         3.438(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_data  |         8.113(R)|      SLOW  |         4.028(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_ws    |         6.805(R)|      SLOW  |         3.500(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -68,28 +59,48 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.794|         |         |         |
+clk            |    4.187|         |         |         |
+rst_n          |    8.274|    8.274|         |         |
+rst_n_in       |    7.670|    7.670|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+rst_n          |         |         |    0.538|    0.538|
+rst_n_in       |         |         |   -0.705|   -0.705|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst_n_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+rst_n          |         |         |    2.127|    2.127|
+rst_n_in       |         |         |    0.446|    0.446|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-clk            |audio_sysclk   |    7.886|
-rst_n          |LCD_rst        |   11.652|
-rst_n          |rst_n_out      |    9.101|
-rst_n_in       |LCD_rst        |    9.542|
+clk            |audio_sysclk   |    7.990|
+rst_n          |LCD_rst        |   10.854|
+rst_n          |rst_n_out      |    8.941|
+rst_n_in       |LCD_rst        |   10.695|
 ---------------+---------------+---------+
 
 
-Analysis completed Sat Jun 20 20:57:52 2015 
+Analysis completed Tue Jun 23 14:07:45 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 355 MB
+Peak Memory Usage: 360 MB
 
 
 

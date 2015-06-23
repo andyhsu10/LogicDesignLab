@@ -22,41 +22,40 @@ module game_ctl(
 output [2:0] game_en; //game enable
 input clk; //100 Hz clock
 input [3:0] state; //fsm state
-input [9:0] random; //randow value
+input [2:0] random; //randow value
 input rst_n; //active low reset
 
-wire [2:0] game_decision;
-
-assign game_decision = random % 6;
-
+reg [2:0] game_decision;
 reg [2:0] game_en; //game enable
 reg [8:0] check;
 
+always @(posedge clk)
+	if(random > 3'd5)
+		game_decision = random - 3'd6;
+	else
+		game_decision = random;
+
+
 always @(posedge clk or negedge rst_n)
 	if(~rst_n || (state == `STAT_RESULT))
-		begin
-			game_en = 3'd6;
-			check = 9'd511;
-		end
+		check = 9'd511;
 	else if(state == `STAT_INITIAL)
-		begin
-			game_en = game_decision;
-			check[2:0] = game_decision;
-		end
+		check[2:0] = game_decision;
 	else if((state == `STAT_GAME_INVITE) && (check[2:0] != game_decision))
-		begin
-			game_en = game_decision;
-			check[5:3] = game_decision;
-		end
+		check[5:3] = game_decision;
 	else if((state == `STAT_STAGE1_DES) && (check[2:0] != game_decision) && (check[5:3] != game_decision))
-		begin
-			game_en = game_decision;
-			check[8:6] = game_decision;
-		end
+		check[8:6] = game_decision;
+
+always @(posedge clk or negedge rst_n)
+	if(~rst_n)
+		game_en = 3'd6;
+	else if((state == `STAT_STAGE1_DES) || (state == `STAT_STAGE1))
+		game_en = check[2:0];
+	else if((state == `STAT_STAGE2_DES) || (state == `STAT_STAGE2))
+		game_en = check[5:3];
+	else if((state == `STAT_STAGE3_DES) || (state == `STAT_STAGE3))
+		game_en = check[8:6];
 	else
-		begin
-			game_en = game_en;
-			check = check;
-		end
+		game_en = 3'd6;
 
 endmodule

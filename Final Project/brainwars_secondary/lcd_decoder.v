@@ -211,6 +211,9 @@ always @(font)
 		`GRAPH_RAINFALL_2: mark = `LCD_RAINFALL_2;
 		`GRAPH_RAINFALL_3: mark = `LCD_RAINFALL_3;
 		`GRAPH_RAINFALL_4: mark = `LCD_RAINFALL_4;
+		`GRAPH_RAIN: mark = `LCD_RAIN;
+		`GRAPH_LIGHTNING: mark = `LCD_LIGHTNING;
+		`GRAPH_UMBRELLA: mark = `LCD_UMBRELLA;
 		default: mark = `LCD_NONE;
 	endcase
 

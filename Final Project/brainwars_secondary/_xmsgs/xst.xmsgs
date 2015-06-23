@@ -8,16 +8,25 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 109: Port <arg fmt="%s" index="1">clk_out</arg> is not connected to this instance
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 225: Port <arg fmt="%s" index="1">game_next_state</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 236: Port <arg fmt="%s" index="1">point</arg> is not connected to this instance
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 110: Assignment to <arg fmt="%s" index="1">clk_fast</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 111: Assignment to <arg fmt="%s" index="1">clk_ctl</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 214: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">game_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">3</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 207: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">random</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">10</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 219: Assignment to <arg fmt="%s" index="1">point</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 229: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">game_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">3</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 233: Assignment to <arg fmt="%s" index="1">point</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\ipcore_dir\RAM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">RAM</arg>&gt; remains a black box.
@@ -56,19 +65,25 @@
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 71: Signal &lt;<arg fmt="%s" index="1">LCD_data2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%d" index="2">109</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">freqency_divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">brainwars_secondary</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%d" index="2">109</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">freqency_divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">brainwars_secondary</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_ctl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_ctl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_fast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">clk_fast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freqency_divider</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">210</arg>: Output port &lt;<arg fmt="%s" index="3">point</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">game_flick_master</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">game_next_state</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">game_flick_master</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">point</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">game_flick_master</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v</arg>&quot; line <arg fmt="%s" index="2">236</arg>: Output port &lt;<arg fmt="%s" index="3">point</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">game_rainfall</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">note_div&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -141,10 +156,34 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">note_div_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">note_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rand_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">random_producer</arg>&gt;.
+</msg>
+
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_game</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0042</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0041</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0034</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -159,13 +198,73 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0106</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_graph1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_graph2</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_graph3</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">note_div_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">note_decode</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">point_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">rainfall</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">correct</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">rainfall</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;point_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">game_flick_master/RAND/ONE_P/out_pulse</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">game_flick_master/RAND/ONE_P/in_trig_delay</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">random_producer/rand_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q44_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">brainwars_secondary</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -2172,7 +2271,22 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q64_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;counting_down/counting_down/q64_21&gt; &lt;counting_down/counting_down/q64_20&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/pressed_debounce/debounce_window_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;debounce_pressed/debounce/debounce_window_0&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/counting_down/q0_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;counting_down/counting_down/q0_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/pressed_debounce/debounce_window_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;debounce_pressed/debounce/debounce_window_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/pressed_debounce/debounce_window_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;debounce_pressed/debounce/debounce_window_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/pressed_debounce/debounce_window_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;debounce_pressed/debounce/debounce_window_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">counting_down/pressed_debounce/pb_debounced</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">brainwars_secondary</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;debounce_pressed/debounce/pb_debounced&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

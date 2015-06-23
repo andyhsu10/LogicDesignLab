@@ -76,7 +76,7 @@ output game_cancel_out; //game cancellation to secondary board
 //Declare internal nodes
 wire rst;
 wire carry;
-wire pressed;
+wire pressed, de_pressed;
 wire out_valid;
 wire clk_1, clk_2, clk_66, clk_100, clk_fast, clk_div, clk_50k;
 wire de_game_invite, de_game_cancel;
@@ -86,6 +86,7 @@ wire [3:0] key;
 wire [7:0] data_out;
 wire [9:0] q;
 wire [15:0] audio_in_left, audio_in_right;
+wire [15:0] random;
 wire [19:0] note_div;
 wire [127:0] data_output;
 wire [127:0] initial_data_in, invite_data_in, count_down_data_in;
@@ -100,7 +101,7 @@ wire LCD_di1, LCD_di2;
 wire LCD_en1, LCD_en2;
 wire [7:0] LCD_data1, LCD_data2;
 
-wire point;
+wire [1:0] point;
 
 assign rst_n_out = rst_n;
 assign rst = rst_n & rst_n_in;
@@ -148,6 +149,14 @@ keypad_scan keypad_scanner(
 	.pressed(pressed) //whether key pressed (1) or not (0)
 );
 
+debounce_one_pulse debounce_pressed(
+	.de_clk(clk_100), //debounce clock (I)
+	.pulse_clk(clk_100), //one pulse clock (I)
+	.rst_n(rst), //low active reset (I)
+	.in(pressed), //push button input (I)
+	.out(de_pressed) //pulsed push button output (O)
+);
+
 initial_screen game_initial_screen(
 	.clk(clk_2), //2Hz clock (I)
 	.state(state), //fsm state (I)
@@ -175,6 +184,12 @@ count_down_screen counting_down(
 	.data_out(count_down_data_in) //data output (O)
 );
 
+random_main random_producer(
+	.rand(random), //random value output (O)
+	.clk(clk_100), //global clock input (I)
+	.rst_n(rst) //active low reset (I)
+);
+
 flick_master game_flick_master(
 	.clk_100(clk_100), // 100 HZ (I)
 	.clk_1(clk_1), // 1Hz (I)
@@ -186,6 +201,17 @@ flick_master game_flick_master(
 	.point(point) // 1:get point 0:no point got (O)
 );
 
+rainfall game_rainfall(
+    .game_en(3'b101), //game enable (I)
+    .clk(clk_100), //100 Hz clock (I)
+    .key(key), //returned pressed key (I)
+	.pressed(~de_pressed), //whether key pressed (1) or not (0) (I)
+    .random(random[7:6]), //randow value 2-bit (I)
+    .rst_n(rst), //active low reset (I)
+    .data_output(game2_data_in) // to ram_ctrl 128b (O)
+//	.point // 1:get point 0:no point got (O)
+);
+
 display_ctl display_controller(
     .data_out(data_output), //data output (O)
     .state(state), //fsm state (I)
@@ -193,7 +219,7 @@ display_ctl display_controller(
 	.invite_data_in(invite_data_in), //invite screen lcd data (I)
 	.count_down_data_in(count_down_data_in), //count down screen lcd data (I)
 	.game1_data_in(game1_data_in), //game1 screen lcd data (I)
-	.game2_data_in(128'd0), //game2 screen lcd data (I)
+	.game2_data_in(game2_data_in), //game2 screen lcd data (I)
 	.game3_data_in(128'd0), //game3 screen lcd data (I)
 	.result_data_in(128'd0) //result screen lcd data (I)
 );

@@ -33,7 +33,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 192260 kilobytes
 
 Writing NGD file "brainwars_secondary.ngd" ...
-Total REAL time to NGDBUILD completion:  8 sec
+Total REAL time to NGDBUILD completion:  7 sec
 Total CPU time to NGDBUILD completion:   7 sec
 
 Writing NGDBUILD log file "brainwars_secondary.bld"...

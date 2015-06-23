@@ -24,8 +24,8 @@ reg [15:0] rand; //random value output
 
 always @(posedge clk or negedge rst_n)
 	if(~rst_n)
-		rand <= 16'b0010101110000111;
+		rand <= 16'b0101011011010111;
 	else
-		rand <= {rand[15:8], rand[8] ^ rand[6], rand[4:0], rand[5] & rand[10], rand[7]};
+		rand <= {rand[14:0], rand[6] ^ rand[5]};
 
 endmodule

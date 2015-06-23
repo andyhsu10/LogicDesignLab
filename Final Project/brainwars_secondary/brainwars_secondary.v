@@ -73,7 +73,7 @@ output [3:0] state; //fsm state
 
 //Declare internal nodes
 wire rst;
-wire pressed;
+wire pressed, de_pressed;
 wire out_valid;
 wire game_invite_back_state;
 wire count_down_next_state;
@@ -141,6 +141,21 @@ debounce_one_pulse debounce_game_cancel(
 	.rst_n(rst), //low active reset (I)
 	.in(game_cancel), //push button input (I)
 	.out(de_game_cancel) //pulsed push button output (O)
+);
+
+debounce_one_pulse debounce_pressed(
+	.de_clk(clk_100), //debounce clock (I)
+	.pulse_clk(clk_100), //one pulse clock (I)
+	.rst_n(rst), //low active reset (I)
+	.in(pressed), //push button input (I)
+	.out(de_pressed) //pulsed push button output (O)
+);
+
+next_game next_game(
+	.clk(clk_1), //1 Hz clock (I)
+	.state(state), //fsm state (I)
+	.rst_n(rst), //acive low reset (I)
+	.game_next_state(game_next_state) //to the next game
 );
 
 fsm finite_state_machine(
@@ -211,12 +226,22 @@ flick_master game_flick_master(
 	.clk_100(clk_100), // 100 HZ (I)
 	.clk_1(clk_1), // 1Hz (I)
 	.rst_n(rst), // reset (I)
-	.game_en(3'b000), // enable to play game (I)
+	.game_en(game_en), // enable to play game (I)
 	.key(key), // keypad (I)
 	.pressed(pressed), // if key pad was pressed (I)
 	.data_output(game1_data_in), // to ram_ctrl 128b (O)
-	.game_next_state(game_next_state),	// 1: finish 0:playing (O)
 	.point(point) // 1:get point 0:no point got (O)
+);
+
+rainfall game_rainfall(
+    .game_en(3'b101), //game enable (I)
+    .clk(clk_100), //100 Hz clock (I)
+    .key(key), //returned pressed key (I)
+	.pressed(~de_pressed), //whether key pressed (1) or not (0) (I)
+    .random(random[7:6]), //randow value 2-bit (I)
+    .rst_n(rst), //active low reset (I)
+    .data_output(game2_data_in) // to ram_ctrl 128b (O)
+//	.point // 1:get point 0:no point got (O)
 );
 
 display_ctl display_controller(
@@ -226,7 +251,7 @@ display_ctl display_controller(
 	.invite_data_in(invite_data_in), //invite screen lcd data (I)
 	.count_down_data_in(count_down_data_in), //count down screen lcd data (I)
 	.game1_data_in(game1_data_in), //game1 screen lcd data (I)
-	.game2_data_in(128'd0), //game2 screen lcd data (I)
+	.game2_data_in(game2_data_in), //game2 screen lcd data (I)
 	.game3_data_in(128'd0), //game3 screen lcd data (I)
 	.result_data_in(128'd0) //result screen lcd data (I)
 );
