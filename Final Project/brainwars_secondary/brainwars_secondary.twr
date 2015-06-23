@@ -37,21 +37,33 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-LCD_cs<0>   |         9.443(R)|      SLOW  |         5.107(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_cs<1>   |         9.825(R)|      SLOW  |         5.398(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<0> |        10.744(R)|      SLOW  |         5.933(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<1> |        10.621(R)|      SLOW  |         5.877(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<2> |        10.499(R)|      SLOW  |         5.733(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<3> |        10.419(R)|      SLOW  |         5.666(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<4> |        10.566(R)|      SLOW  |         5.782(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<5> |        10.705(R)|      SLOW  |         5.858(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<6> |        10.748(R)|      SLOW  |         5.987(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_data<7> |        10.531(R)|      SLOW  |         5.839(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_di      |        10.652(R)|      SLOW  |         5.861(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-LCD_en      |        10.373(R)|      SLOW  |         5.736(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_bck   |         6.945(R)|      SLOW  |         3.561(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_data  |         8.325(R)|      SLOW  |         4.116(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
-audio_ws    |         6.855(R)|      SLOW  |         3.535(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_cs<0>   |         9.495(R)|      SLOW  |         5.125(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_cs<1>   |         9.137(R)|      SLOW  |         4.986(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<0> |        11.075(R)|      SLOW  |         6.159(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<1> |        10.640(R)|      SLOW  |         5.885(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<2> |        10.698(R)|      SLOW  |         5.930(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<3> |        10.687(R)|      SLOW  |         5.937(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<4> |        11.099(R)|      SLOW  |         6.128(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<5> |        10.553(R)|      SLOW  |         5.713(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<6> |        10.466(R)|      SLOW  |         5.732(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_data<7> |        10.292(R)|      SLOW  |         5.617(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_di      |        10.921(R)|      SLOW  |         6.030(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LCD_en      |        10.747(R)|      SLOW  |         5.925(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_bck   |         6.916(R)|      SLOW  |         3.544(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_data  |         9.494(R)|      SLOW  |         4.385(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+audio_ws    |         6.804(R)|      SLOW  |         3.496(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+control<0>  |         8.236(R)|      SLOW  |         4.325(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+control<1>  |         8.693(R)|      SLOW  |         4.525(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+control<2>  |         8.653(R)|      SLOW  |         4.525(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<0>  |        10.946(R)|      SLOW  |         4.854(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<7>  |        11.112(R)|      SLOW  |         4.866(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<8>  |        11.827(R)|      SLOW  |         5.347(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<9>  |        11.127(R)|      SLOW  |         5.007(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<10> |        10.933(R)|      SLOW  |         4.761(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<11> |        11.333(R)|      SLOW  |         4.937(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<12> |        10.599(R)|      SLOW  |         4.962(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<13> |        11.204(R)|      SLOW  |         4.846(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+display<14> |        11.158(R)|      SLOW  |         5.341(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -59,15 +71,15 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.866|         |         |         |
-note_in<0>     |         |    7.699|         |         |
-note_in<1>     |         |    7.699|         |         |
-note_in<2>     |         |    7.699|         |         |
-note_in<3>     |         |    7.699|         |         |
-note_in<4>     |         |    7.699|         |         |
-note_in<5>     |         |    7.699|         |         |
-rst_n          |   10.304|   10.304|         |         |
-rst_n_in       |   11.282|   11.282|         |         |
+clk            |    4.266|         |         |         |
+note_in<0>     |         |    6.985|         |         |
+note_in<1>     |         |    6.985|         |         |
+note_in<2>     |         |    6.985|         |         |
+note_in<3>     |         |    6.985|         |         |
+note_in<4>     |         |    6.985|         |         |
+note_in<5>     |         |    6.985|         |         |
+rst_n          |   10.368|   10.368|         |         |
+rst_n_in       |   10.998|   10.998|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock note_in<0>
@@ -75,12 +87,12 @@ Clock to Setup on destination clock note_in<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-note_in<0>     |         |         |   -0.194|   -0.194|
-note_in<1>     |         |         |   -0.410|   -0.410|
-note_in<2>     |         |         |   -0.667|   -0.667|
-note_in<3>     |         |         |   -0.878|   -0.878|
-note_in<4>     |         |         |   -0.635|   -0.635|
-note_in<5>     |         |         |   -0.745|   -0.745|
+note_in<0>     |         |         |   -0.847|   -0.847|
+note_in<1>     |         |         |   -0.649|   -0.649|
+note_in<2>     |         |         |   -0.867|   -0.867|
+note_in<3>     |         |         |   -1.257|   -1.257|
+note_in<4>     |         |         |   -0.986|   -0.986|
+note_in<5>     |         |         |   -1.016|   -1.016|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock note_in<1>
@@ -88,12 +100,12 @@ Clock to Setup on destination clock note_in<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-note_in<0>     |         |         |   -0.091|   -0.091|
-note_in<1>     |         |         |   -0.307|   -0.307|
-note_in<2>     |         |         |   -0.564|   -0.564|
-note_in<3>     |         |         |   -0.775|   -0.775|
-note_in<4>     |         |         |   -0.532|   -0.532|
-note_in<5>     |         |         |   -0.642|   -0.642|
+note_in<0>     |         |         |   -0.724|   -0.724|
+note_in<1>     |         |         |   -0.526|   -0.526|
+note_in<2>     |         |         |   -0.744|   -0.744|
+note_in<3>     |         |         |   -1.134|   -1.134|
+note_in<4>     |         |         |   -0.863|   -0.863|
+note_in<5>     |         |         |   -0.893|   -0.893|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock note_in<2>
@@ -101,12 +113,12 @@ Clock to Setup on destination clock note_in<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-note_in<0>     |         |         |    0.180|    0.180|
-note_in<1>     |         |         |   -0.036|   -0.036|
-note_in<2>     |         |         |   -0.293|   -0.293|
-note_in<3>     |         |         |   -0.504|   -0.504|
-note_in<4>     |         |         |   -0.261|   -0.261|
-note_in<5>     |         |         |   -0.371|   -0.371|
+note_in<0>     |         |         |   -0.935|   -0.935|
+note_in<1>     |         |         |   -0.737|   -0.737|
+note_in<2>     |         |         |   -0.955|   -0.955|
+note_in<3>     |         |         |   -1.345|   -1.345|
+note_in<4>     |         |         |   -1.074|   -1.074|
+note_in<5>     |         |         |   -1.104|   -1.104|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock note_in<3>
@@ -114,12 +126,12 @@ Clock to Setup on destination clock note_in<3>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-note_in<0>     |         |         |    0.100|    0.100|
-note_in<1>     |         |         |   -0.116|   -0.116|
-note_in<2>     |         |         |   -0.373|   -0.373|
-note_in<3>     |         |         |   -0.584|   -0.584|
-note_in<4>     |         |         |   -0.341|   -0.341|
-note_in<5>     |         |         |   -0.451|   -0.451|
+note_in<0>     |         |         |   -0.266|   -0.266|
+note_in<1>     |         |         |   -0.068|   -0.068|
+note_in<2>     |         |         |   -0.286|   -0.286|
+note_in<3>     |         |         |   -0.676|   -0.676|
+note_in<4>     |         |         |   -0.405|   -0.405|
+note_in<5>     |         |         |   -0.435|   -0.435|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock note_in<4>
@@ -127,12 +139,12 @@ Clock to Setup on destination clock note_in<4>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-note_in<0>     |         |         |   -0.178|   -0.178|
-note_in<1>     |         |         |   -0.394|   -0.394|
-note_in<2>     |         |         |   -0.651|   -0.651|
-note_in<3>     |         |         |   -0.862|   -0.862|
-note_in<4>     |         |         |   -0.619|   -0.619|
-note_in<5>     |         |         |   -0.729|   -0.729|
+note_in<0>     |         |         |   -0.437|   -0.437|
+note_in<1>     |         |         |   -0.239|   -0.239|
+note_in<2>     |         |         |   -0.457|   -0.457|
+note_in<3>     |         |         |   -0.847|   -0.847|
+note_in<4>     |         |         |   -0.576|   -0.576|
+note_in<5>     |         |         |   -0.606|   -0.606|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock note_in<5>
@@ -140,12 +152,12 @@ Clock to Setup on destination clock note_in<5>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-note_in<0>     |         |         |    0.049|    0.049|
-note_in<1>     |         |         |   -0.167|   -0.167|
-note_in<2>     |         |         |   -0.424|   -0.424|
-note_in<3>     |         |         |   -0.635|   -0.635|
-note_in<4>     |         |         |   -0.392|   -0.392|
-note_in<5>     |         |         |   -0.502|   -0.502|
+note_in<0>     |         |         |   -0.502|   -0.502|
+note_in<1>     |         |         |   -0.304|   -0.304|
+note_in<2>     |         |         |   -0.522|   -0.522|
+note_in<3>     |         |         |   -0.912|   -0.912|
+note_in<4>     |         |         |   -0.641|   -0.641|
+note_in<5>     |         |         |   -0.671|   -0.671|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rst_n
@@ -153,8 +165,8 @@ Clock to Setup on destination clock rst_n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rst_n          |         |         |    0.565|    0.565|
-rst_n_in       |         |         |    1.751|    1.751|
+rst_n          |         |         |    0.362|    0.362|
+rst_n_in       |         |         |    1.267|    1.267|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rst_n_in
@@ -162,8 +174,8 @@ Clock to Setup on destination clock rst_n_in
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rst_n          |         |         |   -0.387|   -0.387|
-rst_n_in       |         |         |    0.618|    0.618|
+rst_n          |         |         |   -0.314|   -0.314|
+rst_n_in       |         |         |    0.408|    0.408|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
@@ -171,20 +183,20 @@ Pad to Pad
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
 clk            |audio_sysclk   |    7.915|
-rst_n          |LCD_rst        |   10.421|
-rst_n          |rst_n_out      |   10.463|
-rst_n_in       |LCD_rst        |   11.288|
+rst_n          |LCD_rst        |   11.330|
+rst_n          |rst_n_out      |    9.806|
+rst_n_in       |LCD_rst        |   11.960|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Jun 23 14:26:30 2015 
+Analysis completed Tue Jun 23 20:09:17 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 345 MB
+Peak Memory Usage: 347 MB
 
 
 

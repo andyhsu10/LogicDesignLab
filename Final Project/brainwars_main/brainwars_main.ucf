@@ -7,7 +7,6 @@ NET "game_invite" LOC = N3;
 NET "game_cancel" LOC = P4;
 NET "music_on_off" LOC = L2;
 
-/*
 NET "control[0]" LOC = V8;
 NET "control[1]" LOC = U8;
 NET "control[2]" LOC = V6;
@@ -28,7 +27,6 @@ NET "display[3]" LOC = V7;
 NET "display[2]" LOC = R7;
 NET "display[1]" LOC = T7;
 NET "display[0]" LOC = U5;
-*/
 
 NET "audio_appsel" LOC = H18;
 NET "audio_sysclk" LOC = H17;
@@ -42,9 +40,6 @@ NET "note[2]" LOC = H16;
 NET "note[3]" LOC = J13;
 NET "note[4]" LOC = L13;
 NET "note[5]" LOC = K17;
-
-NET "rst_n_in" LOC = G16;
-NET "rst_n_out" LOC = H14;
 
 NET "dialogue_in[3]" LOC = L18;
 NET "dialogue_in[2]" LOC = N17;
@@ -67,6 +62,18 @@ NET "game_en[0]" LOC = G18;
 
 NET "game_invite_out" LOC = L12;
 NET "game_cancel_out" LOC = J18;
+
+NET "score_out[7]"   LOC = "L17";
+NET "score_out[6]"   LOC = "M18";
+NET "score_out[5]"   LOC = "P17";
+NET "score_out[4]"   LOC = "N16";
+NET "score_out[3]"   LOC = "U17";
+NET "score_out[2]"   LOC = "N14";
+NET "score_out[1]"   LOC = "P15";
+NET "score_out[0]"   LOC = "V16";
+
+NET "rst_n_in" LOC = G16;
+NET "rst_n_out" LOC = H14;
 
 ## LCD control signals
 NET "LCD_rst"       LOC = "E3";

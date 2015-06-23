@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Jun 23 14:26:38 2015
+Tue Jun 23 20:09:26 2015
 
 drc -z brainwars_secondary.ncd brainwars_secondary.pcf
 

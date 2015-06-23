@@ -6,7 +6,6 @@ NET "rst_n" LOC = T2;
 NET "game_invite" LOC = N3;
 NET "game_cancel" LOC = P4;
 
-/*
 NET "control[0]" LOC = V8;
 NET "control[1]" LOC = U8;
 NET "control[2]" LOC = V6;
@@ -27,7 +26,6 @@ NET "display[3]" LOC = V7;
 NET "display[2]" LOC = R7;
 NET "display[1]" LOC = T7;
 NET "display[0]" LOC = U5;
-*/
 
 NET "audio_appsel" LOC = H18;
 NET "audio_sysclk" LOC = H17;
@@ -41,9 +39,6 @@ NET "note_in[2]" LOC = A4;
 NET "note_in[3]" LOC = C7;
 NET "note_in[4]" LOC = A6;
 NET "note_in[5]" LOC = B8;
-
-NET "rst_n_in" LOC = A3;
-NET "rst_n_out" LOC = C5;
 
 NET "dialogue_in[3]" LOC = A12;
 NET "dialogue_in[2]" LOC = F13;
@@ -66,6 +61,18 @@ NET "game_en[0]" LOC = A5;
 
 NET "game_invite_in" LOC = B6;
 NET "game_cancel_in" LOC = C8;
+
+NET "score_in[7]"   LOC = "D9";
+NET "score_in[6]"   LOC = "A9";
+NET "score_in[5]"   LOC = "C10";
+NET "score_in[4]"   LOC = "F9";
+NET "score_in[3]"   LOC = "B12";
+NET "score_in[2]"   LOC = "A14";
+NET "score_in[1]"   LOC = "C15";
+NET "score_in[0]"   LOC = "C14";
+
+NET "rst_n_in" LOC = A3;
+NET "rst_n_out" LOC = C5;
 
 ## LCD control signals
 NET "LCD_rst"       LOC = "E3";

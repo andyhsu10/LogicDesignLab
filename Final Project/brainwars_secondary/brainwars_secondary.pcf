@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Jun 23 14:24:19 2015
+// Written by: Map P.20131013 on Tue Jun 23 20:06:26 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,9 +11,22 @@ COMP "note_in<2>" LOCATE = SITE "A4" LEVEL 1;
 COMP "note_in<3>" LOCATE = SITE "C7" LEVEL 1;
 COMP "note_in<4>" LOCATE = SITE "A6" LEVEL 1;
 COMP "note_in<5>" LOCATE = SITE "B8" LEVEL 1;
+COMP "display<10>" LOCATE = SITE "U7" LEVEL 1;
+COMP "display<11>" LOCATE = SITE "T5" LEVEL 1;
+COMP "display<12>" LOCATE = SITE "V5" LEVEL 1;
+COMP "display<13>" LOCATE = SITE "N4" LEVEL 1;
+COMP "display<14>" LOCATE = SITE "P6" LEVEL 1;
 COMP "audio_bck" LOCATE = SITE "K16" LEVEL 1;
 COMP "audio_appsel" LOCATE = SITE "H18" LEVEL 1;
 COMP "rst_n" LOCATE = SITE "T2" LEVEL 1;
+COMP "score_in<0>" LOCATE = SITE "C14" LEVEL 1;
+COMP "score_in<1>" LOCATE = SITE "C15" LEVEL 1;
+COMP "score_in<2>" LOCATE = SITE "A14" LEVEL 1;
+COMP "score_in<3>" LOCATE = SITE "B12" LEVEL 1;
+COMP "score_in<4>" LOCATE = SITE "F9" LEVEL 1;
+COMP "score_in<5>" LOCATE = SITE "C10" LEVEL 1;
+COMP "score_in<6>" LOCATE = SITE "A9" LEVEL 1;
+COMP "score_in<7>" LOCATE = SITE "D9" LEVEL 1;
 COMP "audio_sysclk" LOCATE = SITE "H17" LEVEL 1;
 COMP "game_en<0>" LOCATE = SITE "A5" LEVEL 1;
 COMP "game_en<1>" LOCATE = SITE "B4" LEVEL 1;
@@ -34,12 +47,26 @@ COMP "col_n<0>" LOCATE = SITE "J3" LEVEL 1;
 COMP "col_n<1>" LOCATE = SITE "J1" LEVEL 1;
 COMP "col_n<2>" LOCATE = SITE "H2" LEVEL 1;
 COMP "col_n<3>" LOCATE = SITE "H1" LEVEL 1;
+COMP "display<0>" LOCATE = SITE "U5" LEVEL 1;
+COMP "display<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "display<2>" LOCATE = SITE "R7" LEVEL 1;
+COMP "display<3>" LOCATE = SITE "V7" LEVEL 1;
+COMP "display<4>" LOCATE = SITE "V4" LEVEL 1;
+COMP "display<5>" LOCATE = SITE "T4" LEVEL 1;
+COMP "display<6>" LOCATE = SITE "T3" LEVEL 1;
+COMP "display<7>" LOCATE = SITE "R5" LEVEL 1;
+COMP "display<8>" LOCATE = SITE "N5" LEVEL 1;
+COMP "display<9>" LOCATE = SITE "R3" LEVEL 1;
 COMP "game_cancel_in" LOCATE = SITE "C8" LEVEL 1;
 COMP "audio_ws" LOCATE = SITE "L15" LEVEL 1;
 COMP "dialogue_out<0>" LOCATE = SITE "B11" LEVEL 1;
 COMP "dialogue_out<1>" LOCATE = SITE "A10" LEVEL 1;
 COMP "dialogue_out<2>" LOCATE = SITE "D11" LEVEL 1;
 COMP "dialogue_out<3>" LOCATE = SITE "C9" LEVEL 1;
+COMP "control<0>" LOCATE = SITE "V8" LEVEL 1;
+COMP "control<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "control<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "control<3>" LOCATE = SITE "T6" LEVEL 1;
 COMP "rst_n_out" LOCATE = SITE "C5" LEVEL 1;
 COMP "dialogue_in<0>" LOCATE = SITE "B16" LEVEL 1;
 COMP "dialogue_in<1>" LOCATE = SITE "A15" LEVEL 1;

@@ -1,10 +1,15 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Jun 23 14:05:06 2015
+// Written by: Map P.20131013 on Tue Jun 23 20:11:09 2015
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "clk" LOCATE = SITE "R10" LEVEL 1;
 COMP "game_invite_out" LOCATE = SITE "L12" LEVEL 1;
+COMP "display<10>" LOCATE = SITE "U7" LEVEL 1;
+COMP "display<11>" LOCATE = SITE "T5" LEVEL 1;
+COMP "display<12>" LOCATE = SITE "V5" LEVEL 1;
+COMP "display<13>" LOCATE = SITE "N4" LEVEL 1;
+COMP "display<14>" LOCATE = SITE "P6" LEVEL 1;
 COMP "audio_bck" LOCATE = SITE "K16" LEVEL 1;
 COMP "game_cancel_out" LOCATE = SITE "J18" LEVEL 1;
 COMP "audio_appsel" LOCATE = SITE "H18" LEVEL 1;
@@ -36,11 +41,25 @@ COMP "col_n<0>" LOCATE = SITE "J3" LEVEL 1;
 COMP "col_n<1>" LOCATE = SITE "J1" LEVEL 1;
 COMP "col_n<2>" LOCATE = SITE "H2" LEVEL 1;
 COMP "col_n<3>" LOCATE = SITE "H1" LEVEL 1;
+COMP "display<0>" LOCATE = SITE "U5" LEVEL 1;
+COMP "display<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "display<2>" LOCATE = SITE "R7" LEVEL 1;
+COMP "display<3>" LOCATE = SITE "V7" LEVEL 1;
+COMP "display<4>" LOCATE = SITE "V4" LEVEL 1;
+COMP "display<5>" LOCATE = SITE "T4" LEVEL 1;
+COMP "display<6>" LOCATE = SITE "T3" LEVEL 1;
+COMP "display<7>" LOCATE = SITE "R5" LEVEL 1;
+COMP "display<8>" LOCATE = SITE "N5" LEVEL 1;
+COMP "display<9>" LOCATE = SITE "R3" LEVEL 1;
 COMP "audio_ws" LOCATE = SITE "L15" LEVEL 1;
 COMP "dialogue_out<0>" LOCATE = SITE "T14" LEVEL 1;
 COMP "dialogue_out<1>" LOCATE = SITE "P16" LEVEL 1;
 COMP "dialogue_out<2>" LOCATE = SITE "L14" LEVEL 1;
 COMP "dialogue_out<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "control<0>" LOCATE = SITE "V8" LEVEL 1;
+COMP "control<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "control<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "control<3>" LOCATE = SITE "T6" LEVEL 1;
 COMP "rst_n_out" LOCATE = SITE "H14" LEVEL 1;
 COMP "dialogue_in<0>" LOCATE = SITE "T17" LEVEL 1;
 COMP "dialogue_in<1>" LOCATE = SITE "P18" LEVEL 1;
@@ -57,6 +76,14 @@ COMP "state<2>" LOCATE = SITE "V11" LEVEL 1;
 COMP "state<3>" LOCATE = SITE "U13" LEVEL 1;
 COMP "LCD_cs<0>" LOCATE = SITE "F4" LEVEL 1;
 COMP "LCD_cs<1>" LOCATE = SITE "E1" LEVEL 1;
+COMP "score_out<0>" LOCATE = SITE "V16" LEVEL 1;
+COMP "score_out<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "score_out<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "score_out<3>" LOCATE = SITE "U17" LEVEL 1;
+COMP "score_out<4>" LOCATE = SITE "N16" LEVEL 1;
+COMP "score_out<5>" LOCATE = SITE "P17" LEVEL 1;
+COMP "score_out<6>" LOCATE = SITE "M18" LEVEL 1;
+COMP "score_out<7>" LOCATE = SITE "L17" LEVEL 1;
 COMP "game_invite" LOCATE = SITE "N3" LEVEL 1;
 COMP "rst_n_in" LOCATE = SITE "G16" LEVEL 1;
 COMP "LCD_rst" LOCATE = SITE "E3" LEVEL 1;

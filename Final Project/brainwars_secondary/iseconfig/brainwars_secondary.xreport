@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-06-23T11:00:37</DateModified>
+  <DateModified>2015-06-23T19:19:12</DateModified>
   <ModuleName>brainwars_secondary</ModuleName>
   <SummaryTimeStamp>2015-06-19T19:31:41</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Andy/Desktop/Working/brainwars_secondary/iseconfig/brainwars_secondary.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Andy/Desktop/Working/brainwars_secondary\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GitHub/LogicDesignLab/Final Project/brainwars_secondary/iseconfig/brainwars_secondary.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Final Project/brainwars_secondary\</ImplementationReportsDirectory>
   <DateInitialized>2015-06-15T21:00:26</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -25,9 +25,10 @@ module brainwars_main(
 	state, //fsm state (I)
 	row_n, //scanned row index (O)
 	dialogue_out, //dialogue sent to another board (O)
+	score_out, //score send to secondary board (O)
 	rst_n_out, //reset signal for second board (O)
-//	display, //SSD output (O)
-//	control, //SSD control signal (O)
+	display, //SSD output (O)
+	control, //SSD control signal (O)
 	audio_appsel, //playing mode selection (O)
 	audio_sysclk, //control clock for DAC (from crystal) (O)
 	audio_bck, //bit clock of audio data (5MHz) (O)
@@ -55,9 +56,10 @@ input [3:0] dialogue_in; //dialogue from another board
 input [`KEYPAD_WIDTH-1:0] col_n;
 output [`KEYPAD_WIDTH-1:0] row_n;
 output [3:0] dialogue_out; //dialogue sent to another board
+output [7:0] score_out; //score send to secondary board (O)
 output rst_n_out; //reset signal for second board
-//output [14:0] display; //SSD output
-//output [3:0] control; //SSD control signal
+output [14:0] display; //SSD output
+output [3:0] control; //SSD control signal
 output [5:0] note;
 output audio_appsel; //playing mode selection
 output audio_sysclk; //control clock for DAC (from crystal)
@@ -81,16 +83,16 @@ wire out_valid;
 wire clk_1, clk_2, clk_66, clk_100, clk_fast, clk_div, clk_50k;
 wire de_game_invite, de_game_cancel;
 wire [1:0] clk_ctl;
+wire [1:0] flick_master_point, touch_number_point, follow_order_point, unfollow_order_point, high_or_low_point, rainfall_point;
 wire [3:0] key;
 //wire [5:0] letter;
 wire [7:0] data_out;
-wire [9:0] q;
 wire [15:0] audio_in_left, audio_in_right;
 wire [15:0] random;
 wire [19:0] note_div;
 wire [127:0] data_output;
-wire [127:0] initial_data_in, invite_data_in, count_down_data_in;
-wire [127:0] game1_data_in, game2_data_in, game3_data_in, result_data_in;
+wire [127:0] initial_data_in, invite_data_in, count_down_data_in, result_data_in;
+wire [127:0] flick_master_data_in, touch_number_data_in, follow_order_data_in, unfollow_order_data_in, high_or_low_data_in, rainfall_data_in;
 
 wire [7:0] data; // byte data transfer from buffer
 wire [6:0] addr; // Address for each picture
@@ -102,6 +104,9 @@ wire LCD_en1, LCD_en2;
 wire [7:0] LCD_data1, LCD_data2;
 
 wire [1:0] point;
+wire [3:0] score_unit, score_tens, score_hund, score_BCD;
+
+assign clk_out = clk;
 
 assign rst_n_out = rst_n;
 assign rst = rst_n & rst_n_in;
@@ -197,31 +202,52 @@ flick_master game_flick_master(
 	.game_en(game_en), // enable to play game (I)
 	.key(key), // keypad (I)
 	.pressed(pressed), // if key pad was pressed (I)
-	.data_output(game1_data_in), // to ram_ctrl 128b (O)
-	.point(point) // 1:get point 0:no point got (O)
+	.data_output(flick_master_data_in), // to ram_ctrl 128b (O)
+	.point(flick_master_point) // 1:get point 0:no point got (O)
 );
 
 rainfall game_rainfall(
-    .game_en(3'b101), //game enable (I)
+    .game_en(game_en), //game enable (I)
     .clk(clk_100), //100 Hz clock (I)
     .key(key), //returned pressed key (I)
 	.pressed(~de_pressed), //whether key pressed (1) or not (0) (I)
     .random(random[7:6]), //randow value 2-bit (I)
     .rst_n(rst), //active low reset (I)
-    .data_output(game2_data_in) // to ram_ctrl 128b (O)
-//	.point // 1:get point 0:no point got (O)
+    .data_output(rainfall_data_in), // to ram_ctrl 128b (O)
+	.point(rainfall_point) // 1:get point 0:no point got (O)
 );
 
 display_ctl display_controller(
     .data_out(data_output), //data output (O)
+    .game_en(game_en), //game enable (I)
     .state(state), //fsm state (I)
     .initial_data_in(initial_data_in), //initial screen lcd data (I)
 	.invite_data_in(invite_data_in), //invite screen lcd data (I)
 	.count_down_data_in(count_down_data_in), //count down screen lcd data (I)
-	.game1_data_in(game1_data_in), //game1 screen lcd data (I)
-	.game2_data_in(game2_data_in), //game2 screen lcd data (I)
-	.game3_data_in(128'd0), //game3 screen lcd data (I)
-	.result_data_in(128'd0) //result screen lcd data (I)
+	.flick_master_data_in(flick_master_data_in), //flick master screen lcd data (I)
+	.touch_number_data_in(touch_number_data_in), //touch number screen lcd data (I)
+	.follow_order_data_in(follow_order_data_in), //follow order screen lcd data (I)
+	.unfollow_order_data_in(unfollow_order_data_in), //unfollow order screen lcd data (I)
+	.high_or_low_data_in(high_or_low_data_in), //high or low screen lcd data (I)
+	.rainfall_data_in(rainfall_data_in), //rainfall screen lcd data (I)
+	.result_data_in(result_data_in) //result screen lcd data (I)
+);
+
+point_cal_main point_calculator(
+    .score_unit(score_unit), //unit score (O)
+    .score_tens(score_tens), //tens score (O)
+    .score_hund(score_hund), //hund score (O)
+    .score(score_out), //binary output to secondary board (O)
+    .clk(clk_100), //100 Hz clock (I)
+    .rst_n(rst), //active low reset (I)
+    .game_en(game_en), //game enable (I)
+    .state(state), //fsm state (I)
+	.flick_master_point(flick_master_point), //flick master point (I)
+	.touch_number_point(touch_number_point), //touch number point (I)
+	.follow_order_point(follow_order_point), //follow order point (I)
+	.unfollow_order_point(unfollow_order_point), //unfollow order point (I)
+	.high_or_low_point(high_or_low_point), //high or low point (I)
+	.rainfall_point(rainfall_point) //rainfall point (I)
 );
 
 RAM_ctrl RAM_controller(
@@ -347,19 +373,20 @@ speaker_ctl speaker_controllor(
 	.audio_data(audio_data) //serial output audio data (O)
 );
 
-/*
+
 scan_ctl scan_controllor(
-    .bcd_in1(letter1),
-    .bcd_in2(letter2),
+    .bcd_in1(score_hund),
+    .bcd_in2(score_tens),
+    .bcd_in3(score_unit),
     .clk_ctl(clk_ctl),
     .ssd_ctl(control),
-    .bcd_out(letter)
+    .bcd_out(score_BCD)
 );
 
 ssd_decoder decoder(
 	.ssd_out(display), //14-segment display output
-	.bcd(letter) //BCD input
+	.bcd(score_BCD) //BCD input
 );
-*/
+
 
 endmodule

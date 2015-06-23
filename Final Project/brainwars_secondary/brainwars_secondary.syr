@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: brainwars_secondary.prj
 
@@ -108,98 +108,107 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\one_pulse.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\one_pulse.v" into library work
 Parsing module <one_pulse>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\rand_0_to_7.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\add3.v" into library work
+Parsing module <add3>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rand_0_to_7.v" into library work
 Parsing module <rand_0_to_7>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_decoder.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_decoder.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <lcd_decoder>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\ipcore_dir\ROM.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ipcore_dir\ROM.v" into library work
 Parsing module <ROM>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\ipcore_dir\RAM.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ipcore_dir\RAM.v" into library work
 Parsing module <RAM>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\game_duration_cnt.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\game_duration_cnt.v" into library work
 Parsing module <game_duration_cnt>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\debounce.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\debounce.v" into library work
 Parsing module <debounce>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\count_down.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\count_down.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <count_down>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\speaker_ctl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\binary_converter.v" into library work
+Parsing module <binary_converter>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ssd_decoder.v" into library work
+Parsing module <ssd_decoder>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\speaker_ctl.v" into library work
 Parsing module <speaker_ctl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\rom_lcd_ctrl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\scan_ctl.v" into library work
+Parsing module <scan_ctl>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rom_lcd_ctrl.v" into library work
 Parsing module <rom_lcd_ctrl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\rom_ctrl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rom_ctrl.v" into library work
 Parsing module <rom_ctrl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\random_secondary.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\random_secondary.v" into library work
 Parsing module <random_secondary>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\RAM_ctrl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\RAM_ctrl.v" into library work
 Parsing module <RAM_ctrl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\rainfall.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rainfall.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <rainfall>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\note_decoder.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" into library work
+Parsing verilog file "global.v" included at line 12.
+Parsing module <point_cal_secondary>.
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\note_decoder.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <note_decode>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\next_game.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\next_game.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <next_game>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" into library work
 Parsing module <lcd_switcher>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_ctrl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_ctrl.v" into library work
 Parsing module <lcd_ctrl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\keypad_scan.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\keypad_scan.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <keypad_scan>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\invite_screen_secondary.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\invite_screen_secondary.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <invite_screen_secondary>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\initial_screen.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\initial_screen.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <initial_screen>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\game_ctl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\game_ctl.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <game_ctl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\fsm.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\fsm.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <fsm>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\freq_div.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\freq_div.v" into library work
 Parsing module <freq_div>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\flick_master.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\flick_master.v" into library work
 Parsing verilog file "global.v" included at line 21.
 Parsing module <flick_master>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\display_ctl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\display_ctl.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <display_ctl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\debounce_one_pulse.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\debounce_one_pulse.v" into library work
 Parsing module <debounce_one_pulse>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\count_down_screen.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\count_down_screen.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <count_down_screen>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\clock_generator.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\clock_generator.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <clock_generator>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\clock_divider.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\clock_divider.v" into library work
 Parsing module <clock_divider>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\buzzer_ctl.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\buzzer_ctl.v" into library work
 Parsing module <buzzer_ctl>.
-Analyzing Verilog file "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" into library work
+Analyzing Verilog file "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" into library work
 Parsing verilog file "global.v" included at line 12.
 Parsing module <brainwars_secondary>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 109: Port clk_out is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 225: Port game_next_state is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 236: Port point is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 112: Port clk_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 228: Port game_next_state is not connected to this instance
 
 Elaborating module <brainwars_secondary>.
 
 Elaborating module <freq_div>.
-WARNING:HDLCompiler:1127 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 110: Assignment to clk_fast ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 111: Assignment to clk_ctl ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 113: Assignment to clk_fast ignored, since the identifier is never used
 
 Elaborating module <note_decode>.
 
@@ -224,7 +233,7 @@ Elaborating module <initial_screen>.
 Elaborating module <invite_screen_secondary>.
 
 Elaborating module <game_ctl>.
-WARNING:HDLCompiler:189 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 207: Size mismatch in connection of port <random>. Formal port size is 3-bit while actual signal size is 10-bit.
+WARNING:HDLCompiler:189 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 210: Size mismatch in connection of port <random>. Formal port size is 3-bit while actual signal size is 10-bit.
 
 Elaborating module <count_down_screen>.
 
@@ -235,19 +244,32 @@ Elaborating module <flick_master>.
 Elaborating module <game_duration_cnt>.
 
 Elaborating module <rand_0_to_7>.
-WARNING:HDLCompiler:189 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 229: Size mismatch in connection of port <game_en>. Formal port size is 4-bit while actual signal size is 3-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" Line 233: Assignment to point ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 232: Size mismatch in connection of port <game_en>. Formal port size is 4-bit while actual signal size is 3-bit.
+WARNING:HDLCompiler:189 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 236: Size mismatch in connection of port <point>. Formal port size is 1-bit while actual signal size is 2-bit.
 
 Elaborating module <rainfall>.
 
 Elaborating module <display_ctl>.
+
+Elaborating module <point_cal_secondary>.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" Line 49: Signal <flick_master_point> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" Line 50: Signal <touch_number_point> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" Line 51: Signal <follow_order_point> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" Line 52: Signal <unfollow_order_point> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" Line 53: Signal <high_or_low_point> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" Line 54: Signal <rainfall_point> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v" Line 60: Signal <point> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <binary_converter>.
+
+Elaborating module <add3>.
 
 Elaborating module <RAM_ctrl>.
 
 Elaborating module <lcd_decoder>.
 
 Elaborating module <RAM>.
-WARNING:HDLCompiler:1499 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\ipcore_dir\RAM.v" Line 39: Empty module <RAM> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ipcore_dir\RAM.v" Line 39: Empty module <RAM> remains a black box.
 
 Elaborating module <lcd_ctrl>.
 
@@ -258,45 +280,70 @@ Elaborating module <rom_lcd_ctrl>.
 Elaborating module <rom_ctrl>.
 
 Elaborating module <ROM>.
-WARNING:HDLCompiler:1499 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\ipcore_dir\ROM.v" Line 39: Empty module <ROM> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ipcore_dir\ROM.v" Line 39: Empty module <ROM> remains a black box.
 
 Elaborating module <clock_divider(half_cycle=400,counter_width=9)>.
 
 Elaborating module <lcd_switcher>.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 57: Signal <LCD_rst1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 58: Signal <LCD_rw1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 59: Signal <LCD_di1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 60: Signal <LCD_en1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 62: Signal <LCD_data1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 66: Signal <LCD_rst2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 67: Signal <LCD_rw2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 68: Signal <LCD_di2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 69: Signal <LCD_en2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v" Line 71: Signal <LCD_data2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 57: Signal <LCD_rst1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 58: Signal <LCD_rw1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 59: Signal <LCD_di1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 60: Signal <LCD_en1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 62: Signal <LCD_data1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 66: Signal <LCD_rst2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 67: Signal <LCD_rw2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 68: Signal <LCD_di2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 69: Signal <LCD_en2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v" Line 71: Signal <LCD_data2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <buzzer_ctl>.
 
 Elaborating module <speaker_ctl>.
-WARNING:Xst:2972 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" line 109. All outputs of instance <freqency_divider> of block <freq_div> are unconnected in block <brainwars_secondary>. Underlying logic will be removed.
+
+Elaborating module <scan_ctl>.
+
+Elaborating module <ssd_decoder>.
+WARNING:HDLCompiler:634 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 85: Net <touch_number_point[1]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 93: Net <result_data_in[127]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" Line 94: Net <touch_number_data_in[127]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <brainwars_secondary>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v".
-INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" line 109: Output port <clk_ctl> of the instance <freqency_divider> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" line 109: Output port <clk_out> of the instance <freqency_divider> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" line 109: Output port <clk_fast> of the instance <freqency_divider> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" line 225: Output port <game_next_state> of the instance <game_flick_master> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" line 225: Output port <point> of the instance <game_flick_master> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Andy\Desktop\Working\brainwars_secondary\brainwars_secondary.v" line 236: Output port <point> of the instance <game_rainfall> is unconnected or connected to loadless signal.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v".
+WARNING:Xst:647 - Input <score_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" line 112: Output port <clk_out> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" line 112: Output port <clk_fast> of the instance <freqency_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.v" line 228: Output port <game_next_state> of the instance <game_flick_master> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <touch_number_point> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <follow_order_point> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <unfollow_order_point> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <high_or_low_point> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <result_data_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <touch_number_data_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <follow_order_data_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <unfollow_order_data_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <high_or_low_data_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <brainwars_secondary> synthesized.
 
+Synthesizing Unit <freq_div>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\freq_div.v".
+    Found 2-bit register for signal <clk_ctl>.
+    Found 7-bit register for signal <cnt_h>.
+    Found 15-bit register for signal <cnt_l>.
+    Found 1-bit register for signal <clk_out>.
+    Found 25-bit adder for signal <cnt_tmp> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <freq_div> synthesized.
+
 Synthesizing Unit <note_decode>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\note_decoder.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\note_decoder.v".
     Found 64x19-bit Read Only RAM for signal <_n0106>
 WARNING:Xst:737 - Found 1-bit latch for signal <note_div<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <note_div<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -323,7 +370,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <note_div<0>>. Latches may be gen
 Unit <note_decode> synthesized.
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\clock_generator.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\clock_generator.v".
     Found 24-bit register for signal <count_10M>.
     Found 18-bit register for signal <count_200K>.
     Found 22-bit register for signal <count_1515151>.
@@ -343,13 +390,13 @@ Synthesizing Unit <clock_generator>.
 Unit <clock_generator> synthesized.
 
 Synthesizing Unit <debounce_one_pulse>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\debounce_one_pulse.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\debounce_one_pulse.v".
     Summary:
 	no macro.
 Unit <debounce_one_pulse> synthesized.
 
 Synthesizing Unit <debounce>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\debounce.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\debounce.v".
     Found 4-bit register for signal <debounce_window>.
     Found 1-bit register for signal <pb_debounced>.
     Summary:
@@ -357,7 +404,7 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 Synthesizing Unit <one_pulse>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\one_pulse.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\one_pulse.v".
     Found 1-bit register for signal <out_pulse>.
     Found 1-bit register for signal <in_trig_delay>.
     Summary:
@@ -365,7 +412,7 @@ Synthesizing Unit <one_pulse>.
 Unit <one_pulse> synthesized.
 
 Synthesizing Unit <next_game>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\next_game.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\next_game.v".
     Found 4-bit register for signal <cnt>.
     Found 1-bit register for signal <game_next_state>.
     Found 4-bit adder for signal <cnt_tmp> created at line 31.
@@ -376,7 +423,7 @@ Synthesizing Unit <next_game>.
 Unit <next_game> synthesized.
 
 Synthesizing Unit <fsm>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\fsm.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\fsm.v".
     Found 4-bit register for signal <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
@@ -396,14 +443,14 @@ Synthesizing Unit <fsm>.
 Unit <fsm> synthesized.
 
 Synthesizing Unit <random_secondary>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\random_secondary.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\random_secondary.v".
     Found 16-bit register for signal <rand>.
     Summary:
 	inferred  16 D-type flip-flop(s).
 Unit <random_secondary> synthesized.
 
 Synthesizing Unit <keypad_scan>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\keypad_scan.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\keypad_scan.v".
     Found 4-bit register for signal <pause_delay>.
     Found 4-bit register for signal <key>.
     Found 2-bit register for signal <sel>.
@@ -420,13 +467,13 @@ Synthesizing Unit <keypad_scan>.
 Unit <keypad_scan> synthesized.
 
 Synthesizing Unit <initial_screen>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\initial_screen.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\initial_screen.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <initial_screen> synthesized.
 
 Synthesizing Unit <invite_screen_secondary>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\invite_screen_secondary.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\invite_screen_secondary.v".
     Found 4-bit register for signal <cnt>.
     Found 4-bit subtractor for signal <cnt_tmp> created at line 35.
     Found 16x17-bit Read Only RAM for signal <_n0034>
@@ -438,7 +485,7 @@ Synthesizing Unit <invite_screen_secondary>.
 Unit <invite_screen_secondary> synthesized.
 
 Synthesizing Unit <game_ctl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\game_ctl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\game_ctl.v".
     Found 1-bit register for signal <check<7>>.
     Found 1-bit register for signal <check<6>>.
     Found 1-bit register for signal <check<5>>.
@@ -462,7 +509,7 @@ Synthesizing Unit <game_ctl>.
 Unit <game_ctl> synthesized.
 
 Synthesizing Unit <count_down_screen>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\count_down_screen.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\count_down_screen.v".
     Found 8x32-bit Read Only RAM for signal <game>
     Summary:
 	inferred   1 RAM(s).
@@ -470,7 +517,7 @@ Synthesizing Unit <count_down_screen>.
 Unit <count_down_screen> synthesized.
 
 Synthesizing Unit <count_down>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\count_down.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\count_down.v".
     Found 32-bit register for signal <q1>.
     Found 32-bit register for signal <q2>.
     Found 32-bit register for signal <q3>.
@@ -543,7 +590,7 @@ Synthesizing Unit <count_down>.
 Unit <count_down> synthesized.
 
 Synthesizing Unit <flick_master>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\flick_master.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\flick_master.v".
     Found 8x128-bit Read Only RAM for signal <_n0041>
     Summary:
 	inferred   1 RAM(s).
@@ -551,7 +598,7 @@ Synthesizing Unit <flick_master>.
 Unit <flick_master> synthesized.
 
 Synthesizing Unit <game_duration_cnt>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\game_duration_cnt.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\game_duration_cnt.v".
 WARNING:Xst:647 - Input <game_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <CNT>.
     Found 4-bit subtractor for signal <CNT[3]_GND_43_o_sub_2_OUT> created at line 36.
@@ -562,7 +609,7 @@ WARNING:Xst:647 - Input <game_en> is never used. This port will be preserved and
 Unit <game_duration_cnt> synthesized.
 
 Synthesizing Unit <rand_0_to_7>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\rand_0_to_7.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rand_0_to_7.v".
     Found 4-bit register for signal <rand_out>.
     Found 4-bit register for signal <rand>.
     Found 4-bit adder for signal <rand[3]_GND_45_o_add_0_OUT> created at line 45.
@@ -573,7 +620,7 @@ Synthesizing Unit <rand_0_to_7>.
 Unit <rand_0_to_7> synthesized.
 
 Synthesizing Unit <rainfall>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\rainfall.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rainfall.v".
     Found 2-bit register for signal <point>.
     Found 1-bit register for signal <correct>.
     Found 1-bit register for signal <q2<1>>.
@@ -588,17 +635,169 @@ Synthesizing Unit <rainfall>.
     Summary:
 	inferred   3 RAM(s).
 	inferred   9 D-type flip-flop(s).
-	inferred   9 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 Unit <rainfall> synthesized.
 
 Synthesizing Unit <display_ctl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\display_ctl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\display_ctl.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <game<126>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<125>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<124>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<123>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<122>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<121>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<120>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<119>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<118>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<117>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<116>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<115>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<114>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<113>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<112>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<111>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<110>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<109>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<108>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<107>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<106>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<105>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<104>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<103>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<102>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<101>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<100>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<99>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<98>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<97>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<96>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<95>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<94>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<93>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<92>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<91>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<90>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<89>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<88>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<87>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<86>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<85>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<84>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<83>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<82>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<81>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<80>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<79>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<78>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<77>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<76>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<75>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<74>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<73>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<72>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<71>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<70>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<69>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<68>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<67>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<66>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<65>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<64>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<63>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<62>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<61>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<60>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<59>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<58>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<57>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<56>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<55>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<54>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<53>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<52>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<51>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<50>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<49>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<48>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<47>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<46>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<45>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<44>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<43>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<42>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<41>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<40>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<39>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<38>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<37>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<36>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<35>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<34>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<33>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <game<127>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   8 Multiplexer(s).
+	inferred 128 Latch(s).
+	inferred 776 Multiplexer(s).
 Unit <display_ctl> synthesized.
 
+Synthesizing Unit <point_cal_secondary>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\point_cal_secondary.v".
+    Found 8-bit register for signal <score>.
+    Found 8-bit adder for signal <score_tmp> created at line 60.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <point_cal_secondary> synthesized.
+
+Synthesizing Unit <binary_converter>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\binary_converter.v".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <binary_converter> synthesized.
+
+Synthesizing Unit <add3>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\add3.v".
+    Found 16x4-bit Read Only RAM for signal <out>
+    Summary:
+	inferred   1 RAM(s).
+Unit <add3> synthesized.
+
 Synthesizing Unit <RAM_ctrl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\RAM_ctrl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\RAM_ctrl.v".
         IDLE = 2'b00
         WRITE = 2'b01
         GETDATA = 2'b10
@@ -626,32 +825,32 @@ Synthesizing Unit <RAM_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit subtractor for signal <GND_48_o_GND_48_o_sub_561_OUT> created at line 193.
-    Found 9-bit subtractor for signal <GND_48_o_GND_48_o_sub_563_OUT> created at line 194.
-    Found 8-bit subtractor for signal <GND_48_o_GND_48_o_sub_565_OUT> created at line 195.
-    Found 7-bit subtractor for signal <GND_48_o_GND_48_o_sub_567_OUT> created at line 196.
-    Found 2-bit adder for signal <cnt[1]_GND_48_o_add_31_OUT> created at line 170.
+    Found 9-bit subtractor for signal <GND_180_o_GND_180_o_sub_561_OUT> created at line 193.
+    Found 9-bit subtractor for signal <GND_180_o_GND_180_o_sub_563_OUT> created at line 194.
+    Found 8-bit subtractor for signal <GND_180_o_GND_180_o_sub_565_OUT> created at line 195.
+    Found 7-bit subtractor for signal <GND_180_o_GND_180_o_sub_567_OUT> created at line 196.
+    Found 2-bit adder for signal <cnt[1]_GND_180_o_add_31_OUT> created at line 170.
     Found 6-bit adder for signal <addr_next> created at line 175.
-    Found 6-bit adder for signal <counter_word[5]_GND_48_o_add_551_OUT> created at line 187.
-    Found 8-bit subtractor for signal <GND_48_o_GND_48_o_sub_2_OUT<7:0>> created at line 82.
-    Found 3-bit subtractor for signal <GND_48_o_GND_48_o_sub_38_OUT<2:0>> created at line 181.
-    Found 9-bit subtractor for signal <GND_48_o_GND_48_o_sub_553_OUT<8:0>> created at line 189.
-    Found 9-bit subtractor for signal <GND_48_o_GND_48_o_sub_555_OUT<8:0>> created at line 190.
-    Found 9-bit subtractor for signal <GND_48_o_GND_48_o_sub_557_OUT<8:0>> created at line 191.
-    Found 9-bit subtractor for signal <GND_48_o_GND_48_o_sub_559_OUT<8:0>> created at line 192.
+    Found 6-bit adder for signal <counter_word[5]_GND_180_o_add_551_OUT> created at line 187.
+    Found 8-bit subtractor for signal <GND_180_o_GND_180_o_sub_2_OUT<7:0>> created at line 82.
+    Found 3-bit subtractor for signal <GND_180_o_GND_180_o_sub_38_OUT<2:0>> created at line 181.
+    Found 9-bit subtractor for signal <GND_180_o_GND_180_o_sub_553_OUT<8:0>> created at line 189.
+    Found 9-bit subtractor for signal <GND_180_o_GND_180_o_sub_555_OUT<8:0>> created at line 190.
+    Found 9-bit subtractor for signal <GND_180_o_GND_180_o_sub_557_OUT<8:0>> created at line 191.
+    Found 9-bit subtractor for signal <GND_180_o_GND_180_o_sub_559_OUT<8:0>> created at line 192.
     Found 496-bit shifter logical right for signal <n0613> created at line 82
     Found 496-bit shifter logical right for signal <n0614> created at line 83
     Found 496-bit shifter logical right for signal <n0615> created at line 84
     Found 496-bit shifter logical right for signal <n0616> created at line 85
     Found 32-bit 4-to-1 multiplexer for signal <translate> created at line 55.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_553_o> created at line 189.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_555_o> created at line 190.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_557_o> created at line 191.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_559_o> created at line 192.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_561_o> created at line 193.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_563_o> created at line 194.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_565_o> created at line 195.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_48_o_mem[511]_Mux_567_o> created at line 196.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_553_o> created at line 189.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_555_o> created at line 190.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_557_o> created at line 191.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_559_o> created at line 192.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_561_o> created at line 193.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_563_o> created at line 194.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_565_o> created at line 195.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_180_o_mem[511]_Mux_567_o> created at line 196.
     Found 3-bit comparator lessequal for signal <n0040> created at line 180
     Summary:
 	inferred  13 Adder/Subtractor(s).
@@ -663,14 +862,14 @@ Synthesizing Unit <RAM_ctrl>.
 Unit <RAM_ctrl> synthesized.
 
 Synthesizing Unit <lcd_decoder>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_decoder.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_decoder.v".
     Found 256x256-bit Read Only RAM for signal <mark>
     Summary:
 	inferred   1 RAM(s).
 Unit <lcd_decoder> synthesized.
 
 Synthesizing Unit <lcd_ctrl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_ctrl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_ctrl.v".
         SETDSL = 3'b000
         SetY = 3'b001
         SetX = 3'b010
@@ -698,9 +897,9 @@ Synthesizing Unit <lcd_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <flag[1]_GND_52_o_add_18_OUT> created at line 139.
-    Found 3-bit adder for signal <x_cnt[2]_GND_52_o_add_20_OUT> created at line 149.
-    Found 6-bit adder for signal <y_cnt[5]_GND_52_o_add_21_OUT> created at line 152.
+    Found 2-bit adder for signal <flag[1]_GND_184_o_add_18_OUT> created at line 139.
+    Found 3-bit adder for signal <x_cnt[2]_GND_184_o_add_20_OUT> created at line 149.
+    Found 6-bit adder for signal <y_cnt[5]_GND_184_o_add_21_OUT> created at line 152.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  22 D-type flip-flop(s).
@@ -709,12 +908,12 @@ Synthesizing Unit <lcd_ctrl>.
 Unit <lcd_ctrl> synthesized.
 
 Synthesizing Unit <clock_divider_1>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\clock_divider.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\clock_divider.v".
         counter_width = 8
         half_cycle = 200
     Found 8-bit register for signal <count>.
     Found 1-bit register for signal <clk_div>.
-    Found 8-bit adder for signal <count[7]_GND_54_o_add_1_OUT> created at line 40.
+    Found 8-bit adder for signal <count[7]_GND_186_o_add_1_OUT> created at line 40.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   9 D-type flip-flop(s).
@@ -722,7 +921,7 @@ Synthesizing Unit <clock_divider_1>.
 Unit <clock_divider_1> synthesized.
 
 Synthesizing Unit <rom_lcd_ctrl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\rom_lcd_ctrl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rom_lcd_ctrl.v".
     Found 8-bit register for signal <counter_y>.
     Found 8-bit register for signal <lcd_data>.
     Found 4-bit register for signal <counter_page>.
@@ -745,13 +944,13 @@ Synthesizing Unit <rom_lcd_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 14-bit adder for signal <idle_counter[13]_GND_55_o_add_41_OUT> created at line 146.
-    Found 8-bit adder for signal <counter_y[7]_GND_55_o_add_53_OUT> created at line 170.
-    Found 4-bit adder for signal <counter_page[3]_GND_55_o_add_54_OUT> created at line 171.
-    Found 4-bit adder for signal <image[3]_GND_55_o_add_57_OUT> created at line 178.
+    Found 14-bit adder for signal <idle_counter[13]_GND_187_o_add_41_OUT> created at line 146.
+    Found 8-bit adder for signal <counter_y[7]_GND_187_o_add_53_OUT> created at line 170.
+    Found 4-bit adder for signal <counter_page[3]_GND_187_o_add_54_OUT> created at line 171.
+    Found 4-bit adder for signal <image[3]_GND_187_o_add_57_OUT> created at line 178.
     Found 4-bit comparator greater for signal <n0004> created at line 108
     Found 14-bit comparator greater for signal <n0039> created at line 136
-    Found 8-bit comparator greater for signal <counter_y[7]_GND_55_o_LessThan_51_o> created at line 162
+    Found 8-bit comparator greater for signal <counter_y[7]_GND_187_o_LessThan_51_o> created at line 162
     WARNING:Xst:2404 -  FFs/Latches <lcd_rw<0:0>> (without init value) have a constant value of 0 in block <rom_lcd_ctrl>.
     Summary:
 	inferred   4 Adder/Subtractor(s).
@@ -762,7 +961,7 @@ Synthesizing Unit <rom_lcd_ctrl>.
 Unit <rom_lcd_ctrl> synthesized.
 
 Synthesizing Unit <rom_ctrl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\rom_ctrl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\rom_ctrl.v".
     Found 6-bit register for signal <counter_byte>.
     Found 512-bit register for signal <mem>.
     Found 8-bit register for signal <data>.
@@ -782,25 +981,25 @@ Synthesizing Unit <rom_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit subtractor for signal <GND_56_o_GND_56_o_sub_531_OUT> created at line 108.
-    Found 9-bit subtractor for signal <GND_56_o_GND_56_o_sub_533_OUT> created at line 109.
-    Found 8-bit subtractor for signal <GND_56_o_GND_56_o_sub_535_OUT> created at line 110.
-    Found 7-bit subtractor for signal <GND_56_o_GND_56_o_sub_537_OUT> created at line 111.
-    Found 4-bit adder for signal <counter_word[3]_GND_56_o_add_3_OUT> created at line 88.
-    Found 6-bit adder for signal <counter_byte[5]_GND_56_o_add_521_OUT> created at line 103.
-    Found 4-bit subtractor for signal <GND_56_o_GND_56_o_sub_5_OUT<3:0>> created at line 89.
-    Found 9-bit subtractor for signal <GND_56_o_GND_56_o_sub_523_OUT<8:0>> created at line 104.
-    Found 9-bit subtractor for signal <GND_56_o_GND_56_o_sub_525_OUT<8:0>> created at line 105.
-    Found 9-bit subtractor for signal <GND_56_o_GND_56_o_sub_527_OUT<8:0>> created at line 106.
-    Found 9-bit subtractor for signal <GND_56_o_GND_56_o_sub_529_OUT<8:0>> created at line 107.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_523_o> created at line 104.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_525_o> created at line 105.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_527_o> created at line 106.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_529_o> created at line 107.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_531_o> created at line 108.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_533_o> created at line 109.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_535_o> created at line 110.
-    Found 1-bit 512-to-1 multiplexer for signal <GND_56_o_mem[511]_Mux_537_o> created at line 111.
+    Found 9-bit subtractor for signal <GND_188_o_GND_188_o_sub_531_OUT> created at line 108.
+    Found 9-bit subtractor for signal <GND_188_o_GND_188_o_sub_533_OUT> created at line 109.
+    Found 8-bit subtractor for signal <GND_188_o_GND_188_o_sub_535_OUT> created at line 110.
+    Found 7-bit subtractor for signal <GND_188_o_GND_188_o_sub_537_OUT> created at line 111.
+    Found 4-bit adder for signal <counter_word[3]_GND_188_o_add_3_OUT> created at line 88.
+    Found 6-bit adder for signal <counter_byte[5]_GND_188_o_add_521_OUT> created at line 103.
+    Found 4-bit subtractor for signal <GND_188_o_GND_188_o_sub_5_OUT<3:0>> created at line 89.
+    Found 9-bit subtractor for signal <GND_188_o_GND_188_o_sub_523_OUT<8:0>> created at line 104.
+    Found 9-bit subtractor for signal <GND_188_o_GND_188_o_sub_525_OUT<8:0>> created at line 105.
+    Found 9-bit subtractor for signal <GND_188_o_GND_188_o_sub_527_OUT<8:0>> created at line 106.
+    Found 9-bit subtractor for signal <GND_188_o_GND_188_o_sub_529_OUT<8:0>> created at line 107.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_523_o> created at line 104.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_525_o> created at line 105.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_527_o> created at line 106.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_529_o> created at line 107.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_531_o> created at line 108.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_533_o> created at line 109.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_535_o> created at line 110.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_188_o_mem[511]_Mux_537_o> created at line 111.
     Found 10-bit 3-to-1 multiplexer for signal <addr_rom> created at line 73.
     Summary:
 	inferred  11 Adder/Subtractor(s).
@@ -810,12 +1009,12 @@ Synthesizing Unit <rom_ctrl>.
 Unit <rom_ctrl> synthesized.
 
 Synthesizing Unit <clock_divider_2>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\clock_divider.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\clock_divider.v".
         counter_width = 9
         half_cycle = 400
     Found 9-bit register for signal <count>.
     Found 1-bit register for signal <clk_div>.
-    Found 9-bit adder for signal <count[8]_GND_58_o_add_1_OUT> created at line 40.
+    Found 9-bit adder for signal <count[8]_GND_190_o_add_1_OUT> created at line 40.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  10 D-type flip-flop(s).
@@ -823,16 +1022,16 @@ Synthesizing Unit <clock_divider_2>.
 Unit <clock_divider_2> synthesized.
 
 Synthesizing Unit <lcd_switcher>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\lcd_switcher.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\lcd_switcher.v".
     Summary:
 	inferred   5 Multiplexer(s).
 Unit <lcd_switcher> synthesized.
 
 Synthesizing Unit <buzzer_ctl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\buzzer_ctl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\buzzer_ctl.v".
     Found 20-bit register for signal <clk_cnt>.
     Found 1-bit register for signal <b_clk>.
-    Found 20-bit adder for signal <clk_cnt[19]_GND_60_o_add_2_OUT> created at line 52.
+    Found 20-bit adder for signal <clk_cnt[19]_GND_192_o_add_2_OUT> created at line 52.
     Found 20-bit comparator equal for signal <clk_cnt[19]_note_div[19]_equal_2_o> created at line 45
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -842,7 +1041,7 @@ Synthesizing Unit <buzzer_ctl>.
 Unit <buzzer_ctl> synthesized.
 
 Synthesizing Unit <speaker_ctl>.
-    Related source file is "C:\Users\Andy\Desktop\Working\brainwars_secondary\speaker_ctl.v".
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\speaker_ctl.v".
     Found 4-bit register for signal <audio_cnt_h>.
     Found 2-bit register for signal <audio_cnt_l>.
     Found 1-bit register for signal <audio_bck>.
@@ -855,42 +1054,61 @@ Synthesizing Unit <speaker_ctl>.
 	inferred   1 Multiplexer(s).
 Unit <speaker_ctl> synthesized.
 
+Synthesizing Unit <scan_ctl>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\scan_ctl.v".
+    Found 4x4-bit Read Only RAM for signal <ssd_ctl>
+    Found 4-bit 4-to-1 multiplexer for signal <bcd_out> created at line 29.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <scan_ctl> synthesized.
+
+Synthesizing Unit <ssd_decoder>.
+    Related source file is "D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\ssd_decoder.v".
+    Found 16x15-bit Read Only RAM for signal <ssd_out>
+    Summary:
+	inferred   1 RAM(s).
+Unit <ssd_decoder> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 12
+# RAMs                                                 : 21
+ 16x15-bit single-port Read Only RAM                   : 1
  16x17-bit single-port Read Only RAM                   : 1
+ 16x4-bit single-port Read Only RAM                    : 7
  256x256-bit single-port Read Only RAM                 : 4
  4x16-bit single-port Read Only RAM                    : 3
- 4x4-bit single-port Read Only RAM                     : 1
+ 4x4-bit single-port Read Only RAM                     : 2
  64x19-bit single-port Read Only RAM                   : 1
  8x128-bit single-port Read Only RAM                   : 1
  8x32-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 46
+# Adders/Subtractors                                   : 48
  14-bit adder                                          : 1
  18-bit adder                                          : 1
  2-bit adder                                           : 3
  20-bit adder                                          : 1
  22-bit adder                                          : 1
  24-bit adder                                          : 1
- 25-bit adder                                          : 1
+ 25-bit adder                                          : 2
  3-bit adder                                           : 1
  3-bit subtractor                                      : 2
  4-bit adder                                           : 6
  4-bit subtractor                                      : 3
  6-bit adder                                           : 4
  7-bit subtractor                                      : 2
- 8-bit adder                                           : 3
+ 8-bit adder                                           : 4
  8-bit subtractor                                      : 3
  9-bit adder                                           : 1
  9-bit subtractor                                      : 12
-# Registers                                            : 160
- 1-bit register                                        : 51
+# Registers                                            : 165
+ 1-bit register                                        : 52
  14-bit register                                       : 1
+ 15-bit register                                       : 1
  16-bit register                                       : 1
  18-bit register                                       : 1
- 2-bit register                                        : 5
+ 2-bit register                                        : 6
  20-bit register                                       : 1
  22-bit register                                       : 1
  24-bit register                                       : 1
@@ -900,10 +1118,11 @@ Macro Statistics
  4-bit register                                        : 15
  512-bit register                                      : 2
  6-bit register                                        : 4
- 8-bit register                                        : 6
+ 7-bit register                                        : 1
+ 8-bit register                                        : 7
  9-bit register                                        : 1
-# Latches                                              : 19
- 1-bit latch                                           : 19
+# Latches                                              : 147
+ 1-bit latch                                           : 147
 # Comparators                                          : 8
  14-bit comparator greater                             : 1
  20-bit comparator equal                               : 1
@@ -912,8 +1131,8 @@ Macro Statistics
  3-bit comparator not equal                            : 2
  4-bit comparator greater                              : 1
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 1230
- 1-bit 2-to-1 multiplexer                              : 44
+# Multiplexers                                         : 2013
+ 1-bit 2-to-1 multiplexer                              : 813
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 512-to-1 multiplexer                            : 16
  10-bit 2-to-1 multiplexer                             : 3
@@ -928,7 +1147,7 @@ Macro Statistics
  17-bit 2-to-1 multiplexer                             : 2
  18-bit 2-to-1 multiplexer                             : 3
  19-bit 2-to-1 multiplexer                             : 2
- 2-bit 2-to-1 multiplexer                              : 11
+ 2-bit 2-to-1 multiplexer                              : 20
  20-bit 2-to-1 multiplexer                             : 3
  21-bit 2-to-1 multiplexer                             : 2
  22-bit 2-to-1 multiplexer                             : 3
@@ -951,7 +1170,8 @@ Macro Statistics
  37-bit 2-to-1 multiplexer                             : 2
  38-bit 2-to-1 multiplexer                             : 2
  39-bit 2-to-1 multiplexer                             : 2
- 4-bit 2-to-1 multiplexer                              : 15
+ 4-bit 2-to-1 multiplexer                              : 18
+ 4-bit 4-to-1 multiplexer                              : 1
  40-bit 2-to-1 multiplexer                             : 2
  41-bit 2-to-1 multiplexer                             : 2
  42-bit 2-to-1 multiplexer                             : 2
@@ -980,7 +1200,7 @@ Macro Statistics
  63-bit 2-to-1 multiplexer                             : 2
  64-bit 2-to-1 multiplexer                             : 899
  7-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 32
+ 8-bit 2-to-1 multiplexer                              : 33
  9-bit 2-to-1 multiplexer                              : 3
 # Logic shifters                                       : 4
  496-bit shifter logical right                         : 4
@@ -998,8 +1218,6 @@ Reading core <ipcore_dir/RAM.ngc>.
 Reading core <ipcore_dir/ROM.ngc>.
 Loading core <RAM> for timing and area information for instance <R1>.
 Loading core <ROM> for timing and area information for instance <R1>.
-WARNING:Xst:1290 - Hierarchical block <ONE_P> is unconnected in block <RAND>.
-   It will be removed from the design.
 WARNING:Xst:1710 - FF/Latch <note_div_18> (without init value) has a constant value of 0 in block <note_decoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <rand_8> of sequential type is unconnected in block <random_producer>.
 WARNING:Xst:2677 - Node <rand_9> of sequential type is unconnected in block <random_producer>.
@@ -1015,6 +1233,20 @@ The following registers are absorbed into counter <cnt>: 1 register on signal <c
 The following registers are absorbed into counter <addr>: 1 register on signal <addr>.
 The following registers are absorbed into counter <counter_word>: 1 register on signal <counter_word>.
 Unit <RAM_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <add3>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <in>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <out>           |          |
+    -----------------------------------------------------------------------
+Unit <add3> synthesized (advanced).
 
 Synthesizing (advanced) Unit <buzzer_ctl>.
 The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
@@ -1129,6 +1361,10 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0106> will be implemented on LUTs 
     -----------------------------------------------------------------------
 Unit <note_decode> synthesized (advanced).
 
+Synthesizing (advanced) Unit <point_cal_secondary>.
+The following registers are absorbed into accumulator <score>: 1 register on signal <score>.
+Unit <point_cal_secondary> synthesized (advanced).
+
 Synthesizing (advanced) Unit <rainfall>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_graph1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
@@ -1179,20 +1415,51 @@ The following registers are absorbed into counter <image>: 1 register on signal 
 The following registers are absorbed into counter <idle_counter>: 1 register on signal <idle_counter>.
 Unit <rom_lcd_ctrl> synthesized (advanced).
 
+Synthesizing (advanced) Unit <scan_ctl>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ssd_ctl> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <clk_ctl>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ssd_ctl>       |          |
+    -----------------------------------------------------------------------
+Unit <scan_ctl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ssd_decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ssd_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 15-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bcd>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ssd_out>       |          |
+    -----------------------------------------------------------------------
+Unit <ssd_decoder> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 12
+# RAMs                                                 : 21
+ 16x15-bit single-port distributed Read Only RAM       : 1
  16x17-bit single-port distributed Read Only RAM       : 1
+ 16x4-bit single-port distributed Read Only RAM        : 7
  256x256-bit single-port distributed Read Only RAM     : 4
  4x16-bit single-port distributed Read Only RAM        : 3
- 4x4-bit single-port distributed Read Only RAM         : 1
+ 4x4-bit single-port distributed Read Only RAM         : 2
  64x19-bit single-port distributed Read Only RAM       : 1
  8x128-bit single-port distributed Read Only RAM       : 1
  8x32-bit single-port distributed Read Only RAM        : 1
-# Adders/Subtractors                                   : 27
+# Adders/Subtractors                                   : 28
  2-bit adder                                           : 1
+ 25-bit adder                                          : 1
  3-bit subtractor                                      : 2
  4-bit adder                                           : 3
  4-bit subtractor                                      : 1
@@ -1215,8 +1482,10 @@ Macro Statistics
  6-bit up counter                                      : 3
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 3301
- Flip-Flops                                            : 3301
+# Accumulators                                         : 1
+ 8-bit up loadable accumulator                         : 1
+# Registers                                            : 3326
+ Flip-Flops                                            : 3326
 # Comparators                                          : 8
  14-bit comparator greater                             : 1
  20-bit comparator equal                               : 1
@@ -1225,8 +1494,8 @@ Macro Statistics
  3-bit comparator not equal                            : 2
  4-bit comparator greater                              : 1
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 1220
- 1-bit 2-to-1 multiplexer                              : 50
+# Multiplexers                                         : 2002
+ 1-bit 2-to-1 multiplexer                              : 819
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 512-to-1 multiplexer                            : 16
  10-bit 2-to-1 multiplexer                             : 3
@@ -1241,7 +1510,7 @@ Macro Statistics
  17-bit 2-to-1 multiplexer                             : 2
  18-bit 2-to-1 multiplexer                             : 2
  19-bit 2-to-1 multiplexer                             : 2
- 2-bit 2-to-1 multiplexer                              : 11
+ 2-bit 2-to-1 multiplexer                              : 20
  20-bit 2-to-1 multiplexer                             : 2
  21-bit 2-to-1 multiplexer                             : 2
  22-bit 2-to-1 multiplexer                             : 2
@@ -1264,7 +1533,8 @@ Macro Statistics
  37-bit 2-to-1 multiplexer                             : 2
  38-bit 2-to-1 multiplexer                             : 2
  39-bit 2-to-1 multiplexer                             : 2
- 4-bit 2-to-1 multiplexer                              : 11
+ 4-bit 2-to-1 multiplexer                              : 14
+ 4-bit 4-to-1 multiplexer                              : 1
  40-bit 2-to-1 multiplexer                             : 2
  41-bit 2-to-1 multiplexer                             : 2
  42-bit 2-to-1 multiplexer                             : 2
@@ -1365,7 +1635,7 @@ Optimizing FSM <U_romctrl/FSM_4> on signal <state[1:2]> with user encoding.
  10    | 10
 -------------------
 WARNING:Xst:1710 - FF/Latch <point_0> (without init value) has a constant value of 0 in block <rainfall>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <correct> in Unit <rainfall> is equivalent to the following FF/Latch, which will be removed : <point_1> 
+INFO:Xst:2261 - The FF/Latch <point_1> in Unit <rainfall> is equivalent to the following FF/Latch, which will be removed : <correct> 
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
    either a register or latch described with both an asynchronous set and
@@ -1391,9 +1661,9 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
   List of register instances with asynchronous set and reset:
     q0_1 in unit <rainfall>
     q1_1 in unit <rainfall>
-    q1_0 in unit <rainfall>
     q2_0 in unit <rainfall>
     q2_1 in unit <rainfall>
+    q1_0 in unit <rainfall>
 
 
 Optimizing unit <brainwars_secondary> ...
@@ -1408,7 +1678,11 @@ Optimizing unit <keypad_scan> ...
 
 Optimizing unit <note_decode> ...
 
+Optimizing unit <freq_div> ...
+
 Optimizing unit <speaker_ctl> ...
+
+Optimizing unit <display_ctl> ...
 
 Optimizing unit <rand_0_to_7> ...
 
@@ -1420,6 +1694,10 @@ Optimizing unit <random_secondary> ...
 
 Optimizing unit <game_ctl> ...
 
+Optimizing unit <point_cal_secondary> ...
+
+Optimizing unit <binary_converter> ...
+
 Optimizing unit <RAM_ctrl> ...
 
 Optimizing unit <lcd_ctrl> ...
@@ -1427,8 +1705,92 @@ Optimizing unit <lcd_ctrl> ...
 Optimizing unit <rom_lcd_ctrl> ...
 
 Optimizing unit <rom_ctrl> ...
-WARNING:Xst:2677 - Node <game_flick_master/RAND/ONE_P/out_pulse> of sequential type is unconnected in block <brainwars_secondary>.
-WARNING:Xst:2677 - Node <game_flick_master/RAND/ONE_P/in_trig_delay> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_97> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_96> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_95> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_94> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_91> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_93> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_92> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_90> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_89> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_88> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_81> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_70> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_71> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_69> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_68> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_67> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_66> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_63> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_65> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_127> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_126> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_125> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_124> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_123> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_120> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_122> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_121> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_116> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_113> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_114> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_108> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_106> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_105> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_103> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_102> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_101> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_98> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_100> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_99> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_29> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_27> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_26> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_25> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_24> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_20> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_18> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_16> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_12> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_10> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_7> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_8> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_6> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_5> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_4> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_3> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_0> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_2> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_1> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_64> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_62> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_61> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_60> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_59> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_56> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_58> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_57> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_41> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_39> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_38> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_35> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_37> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_36> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_34> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_33> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_32> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_31> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_28> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_controller/game_30> (without init value) has a constant value of 0 in block <brainwars_secondary>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <freqency_divider/clk_out> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_6> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_5> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_4> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_3> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_2> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_1> of sequential type is unconnected in block <brainwars_secondary>.
+WARNING:Xst:2677 - Node <freqency_divider/cnt_h_0> of sequential type is unconnected in block <brainwars_secondary>.
 WARNING:Xst:2677 - Node <random_producer/rand_15> of sequential type is unconnected in block <brainwars_secondary>.
 WARNING:Xst:2677 - Node <random_producer/rand_14> of sequential type is unconnected in block <brainwars_secondary>.
 WARNING:Xst:2677 - Node <random_producer/rand_13> of sequential type is unconnected in block <brainwars_secondary>.
@@ -2109,14 +2471,24 @@ INFO:Xst:3203 - The FF/Latch <counting_down/counting_down/q64_22> in Unit <brain
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <counting_down/pressed_debounce/debounce_window_0> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <debounce_pressed/debounce/debounce_window_0> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_9> in Unit <brainwars_secondary> is equivalent to the following 4 FFs/Latches, which will be removed : <display_controller/game_11> <display_controller/game_13> <display_controller/game_15> <display_controller/game_14> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_115> in Unit <brainwars_secondary> is equivalent to the following 3 FFs/Latches, which will be removed : <display_controller/game_117> <display_controller/game_118> <display_controller/game_119> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_107> in Unit <brainwars_secondary> is equivalent to the following 3 FFs/Latches, which will be removed : <display_controller/game_109> <display_controller/game_110> <display_controller/game_111> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_50> in Unit <brainwars_secondary> is equivalent to the following 2 FFs/Latches, which will be removed : <display_controller/game_74> <display_controller/game_82> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_78> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <display_controller/game_77> 
 INFO:Xst:2261 - The FF/Latch <counting_down/counting_down/q0_21> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <counting_down/counting_down/q0_20> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_52> in Unit <brainwars_secondary> is equivalent to the following 2 FFs/Latches, which will be removed : <display_controller/game_76> <display_controller/game_84> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_17> in Unit <brainwars_secondary> is equivalent to the following 4 FFs/Latches, which will be removed : <display_controller/game_19> <display_controller/game_22> <display_controller/game_23> <display_controller/game_21> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_85> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <display_controller/game_86> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_53> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <display_controller/game_54> 
+INFO:Xst:2261 - The FF/Latch <display_controller/game_49> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <display_controller/game_73> 
 INFO:Xst:2261 - The FF/Latch <counting_down/pressed_debounce/debounce_window_1> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <debounce_pressed/debounce/debounce_window_1> 
 INFO:Xst:2261 - The FF/Latch <counting_down/pressed_debounce/debounce_window_2> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <debounce_pressed/debounce/debounce_window_2> 
 INFO:Xst:2261 - The FF/Latch <counting_down/pressed_debounce/debounce_window_3> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <debounce_pressed/debounce/debounce_window_3> 
 INFO:Xst:2261 - The FF/Latch <counting_down/pressed_debounce/pb_debounced> in Unit <brainwars_secondary> is equivalent to the following FF/Latch, which will be removed : <debounce_pressed/debounce/pb_debounced> 
-Found area constraint ratio of 100 (+ 5) on block brainwars_secondary, actual ratio is 98.
+Found area constraint ratio of 100 (+ 5) on block brainwars_secondary, actual ratio is 99.
 FlipFlop RAM_controller/cnt_0 has been replicated 1 time(s)
-FlipFlop RAM_controller/cnt_1 has been replicated 1 time(s)
+FlipFlop RAM_controller/cnt_1 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -2124,8 +2496,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2743
- Flip-Flops                                            : 2743
+# Registers                                            : 2771
+ Flip-Flops                                            : 2771
 
 =========================================================================
 
@@ -2148,35 +2520,35 @@ Top Level Output File Name         : brainwars_secondary.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 9472
+# BELS                             : 9630
 #      GND                         : 3
-#      INV                         : 27
-#      LUT1                        : 85
-#      LUT2                        : 112
-#      LUT3                        : 179
-#      LUT4                        : 245
-#      LUT5                        : 2386
-#      LUT6                        : 4122
-#      MUXCY                       : 140
-#      MUXF7                       : 1385
+#      INV                         : 28
+#      LUT1                        : 101
+#      LUT2                        : 105
+#      LUT3                        : 255
+#      LUT4                        : 253
+#      LUT5                        : 2346
+#      LUT6                        : 4178
+#      MUXCY                       : 155
+#      MUXF7                       : 1401
 #      MUXF8                       : 665
 #      VCC                         : 3
-#      XORCY                       : 120
-# FlipFlops/Latches                : 2763
+#      XORCY                       : 137
+# FlipFlops/Latches                : 2819
 #      FD                          : 3
-#      FDC                         : 897
-#      FDCE                        : 1113
-#      FDP                         : 720
+#      FDC                         : 923
+#      FDCE                        : 1114
+#      FDP                         : 721
 #      FDPE                        : 10
-#      LD                          : 18
+#      LD                          : 46
 #      LDC                         : 2
 # RAMS                             : 5
 #      RAMB16BWER                  : 5
-# Clock Buffers                    : 5
-#      BUFG                        : 5
-# IO Buffers                       : 56
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 75
 #      IBUF                        : 21
-#      OBUF                        : 35
+#      OBUF                        : 54
 
 Device utilization summary:
 ---------------------------
@@ -2185,25 +2557,25 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2763  out of  18224    15%  
- Number of Slice LUTs:                 7156  out of   9112    78%  
-    Number used as Logic:              7156  out of   9112    78%  
+ Number of Slice Registers:            2819  out of  18224    15%  
+ Number of Slice LUTs:                 7266  out of   9112    79%  
+    Number used as Logic:              7266  out of   9112    79%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7182
-   Number with an unused Flip Flop:    4419  out of   7182    61%  
-   Number with an unused LUT:            26  out of   7182     0%  
-   Number of fully used LUT-FF pairs:  2737  out of   7182    38%  
-   Number of unique control sets:        45
+ Number of LUT Flip Flop pairs used:   7295
+   Number with an unused Flip Flop:    4476  out of   7295    61%  
+   Number with an unused LUT:            29  out of   7295     0%  
+   Number of fully used LUT-FF pairs:  2790  out of   7295    38%  
+   Number of unique control sets:        46
 
 IO Utilization: 
- Number of IOs:                          56
- Number of bonded IOBs:                  56  out of    232    24%  
+ Number of IOs:                          83
+ Number of bonded IOBs:                  75  out of    232    32%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                5  out of     32    15%  
     Number using Block RAM only:          5
- Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
 
 ---------------------------
 Partition Resource Summary:
@@ -2226,18 +2598,19 @@ Clock Information:
 ---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                     | Clock buffer(FF name)                                                                                                                 | Load  |
 ---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk                                                                              | IBUF+BUFG                                                                                                                             | 121   |
-clock_generate/clk_100                                                           | BUFG                                                                                                                                  | 80    |
-clock_generate/clk_1                                                             | NONE(game_flick_master/D_CNT/CNT_1)                                                                                                   | 13    |
+clk                                                                              | IBUF+BUFG                                                                                                                             | 138   |
+clock_generate/clk_100                                                           | BUFG                                                                                                                                  | 90    |
+clock_generate/clk_1                                                             | NONE(game_flick_master/D_CNT/CNT_0)                                                                                                   | 13    |
 clock_generate/clk_66                                                            | BUFG                                                                                                                                  | 1386  |
 note_decoder/_n0106<0>(note_decoder_Mram__n0106181:O)                            | NONE(*)(note_decoder/note_div_0)                                                                                                      | 18    |
-clk100K/clk_div                                                                  | BUFG                                                                                                                                  | 568   |
+count_down_data_in<0>(counting_down/game<1>1:O)                                  | BUFG(*)(display_controller/game_9)                                                                                                    | 28    |
+clk100K/clk_div                                                                  | BUFG                                                                                                                                  | 569   |
 clk50k/clk_div                                                                   | BUFG                                                                                                                                  | 580   |
 U_romctrl/R1/N1                                                                  | NONE(U_romctrl/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
 game_rainfall/rst_n_random[1]_AND_55_o(game_rainfall/rst_n_random[1]_AND_55_o1:O)| NONE(*)(game_rainfall/q0_1_LDC)                                                                                                       | 1     |
 game_rainfall/rst_n_random[0]_AND_57_o(game_rainfall/rst_n_random[0]_AND_57_o1:O)| NONE(*)(game_rainfall/q1_1_LDC)                                                                                                       | 1     |
 ---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
-(*) These 3 clock signal(s) are generated by combinatorial logic,
+(*) These 4 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -2250,10 +2623,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.951ns (Maximum Frequency: 111.719MHz)
-   Minimum input arrival time before clock: 15.033ns
-   Maximum output required time after clock: 5.346ns
-   Maximum combinational path delay: 5.764ns
+   Minimum period: 8.839ns (Maximum Frequency: 113.129MHz)
+   Minimum input arrival time before clock: 14.958ns
+   Maximum output required time after clock: 10.310ns
+   Maximum combinational path delay: 5.546ns
 
 Timing Details:
 ---------------
@@ -2261,10 +2634,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.143ns (frequency: 194.447MHz)
-  Total number of paths / destination ports: 8359 / 128
+  Clock period: 5.163ns (frequency: 193.693MHz)
+  Total number of paths / destination ports: 8512 / 145
 -------------------------------------------------------------------------
-Delay:               5.143ns (Levels of Logic = 3)
+Delay:               5.163ns (Levels of Logic = 3)
   Source:            clock_generate/count_200K_2 (FF)
   Destination:       clock_generate/clk_100 (FF)
   Source Clock:      clk rising
@@ -2275,58 +2648,62 @@ Delay:               5.143ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             14   0.447   1.186  clock_generate/count_200K_2 (clock_generate/count_200K_2)
-     LUT6:I3->O            1   0.205   0.924  clock_generate/GND_24_o_GND_24_o_equal_9_o<17>1 (clock_generate/GND_24_o_GND_24_o_equal_9_o<17>)
-     LUT6:I1->O           19   0.203   1.072  clock_generate/GND_24_o_GND_24_o_equal_9_o<17>2 (clock_generate/GND_24_o_GND_24_o_equal_9_o<17>1)
+     LUT6:I3->O            1   0.205   0.944  clock_generate/GND_24_o_GND_24_o_equal_9_o<17>1 (clock_generate/GND_24_o_GND_24_o_equal_9_o<17>)
+     LUT6:I0->O           19   0.203   1.072  clock_generate/GND_24_o_GND_24_o_equal_9_o<17>2 (clock_generate/GND_24_o_GND_24_o_equal_9_o<17>1)
      LUT4:I3->O            1   0.205   0.579  clock_generate/GND_24_o_GND_24_o_equal_9_o<17>4 (clock_generate/GND_24_o_GND_24_o_equal_9_o)
      FDCE:CE                   0.322          clock_generate/clk_100
     ----------------------------------------
-    Total                      5.143ns (1.382ns logic, 3.761ns route)
-                                       (26.9% logic, 73.1% route)
+    Total                      5.163ns (1.382ns logic, 3.781ns route)
+                                       (26.8% logic, 73.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_generate/clk_100'
-  Clock period: 5.220ns (frequency: 191.578MHz)
-  Total number of paths / destination ports: 408 / 113
+  Clock period: 6.607ns (frequency: 151.354MHz)
+  Total number of paths / destination ports: 721 / 125
 -------------------------------------------------------------------------
-Delay:               5.220ns (Levels of Logic = 2)
+Delay:               6.607ns (Levels of Logic = 5)
   Source:            finite_state_machine/state_FSM_FFd2 (FF)
-  Destination:       game_controller/check_8 (FF)
+  Destination:       point_calculator/score_7 (FF)
   Source Clock:      clock_generate/clk_100 rising
   Destination Clock: clock_generate/clk_100 rising
 
-  Data Path: finite_state_machine/state_FSM_FFd2 to game_controller/check_8
+  Data Path: finite_state_machine/state_FSM_FFd2 to point_calculator/score_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q           1507   0.447   2.673  finite_state_machine/state_FSM_FFd2 (finite_state_machine/state_FSM_FFd2)
-     LUT5:I0->O            2   0.203   0.721  game_controller/_n0095_inv3 (game_controller/_n0095_inv3)
-     LUT6:I4->O            3   0.203   0.650  game_controller/_n0095_inv (game_controller/_n0095_inv)
-     FDPE:CE                   0.322          game_controller/check_6
+     FDC:C->Q           1494   0.447   2.573  finite_state_machine/state_FSM_FFd2 (finite_state_machine/state_FSM_FFd2)
+     LUT4:I0->O           11   0.203   0.883  point_calculator/Maccum_score_xor<3>111 (point_calculator/Maccum_score_xor<3>11)
+     LUT6:I5->O            5   0.205   0.962  point_calculator/Maccum_score_lut<0>1 (point_calculator/Maccum_score_lut<0>)
+     LUT5:I1->O            1   0.203   0.000  point_calculator/Maccum_score_cy<6>11_G (N298)
+     MUXF7:I1->O           4   0.140   0.684  point_calculator/Maccum_score_cy<6>11 (point_calculator/Maccum_score_cy<3>)
+     LUT4:I3->O            1   0.205   0.000  point_calculator/Maccum_score_xor<5>11 (point_calculator/Result<5>)
+     FDC:D                     0.102          point_calculator/score_5
     ----------------------------------------
-    Total                      5.220ns (1.175ns logic, 4.045ns route)
-                                       (22.5% logic, 77.5% route)
+    Total                      6.607ns (1.505ns logic, 5.102ns route)
+                                       (22.8% logic, 77.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_generate/clk_1'
-  Clock period: 2.918ns (frequency: 342.659MHz)
+  Clock period: 3.869ns (frequency: 258.468MHz)
   Total number of paths / destination ports: 60 / 17
 -------------------------------------------------------------------------
-Delay:               2.918ns (Levels of Logic = 1)
-  Source:            game_flick_master/D_CNT/CNT_3 (FF)
-  Destination:       game_flick_master/D_CNT/CNT_1 (FF)
+Delay:               3.869ns (Levels of Logic = 2)
+  Source:            game_flick_master/D_CNT/CNT_1 (FF)
+  Destination:       game_flick_master/D_CNT/CNT_0 (FF)
   Source Clock:      clock_generate/clk_1 rising
   Destination Clock: clock_generate/clk_1 rising
 
-  Data Path: game_flick_master/D_CNT/CNT_3 to game_flick_master/D_CNT/CNT_1
+  Data Path: game_flick_master/D_CNT/CNT_1 to game_flick_master/D_CNT/CNT_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              4   0.447   0.931  game_flick_master/D_CNT/CNT_3 (game_flick_master/D_CNT/CNT_3)
-     LUT6:I2->O           12   0.203   0.908  game_flick_master/reset_n_inv1 (game_flick_master/RAND/ONE_P/rst_n_inv)
-     FDP:PRE                   0.430          game_flick_master/D_CNT/CNT_1
+     FDP:C->Q              5   0.447   0.943  game_flick_master/D_CNT/CNT_1 (game_flick_master/D_CNT/CNT_1)
+     LUT4:I1->O            1   0.205   0.684  game_flick_master/reset_n_inv_SW0 (N12)
+     LUT6:I4->O           14   0.203   0.957  game_flick_master/reset_n_inv (game_flick_master/RAND/ONE_P/rst_n_inv)
+     FDC:CLR                   0.430          game_flick_master/D_CNT/CNT_0
     ----------------------------------------
-    Total                      2.918ns (1.080ns logic, 1.838ns route)
-                                       (37.0% logic, 63.0% route)
+    Total                      3.869ns (1.285ns logic, 2.584ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_generate/clk_66'
@@ -2352,138 +2729,138 @@ Delay:               1.683ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk100K/clk_div'
-  Clock period: 8.951ns (frequency: 111.719MHz)
-  Total number of paths / destination ports: 58537 / 1200
+  Clock period: 8.839ns (frequency: 113.129MHz)
+  Total number of paths / destination ports: 56477 / 1202
 -------------------------------------------------------------------------
-Delay:               8.951ns (Levels of Logic = 8)
-  Source:            RAM_controller/cnt_1_1 (FF)
+Delay:               8.839ns (Levels of Logic = 7)
+  Source:            RAM_controller/cnt_0_1 (FF)
   Destination:       RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram (RAM)
   Source Clock:      clk100K/clk_div rising
   Destination Clock: clk100K/clk_div rising
 
-  Data Path: RAM_controller/cnt_1_1 to RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
+  Data Path: RAM_controller/cnt_0_1 to RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            16   0.447   1.109  RAM_controller/cnt_1_1 (RAM_controller/cnt_1_1)
-     LUT5:I3->O          635   0.203   2.484  RAM_controller/Mmux_translate174 (RAM_controller/translate<24>)
-     LUT6:I0->O            4   0.203   0.684  RAM_controller_decoder1/Mram_mark537 (RAM_controller_decoder1/Mram_mark537)
-     LUT3:I2->O            4   0.205   0.788  RAM_controller_mark1<247>1 (RAM_controller/Sh486)
-     LUT6:I4->O            2   0.203   0.617  RAM_controller/Mmux_data_in522 (RAM_controller/Mmux_data_in522)
-     LUT6:I5->O            1   0.205   0.000  RAM_controller/Mmux_data_in523_G (N508)
-     MUXF7:I1->O           1   0.140   0.580  RAM_controller/Mmux_data_in523 (RAM_controller/Mmux_data_in523)
-     LUT6:I5->O            1   0.205   0.579  RAM_controller/Mmux_data_in526 (RAM_controller/data_in<56>)
-     begin scope: 'RAM_controller/R1:dina<56>'
-     RAMB16BWER:DIB24          0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
+     FDCE:C->Q            16   0.447   1.005  RAM_controller/cnt_0_1 (RAM_controller/cnt_0_1)
+     LUT6:I5->O          807   0.205   2.505  RAM_controller/Mmux_translate66 (RAM_controller/translate<14>)
+     LUT6:I1->O            1   0.203   0.808  RAM_controller_decoder3/Mram_mark319 (RAM_controller_decoder3/Mram_mark319)
+     LUT5:I2->O            1   0.205   0.580  RAM_controller_decoder3/Mram_mark319_f8 (RAM_controller/Sh4353)
+     LUT3:I2->O            1   0.205   0.580  RAM_controller/Mmux_data_in95 (RAM_controller/Mmux_data_in94)
+     LUT6:I5->O            1   0.205   0.808  RAM_controller/Mmux_data_in96 (RAM_controller/Mmux_data_in95)
+     LUT6:I3->O            1   0.205   0.579  RAM_controller/Mmux_data_in99 (RAM_controller/data_in<17>)
+     begin scope: 'RAM_controller/R1:dina<17>'
+     RAMB16BWER:DIA17          0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
     ----------------------------------------
-    Total                      8.951ns (2.111ns logic, 6.840ns route)
-                                       (23.6% logic, 76.4% route)
+    Total                      8.839ns (1.975ns logic, 6.864ns route)
+                                       (22.3% logic, 77.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50k/clk_div'
-  Clock period: 6.892ns (frequency: 145.093MHz)
-  Total number of paths / destination ports: 8620 / 1166
+  Clock period: 6.979ns (frequency: 143.296MHz)
+  Total number of paths / destination ports: 8603 / 1166
 -------------------------------------------------------------------------
-Delay:               6.892ns (Levels of Logic = 5)
-  Source:            U_LCDctrl/counter_page_3 (FF)
-  Destination:       U_LCDctrl/counter_page_3 (FF)
+Delay:               6.979ns (Levels of Logic = 6)
+  Source:            U_LCDctrl/counter_page_0 (FF)
+  Destination:       U_LCDctrl/counter_y_6 (FF)
   Source Clock:      clk50k/clk_div rising
   Destination Clock: clk50k/clk_div rising
 
-  Data Path: U_LCDctrl/counter_page_3 to U_LCDctrl/counter_page_3
+  Data Path: U_LCDctrl/counter_page_0 to U_LCDctrl/counter_y_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            10   0.447   1.104  U_LCDctrl/counter_page_3 (U_LCDctrl/counter_page_3)
-     LUT4:I0->O            4   0.203   0.912  U_LCDctrl/_n0329_inv211 (U_LCDctrl/state_FSM_FFd2-In2)
-     LUT6:I3->O            5   0.205   0.962  U_LCDctrl/state_FSM_FFd2-In11 (U_LCDctrl/state_FSM_FFd2-In11)
-     LUT4:I0->O            2   0.203   0.864  U_LCDctrl/_n02511 (U_LCDctrl/_n0251)
-     LUT6:I2->O            1   0.203   0.580  U_LCDctrl/_n0282_inv1 (U_LCDctrl/_n0282_inv1)
-     LUT6:I5->O            4   0.205   0.683  U_LCDctrl/_n0282_inv2 (U_LCDctrl/_n0282_inv)
-     FDCE:CE                   0.322          U_LCDctrl/counter_page_0
+     FDCE:C->Q            10   0.447   1.104  U_LCDctrl/counter_page_0 (U_LCDctrl/counter_page_0)
+     LUT4:I0->O            3   0.203   0.879  U_LCDctrl/_n0329_inv211 (U_LCDctrl/state_FSM_FFd2-In2)
+     LUT6:I3->O            5   0.205   1.059  U_LCDctrl/state_FSM_FFd2-In11 (U_LCDctrl/state_FSM_FFd2-In11)
+     LUT6:I1->O            1   0.203   0.580  U_LCDctrl/_n0238_inv1_SW0 (N194)
+     LUT6:I5->O            2   0.205   0.721  U_LCDctrl/_n0238_inv2 (U_LCDctrl/_n0238_inv2)
+     LUT6:I4->O            2   0.203   0.864  U_LCDctrl/_n0238_inv4 (U_LCDctrl/_n0238_inv)
+     LUT4:I0->O            1   0.203   0.000  U_LCDctrl/counter_y_6_rstpot (U_LCDctrl/counter_y_6_rstpot)
+     FDC:D                     0.102          U_LCDctrl/counter_y_6
     ----------------------------------------
-    Total                      6.892ns (1.788ns logic, 5.104ns route)
-                                       (25.9% logic, 74.1% route)
+    Total                      6.979ns (1.771ns logic, 5.208ns route)
+                                       (25.4% logic, 74.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 242 / 121
+  Total number of paths / destination ports: 276 / 138
 -------------------------------------------------------------------------
-Offset:              5.560ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
+Offset:              5.387ns (Levels of Logic = 2)
+  Source:            rst_n_in (PAD)
   Destination:       clock_generate/clk_66 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to clock_generate/clk_66
+  Data Path: rst_n_in to clock_generate/clk_66
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.222   1.086  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         2718   0.203   2.619  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
-     FDCE:CLR                  0.430          buzzer_controllor/b_clk
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
+     LUT2:I0->O         2745   0.203   2.625  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     FDC:CLR                   0.430          freqency_divider/cnt_l_0
     ----------------------------------------
-    Total                      5.560ns (1.855ns logic, 3.705ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                      5.387ns (1.855ns logic, 3.532ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_100'
-  Total number of paths / destination ports: 202 / 91
+  Total number of paths / destination ports: 222 / 101
 -------------------------------------------------------------------------
-Offset:              5.560ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
+Offset:              5.387ns (Levels of Logic = 2)
+  Source:            rst_n_in (PAD)
   Destination:       debounce_game_invite/pulse/in_trig_delay (FF)
   Destination Clock: clock_generate/clk_100 rising
 
-  Data Path: rst_n to debounce_game_invite/pulse/in_trig_delay
+  Data Path: rst_n_in to debounce_game_invite/pulse/in_trig_delay
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.222   1.086  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         2718   0.203   2.619  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
-     FDP:PRE                   0.430          debounce_pressed/pulse/out_pulse
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
+     LUT2:I0->O         2745   0.203   2.625  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     FDC:CLR                   0.430          counting_down/pressed_debounce/debounce_window_0
     ----------------------------------------
-    Total                      5.560ns (1.855ns logic, 3.705ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                      5.387ns (1.855ns logic, 3.532ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_1'
   Total number of paths / destination ports: 26 / 13
 -------------------------------------------------------------------------
-Offset:              5.560ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
+Offset:              5.387ns (Levels of Logic = 2)
+  Source:            rst_n_in (PAD)
   Destination:       invite_screen/cnt_0 (FF)
   Destination Clock: clock_generate/clk_1 rising
 
-  Data Path: rst_n to invite_screen/cnt_0
+  Data Path: rst_n_in to invite_screen/cnt_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.222   1.086  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         2718   0.203   2.619  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
-     FDP:PRE                   0.430          invite_screen/cnt_0
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
+     LUT2:I0->O         2745   0.203   2.625  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     FDC:CLR                   0.430          next_game/game_next_state
     ----------------------------------------
-    Total                      5.560ns (1.855ns logic, 3.705ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                      5.387ns (1.855ns logic, 3.532ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generate/clk_66'
   Total number of paths / destination ports: 2772 / 1386
 -------------------------------------------------------------------------
-Offset:              5.560ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
+Offset:              5.387ns (Levels of Logic = 2)
+  Source:            rst_n_in (PAD)
   Destination:       counting_down/counting_down/q1_28 (FF)
   Destination Clock: clock_generate/clk_66 rising
 
-  Data Path: rst_n to counting_down/counting_down/q1_28
+  Data Path: rst_n_in to counting_down/counting_down/q1_28
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.222   1.086  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         2718   0.203   2.619  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
+     LUT2:I0->O         2745   0.203   2.625  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          counting_down/counting_down/q0_0
     ----------------------------------------
-    Total                      5.560ns (1.855ns logic, 3.705ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                      5.387ns (1.855ns logic, 3.532ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'note_decoder/_n0106<0>'
@@ -2507,60 +2884,58 @@ Offset:              2.898ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk100K/clk_div'
-  Total number of paths / destination ports: 150885 / 631
+  Total number of paths / destination ports: 140963 / 632
 -------------------------------------------------------------------------
-Offset:              15.033ns (Levels of Logic = 13)
-  Source:            rst_n (PAD)
+Offset:              14.958ns (Levels of Logic = 11)
+  Source:            rst_n_in (PAD)
   Destination:       RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram (RAM)
   Destination Clock: clk100K/clk_div rising
 
-  Data Path: rst_n to RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
+  Data Path: rst_n_in to RAM_controller/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.222   1.086  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O            4   0.203   1.028  rst1 (LCD_rst_OBUF)
-     LUT6:I1->O           12   0.203   0.909  game_initial_screen/data_out<47>1 (initial_data_in<33>)
-     LUT6:I5->O            4   0.205   1.028  display_controller/Mmux_data_out14911 (display_controller/Mmux_data_out1491)
-     LUT5:I0->O            3   0.203   0.651  display_controller/Mmux_data_out15011 (display_controller/Mmux_data_out1501)
-     LUT6:I5->O            1   0.205   0.944  RAM_controller/Mmux_translate39_SW1 (N175)
-     LUT6:I0->O          812   0.203   2.267  RAM_controller/Mmux_translate39 (RAM_controller/translate<11>)
-     LUT6:I4->O            1   0.203   0.808  RAM_controller_decoder3/Mram_mark3331 (RAM_controller_decoder3/Mram_mark3331)
-     LUT5:I2->O            1   0.205   0.580  RAM_controller_decoder3/Mram_mark333_f8 (RAM_controller/Sh4360)
-     LUT6:I5->O            1   0.205   0.808  RAM_controller/Mmux_data_in171 (RAM_controller/Mmux_data_in17)
-     LUT6:I3->O            1   0.205   0.580  RAM_controller/Mmux_data_in173 (RAM_controller/Mmux_data_in172)
-     LUT6:I5->O            1   0.205   0.579  RAM_controller/Mmux_data_in176 (RAM_controller/data_in<24>)
-     begin scope: 'RAM_controller/R1:dina<24>'
-     RAMB16BWER:DIA24          0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
+     LUT2:I0->O         2745   0.203   2.626  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     LUT6:I5->O           26   0.205   1.311  display_controller/Mmux_data_out1012 (data_output<67>)
+     LUT2:I0->O            1   0.203   0.924  RAM_controller/Mmux_translate77_SW1 (N167)
+     LUT6:I1->O          789   0.203   2.501  RAM_controller/Mmux_translate77 (RAM_controller/translate<15>)
+     LUT6:I1->O            1   0.203   0.684  RAM_controller_decoder3/Mram_mark411113_SW1 (RAM_controller_N506)
+     LUT4:I2->O            1   0.203   0.684  RAM_controller_decoder3/Mram_mark411113 (RAM_controller/Sh4225)
+     LUT3:I1->O            1   0.203   0.580  RAM_controller/Mmux_data_in95 (RAM_controller/Mmux_data_in94)
+     LUT6:I5->O            1   0.205   0.808  RAM_controller/Mmux_data_in96 (RAM_controller/Mmux_data_in95)
+     LUT6:I3->O            1   0.205   0.579  RAM_controller/Mmux_data_in99 (RAM_controller/data_in<17>)
+     begin scope: 'RAM_controller/R1:dina<17>'
+     RAMB16BWER:DIA17          0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram
     ----------------------------------------
-    Total                     15.033ns (3.767ns logic, 11.266ns route)
-                                       (25.1% logic, 74.9% route)
+    Total                     14.958ns (3.355ns logic, 11.603ns route)
+                                       (22.4% logic, 77.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50k/clk_div'
   Total number of paths / destination ports: 1152 / 576
 -------------------------------------------------------------------------
-Offset:              5.560ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
+Offset:              5.387ns (Levels of Logic = 2)
+  Source:            rst_n_in (PAD)
   Destination:       U_LCDctrl/image_3 (FF)
   Destination Clock: clk50k/clk_div rising
 
-  Data Path: rst_n to U_LCDctrl/image_3
+  Data Path: rst_n_in to U_LCDctrl/image_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.222   1.086  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O         2718   0.203   2.619  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
+     LUT2:I0->O         2745   0.203   2.625  buzzer_controllor/rst_n_inv1 (LCD_controller/rst_n_inv)
      FDC:CLR                   0.430          U_LCDctrl/lcd_en
     ----------------------------------------
-    Total                      5.560ns (1.855ns logic, 3.705ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                      5.387ns (1.855ns logic, 3.532ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'game_rainfall/rst_n_random[1]_AND_55_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.600ns (Levels of Logic = 2)
+Offset:              3.444ns (Levels of Logic = 2)
   Source:            rst_n_in (PAD)
   Destination:       game_rainfall/q0_1_LDC (LATCH)
   Destination Clock: game_rainfall/rst_n_random[1]_AND_55_o falling
@@ -2569,18 +2944,18 @@ Offset:              3.600ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            14   1.222   1.062  rst_n_in_IBUF (rst_n_in_IBUF)
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
      LUT3:I1->O            4   0.203   0.683  game_rainfall/rst_n_random[1]_AND_56_o1 (game_rainfall/rst_n_random[1]_AND_56_o)
      LDC:CLR                   0.430          game_rainfall/q0_1_LDC
     ----------------------------------------
-    Total                      3.600ns (1.855ns logic, 1.745ns route)
-                                       (51.5% logic, 48.5% route)
+    Total                      3.444ns (1.855ns logic, 1.589ns route)
+                                       (53.9% logic, 46.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'game_rainfall/rst_n_random[0]_AND_57_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.567ns (Levels of Logic = 2)
+Offset:              3.412ns (Levels of Logic = 2)
   Source:            rst_n_in (PAD)
   Destination:       game_rainfall/q1_1_LDC (LATCH)
   Destination Clock: game_rainfall/rst_n_random[0]_AND_57_o falling
@@ -2589,57 +2964,66 @@ Offset:              3.567ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            14   1.222   1.062  rst_n_in_IBUF (rst_n_in_IBUF)
+     IBUF:I->O             8   1.222   0.907  rst_n_in_IBUF (rst_n_in_IBUF)
      LUT3:I1->O            3   0.203   0.650  game_rainfall/rst_n_random[0]_AND_58_o1 (game_rainfall/rst_n_random[0]_AND_58_o)
      LDC:CLR                   0.430          game_rainfall/q1_1_LDC
     ----------------------------------------
-    Total                      3.567ns (1.855ns logic, 1.712ns route)
-                                       (52.0% logic, 48.0% route)
+    Total                      3.412ns (1.855ns logic, 1.557ns route)
+                                       (54.4% logic, 45.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_generate/clk_100'
-  Total number of paths / destination ports: 35 / 15
+  Total number of paths / destination ports: 1970 / 24
 -------------------------------------------------------------------------
-Offset:              5.346ns (Levels of Logic = 1)
-  Source:            finite_state_machine/state_FSM_FFd2 (FF)
-  Destination:       state<2> (PAD)
+Offset:              10.310ns (Levels of Logic = 7)
+  Source:            point_calculator/score_3 (FF)
+  Destination:       display<8> (PAD)
   Source Clock:      clock_generate/clk_100 rising
 
-  Data Path: finite_state_machine/state_FSM_FFd2 to state<2>
+  Data Path: point_calculator/score_3 to display<8>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q           1507   0.447   2.328  finite_state_machine/state_FSM_FFd2 (finite_state_machine/state_FSM_FFd2)
-     OBUF:I->O                 2.571          state_2_OBUF (state<2>)
+     FDC:C->Q             16   0.447   1.369  point_calculator/score_3 (point_calculator/score_3)
+     LUT6:I0->O            5   0.203   0.962  point_calculator/binary_convert/m4/Mram_out111 (point_calculator/binary_convert/c4<1>)
+     LUT4:I0->O            4   0.203   0.684  point_calculator/binary_convert/Mmux_answer_tens311 (point_calculator/binary_convert/Mmux_answer_tens31)
+     LUT6:I5->O            1   0.205   0.580  scan_controllor/Mmux_bcd_out31 (scan_controllor/Mmux_bcd_out3)
+     LUT6:I5->O            1   0.205   0.808  scan_controllor/Mmux_bcd_out32 (scan_controllor/Mmux_bcd_out31)
+     LUT5:I2->O            8   0.205   1.050  scan_controllor/Mmux_bcd_out34 (score_BCD<2>)
+     LUT4:I0->O            2   0.203   0.616  display<8>1 (display_8_OBUF)
+     OBUF:I->O                 2.571          display_8_OBUF (display<8>)
     ----------------------------------------
-    Total                      5.346ns (3.018ns logic, 2.328ns route)
-                                       (56.5% logic, 43.5% route)
+    Total                     10.310ns (4.242ns logic, 6.068ns route)
+                                       (41.1% logic, 58.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 19 / 15
+  Total number of paths / destination ports: 133 / 27
 -------------------------------------------------------------------------
-Offset:              4.939ns (Levels of Logic = 2)
-  Source:            clk50k/clk_div (FF)
-  Destination:       LCD_data<7> (PAD)
+Offset:              7.971ns (Levels of Logic = 5)
+  Source:            freqency_divider/clk_ctl_1 (FF)
+  Destination:       display<10> (PAD)
   Source Clock:      clk rising
 
-  Data Path: clk50k/clk_div to LCD_data<7>
+  Data Path: freqency_divider/clk_ctl_1 to display<10>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            12   0.447   1.137  clk50k/clk_div (clk50k/clk_div)
-     LUT3:I0->O            1   0.205   0.579  lcd_switch/Mmux_LCD_di11 (LCD_di_OBUF)
-     OBUF:I->O                 2.571          LCD_di_OBUF (LCD_di)
+     FDC:C->Q             11   0.447   0.987  freqency_divider/clk_ctl_1 (freqency_divider/clk_ctl_1)
+     LUT2:I0->O            1   0.203   0.944  scan_controllor/Mmux_bcd_out11 (scan_controllor/Mmux_bcd_out1)
+     LUT6:I0->O            1   0.203   0.580  scan_controllor/Mmux_bcd_out13 (scan_controllor/Mmux_bcd_out12)
+     LUT5:I4->O            8   0.205   1.050  scan_controllor/Mmux_bcd_out15 (score_BCD<0>)
+     LUT4:I0->O            1   0.203   0.579  decoder/Mram_ssd_out101 (display_10_OBUF)
+     OBUF:I->O                 2.571          display_10_OBUF (display<10>)
     ----------------------------------------
-    Total                      4.939ns (3.223ns logic, 1.716ns route)
-                                       (65.3% logic, 34.7% route)
+    Total                      7.971ns (3.832ns logic, 4.139ns route)
+                                       (48.1% logic, 51.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50k/clk_div'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              5.239ns (Levels of Logic = 2)
+Offset:              5.139ns (Levels of Logic = 2)
   Source:            U_LCDctrl/lcd_en (FF)
   Destination:       LCD_en (PAD)
   Source Clock:      clk50k/clk_div rising
@@ -2648,12 +3032,12 @@ Offset:              5.239ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             35   0.447   1.439  U_LCDctrl/lcd_en (U_LCDctrl/lcd_en)
+     FDC:C->Q             28   0.447   1.339  U_LCDctrl/lcd_en (U_LCDctrl/lcd_en)
      LUT3:I1->O            1   0.203   0.579  lcd_switch/Mmux_LCD_en11 (LCD_en_OBUF)
      OBUF:I->O                 2.571          LCD_en_OBUF (LCD_en)
     ----------------------------------------
-    Total                      5.239ns (3.221ns logic, 2.018ns route)
-                                       (61.5% logic, 38.5% route)
+    Total                      5.139ns (3.221ns logic, 1.918ns route)
+                                       (62.7% logic, 37.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk100K/clk_div'
@@ -2679,7 +3063,7 @@ Offset:              4.659ns (Levels of Logic = 2)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 3
 -------------------------------------------------------------------------
-Delay:               5.764ns (Levels of Logic = 3)
+Delay:               5.546ns (Levels of Logic = 3)
   Source:            rst_n (PAD)
   Destination:       LCD_rst (PAD)
 
@@ -2687,12 +3071,12 @@ Delay:               5.764ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.222   1.086  rst_n_IBUF (rst_n_out_OBUF)
-     LUT2:I0->O            4   0.203   0.683  rst1 (LCD_rst_OBUF)
+     IBUF:I->O             9   1.222   0.934  rst_n_IBUF (rst_n_out_OBUF)
+     LUT2:I0->O            2   0.203   0.616  rst1 (LCD_rst_OBUF)
      OBUF:I->O                 2.571          LCD_rst_OBUF (LCD_rst)
     ----------------------------------------
-    Total                      5.764ns (3.996ns logic, 1.768ns route)
-                                       (69.3% logic, 30.7% route)
+    Total                      5.546ns (3.996ns logic, 1.550ns route)
+                                       (72.1% logic, 27.9% route)
 
 =========================================================================
 
@@ -2704,30 +3088,29 @@ Clock to Setup on destination clock clk
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-clk                   |    5.143|         |         |         |
-note_decoder/_n0106<0>|         |    4.151|         |         |
+clk                   |    5.163|         |         |         |
+note_decoder/_n0106<0>|         |    4.711|         |         |
 ----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk100K/clk_div
---------------------------------------+---------+---------+---------+---------+
-                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------------------+---------+---------+---------+---------+
-clk                                   |   12.957|         |         |         |
-clk100K/clk_div                       |    8.951|         |         |         |
-clock_generate/clk_1                  |   12.451|         |         |         |
-clock_generate/clk_100                |   14.516|         |         |         |
-clock_generate/clk_66                 |   10.794|         |         |         |
-game_rainfall/rst_n_random[0]_AND_57_o|         |   11.734|         |         |
-game_rainfall/rst_n_random[1]_AND_55_o|         |   12.009|         |         |
---------------------------------------+---------+---------+---------+---------+
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+clk                   |   11.166|         |         |         |
+clk100K/clk_div       |    8.839|         |         |         |
+clock_generate/clk_1  |   11.718|         |         |         |
+clock_generate/clk_100|   14.810|         |         |         |
+clock_generate/clk_66 |   11.282|         |         |         |
+count_down_data_in<0> |         |   11.523|         |         |
+----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk50k/clk_div
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50k/clk_div |    6.892|         |         |         |
+clk50k/clk_div |    6.979|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_generate/clk_1
@@ -2735,8 +3118,8 @@ Clock to Setup on destination clock clock_generate/clk_1
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-clock_generate/clk_1  |    2.918|         |         |         |
-clock_generate/clk_100|    4.588|         |         |         |
+clock_generate/clk_1  |    3.869|         |         |         |
+clock_generate/clk_100|    4.586|         |         |         |
 ----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_generate/clk_100
@@ -2744,11 +3127,11 @@ Clock to Setup on destination clock clock_generate/clk_100
                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------+---------+---------+---------+---------+
-clock_generate/clk_1                  |    3.653|         |         |         |
-clock_generate/clk_100                |    5.220|         |         |         |
+clock_generate/clk_1                  |    3.869|         |         |         |
+clock_generate/clk_100                |    6.607|         |         |         |
 clock_generate/clk_66                 |    2.654|         |         |         |
-game_rainfall/rst_n_random[0]_AND_57_o|         |    2.840|         |         |
-game_rainfall/rst_n_random[1]_AND_55_o|         |    2.913|         |         |
+game_rainfall/rst_n_random[0]_AND_57_o|         |    2.894|         |         |
+game_rainfall/rst_n_random[1]_AND_55_o|         |    2.923|         |         |
 --------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_generate/clk_66
@@ -2756,16 +3139,26 @@ Clock to Setup on destination clock clock_generate/clk_66
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-clock_generate/clk_100|    3.423|         |         |         |
+clock_generate/clk_100|    3.421|         |         |         |
 clock_generate/clk_66 |    1.683|         |         |         |
 ----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock count_down_data_in<0>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+clock_generate/clk_100                |         |         |    3.612|         |
+game_rainfall/rst_n_random[0]_AND_57_o|         |         |    2.846|         |
+game_rainfall/rst_n_random[1]_AND_55_o|         |         |    2.965|         |
+--------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock game_rainfall/rst_n_random[0]_AND_57_o
 ----------------------+---------+---------+---------+---------+
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-clock_generate/clk_100|         |         |    2.675|         |
+clock_generate/clk_100|         |         |    2.705|         |
 ----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock game_rainfall/rst_n_random[1]_AND_55_o
@@ -2773,20 +3166,20 @@ Clock to Setup on destination clock game_rainfall/rst_n_random[1]_AND_55_o
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-clock_generate/clk_100|         |         |    2.644|         |
+clock_generate/clk_100|         |         |    2.708|         |
 ----------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 201.00 secs
-Total CPU time to Xst completion: 201.26 secs
+Total REAL time to Xst completion: 286.00 secs
+Total CPU time to Xst completion: 285.16 secs
  
 --> 
 
-Total memory usage is 397940 kilobytes
+Total memory usage is 407604 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  660 (   0 filtered)
-Number of infos    :   96 (   0 filtered)
+Number of warnings :  888 (   0 filtered)
+Number of infos    :  106 (   0 filtered)
 
