@@ -1,0 +1,260 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Jun 26 06:57:58 2015
+# Process ID: 4044
+# Log file: C:/Users/Andy/Desktop/Working/brainwars_main/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Andy/Desktop/Working/brainwars_main/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Andy/Desktop/Working/brainwars_main/pa.fromHdl.tcl
+# create_project -name brainwars_main -dir "C:/Users/Andy/Desktop/Working/brainwars_main/planAhead_run_1" -part xc6slx16csg324-3
+create_project: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 431.750 ; gain = 51.426
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "brainwars_main.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/RAM.ngc}]
+# add_files [list {ipcore_dir/ROM.ngc}]
+# set hdlfile [add_files [list {store_number.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {one_pulse.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {add3.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {rand_0_to_7.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {rand_0_7_ver5.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {rand_00_to_99.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lcd_decoder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/ROM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/RAM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {debounce.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {count_down.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {binary_converter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ssd_decoder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {speaker_ctl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {scan_ctl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {rom_lcd_ctrl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {rom_ctrl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {result_screen_main.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {random_main.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {RAM_ctrl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {rainfall.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {point_cal_main.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {note_ctl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {music.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {mora.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lcd_switcher.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lcd_ctrl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {keypad_scan.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {invite_screen_main.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {initial_screen.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {high_or_low.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {freq_div.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {flick_master.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {display_ctl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {debounce_one_pulse.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {count_down_screen.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clock_generator.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clock_divider.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {buzzer_ctl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {brainwars_main.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top brainwars_main $srcset
+# add_files [list {brainwars_main.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/RAM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ROM.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/store_number.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/one_pulse.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/add3.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/rand_0_to_7.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/rand_0_7_ver5.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/rand_00_to_99.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/lcd_decoder.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/lcd_decoder.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/ROM.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/RAM.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/debounce.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/count_down.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/count_down.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/binary_converter.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/ssd_decoder.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/speaker_ctl.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/scan_ctl.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/rom_lcd_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/rom_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/result_screen_main.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/result_screen_main.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/random_main.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/RAM_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/rainfall.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/rainfall.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/point_cal_main.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/point_cal_main.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/note_ctl.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/note_ctl.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/music.v" into library work
+Parsing verilog file "global.v" included at line 14. [C:/Users/Andy/Desktop/Working/brainwars_main/music.v:14]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/mora.v" into library work
+Parsing verilog file "global.v" included at line 21. [C:/Users/Andy/Desktop/Working/brainwars_main/mora.v:21]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/lcd_switcher.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/lcd_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/keypad_scan.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/keypad_scan.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/invite_screen_main.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/invite_screen_main.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/initial_screen.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/initial_screen.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/high_or_low.v" into library work
+Parsing verilog file "global.v" included at line 21. [C:/Users/Andy/Desktop/Working/brainwars_main/high_or_low.v:21]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/freq_div.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/flick_master.v" into library work
+Parsing verilog file "global.v" included at line 21. [C:/Users/Andy/Desktop/Working/brainwars_main/flick_master.v:21]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/display_ctl.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/display_ctl.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/debounce_one_pulse.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/count_down_screen.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/count_down_screen.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/clock_generator.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/clock_generator.v:12]
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/clock_divider.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/buzzer_ctl.v" into library work
+Analyzing Verilog file "C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.v" into library work
+Parsing verilog file "global.v" included at line 12. [C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.v:12]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM.edif ...
+ngc2edif: Total memory usage is 81528 kilobytes
+
+Reading core file 'C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/RAM.ngc' for (cell view 'RAM', library 'work', file 'RAM.v')
+Parsing EDIF File [./.Xil/PlanAhead-4044-Home-2/ngc2edif/RAM.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-4044-Home-2/ngc2edif/RAM.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to ROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ROM.edif ...
+ngc2edif: Total memory usage is 82232 kilobytes
+
+Reading core file 'C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/ROM.ngc' for (cell view 'ROM', library 'work', file 'ROM.v')
+Parsing EDIF File [./.Xil/PlanAhead-4044-Home-2/ngc2edif/ROM.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-4044-Home-2/ngc2edif/ROM.edif]
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ucf]
+Finished Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 7a295386
+open_rtl_design: Time (s): elapsed = 00:00:30 . Memory (MB): peak = 684.641 ; gain = 240.160
+update_compile_order -fileset sim_1
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See C:/Users/Andy/Desktop/Working/brainwars_main\planAhead_pid4044.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Jun 26 07:00:59 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

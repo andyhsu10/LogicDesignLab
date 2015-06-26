@@ -21,6 +21,7 @@ module brainwars_secondary(
 	game_invite_in, //game invitation from main board (I)
 	game_cancel, //game cancellation from button (I)
 	game_cancel_in, //game cancellation from main board (I)
+	win_lose_main, //win, lose or tie to main board (O)
 	game_en, //game enable (O)
 	row_n, //scanned row index (O)
 	dialogue_out, //dialogue sent to another board (O)
@@ -38,6 +39,7 @@ module brainwars_secondary(
     LCD_di, //LCD data/instruction (O)
     LCD_data, //LCD data (O)
     LCD_en, //LCD enable (O)
+	 LED, //LED lights (O)
 	note_in,
 	state //fsm state (O)
 );
@@ -54,6 +56,7 @@ input game_invite; //game invitation from button
 input game_invite_in; //game invitation from main board
 input game_cancel; //game cancellation from button
 input game_cancel_in; //game cancellation from main board
+output [1:0] win_lose_main; //win, lose or tie to main board
 output [2:0] game_en; //game enable
 output [`KEYPAD_WIDTH-1:0] row_n;
 output [3:0] dialogue_out; //dialogue sent to another board
@@ -72,6 +75,7 @@ output LCD_di; //LCD data/instruction
 output [7:0] LCD_data; //LCD data
 output LCD_en; //LCD enable
 output [3:0] state; //fsm state
+output [15:0] LED; //LED lights
 
 //Declare internal nodes
 wire rst;
@@ -82,7 +86,7 @@ wire count_down_next_state;
 wire clk_1, clk_2, clk_66, clk_100, clk_fast, clk_div;
 wire de_game_invite, de_game_cancel;
 wire [1:0] clk_ctl;
-wire [1:0] flick_master_point, touch_number_point, follow_order_point, unfollow_order_point, high_or_low_point, rainfall_point;
+wire flick_master_point, mora_point, high_or_low_point, rainfall_point;
 wire [3:0] key;
 wire [5:0] letter;
 wire [7:0] data_out;
@@ -91,7 +95,7 @@ wire [15:0] audio_in_left, audio_in_right;
 wire [19:0] note_div;
 wire [127:0] data_output;
 wire [127:0] initial_data_in, invite_data_in, count_down_data_in, result_data_in;
-wire [127:0] flick_master_data_in, touch_number_data_in, follow_order_data_in, unfollow_order_data_in, high_or_low_data_in, rainfall_data_in;
+wire [127:0] flick_master_data_in, mora_data_in, high_or_low_data_in, rainfall_data_in;
 
 wire [7:0] data; // byte data transfer from buffer
 wire [6:0] addr; // Address for each picture
@@ -104,6 +108,7 @@ wire [7:0] LCD_data1, LCD_data2;
 
 wire [1:0] point;
 wire [3:0] score_unit, score_tens, score_hund, score_BCD;
+wire [7:0] score;
 wire game_next_state;
 
 assign rst_n_out = rst_n;
@@ -168,14 +173,16 @@ fsm finite_state_machine(
 	.game_invite_back_state(game_invite_back_state), //game invitation screen to next state (I)
 	.count_down_next_state(count_down_next_state), //count down screen to next state (I)
 	.game_next_state(game_next_state), //game to next state (I)
-	.result_next_state(1'b1), //result next state (I)
+	.result_next_state(result_next_state), //result next state (I)
 	.clk(clk_100), //global clock signal (I)
 	.rst_n(rst) //low active reset (I)
 );
 
 random_secondary random_producer(
 	.rand(random), //random value output (O)
+	.LED(LED), //LED lights (O)
 	.clk(clk_100), //global clock input (I)
+	.clk_2(clk_2), //2 Hz clock (I)
 	.rst_n(rst) //active low reset (I)
 );
 
@@ -207,7 +214,7 @@ game_ctl game_controller(
     .game_en(game_en), //game enable (O)
     .clk(clk_100), //100 Hz clock (I)
     .state(state), //fsm state (I)
-    .random(random[9:0]), //randow value 10-bit (I)
+    .random(random[9:8]), //randow value 2-bit (I)
     .rst_n(rst) //active low reset (I)
 );
 
@@ -226,14 +233,34 @@ count_down_screen counting_down(
 );
 
 flick_master game_flick_master(
-	.clk_100(clk_100), // 100 HZ (I)
-	.clk_1(clk_1), // 1Hz (I)
-	.rst_n(rst), // reset (I)
-	.game_en(game_en), // enable to play game (I)
-	.key(key), // keypad (I)
-	.pressed(pressed), // if key pad was pressed (I)
-	.data_output(flick_master_data_in), // to ram_ctrl 128b (O)
-	.point(flick_master_point) // 1:get point 0:no point got (O)
+	.clk_100(clk_100),				// 100 HZ (I)
+	.rst_n(rst),				// reset (I)
+	.game_en(game_en),				// enable to play game (I)
+	.key(key),					// keypad (I)
+	.pressed(pressed),				// if key pad was pressed (I)
+	.data_output(flick_master_data_in),		// to ram_ctrl 128b (O)
+	.point(flick_master_point)					// 1:get point 0:no point got (O)
+);
+
+mora game_mora(
+	.clk_100(clk_100),				// 100 HZ (I)
+	.rst_n(rst),				// reset (I)
+	.game_en(game_en),				// enable to play game (I)
+	.key(key),					// keypad (I)
+	.pressed(pressed),				// if key pad was pressed (I)
+	.data_output(mora_data_in),		// to ram_ctrl 128b (O)
+	.point(mora_point)					// 1:get point 0:no point got (O)
+);
+
+wire de_pressed_n = ~de_pressed;
+high_or_low game_high_or_low(
+	.clk_100(clk_100),				// 100 HZ (I)
+	.rst_n(rst),				// reset (I)
+	.game_en(game_en),				// enable to play game (I)
+	.key(key),					// keypad (I)
+	.pressed(de_pressed_n),				// if key pad was pressed (I)
+	.data_output(high_or_low_data_in),		// to ram_ctrl 128b (O)
+	.point(high_or_low_point)					// 1:get point 0:no point got (O)
 );
 
 rainfall game_rainfall(
@@ -247,6 +274,17 @@ rainfall game_rainfall(
 	.point(rainfall_point) // 1:get point 0:no point got (O)
 );
 
+result_screen_secondary result_screen(
+	.clk(clk_1), //1Hz clock (I)
+	.state(state), //fsm state (I)
+	.score_main(score_in), //main board score (I)
+	.score_secondary(score), //secondary board score (I)
+	.rst_n(rst), //active low reset (I)
+	.result_next_state(result_next_state), //game result screen to next state (O)
+	.win_lose_main(win_lose_main), //win or lose to main board (O)
+	.data_out(result_data_in) //data output (O)
+);
+
 display_ctl display_controller(
     .data_out(data_output), //data output (O)
     .game_en(game_en), //game enable (I)
@@ -255,9 +293,7 @@ display_ctl display_controller(
 	.invite_data_in(invite_data_in), //invite screen lcd data (I)
 	.count_down_data_in(count_down_data_in), //count down screen lcd data (I)
 	.flick_master_data_in(flick_master_data_in), //flick master screen lcd data (I)
-	.touch_number_data_in(touch_number_data_in), //touch number screen lcd data (I)
-	.follow_order_data_in(follow_order_data_in), //follow order screen lcd data (I)
-	.unfollow_order_data_in(unfollow_order_data_in), //unfollow order screen lcd data (I)
+	.mora_data_in(mora_data_in), //mora screen lcd data (I)
 	.high_or_low_data_in(high_or_low_data_in), //high or low screen lcd data (I)
 	.rainfall_data_in(rainfall_data_in), //rainfall screen lcd data (I)
 	.result_data_in(result_data_in) //result screen lcd data (I)
@@ -267,14 +303,13 @@ point_cal_secondary point_calculator(
     .score_unit(score_unit), //unit score (O)
     .score_tens(score_tens), //tens score (O)
     .score_hund(score_hund), //hund score (O)
+    .score(score), //binary score (O)
     .clk(clk_100), //100 Hz clock (I)
     .rst_n(rst), //active low reset (I)
     .game_en(game_en), //game enable (I)
     .state(state), //fsm state (I)
 	.flick_master_point(flick_master_point), //flick master point (I)
-	.touch_number_point(touch_number_point), //touch number point (I)
-	.follow_order_point(follow_order_point), //follow order point (I)
-	.unfollow_order_point(unfollow_order_point), //unfollow order point (I)
+	.mora_point(mora_point), //mora point (I)
 	.high_or_low_point(high_or_low_point), //high or low point (I)
 	.rainfall_point(rainfall_point) //rainfall point (I)
 );

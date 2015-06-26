@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Jun 23 20:11:09 2015
+// Written by: Map P.20131013 on Fri Jun 26 07:25:26 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -24,6 +24,8 @@ COMP "audio_sysclk" LOCATE = SITE "H17" LEVEL 1;
 COMP "game_en<0>" LOCATE = SITE "G18" LEVEL 1;
 COMP "game_en<1>" LOCATE = SITE "H15" LEVEL 1;
 COMP "game_en<2>" LOCATE = SITE "F18" LEVEL 1;
+PIN game_en<2>_pin<0> = BEL "game_en<2>" PINNAME PAD;
+PIN "game_en<2>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "music_on_off" LOCATE = SITE "L2" LEVEL 1;
 COMP "LCD_data<0>" LOCATE = SITE "F6" LEVEL 1;
 COMP "LCD_data<1>" LOCATE = SITE "D3" LEVEL 1;
@@ -33,6 +35,16 @@ COMP "LCD_data<4>" LOCATE = SITE "H7" LEVEL 1;
 COMP "LCD_data<5>" LOCATE = SITE "D1" LEVEL 1;
 COMP "LCD_data<6>" LOCATE = SITE "D2" LEVEL 1;
 COMP "LCD_data<7>" LOCATE = SITE "F3" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "K4" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "K3" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "L5" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "K5" LEVEL 1;
+COMP "LED<4>" LOCATE = SITE "H4" LEVEL 1;
+COMP "LED<5>" LOCATE = SITE "H3" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "L7" LEVEL 1;
+COMP "LED<7>" LOCATE = SITE "K6" LEVEL 1;
+COMP "LED<8>" LOCATE = SITE "G3" LEVEL 1;
+COMP "LED<9>" LOCATE = SITE "G1" LEVEL 1;
 COMP "LCD_di" LOCATE = SITE "C1" LEVEL 1;
 COMP "LCD_en" LOCATE = SITE "F5" LEVEL 1;
 COMP "LCD_rw" LOCATE = SITE "C2" LEVEL 1;
@@ -86,6 +98,14 @@ COMP "score_out<6>" LOCATE = SITE "M18" LEVEL 1;
 COMP "score_out<7>" LOCATE = SITE "L17" LEVEL 1;
 COMP "game_invite" LOCATE = SITE "N3" LEVEL 1;
 COMP "rst_n_in" LOCATE = SITE "G16" LEVEL 1;
+COMP "LED<10>" LOCATE = SITE "J7" LEVEL 1;
+COMP "LED<11>" LOCATE = SITE "J6" LEVEL 1;
+COMP "LED<12>" LOCATE = SITE "F2" LEVEL 1;
+COMP "LED<13>" LOCATE = SITE "F1" LEVEL 1;
+COMP "LED<14>" LOCATE = SITE "H6" LEVEL 1;
+COMP "LED<15>" LOCATE = SITE "H5" LEVEL 1;
+COMP "win_lose_main<0>" LOCATE = SITE "V13" LEVEL 1;
+COMP "win_lose_main<1>" LOCATE = SITE "P12" LEVEL 1;
 COMP "LCD_rst" LOCATE = SITE "E3" LEVEL 1;
 SCHEMATIC END;
 

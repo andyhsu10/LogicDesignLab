@@ -32,9 +32,9 @@ input rst_n;
 input [3:0]key;
 input pressed;
 
-output reg [3:0]rand_out;
+output reg [2:0]rand_out;
 output point_out;
-reg [3:0]rand, rand_out_temp;
+reg [2:0]rand, rand_out_temp;
 reg point_out_t;
 
 

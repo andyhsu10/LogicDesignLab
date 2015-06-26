@@ -1,0 +1,1358 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Andy/Desktop/Working/brainwars_main/pa.fromNetlist.tcl
+# create_project -name brainwars_main -dir "C:/Users/Andy/Desktop/Working/brainwars_main/planAhead_run_2" -part xc6slx16csg324-3
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 428.684 ; gain = 51.527
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/Andy/Desktop/Working/brainwars_main} {ipcore_dir} }
+# add_files [list {ipcore_dir/RAM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ROM.ncf}] -fileset [get_property constrset [current_run]]
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "brainwars_main.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ucf' to fileset 'constrs_1'
+# add_files [list {brainwars_main.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design brainwars_main.ngc ...
+WARNING:NetListWriters:298 - No output is written to brainwars_main.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q0<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus count_down_data_in<63 : 13> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus invite_data_in<112 : 108> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q0<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q0[31]_GND_13_o_mux_133_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q65[31]_GND_13_o_mux_131_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q64[31]_GND_13_o_mux_129_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q63[31]_GND_13_o_mux_127_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q62[31]_GND_13_o_mux_125_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q61[31]_GND_13_o_mux_123_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q60[31]_GND_13_o_mux_121_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q59[31]_GND_13_o_mux_119_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q58[31]_GND_13_o_mux_117_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q57[31]_GND_13_o_mux_115_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q56[31]_GND_13_o_mux_113_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q55[31]_GND_13_o_mux_111_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q54[31]_GND_13_o_mux_109_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q53[31]_GND_13_o_mux_107_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q52[31]_GND_13_o_mux_105_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q51[31]_GND_13_o_mux_103_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q50[31]_GND_13_o_mux_101_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q49[31]_GND_13_o_mux_99_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q48[31]_GND_13_o_mux_97_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q47[31]_GND_13_o_mux_95_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q46[31]_GND_13_o_mux_93_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q45[31]_GND_13_o_mux_91_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q44[31]_GND_13_o_mux_89_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q43[31]_GND_13_o_mux_87_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q42[31]_GND_13_o_mux_85_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q41[31]_GND_13_o_mux_83_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q40[31]_GND_13_o_mux_81_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q39[31]_GND_13_o_mux_79_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q38[31]_GND_13_o_mux_77_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q37[31]_GND_13_o_mux_75_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q36[31]_GND_13_o_mux_73_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q35[31]_GND_13_o_mux_71_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q34[31]_GND_13_o_mux_69_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q33[31]_GND_13_o_mux_67_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q32[31]_GND_13_o_mux_65_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q31[31]_GND_13_o_mux_63_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q30[31]_GND_13_o_mux_61_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q29[31]_GND_13_o_mux_59_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q28[31]_GND_13_o_mux_57_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q27[31]_GND_13_o_mux_55_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q26[31]_GND_13_o_mux_53_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q25[31]_GND_13_o_mux_51_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q24[31]_GND_13_o_mux_49_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q23[31]_GND_13_o_mux_47_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q22[31]_GND_13_o_mux_45_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q21[31]_GND_13_o_mux_43_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q20[31]_GND_13_o_mux_41_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q19[31]_GND_13_o_mux_39_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q18[31]_GND_13_o_mux_37_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q17[31]_GND_13_o_mux_35_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q16[31]_GND_13_o_mux_33_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q15[31]_GND_13_o_mux_31_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q14[31]_GND_13_o_mux_29_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q13[31]_GND_13_o_mux_27_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q12[31]_GND_13_o_mux_25_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q11[31]_GND_13_o_mux_23_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q10[31]_GND_13_o_mux_21_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q9[31]_GND_13_o_mux_19_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q8[31]_GND_13_o_mux_17_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q7[31]_GND_13_o_mux_15_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q6[31]_GND_13_o_mux_13_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q5[31]_GND_13_o_mux_11_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q4[31]_GND_13_o_mux_9_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q3[31]_GND_13_o_mux_7_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q2[31]_GND_13_o_mux_5_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   counting_down/counting_down/q1[31]_GND_13_o_mux_3_OUT<28 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q65<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q64<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q63<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q62<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q61<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q60<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q59<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q58<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q57<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q56<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q55<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q54<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q53<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q52<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q51<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q50<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q49<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q48<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q47<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q46<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q45<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q44<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q43<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q42<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q41<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q40<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q39<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q38<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q37<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q36<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q35<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q34<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q33<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q32<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q31<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q30<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q29<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q28<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q27<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q26<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q25<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q24<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q23<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q22<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q21<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q20<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q19<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q18<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q17<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q16<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q15<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q14<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q13<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q12<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q11<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q10<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q9<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q8<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q7<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q6<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q5<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q4<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q3<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q2<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus counting_down/counting_down/q1<28 : 0>
+   on block brainwars_main is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q0[9]_GND_170_o_mux_264_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q132[9]_GND_170_o_mux_262_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q131[9]_GND_170_o_mux_260_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q130[9]_GND_170_o_mux_258_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q129[9]_GND_170_o_mux_256_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q128[9]_GND_170_o_mux_254_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q127[9]_GND_170_o_mux_252_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q126[9]_GND_170_o_mux_250_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q125[9]_GND_170_o_mux_248_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q124[9]_GND_170_o_mux_246_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q123[9]_GND_170_o_mux_244_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q122[9]_GND_170_o_mux_242_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q121[9]_GND_170_o_mux_240_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q120[9]_GND_170_o_mux_238_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q119[9]_GND_170_o_mux_236_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q118[9]_GND_170_o_mux_234_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q117[9]_GND_170_o_mux_232_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q116[9]_GND_170_o_mux_230_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q115[9]_GND_170_o_mux_228_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q114[9]_GND_170_o_mux_226_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q113[9]_GND_170_o_mux_224_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q112[9]_GND_170_o_mux_222_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q111[9]_GND_170_o_mux_220_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q110[9]_GND_170_o_mux_218_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q109[9]_GND_170_o_mux_216_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q108[9]_GND_170_o_mux_214_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q107[9]_GND_170_o_mux_212_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q106[9]_GND_170_o_mux_210_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q105[9]_GND_170_o_mux_208_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q104[9]_GND_170_o_mux_206_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q103[9]_GND_170_o_mux_204_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q102[9]_GND_170_o_mux_202_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q101[9]_GND_170_o_mux_200_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q100[9]_GND_170_o_mux_198_OUT<8 : 0> on block brainwars_main is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q99[9]_GND_170_o_mux_196_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q98[9]_GND_170_o_mux_194_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q97[9]_GND_170_o_mux_192_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q96[9]_GND_170_o_mux_190_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q95[9]_GND_170_o_mux_188_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q94[9]_GND_170_o_mux_186_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q93[9]_GND_170_o_mux_184_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q92[9]_GND_170_o_mux_182_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q91[9]_GND_170_o_mux_180_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q90[9]_GND_170_o_mux_178_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q89[9]_GND_170_o_mux_176_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q88[9]_GND_170_o_mux_174_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q87[9]_GND_170_o_mux_172_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q86[9]_GND_170_o_mux_170_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q85[9]_GND_170_o_mux_168_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q84[9]_GND_170_o_mux_166_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q83[9]_GND_170_o_mux_164_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q82[9]_GND_170_o_mux_162_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q81[9]_GND_170_o_mux_160_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q80[9]_GND_170_o_mux_158_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q79[9]_GND_170_o_mux_156_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q78[9]_GND_170_o_mux_154_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q77[9]_GND_170_o_mux_152_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q76[9]_GND_170_o_mux_150_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q75[9]_GND_170_o_mux_148_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q74[9]_GND_170_o_mux_146_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q73[9]_GND_170_o_mux_144_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q72[9]_GND_170_o_mux_142_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q71[9]_GND_170_o_mux_140_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q70[9]_GND_170_o_mux_138_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q69[9]_GND_170_o_mux_136_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q68[9]_GND_170_o_mux_134_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q67[9]_GND_170_o_mux_132_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q66[9]_GND_170_o_mux_130_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q65[9]_GND_170_o_mux_128_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q64[9]_GND_170_o_mux_126_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q63[9]_GND_170_o_mux_124_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q62[9]_GND_170_o_mux_122_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q61[9]_GND_170_o_mux_120_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q60[9]_GND_170_o_mux_118_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q59[9]_GND_170_o_mux_116_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q58[9]_GND_170_o_mux_114_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q57[9]_GND_170_o_mux_112_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q56[9]_GND_170_o_mux_110_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q55[9]_GND_170_o_mux_108_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q54[9]_GND_170_o_mux_106_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q53[9]_GND_170_o_mux_104_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q52[9]_GND_170_o_mux_102_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   music_play/q51[9]_GND_170_o_mux_100_OUT<8 : 0> on block brainwars_main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q50[9]_GND_170_o_mux_98_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q49[9]_GND_170_o_mux_96_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q48[9]_GND_170_o_mux_94_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q47[9]_GND_170_o_mux_92_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q46[9]_GND_170_o_mux_90_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q45[9]_GND_170_o_mux_88_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q44[9]_GND_170_o_mux_86_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q43[9]_GND_170_o_mux_84_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q42[9]_GND_170_o_mux_82_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q41[9]_GND_170_o_mux_80_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q40[9]_GND_170_o_mux_78_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q39[9]_GND_170_o_mux_76_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q38[9]_GND_170_o_mux_74_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q37[9]_GND_170_o_mux_72_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q36[9]_GND_170_o_mux_70_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q35[9]_GND_170_o_mux_68_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q34[9]_GND_170_o_mux_66_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q33[9]_GND_170_o_mux_64_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q32[9]_GND_170_o_mux_62_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q31[9]_GND_170_o_mux_60_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q30[9]_GND_170_o_mux_58_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q29[9]_GND_170_o_mux_56_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q28[9]_GND_170_o_mux_54_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q27[9]_GND_170_o_mux_52_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q26[9]_GND_170_o_mux_50_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q25[9]_GND_170_o_mux_48_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q24[9]_GND_170_o_mux_46_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q23[9]_GND_170_o_mux_44_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q22[9]_GND_170_o_mux_42_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q21[9]_GND_170_o_mux_40_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q20[9]_GND_170_o_mux_38_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q19[9]_GND_170_o_mux_36_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q18[9]_GND_170_o_mux_34_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q17[9]_GND_170_o_mux_32_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q16[9]_GND_170_o_mux_30_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q15[9]_GND_170_o_mux_28_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q14[9]_GND_170_o_mux_26_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q13[9]_GND_170_o_mux_24_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q12[9]_GND_170_o_mux_22_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q11[9]_GND_170_o_mux_20_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q10[9]_GND_170_o_mux_18_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q9[9]_GND_170_o_mux_16_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q8[9]_GND_170_o_mux_14_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q7[9]_GND_170_o_mux_12_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q6[9]_GND_170_o_mux_10_OUT<8
+   : 0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q5[9]_GND_170_o_mux_8_OUT<8 :
+   0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q4[9]_GND_170_o_mux_6_OUT<8 :
+   0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q3[9]_GND_170_o_mux_4_OUT<8 :
+   0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q2[9]_GND_170_o_mux_2_OUT<8 :
+   0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q1[9]_GND_170_o_mux_0_OUT<8 :
+   0> on block brainwars_main is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q132<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q131<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q125<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q109<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q107<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q98<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q96<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q130<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q114<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q71<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q111<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q110<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q103<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q102<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q100<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q99<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q92<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q91<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q68<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q117<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q74<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q67<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q66<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q63<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q62<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q58<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q45<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q129<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q88<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q42<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q21<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q127<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q105<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q104<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q94<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q93<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q86<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q54<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q40<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q19<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q126<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q85<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q39<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q18<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q122<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q79<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q33<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q12<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q120<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q77<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q31<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q10<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q121<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q119<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q118<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q78<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q76<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q75<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q59<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q57<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q46<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q44<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q32<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q30<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q29<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q11<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q9<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q8<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q124<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q123<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q115<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q81<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q80<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q72<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q60<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q51<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q47<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q35<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q34<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q28<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q14<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q13<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q7<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q116<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q73<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q26<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q5<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q113<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q112<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q84<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q83<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q70<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q69<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q65<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q61<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q56<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q52<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q50<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q43<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q38<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q37<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q27<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q25<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q17<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q16<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q6<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q4<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q128<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q87<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q64<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q53<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q49<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q41<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q24<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q20<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q3<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q101<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q90<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q82<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q48<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q36<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q23<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q15<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q2<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q108<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q106<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q97<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q95<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q89<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q55<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q22<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus music_play/q1<8 : 0> on block
+   brainwars_main is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file brainwars_main.edif ...
+ngc2edif: Total memory usage is 111672 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/brainwars_main.data/cache/brainwars_main_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/brainwars_main.data/cache/brainwars_main_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM.edif ...
+ngc2edif: Total memory usage is 81528 kilobytes
+
+Reading core file 'C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/RAM.ngc' for (cell view 'RAM', library 'brainwars_main_lib', file 'brainwars_main.ngc')
+Parsing EDIF File [./planAhead_run_2/brainwars_main.data/cache/RAM_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/brainwars_main.data/cache/RAM_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to ROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ROM.edif ...
+ngc2edif: Total memory usage is 81528 kilobytes
+
+Reading core file 'C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/ROM.ngc' for (cell view 'ROM', library 'brainwars_main_lib', file 'brainwars_main.ngc')
+Parsing EDIF File [./planAhead_run_2/brainwars_main.data/cache/ROM_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/brainwars_main.data/cache/ROM_ngc_zx.edif]
+WARNING: [Netlist 29-43] Netlist 'brainwars_main' is not ideal for floorplanning, since the cellview 'brainwars_main' defined in file 'brainwars_main.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/RAM.ncf]
+Finished Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/RAM.ncf]
+Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/ROM.ncf]
+Finished Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/ipcore_dir/ROM.ncf]
+Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ucf]
+Finished Parsing UCF File [C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 18748a26
+link_design: Time (s): elapsed = 00:00:35 . Memory (MB): peak = 644.395 ; gain = 203.258
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Jun 26 07:01:04 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -28,49 +28,49 @@ input rst_n; //active low reset
 input [1:0] random; //randow value 4-bit
 input [2:0] game_en; //game enable
 input [3:0] key; //returned pressed key
-output [1:0] point; //1:get point 0:no point got
+output point; //1:get point 0:no point got
 output [127:0] data_output;
 
 reg correct; //whether the answer is correct
-reg [1:0] point; //1:get point 0:no point got
+reg point; //1:get point 0:no point got
 reg [127:0] data_output;
 
 reg [1:0] q0, q1, q2;
 
 always @(posedge clk or negedge rst_n)
-	if(~rst_n || (game_en != 3'b101))
+	if(~rst_n || (game_en != 3'b011))
 		begin
 			correct = 1'b0;
-			point = 2'd0;
+			point = 1'd0;
 		end
 	else if((q0 == 2'b00) && (key == `KEY_7) && (pressed == 1'b1))
 		begin
 			correct = 1'b1;
-			point = 2'd2;
+			point = 1'd1;
 		end
 	else if((q0 == 2'b01) && (key == `KEY_1) && (pressed == 1'b1))
 		begin
 			correct = 1'b1;
-			point = 2'd2;
+			point = 1'd1;
 		end
 	else if((q0 == 2'b10) && (key == `KEY_1) && (pressed == 1'b1))
 		begin
 			correct = 1'b1;
-			point = 2'd2;
+			point = 1'd1;
 		end
 	else if((q0 == 2'b11) && (key == `KEY_7) && (pressed == 1'b1))
 		begin
 			correct = 1'b1;
-			point = 2'd2;
+			point = 1'd1;
 		end
 	else
 		begin
 			correct = 1'b0;
-			point = 2'd0;
+			point = 1'd0;
 		end
 
 always @(posedge clk or negedge rst_n)
-	if(~rst_n || (game_en != 3'b101))
+	if(~rst_n || (game_en != 3'b011))
 		begin
 			q2 <= random;
 			q1 <= {random[0], random[1]};

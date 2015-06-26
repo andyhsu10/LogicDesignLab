@@ -20,9 +20,7 @@ module point_cal_main(
     game_en, //game enable (I)
     state, //fsm state (I)
 	flick_master_point, //flick master point (I)
-	touch_number_point, //touch number point (I)
-	follow_order_point, //follow order point (I)
-	unfollow_order_point, //unfollow order point (I)
+	mora_point, //mora point (I)
 	high_or_low_point, //high or low point (I)
 	rainfall_point //rainfall point (I)
 );
@@ -36,25 +34,21 @@ input clk; //100 Hz clock
 input rst_n; //active low reset
 input [2:0] game_en; //game enable
 input [3:0] state; //fsm state
-input [1:0] flick_master_point; //flick master point
-input [1:0] touch_number_point; //touch number point
-input [1:0] follow_order_point; //follow order point
-input [1:0] unfollow_order_point; //unfollow order point
-input [1:0] high_or_low_point; //high or low point
-input [1:0] rainfall_point; //rainfall point
+input flick_master_point; //flick master point
+input mora_point; //mora point
+input high_or_low_point; //high or low point
+input rainfall_point; //rainfall point
 
-reg [1:0] point; //points
+reg point; //points
 reg [7:0] score, score_tmp; //binary score
 
 always @(game_en)
 	case(game_en)
 		3'b000: point = flick_master_point;
-		3'b001: point = touch_number_point;
-		3'b010: point = follow_order_point;
-		3'b011: point = unfollow_order_point;
-		3'b100: point = high_or_low_point;
-		3'b101: point = rainfall_point;
-		default: point = 2'b00;
+		3'b001: point = mora_point;
+		3'b010: point = high_or_low_point;
+		3'b011: point = rainfall_point;
+		default: point = 1'b0;
 	endcase
 
 //Combinational logics

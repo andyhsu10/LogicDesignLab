@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-06-15T22:58:48</DateModified>
+  <DateModified>2015-06-26T04:31:45</DateModified>
   <ModuleName>calendar_II</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/GitHub/LogicDesignLab/Lab12/Lab12-1/iseconfig/calendar_II.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab12/Lab12-1</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/GitHub/LogicDesignLab/Lab12/Lab12-1\</ImplementationReportsDirectory>
   <DateInitialized>2015-06-15T22:58:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -4,6 +4,24 @@
 NET "clk" LOC = R10;
 NET "rst_n" LOC = T2;
 
+//Debug
+NET "LED[15]" LOC = H5;
+NET "LED[14]" LOC = H6;
+NET "LED[13]" LOC = F1;
+NET "LED[12]" LOC = F2;
+NET "LED[11]" LOC = J6;
+NET "LED[10]" LOC = J7;
+NET "LED[9]" LOC = G1;
+NET "LED[8]" LOC = G3;
+NET "LED[7]" LOC = K6;
+NET "LED[6]" LOC = L7;
+NET "LED[5]" LOC = H3;
+NET "LED[4]" LOC = H4;
+NET "LED[3]" LOC = K5;
+NET "LED[2]" LOC = L5;
+NET "LED[1]" LOC = K3;
+NET "LED[0]" LOC = K4;
+
 ## LCD control signals
 NET "LCD_rst"       LOC = "E3";
 NET "LCD_cs[1]"     LOC = "E1";
@@ -28,3 +46,24 @@ NET "row_n[0]" LOC = K2;
 NET "row_n[1]" LOC = K1;
 NET "row_n[2]" LOC = L4;
 NET "row_n[3]" LOC = L3;
+
+NET "control[0]" LOC = V8;
+NET "control[1]" LOC = U8;
+NET "control[2]" LOC = V6;
+NET "control[3]" LOC = T6;
+
+NET "display[14]" LOC = P6;
+NET "display[13]" LOC = N4;
+NET "display[12]" LOC = V5;
+NET "display[11]" LOC = T5;
+NET "display[10]" LOC = U7;
+NET "display[9]" LOC = R3;
+NET "display[8]" LOC = N5;
+NET "display[7]" LOC = R5;
+NET "display[6]" LOC = T3;
+NET "display[5]" LOC = T4;
+NET "display[4]" LOC = V4;
+NET "display[3]" LOC = V7;
+NET "display[2]" LOC = R7;
+NET "display[1]" LOC = T7;
+NET "display[0]" LOC = U5;

@@ -3,12 +3,12 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Tue Jun 23 20:06:31 2015">
+<application name="pn" timeStamp="Fri Jun 26 07:24:44 2015">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="FAC3B1572127465A874A5EB05BE4EB28" type="project"/>
-<property name="ProjectIteration" value="34" type="project"/>
-<property name="ProjectFile" value="D:/GitHub/LogicDesignLab/Final Project/brainwars_secondary/brainwars_secondary.xise" type="project"/>
-<property name="ProjectCreationTimestamp" value="2015-06-15T21:00:11" type="project"/>
+<property name="ProjectID" value="B675C9888CA64A8A94811540ED5C9A7B" type="project"/>
+<property name="ProjectIteration" value="12" type="project"/>
+<property name="ProjectFile" value="D:/brainwars_secondary/brainwars_secondary.xise" type="project"/>
+<property name="ProjectCreationTimestamp" value="2015-06-25T13:17:04" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
@@ -22,9 +22,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
 <property name="PROP_UseSmartGuide" value="false" type="design"/>
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
-<property name="PROP_intProjectCreationTimestamp" value="2015-06-15T21:00:11" type="design"/>
-<property name="PROP_intWbtProjectID" value="FAC3B1572127465A874A5EB05BE4EB28" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="34" type="process"/>
+<property name="PROP_intProjectCreationTimestamp" value="2015-06-25T13:17:04" type="design"/>
+<property name="PROP_intWbtProjectID" value="B675C9888CA64A8A94811540ED5C9A7B" type="design"/>
+<property name="PROP_intWbtProjectIteration" value="12" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
@@ -38,7 +38,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
 <property name="FILE_COREGEN" value="2" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VERILOG" value="35" type="source"/>
+<property name="FILE_VERILOG" value="41" type="source"/>
 </section>
 </application>
 </document>

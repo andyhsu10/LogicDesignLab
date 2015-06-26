@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.ncd
-OUTFILE=D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary\brainwars_secondary.bit
+INFILE=D:\brainwars_secondary\brainwars_secondary.ncd
+OUTFILE=D:\brainwars_secondary\brainwars_secondary.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=D:\GitHub\LogicDesignLab\Final Project\brainwars_secondary
+WORKINGDIR=D:\brainwars_secondary
 LICENSE=WebPack
 USER_INFO=210913348_0_0_143

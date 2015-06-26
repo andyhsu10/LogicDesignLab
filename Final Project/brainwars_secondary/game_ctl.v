@@ -14,7 +14,7 @@ module game_ctl(
     game_en, //game enable (O)
     clk, //100 Hz clock (I)
     state, //fsm state (I)
-    random, //randow value 10-bit (I)
+    random, //randow value 2-bit (I)
     rst_n //active low reset (I)
 );
 
@@ -22,29 +22,22 @@ module game_ctl(
 output [2:0] game_en; //game enable
 input clk; //100 Hz clock
 input [3:0] state; //fsm state
-input [2:0] random; //randow value
+input [1:0] random; //randow value
 input rst_n; //active low reset
 
 reg [2:0] game_decision;
 reg [2:0] game_en; //game enable
 reg [8:0] check;
 
-always @(posedge clk)
-	if(random > 3'd5)
-		game_decision = random - 3'd6;
-	else
-		game_decision = random;
-
-
 always @(posedge clk or negedge rst_n)
 	if(~rst_n || (state == `STAT_RESULT))
 		check = 9'd511;
 	else if(state == `STAT_INITIAL)
-		check[2:0] = game_decision;
-	else if((state == `STAT_GAME_INVITE) && (check[2:0] != game_decision))
-		check[5:3] = game_decision;
-	else if((state == `STAT_STAGE1_DES) && (check[2:0] != game_decision) && (check[5:3] != game_decision))
-		check[8:6] = game_decision;
+		check[2:0] = random;
+	else if((state == `STAT_GAME_INVITE) && (check[2:0] != random))
+		check[5:3] = random;
+	else if((state == `STAT_STAGE1_DES) && (check[2:0] != random) && (check[5:3] != random))
+		check[8:6] = random;
 
 always @(posedge clk or negedge rst_n)
 	if(~rst_n)

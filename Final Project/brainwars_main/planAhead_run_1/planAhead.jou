@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Jun 26 06:57:58 2015
+# Process ID: 4044
+# Log file: C:/Users/Andy/Desktop/Working/brainwars_main/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Andy/Desktop/Working/brainwars_main/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Andy/Desktop/Working/brainwars_main/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

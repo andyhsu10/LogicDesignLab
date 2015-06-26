@@ -18,9 +18,7 @@ module display_ctl(
 	invite_data_in, //invite screen lcd data (I)
 	count_down_data_in, //count down screen lcd data (I)
 	flick_master_data_in, //flick master screen lcd data (I)
-	touch_number_data_in, //touch number screen lcd data (I)
-	follow_order_data_in, //follow order screen lcd data (I)
-	unfollow_order_data_in, //unfollow order screen lcd data (I)
+	mora_data_in, //touch number screen lcd data (I)
 	high_or_low_data_in, //high or low screen lcd data (I)
 	rainfall_data_in, //rainfall screen lcd data (I)
 	result_data_in //result screen lcd data (I)
@@ -34,11 +32,9 @@ input [127:0] initial_data_in; //initial screen lcd data
 input [127:0] invite_data_in; //invite screen lcd data
 input [127:0] count_down_data_in; //count down screen lcd data
 input [127:0] flick_master_data_in; //flick master screen lcd data
-input [127:0] touch_number_data_in; //touch number screen lcd data
-input [127:0] follow_order_data_in; //follow order screen lcd data
-input [127:0] unfollow_order_data_in; //unfollow order screen lcd data (I)
-input [127:0] high_or_low_data_in; //high or low screen lcd data (I)
-input [127:0] rainfall_data_in; //rainfall screen lcd data (I)
+input [127:0] mora_data_in; //touch number screen lcd data
+input [127:0] high_or_low_data_in; //high or low screen lcd data
+input [127:0] rainfall_data_in; //rainfall screen lcd data
 input [127:0] result_data_in; //result screen lcd data
 
 reg [127:0] game;
@@ -47,11 +43,9 @@ reg [127:0] data_out; //data output
 always @*
 	case(game_en)
 		3'b000: game = flick_master_data_in;
-		3'b001: game = touch_number_data_in;
-		3'b010: game = follow_order_data_in;
-		3'b011: game = unfollow_order_data_in;
-		3'b100: game = high_or_low_data_in;
-		3'b101: game = rainfall_data_in;
+		3'b001: game = mora_data_in;
+		3'b010: game = high_or_low_data_in;
+		3'b011: game = rainfall_data_in;
 	endcase
 
 always @*

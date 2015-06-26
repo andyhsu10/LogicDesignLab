@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-06-19T23:59:33</DateModified>
+  <DateModified>2015-06-25T20:04:42</DateModified>
   <ModuleName>brainwars_secondary</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-06-25T20:02:27</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Andy/Desktop/Working/Test/iseconfig/brainwars_secondary.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Andy/Desktop/Working/Test</ImplementationReportsDirectory>
-  <DateInitialized>2015-06-19T23:59:33</DateInitialized>
+  <DateInitialized>2015-06-25T19:54:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

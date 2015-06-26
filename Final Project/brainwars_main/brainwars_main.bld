@@ -5,8 +5,8 @@ Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc brainwars_main.ucf -p
 xc6slx16-csg324-3 brainwars_main.ngc brainwars_main.ngd
 
-Reading NGO file "D:/GitHub/LogicDesignLab/Final
-Project/brainwars_main/brainwars_main.ngc" ...
+Reading NGO file
+"C:/Users/Andy/Desktop/Working/brainwars_main/brainwars_main.ngc" ...
 Loading design module "ipcore_dir/RAM.ngc"...
 Loading design module "ipcore_dir/ROM.ngc"...
 Gathering constraint information from source properties...
@@ -30,7 +30,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 193284 kilobytes
+Total memory usage is 201604 kilobytes
 
 Writing NGD file "brainwars_main.ngd" ...
 Total REAL time to NGDBUILD completion:  8 sec

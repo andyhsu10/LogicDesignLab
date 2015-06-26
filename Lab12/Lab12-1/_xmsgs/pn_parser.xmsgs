@@ -8,5 +8,73 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/RAM_ctrl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.v</arg>&quot; Line <arg fmt="%d" index="2">12</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/calendar_II.v&quot; line 12
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/clock_divider.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/clock_generator.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/clock_generator.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/clock_generator.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/day_ctl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/day_ctl.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/day_ctl.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/display_ctl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/display_ctl.v</arg>&quot; Line <arg fmt="%d" index="2">12</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/display_ctl.v&quot; line 12
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/freq_div.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/lcd_ctrl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/lcd_decoder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/lcd_decoder.v</arg>&quot; Line <arg fmt="%d" index="2">12</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/lcd_decoder.v&quot; line 12
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/ten.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/ten.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/ten.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/thousand.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/thousand.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/thousand.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/upcounter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/GitHub/LogicDesignLab/Lab12/Lab12-1/upcounter.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/global.v&apos; in file &quot;D:/GitHub/LogicDesignLab/Lab12/Lab12-1/upcounter.v&quot; line 21
+</arg>
+</msg>
+
 </messages>
 

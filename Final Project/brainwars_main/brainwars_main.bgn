@@ -6,7 +6,7 @@ D:\Xilinx\14.7\ISE_DS\ISE\.
 speed -3
 Opened constraints file brainwars_main.pcf.
 
-Tue Jun 23 20:13:31 2015
+Fri Jun 26 07:28:37 2015
 
 D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 brainwars_main.ncd 
 
@@ -130,11 +130,11 @@ There were 0 CONFIG constraint(s) processed from brainwars_main.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   game_rainfall/rst_n_random[0]_AND_52_o is sourced by a combinatorial pin.
+   game_rainfall/rst_n_random[1]_AND_69_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   game_rainfall/rst_n_random[1]_AND_50_o is sourced by a combinatorial pin.
+   game_rainfall/rst_n_random[0]_AND_71_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 DRC detected 0 errors and 2 warnings.  Please see the previously displayed
